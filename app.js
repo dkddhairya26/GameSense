@@ -1,7 +1,34 @@
 const $=x=>document.getElementById(x);let sport='Soccer',all=[],imports=[],filtered=[],ranking=[];
 const defs={Soccer:{title:'Football intelligence',sub:'Observed club-match results · 12 competitions',metrics:{points:'Match points',goals:'Goals scored',goals_against:'Goals conceded',wins:'Wins',draws:'Draws'}},NBA:{title:'NBA performance lab',sub:'Real player-season statistics · 2022–23 onward',metrics:{points:'Total points',rebounds:'Rebounds',assists:'Assists',games:'Games',minutes:'Minutes'}},AFL:{title:'AFL performance centre',sub:'Player-level records from permitted imports · no synthetic data',metrics:{disposals:'Disposals',kicks:'Kicks',handballs:'Handballs',marks:'Marks',tackles:'Tackles',goals:'Goals',points:'Club points'}},F1:{title:'Formula 1 race analysis',sub:'Driver race results · 1950 onward',metrics:{points:'Race points',wins:'Wins (finishes P1)',podiums:'Podiums',finish_position:'Average classified finish',grid_position:'Average starting grid'}}};
 function norm(r){let o={...r};o.sport=String(o.sport||sport).trim();o.season=String(o.season||o.year||'Unknown').trim();o.competitor=String(o.competitor||o.player||o.player_name||o.club||o.driver||o.name||'').trim();o.competition=String(o.competition||o.league|| (o.sport==='AFL'?'VFL/AFL':'All competitions')).trim();o.competitor_id=String(o.competitor_id||o.competitor);for(let k of ['points','goals','goals_against','wins','draws','losses','rebounds','assists','games','minutes','disposals','kicks','handballs','marks','tackles','finish_position','grid_position','podiums'])if(o[k]!==undefined){let x=Number(o[k]);o[k]=Number.isFinite(x)?x:null;}return o}
-async function load(){try{let [a,b]=await Promise.all([fetch('data/f1.json'),fetch('data/soccer.json')]);if(!a.ok||!b.ok)throw Error('Failed to load data');let aa=await a.json(),bb=await b.json();all=[...aa,...bb].map(norm);$('loadState').textContent=all.length.toLocaleString()+' verified rows';}catch(e){$('loadState').textContent='Archive unavailable · import a file';$('importStatus').textContent='If opened as file://, use the included local server instructions. '+e.message}let storage=localStorage.getItem('gamesense-imports');if(storage){try{imports=JSON.parse(storage).map(norm)}catch{}}updateControls()}
+async function load(){
+  const names=["soccer-01.json","soccer-02.json","soccer-03.json","soccer-04.json","soccer-05.json","f1.json","nba.json"];
+  const failures=[];
+  const results=await Promise.allSettled(names.map(async name=>{
+    let lastFailure="";
+    for(const url of ["data/"+name,name]){
+      try{
+        const response=await fetch(url,{cache:"no-cache"});
+        if(!response.ok){lastFailure=url+" (HTTP "+response.status+")";continue;}
+        const records=await response.json();
+        if(!Array.isArray(records))throw new Error("Expected an array of records in "+url);
+        return records;
+      }catch(err){lastFailure=url+": "+err.message;}
+    }
+    throw new Error(lastFailure||"Not found: "+name);
+  }));
+  all=[];
+  for(let i=0;i<results.length;i++){
+    if(results[i].status==="fulfilled")all.push(...results[i].value);
+    else failures.push(names[i]+": "+String(results[i].reason.message||results[i].reason));
+  }
+  all=all.map(norm);
+  $("loadState").textContent=all.length.toLocaleString()+" historical rows loaded"+(failures.length?" · "+failures.length+" dataset errors":"");
+  if(failures.length)$("importStatus").textContent="Dataset loading errors: "+failures.join(" | ");
+  else $("importStatus").textContent="Soccer, NBA and F1 history loaded from this GitHub repository. AFL player records require a permitted import.";
+  try{const saved=localStorage.getItem("gamesense-imports");if(saved)imports=JSON.parse(saved).map(norm)}catch(e){console.warn("Unable to restore imported records",e)}
+  updateControls();
+}
 function rows(){return [...all,...imports].filter(r=>r.sport.toLowerCase()===sport.toLowerCase())}
 function updateControls(){let d=defs[sport];$('sportTitle').textContent=d.title;$('subtitle').textContent=d.sub;$('crumbSport').textContent=sport.toUpperCase();document.querySelectorAll('.nav').forEach(n=>n.classList.toggle('active',n.dataset.sport===sport));let rr=rows();let seasons=[...new Set(rr.map(x=>x.season))].sort((a,b)=>b.localeCompare(a,undefined,{numeric:true}));let cs=[...new Set(rr.map(x=>x.competition))].sort();let old=$('season').value; $('season').innerHTML=options(['All seasons',...seasons],old);old=$('competition').value;$('competition').innerHTML=options(['All competitions',...cs],old);$('metric').innerHTML=Object.entries(d.metrics).map(([k,v])=>`<option value="${k}">${escapeHtml(v)}</option>`).join('');render()}
 function options(values,old){return values.map(v=>`<option${v===old?' selected':''}>${escapeHtml(v)}</option>`).join('')}
