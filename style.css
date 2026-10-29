@@ -120,7 +120,7 @@ select:focus,input:focus{outline:2px solid var(--accent);outline-offset:2px;box-
 .kpi small{color:#57625c;font:12px var(--body)}
 .insight-graphs{display:grid;grid-template-columns:1.15fr 1fr;gap:12px;margin:16px 0}
 .chart-panel{min-width:0;min-height:320px;padding:21px 22px}
-.chart-panel:first-child{background:var(--paper);color:var(--paper-ink);border-color:#a9b3a7}
+.chart-panel:first-child{--accent:#476d40;--accent-2:#416c60;background:var(--paper);color:var(--paper-ink);border-color:#a9b3a7}
 .chart-panel:first-child .eyebrow{color:#496136}
 .chart-panel:first-child .chart-note,.chart-panel:first-child .fn-axis{color:#48544d;fill:#48544d}
 .chart-panel:first-child .chip{color:#45602b;border-color:#45602b}
@@ -203,3 +203,8 @@ footer{font:11px var(--mono);color:var(--muted);text-align:left;border-top:1px s
 @media(max-width:900px){.hero{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.kpi:nth-child(2){border-right:0}.kpi:nth-child(-n+2){border-bottom:1px solid #adb6ab}.diagnostic-grid{grid-template-columns:1fr}.duel-panel{grid-column:1}}
 @media(max-width:760px){.topbar{height:auto;min-height:73px;padding:12px 15px;flex-wrap:wrap}.topmeta{gap:8px}.sidebar{width:66px;flex-basis:66px}.sidebar button,.sidebar a{padding:11px 5px;justify-content:center}.sidebar .sport-number{display:none}.sidebar button span,.sidebar a span,.nav-label,.sidebar-note{display:none}.sidebar button:after{content:attr(data-sport);font:700 11px var(--headline)}.main{padding:18px 12px}.hero{padding:22px 17px}.hero-copy h1{font-size:49px}.kpis{grid-template-columns:1fr 1fr}.kpi{padding:14px}.kpi strong{font-size:29px}.barrow{grid-template-columns:95px 1fr 56px;gap:6px}.source-grid{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.line-draw{stroke-dashoffset:0!important}}
+
+/* Paper graphics use dark ink rather than the signal-yellow used against charcoal. */
+.chart-panel:first-child .analytics-svg text{fill:#55645a!important}
+.chart-panel:first-child .analytics-svg line{stroke:#bac3b7!important}
+@media(max-width:760px){.cricket-view-buttons button{padding:10px 12px;font-size:11px}.topmeta>.pill:last-child{display:none}}
