@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>GameSense | Historical Sports Analytics</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=fieldnotes-1">
 </head>
 <body>
   <header class="topbar">
@@ -12,22 +15,22 @@
       <div class="mark">GS<span class="mark-flare" aria-hidden="true"></span></div>
       <div>
         <strong>GameSense</strong>
-        <small>HISTORICAL SPORTS ANALYTICS</small>
+        <small>AN INDEPENDENT SPORTS DATA JOURNAL</small>
       </div>
     </div>
     <div class="topmeta">
       <span class="pill status-pill" id="loadState"><span class="live-pulse" aria-hidden="true"></span>Loading historical archive…</span>
-      <span class="pill">WEB EDITION · OWNED BY DKDDHAIRYA26</span>
+      <span class="pill">FIELD NOTES / VOL. 01</span>
     </div>
   </header>
 
   <div class="app-shell">
     <aside class="sidebar">
       <div class="nav-label">SPORTS</div>
-      <button class="nav active" data-sport="Soccer">⚽ <span>Soccer</span></button>
-      <button class="nav" data-sport="NBA">🏀 <span>NBA</span></button>
-      <button class="nav" data-sport="Cricket">🏏 <span>Cricket</span></button>
-      <button class="nav" data-sport="F1">🏎️ <span>F1</span></button>
+      <button class="nav active" data-sport="Soccer"><b class="sport-number">01</b> <span>Football</span></button>
+      <button class="nav" data-sport="NBA"><b class="sport-number">02</b> <span>NBA</span></button>
+      <button class="nav" data-sport="Cricket"><b class="sport-number">03</b> <span>Cricket</span></button>
+      <button class="nav" data-sport="F1"><b class="sport-number">04</b> <span>Formula 1</span></button>
 
       <div class="nav-label spaced">SECTIONS</div>
       <a href="#rankingPanel">↗ <span>Rankings</span></a>
@@ -37,22 +40,17 @@
       <a href="#sourcesPanel">↗ <span>Sources</span></a>
 
       <div class="sidebar-note">
-        Built for a school assessment. Uses historical records that are source-limited and clearly labelled.
+        A STUDENT RESEARCH PROJECT<br><small>Historical data. Reproducible comparisons. No live predictions.</small>
       </div>
     </aside>
 
     <main class="main">
       <div id="runtimeError" class="runtime-error" hidden role="alert"></div>
-      <div class="crumb">GAME SENSE / <span id="crumbSport">SOCCER</span> / HISTORICAL ANALYTICS</div>
+      <div class="crumb">ARCHIVE / <span id="crumbSport">SOCCER</span> / RESEARCH DESK</div>
 
       <section class="hero panel">
-        <div class="hero-graphic" aria-hidden="true">
-          <div class="hero-ring ring-one"></div><div class="hero-ring ring-two"></div>
-          <div class="hero-spark spark-one"></div><div class="hero-spark spark-two"></div>
-          <div class="hero-grid"></div>
-        </div>
         <div class="hero-copy">
-          <div class="eyebrow" id="heroEyebrow">PERFORMANCE ANALYTICS</div>
+          <div class="eyebrow" id="heroEyebrow">THE DATA, NOT THE HYPE / EDITION 01</div>
           <h1 id="sportTitle">Soccer intelligence</h1>
           <p id="subtitle">Explore historical records, compare competitors and export rankings from real archived sports data.</p>
           <div class="hero-tags">
@@ -65,12 +63,12 @@
             <div class="hero-profile-photo" id="leaderPortraitWrap" aria-hidden="true">
               <span id="leaderMonogram">GS</span><img id="leaderPortrait" alt="" hidden loading="lazy" referrerpolicy="no-referrer">
             </div>
-            <span>Current leader</span>
+            <span>LEADING SUBJECT / SELECTED METRIC</span>
             <strong id="leaderName">—</strong>
             <small id="leaderMetric">Waiting for data…</small>
           </div>
           <div class="mini-stat">
-            <span>Quick insight</span>
+            <span>READOUT / CURRENT FILTERS</span>
             <strong id="insightTitle">—</strong>
             <small id="insightText">Choose a sport and metric to generate an insight.</small>
           </div>
@@ -96,12 +94,12 @@
           <label>Competition<select id="competition"></select></label>
           <label>Metric<select id="metric"></select></label>
           <label>Find competitor<input id="search" placeholder="Search names..."></label>
-          <button id="export" class="primary-action">Export rankings CSV</button>
+          <button id="export" class="primary-action">EXPORT DATA ↗</button>
         </div>
       </section>
 
       <section class="panel" id="analysisPanel" style="margin:18px 0;padding:20px">
-        <div class="panel-head"><div><span class="eyebrow">SOURCE-BASED ANALYSIS</span><h2>Recent form</h2></div><span class="chip">Observed records only</span></div>
+        <div class="panel-head"><div><span class="eyebrow">FORM CHECK / RECENT OBSERVATIONS</span><h2>What happened recently?</h2></div><span class="chip">Observed records only</span></div>
         <p id="formSummary" class="analytics-message">Waiting for historical records…</p>
         <p class="analytics-disclaimer">Form is based on the latest observed events or player-seasons, not predictions. Incomplete coverage can affect the results.</p>
       </section>
@@ -114,15 +112,32 @@
 
       <section class="insight-graphs" id="chartsPanel" aria-label="Interactive sports performance charts">
         <section class="panel chart-panel">
-          <div class="panel-head"><div><span class="eyebrow">YEAR-BY-YEAR ANALYSIS</span><h2>Historical performance</h2></div><span class="chip" id="timeChartMetric">Selected metric</span></div>
+          <div class="panel-head"><div><span class="eyebrow">YEAR-BY-YEAR ANALYSIS</span><h2>When did performance change?</h2></div><span class="chip" id="timeChartMetric">Selected metric</span></div>
           <p class="chart-note" id="timeChartNote">Calculated from your current season and competition filters</p>
           <div id="timeChart" class="chart-viewport" role="img" aria-label="Historical metric trend chart"></div>
         </section>
         <section class="panel chart-panel">
-          <div class="panel-head"><div><span class="eyebrow">COMPARATIVE INTELLIGENCE</span><h2>Top competitors</h2></div><span class="chip">Interactive chart</span></div>
+          <div class="panel-head"><div><span class="eyebrow">RANKED FIELD</span><h2>Who leads the field?</h2></div><span class="chip">Interactive chart</span></div>
           <p class="chart-note" id="rankChartNote">Top competitors for the selected metric</p>
           <div id="rankChart" class="chart-viewport" role="img" aria-label="Top competitor comparison bar chart"></div>
         </section>
+      </section>
+      <section class="diagnostic-grid" id="diagnostics" aria-label="Further performance analysis">
+        <div class="panel diagnostic-panel">
+          <div class="panel-head"><div><span class="eyebrow">DISTRIBUTION / 01</span><h2>How spread out is the field?</h2></div></div>
+          <p class="chart-note" id="distributionNote">Distribution of the selected metric across competitors.</p>
+          <div id="distributionChart" class="chart-viewport" role="img" aria-label="Competitor metric distribution histogram"></div>
+        </div>
+        <div class="panel diagnostic-panel">
+          <div class="panel-head"><div><span class="eyebrow">RELATIONSHIPS / 02</span><h2>Output against volume</h2></div></div>
+          <p class="chart-note" id="scatterNote">Which competitors outperform the usual relationship?</p>
+          <div id="scatterChart" class="chart-viewport" role="img" aria-label="Scatter plot comparing two measured statistics"></div>
+        </div>
+        <div class="panel diagnostic-panel duel-panel">
+          <div class="panel-head"><div><span class="eyebrow">HEAD-TO-HEAD / 03</span><h2>The matchup, broken down</h2></div></div>
+          <p class="chart-note" id="duelNote">Choose two competitors to compare matched statistics.</p>
+          <div id="duelChart" class="chart-viewport" role="img" aria-label="Side by side competitor metric analysis"></div>
+        </div>
       </section>
       <div class="content-grid">
         <section class="panel" id="rankingPanel">
@@ -149,7 +164,7 @@
             <div class="panel-head">
               <div>
                 <span class="eyebrow">HEAD TO HEAD</span>
-                <h2>Compare competitors</h2>
+                <h2>Two subjects. One metric.</h2>
               </div>
             </div>
             <label>Competitor A<select id="compareA"></select></label>
@@ -182,7 +197,7 @@
             <div class="panel-head">
               <div>
                 <span class="eyebrow">HISTORICAL TREND</span>
-                <h2>Season trend</h2>
+                <h2>Season record</h2>
               </div>
             </div>
             <div id="trend" class="trend"></div>
@@ -195,7 +210,7 @@
         <div class="panel-head">
           <div>
             <span class="eyebrow">DATA STUDIO</span>
-            <h2>Load your own historical records</h2>
+            <h2>Bring your own data</h2>
           </div>
           <span class="chip">CSV / JSON</span>
         </div>
@@ -224,8 +239,8 @@
       <section class="panel" id="sourcesPanel">
         <div class="panel-head">
           <div>
-            <span class="eyebrow">TRANSPARENCY</span>
-            <h2>Source coverage & limitations</h2>
+            <span class="eyebrow">SOURCE LEDGER</span>
+            <h2>What the data can tell us</h2>
           </div>
         </div>
         <div class="source-grid">
@@ -258,6 +273,6 @@
     </main>
   </div>
 
-  <script defer src="app.js?v=20261030-international-players-v6"></script>
+  <script defer src="app.js?v=fieldnotes-20261030-v7"></script>
 </body>
 </html>
