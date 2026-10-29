@@ -34,3 +34,9 @@ Substantial AI collaboration assisted this web edition; see [PROJECT_EVIDENCE.md
 
 ## International ODI view (final project extension)
 Choose Cricket, then **International ODIs · Team results** to compare countries using actual observed outcomes, total wins and win percentages. This small 16-match selection (2009–2014) is sourced from original Cricsheet ODI JSON under ODC-BY 1.0; it is not complete international coverage and does not contain Tests or T20Is. IPL player metrics are kept separate from international team outcomes. See PROJECT_EVIDENCE.md.\n
+## Interactive design refresh — 30 October 2026
+The interface includes **original GameSense styling influenced by sports-data dashboards such as STATSCORE**: motion-accented hero artwork, chart transitions, sport-specific colours, leader portraits, and competitor profile cards. It does not copy or embed STATSCORE proprietary assets, branded widgets, or live data feeds.
+
+Profile images are requested on demand from the **English Wikipedia MediaWiki API**, with a conservative page-title match. Images are not included in the source repository or downloaded into the project ZIP. Their licences vary by file, so users can follow the provided attribution/source link; unavailable or ambiguous images fall back to initials. A profile's associated team or country is derived from **selected historical records**, not assumed to be a current team.
+
+The animations use CSS transforms/opacity and honour `prefers-reduced-motion`. GameSense historical data remains sourced separately from all photos.
