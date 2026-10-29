@@ -5,7 +5,7 @@ GameSense is a *sports research publication*, not a fintech dashboard, SaaS prod
 
 ## Non-negotiable visual choices
 - **Typography**: Barlow Condensed for headlines and navigation; Source Sans 3 for editorial reading; IBM Plex Mono for data labels, timestamps, figures and axes. No Inter/Roboto/Arial as the authored face.
-- **Palette**: coal `#0c1113`, off-white `#f2f1e9`, warm-paper `#e8e7df`, dark-rule `#2a3335`, signal-yellow `#d8f251` and per-sport accents. No purple, indigo, glassmorphism, blur/shadow cards or generic gradients.
+- **Palette**: coal `#0c1113`, off-white `#f2f1e9`, warm-paper `#e8e7df`, dark-rule `#2a3335`, desaturated sage `#a9bbac`, archival paper and muted per-sport accents. No fluorescent yellow, purple, indigo, glassmorphism, blur/shadow cards or generic gradients.
 - **Shape**: mostly straight edges, 1–4 px corner radius only where ergonomically required, sharp dividers, underlines, left-margin annotation bars. No rounded-2xl pill patterns.
 - **Navigation**: sports have numbered text tabs, not emoji; archive sections have clear labels. No decorative stars, trophy icons or generic AI copy.
 - **Hierarchy**: editorial masthead → current subject → filter strip → primary charts → diagnostic charts → competitors/notes → methods and provenance.
@@ -24,3 +24,6 @@ GameSense is a *sports research publication*, not a fintech dashboard, SaaS prod
 
 ## AI transparency
 This redesign and technical implementation used AI assistance. A distinct design does not claim to have been made without AI; continue to attribute assistance honestly in the assessment documentation.
+
+## Portrait and muted palette revision — 30 October 2026
+The fluorescent signal yellow has been replaced by desaturated slate/sage and warm paper, with muted sport accents (football #a9bbac, NBA #c6a68d, cricket #b7ac8c, F1 #b69a97). A selected subject profile sits below filters. It shows a verified photograph or club image from Wikipedia where available; national cricket teams show flags; all other missing images show typographic initials. Photographs load only for exact article-title matches, with a second summary API fallback, cached lookups and Wikimedia attribution/source links. Clicking ranking rows or bars changes the subject. Affiliations are grounded in selected historical records; unknown IPL team assignments are not guessed.
