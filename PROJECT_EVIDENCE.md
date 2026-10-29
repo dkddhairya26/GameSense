@@ -27,3 +27,10 @@ Local programmatic checks of the offline edition verified all four sports return
 - Cricsheet licence: https://cricsheet.org/licensing/
 
 This is a student learning project, not an official sport-data service.
+
+## International cricket extension — 30 October 2026
+The Cricket section now offers separate **IPL player-season** and **international ODI team-match** views. The international sample uses 16 men’s ODIs (32 club-perspective equivalent team records) dated 2009–2014, extracted directly from Cricsheet’s original match JSON as mirrored at https://github.com/walsri24/Cricket-Dataset/tree/main/odis_json. **Original match data is attributed to Cricsheet under ODC-BY 1.0**. This is deliberately a small sample, not complete international coverage; there are no Test/T20I international match records or international batting innings in this edition. The independent match mirror itself states no general licence, so records are reconstructed only from the original Cricsheet-licensed JSON data. A previously tested, third-party, licence-unclear archive was removed and was not included in the final package.
+
+In international mode, nation outcomes are ranked by recorded wins (or win percentage for selected observed matches); the GameSense index is 100 for a win, 50 for a draw/tie, 0 for a loss. In IPL mode, player-season runs/wickets remain separate. The interface prevents comparing these unlike units in one ranking.
+
+Validation includes JavaScript syntax and element-ID checks, counts of 16 unique ODI matches and 32 team rows, and ZIP integrity checks. A full visual Chromium test could not complete because this environment returned ERR_BLOCKED_BY_ADMINISTRATOR for both file and loopback HTTP navigation. The student should test the website personally on their own browser.
