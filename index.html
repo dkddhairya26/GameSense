@@ -77,6 +77,16 @@
         </div>
       </section>
 
+      <section id="cricketFormats" class="panel cricket-views" hidden aria-label="Cricket competition views">
+        <span class="eyebrow">CRICKET · CHOOSE YOUR ANALYSIS</span>
+        <div class="cricket-view-buttons">
+          <button data-cricket-view="Indian Premier League · selected leading performers" class="selected">IPL · Player stats</button>
+          <button data-cricket-view="International ODI">International ODIs</button>
+          <button data-cricket-view="International T20I">International T20Is</button>
+          <button data-cricket-view="International Test">International Tests</button>
+        </div>
+        <p class="analytics-disclaimer">Select IPL for individual player statistics, or ODI, T20I and Test for international country-versus-country records. Undecided or missing results are excluded from win-rate calculations.</p>
+      </section>
       <section class="filters panel slim-panel">
         <div class="filters-grid">
           <label>Season<select id="season"></select></label>
@@ -91,16 +101,6 @@
         <div class="panel-head"><div><span class="eyebrow">SOURCE-BASED ANALYSIS</span><h2>Recent form</h2></div><span class="chip">Observed records only</span></div>
         <p id="formSummary" class="analytics-message">Waiting for historical records…</p>
         <p class="analytics-disclaimer">Form is based on the latest observed events or player-seasons, not predictions. Incomplete coverage can affect the results.</p>
-      </section>
-      <section class="panel cricket-views" aria-label="Cricket competition views">
-        <span class="eyebrow">CRICKET DATASETS</span>
-        <div class="cricket-view-buttons">
-          <button data-cricket-view="Indian Premier League · selected leading performers" class="selected">IPL · Player stats</button>
-          <button data-cricket-view="International ODI">ODI · Teams</button>
-          <button data-cricket-view="International T20I">T20I · Teams</button>
-          <button data-cricket-view="International Test">Tests · Teams</button>
-        </div>
-        <p class="analytics-disclaimer">IPL player-seasons and international national-team matches use different metrics. International ODI, T20I and Test match-result archives are historical and may include matches with unknown outcomes; only decided results contribute to win percentages.</p>
       </section>
       <section class="kpis">
         <div class="kpi panel"><span>OBSERVATIONS</span><strong id="count">—</strong><small>Rows in current filtered view</small></div>
@@ -255,6 +255,6 @@
     </main>
   </div>
 
-  <script defer src="app.js?v=20261030-international-charts-v4"></script>
+  <script defer src="app.js?v=20261030-cricket-formats-fix-v5"></script>
 </body>
 </html>
