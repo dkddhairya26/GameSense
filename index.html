@@ -26,13 +26,14 @@
       <div class="nav-label">SPORTS</div>
       <button class="nav active" data-sport="Soccer">⚽ <span>Soccer</span></button>
       <button class="nav" data-sport="NBA">🏀 <span>NBA</span></button>
-      <button class="nav" data-sport="AFL">🏉 <span>AFL</span></button>
+      <button class="nav" data-sport="Cricket">🏏 <span>Cricket</span></button>
       <button class="nav" data-sport="F1">🏎️ <span>F1</span></button>
 
       <div class="nav-label spaced">SECTIONS</div>
       <a href="#rankingPanel">↗ <span>Rankings</span></a>
       <a href="#comparePanel">↗ <span>Compare</span></a>
       <a href="#studioPanel">↗ <span>Data Studio</span></a>
+      <a href="#methodPanel">↗ <span>Methodology</span></a>
       <a href="#sourcesPanel">↗ <span>Sources</span></a>
 
       <div class="sidebar-note">
@@ -77,6 +78,11 @@
         </div>
       </section>
 
+      <section class="panel" id="analysisPanel" style="margin:18px 0;padding:20px">
+        <div class="panel-head"><div><span class="eyebrow">SOURCE-BASED ANALYSIS</span><h2>Recent form</h2></div><span class="chip">Observed records only</span></div>
+        <p id="formSummary" class="analytics-message">Waiting for historical records…</p>
+        <p class="analytics-disclaimer">Form is based on the latest observed events or player-seasons, not predictions. Incomplete coverage can affect the results.</p>
+      </section>
       <section class="kpis">
         <div class="kpi panel"><span>OBSERVATIONS</span><strong id="count">—</strong><small>Rows in current filtered view</small></div>
         <div class="kpi panel"><span>COMPETITORS</span><strong id="competitors">—</strong><small>Distinct people or teams</small></div>
@@ -138,21 +144,28 @@
           </div>
           <span class="chip">CSV / JSON</span>
         </div>
-        <p>
-          Imported records stay in this browser only. For AFL, this site can also auto-load a repository file named <code>afl.json</code>, <code>afl.csv</code>, <code>afl-player-seasons.json</code> or <code>afl_player_seasons.json</code> if you upload one to your GitHub repo.
-        </p>
+        <p>Import permitted CSV/JSON with <code>sport</code>, <code>season</code>, <code>competitor</code>, and sport-specific metrics. Imported rows stay in this browser only.</p>
         <div class="import-row">
           <input type="file" id="upload" accept=".csv,.json,application/json,text/csv">
           <button id="clearImports" class="ghost-action">Clear imported data</button>
           <span id="importStatus">Waiting for dataset load…</span>
         </div>
         <details>
-          <summary>Example AFL columns</summary>
-          <code>sport,season,competitor,competition,disposals,kicks,handballs,marks,tackles,goals,team</code>
+          <summary>Example import columns</summary>
+          <code>sport,season,competitor,competition,points,goals,wins,draws,rebounds,assists,runs,wickets,finish_position</code>
           <p>Use real permitted records only. Example values are not included here to avoid implying fabricated athlete data.</p>
         </details>
       </section>
 
+      <section class="panel" id="methodPanel" style="margin-top:18px">
+        <div class="panel-head"><div><span class="eyebrow">ALGORITHMS & DATA QUALITY</span><h2>How the analysis works</h2></div></div>
+        <p id="qualityStatus">Checking loaded records…</p>
+        <p><strong>Soccer points:</strong> calculated as 3 per win, 1 per draw and 0 per loss, rather than trusting an ambiguous source points field.</p>
+        <p><strong>GameSense performance index:</strong> a transparent sport-specific experimental score out of 100. Scores are neither official ratings nor comparable between sports.</p>
+        <p id="ratingFormula">Select a sport to see its formula.</p>
+        <p><strong>Processing:</strong> fetch → normalize → validate → deduplicate → filter → aggregate → rank → visualize.</p>
+        <p><strong>Limits:</strong> historical fields and season coverage vary. Cricket is a curated leading-performer selection; NBA rows are player-season totals; F1 and Soccer results may be event-level.</p>
+      </section>
       <section class="panel" id="sourcesPanel">
         <div class="panel-head">
           <div>
@@ -170,8 +183,9 @@
             <p>Bundled player-season totals from the supplied GameSense archive. Coverage starts from the observed seasons bundled in that archive.</p>
           </div>
           <div>
-            <b>AFL</b>
-            <p id="aflSourceText">AFL player data will load automatically if a compatible AFL file is uploaded to this repository or imported locally in the browser.</p>
+            <b>Cricket — Indian Premier League</b>
+            <p>208 historical selected leading IPL player-season records across 19 observed seasons, 2007/08–2026. Selection: the seven highest-run and four highest-wicket players per season with duplicates removed. This is a curated sample, not complete IPL coverage.</p>
+            <p>Source: <a href="https://cricsheet.org/" target="_blank" rel="noopener">Cricsheet</a> · <a href="https://github.com/VeeraMounika/IPL-analytics-ETL" target="_blank" rel="noopener">IPL ETL derived data</a> · <a href="https://cricsheet.org/licensing/" target="_blank" rel="noopener">ODC-BY 1.0 license</a>.</p>
           </div>
           <div>
             <b>Formula 1</b>
