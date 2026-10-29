@@ -716,6 +716,13 @@ async function resolvePortrait(g){
   const key=p.kind+':'+p.name;
   if(photoCache.has(key))return photoCache.get(key);
   const promise=(async()=>{
+    // NBA archive IDs are NBA official player IDs. Use the league image CDN first:
+    // it avoids Wikimedia CORS/rate limits for known basketball headshots.
+    if(sport==='NBA'&&/^nba:\\d+$/.test(String(g.id||''))){
+      const id=String(g.id).slice(4);
+      return {src:'https://cdn.nba.com/headshots/nba/latest/260x190/'+id+'.png',
+        credit:'https://www.nba.com/players',page:'https://www.nba.com/players',fallbackToWiki:true};
+    }
     const title=p.name;
     const url='https://en.wikipedia.org/w/api.php?action=query&origin=*&redirects=1&titles='+
       encodeURIComponent(title)+'&prop=pageimages%7Cdescription&piprop=thumbnail%7Cname&pithumbsize=460&format=json&formatversion=2';
@@ -746,6 +753,9 @@ async function resolvePortrait(g){
   photoCache.set(key,promise);
   return promise;
 }
+async function resolveWikiPortraitFallback(g){
+  return resolvePortrait({...g,id:'wikipedia:'+g.name});
+}
 let profileVersion=0,leaderVersion=0,subjectVersion=0;
 function displayPhoto(g,imageId,initialsId,creditId,version,readVersion){
   const img=$(imageId),fallback=$(initialsId),credit=creditId?$(creditId):null;
@@ -760,7 +770,20 @@ function displayPhoto(g,imageId,initialsId,creditId,version,readVersion){
   resolvePortrait(g).then(info=>{
     if(readVersion()!==version||!info)return;
     img.onload=()=>{if(readVersion()===version){img.hidden=false;fallback.hidden=true;}};
-    img.onerror=()=>{if(readVersion()===version){img.hidden=true;fallback.hidden=false;if(credit)credit.hidden=true;}};
+    img.onerror=()=>{
+      if(readVersion()!==version)return;
+      if(info.fallbackToWiki){
+        // Re-try with sourced Wikimedia photo when the NBA CDN has no image.
+        photoCache.delete('athlete:'+((portraitAliases[g.name])||g.name));
+        resolveWikiPortraitFallback(g).then(alternative=>{
+          if(readVersion()!==version)return;
+          if(alternative){
+            img.onerror=()=>{img.hidden=true;fallback.hidden=false;if(credit)credit.hidden=true;};
+            img.src=alternative.src;if(credit){credit.href=alternative.credit;credit.hidden=false}
+          }else{img.hidden=true;fallback.hidden=false;if(credit)credit.hidden=true;}
+        });
+      }else{img.hidden=true;fallback.hidden=false;if(credit)credit.hidden=true;}
+    };
     img.src=info.src;
     if(credit){credit.href=info.credit;credit.hidden=false;credit.title='Wikimedia image file and licensing information'}
   }).catch(()=>{});
