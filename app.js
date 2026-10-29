@@ -327,6 +327,9 @@ function updateControls() {
   setTheme();
   const d = defs[sport];
   document.querySelectorAll('.nav').forEach(n => n.classList.toggle('active', n.dataset.sport === sport));
+  // Explicit visibility, compatible with browsers that do not support CSS :has().
+  const cricketPanel=$('cricketFormats');
+  if(cricketPanel) cricketPanel.hidden=(sport!=='Cricket');
   const rr = rows();
   const seasons = [...new Set(rr.map(x => x.season))].sort((a, b) => b.localeCompare(a, undefined, { numeric: true }));
   const competitions = [...new Set(rr.map(x => x.competition))].sort();
@@ -621,6 +624,7 @@ function selectCricketView(c){
   $('season').value='All seasons';$('competition').value=c;
   $('metric').value=c.startsWith('International ')?'wins':'runs';
   document.querySelectorAll('[data-cricket-view]').forEach(b=>b.classList.toggle('selected',b.dataset.cricketView===c));
+  const cricketPanel=$('cricketFormats'); if(cricketPanel)cricketPanel.hidden=false;
   render();
 }
 document.querySelectorAll('[data-cricket-view]').forEach(b=>b.addEventListener('click',()=>selectCricketView(b.dataset.cricketView)));
