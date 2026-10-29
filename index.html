@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=fieldnotes-1">
+  <link rel="stylesheet" href="style.css?v=fieldnotes-portrait-v2">
 </head>
 <body>
   <header class="topbar">
@@ -60,12 +60,14 @@
         </div>
         <div class="hero-side">
           <div class="mini-stat leader-stat">
-            <div class="hero-profile-photo" id="leaderPortraitWrap" aria-hidden="true">
-              <span id="leaderMonogram">GS</span><img id="leaderPortrait" alt="" hidden loading="lazy" referrerpolicy="no-referrer">
+            <div class="hero-profile-photo" id="leaderPortraitWrap">
+              <span id="leaderMonogram">GS</span><img id="leaderPortrait" alt="Photograph or badge of the leading subject" hidden loading="lazy" decoding="async" referrerpolicy="no-referrer">
             </div>
             <span>LEADING SUBJECT / SELECTED METRIC</span>
             <strong id="leaderName">—</strong>
             <small id="leaderMetric">Waiting for data…</small>
+            <small id="leaderTeam" class="leader-affiliation">Club / team / country</small>
+            <a id="leaderPhotoCredit" class="leader-photo-credit" hidden target="_blank" rel="noopener noreferrer">PHOTO CREDIT</a>
           </div>
           <div class="mini-stat">
             <span>READOUT / CURRENT FILTERS</span>
@@ -98,6 +100,24 @@
         </div>
       </section>
 
+      <section class="selected-subject panel" id="subjectPanel" aria-label="Selected athlete or team profile">
+        <div class="subject-photo">
+          <span id="subjectMonogram" aria-hidden="true">GS</span>
+          <img id="subjectPortrait" alt="Selected competitor photograph or team badge" hidden loading="lazy" decoding="async" referrerpolicy="no-referrer">
+        </div>
+        <div class="subject-identity">
+          <span class="eyebrow" id="subjectEyebrow">SUBJECT / ARCHIVE PROFILE</span>
+          <h2 id="subjectName">Choose a sport to begin</h2>
+          <p id="subjectAffiliation">Verified team or country will appear here when recorded.</p>
+          <p id="subjectContext" class="subject-context">Historical data, not live affiliation.</p>
+          <a id="subjectPhotoCredit" class="subject-photo-credit" hidden target="_blank" rel="noopener noreferrer">PHOTO &amp; LICENCE SOURCE</a>
+        </div>
+        <div class="subject-metric">
+          <span>SELECTED STATISTIC</span>
+          <strong id="subjectMetric">—</strong>
+          <small id="subjectMetricLabel">Choose a metric</small>
+        </div>
+      </section>
       <section class="panel" id="analysisPanel" style="margin:18px 0;padding:20px">
         <div class="panel-head"><div><span class="eyebrow">FORM CHECK / RECENT OBSERVATIONS</span><h2>What happened recently?</h2></div><span class="chip">Observed records only</span></div>
         <p id="formSummary" class="analytics-message">Waiting for historical records…</p>
@@ -171,7 +191,7 @@
             <label>Competitor B<select id="compareB"></select></label>
             <div class="profile-duo" id="profileDuo">
               <article class="athlete-card" id="profileCardA" aria-label="Competitor A profile">
-                <div class="athlete-image"><span id="avatarFallbackA">GS</span><img id="avatarPhotoA" alt="" hidden loading="lazy" referrerpolicy="no-referrer"></div>
+                <div class="athlete-image"><span id="avatarFallbackA">GS</span><img id="avatarPhotoA" alt="Selected competitor photograph or badge" hidden loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>
                 <div class="athlete-details">
                   <span class="athlete-kicker">COMPETITOR A</span>
                   <strong id="avatarNameA">Choose a competitor</strong>
@@ -180,7 +200,7 @@
                 </div>
               </article>
               <article class="athlete-card" id="profileCardB" aria-label="Competitor B profile">
-                <div class="athlete-image"><span id="avatarFallbackB">GS</span><img id="avatarPhotoB" alt="" hidden loading="lazy" referrerpolicy="no-referrer"></div>
+                <div class="athlete-image"><span id="avatarFallbackB">GS</span><img id="avatarPhotoB" alt="Selected competitor photograph or badge" hidden loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>
                 <div class="athlete-details">
                   <span class="athlete-kicker">COMPETITOR B</span>
                   <strong id="avatarNameB">Choose a competitor</strong>
@@ -189,7 +209,7 @@
                 </div>
               </article>
             </div>
-            <p class="photo-disclaimer">Portraits appear when Wikipedia returns a confident name match. If not, initials are shown. Clubs, constructors and countries reflect the selected historical archive, not necessarily current affiliations.</p>
+            <p class="photo-disclaimer">Portraits and club crests come from Wikimedia where a reliable match exists. Country flags or initials are shown if no photograph is available. Affiliations come from the selected historical records; credits link to the image source.</p>
             <div id="comparison"></div>
           </section>
 
@@ -273,6 +293,6 @@
     </main>
   </div>
 
-  <script defer src="app.js?v=fieldnotes-20261030-v7"></script>
+  <script defer src="app.js?v=fieldnotes-portrait-v8"></script>
 </body>
 </html>
