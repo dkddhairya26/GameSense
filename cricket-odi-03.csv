@@ -1,0 +1,958 @@
+match_id,date,venue,team1,team2,winner,toss_winner,toss_decision,format,year
+319136,2008-04-15,"Beausejour Stadium, Gros Islet",West Indies,Sri Lanka,,West Indies,field,ODI,2008
+319143,2008-06-24,"Arnos Vale Ground, Kingstown",West Indies,Australia,Australia,West Indies,field,ODI,2008
+319144,2008-06-27,"National Cricket Stadium, St George's",West Indies,Australia,Australia,Australia,bat,ODI,2008
+319145,2008-06-29,"National Cricket Stadium, St George's",West Indies,Australia,Australia,Australia,field,ODI,2008
+319146,2008-07-04,"Warner Park, Basseterre",West Indies,Australia,Australia,West Indies,field,ODI,2008
+319147,2008-07-06,"Warner Park, Basseterre",West Indies,Australia,Australia,Australia,bat,ODI,2008
+323949,2008-03-09,Chittagong Divisional Stadium,Bangladesh,South Africa,South Africa,Bangladesh,bat,ODI,2008
+323950,2008-03-12,Shere Bangla National Stadium,Bangladesh,South Africa,South Africa,Bangladesh,bat,ODI,2008
+323951,2008-03-14,Shere Bangla National Stadium,Bangladesh,South Africa,South Africa,Bangladesh,bat,ODI,2008
+325569,2008-06-29,Maple Leaf North-West Ground,Canada,Bermuda,Bermuda,Canada,field,ODI,2008
+325572,2008-08-12,Cambusdoon New Ground,Scotland,Kenya,,Scotland,field,ODI,2008
+325576,2008-08-25,"Civil Service Cricket Club, Stormont",Ireland,Kenya,,Kenya,field,ODI,2008
+325579,2008-07-29,Clontarf Cricket Club Ground,Netherlands,Scotland,Scotland,Netherlands,bat,ODI,2008
+325580,2008-07-31,Clontarf Cricket Club Ground,Ireland,Scotland,Ireland,Ireland,field,ODI,2008
+325581,2008-10-17,Gymkhana Club Ground,Ireland,Zimbabwe,Zimbabwe,Zimbabwe,bat,ODI,2008
+325800,2008-01-21,National Stadium,Pakistan,Zimbabwe,Pakistan,Zimbabwe,field,ODI,2008
+325801,2008-01-24,"Niaz Stadium, Hyderabad",Pakistan,Zimbabwe,Pakistan,Zimbabwe,bat,ODI,2008
+325802,2008-01-27,Multan Cricket Stadium,Pakistan,Zimbabwe,Pakistan,Pakistan,bat,ODI,2008
+325803,2008-01-30,Iqbal Stadium,Pakistan,Zimbabwe,Pakistan,Zimbabwe,bat,ODI,2008
+325804,2008-02-02,Sheikhupura Stadium,Pakistan,Zimbabwe,Pakistan,Zimbabwe,bat,ODI,2008
+335346,2008-06-24,Gaddafi Stadium,Bangladesh,United Arab Emirates,Bangladesh,Bangladesh,bat,ODI,2008
+335347,2008-06-24,National Stadium,Pakistan,Hong Kong,Pakistan,Pakistan,bat,ODI,2008
+335348,2008-06-25,Gaddafi Stadium,Bangladesh,Sri Lanka,Sri Lanka,Bangladesh,field,ODI,2008
+335349,2008-06-25,National Stadium,Hong Kong,India,India,India,bat,ODI,2008
+335350,2008-06-26,Gaddafi Stadium,Sri Lanka,United Arab Emirates,Sri Lanka,Sri Lanka,bat,ODI,2008
+335351,2008-06-26,National Stadium,Pakistan,India,India,Pakistan,bat,ODI,2008
+335352,2008-06-28,National Stadium,Bangladesh,India,India,Bangladesh,bat,ODI,2008
+335353,2008-06-29,National Stadium,Pakistan,Sri Lanka,Sri Lanka,Pakistan,field,ODI,2008
+335354,2008-06-30,National Stadium,Bangladesh,Sri Lanka,Sri Lanka,Sri Lanka,bat,ODI,2008
+335355,2008-07-02,National Stadium,Pakistan,India,Pakistan,India,bat,ODI,2008
+335356,2008-07-03,National Stadium,India,Sri Lanka,India,Sri Lanka,bat,ODI,2008
+335357,2008-07-04,National Stadium,Pakistan,Bangladesh,Pakistan,Bangladesh,bat,ODI,2008
+335358,2008-07-06,National Stadium,India,Sri Lanka,Sri Lanka,India,field,ODI,2008
+336201,2008-08-30,Marrara Cricket Ground,Australia,Bangladesh,Australia,Bangladesh,field,ODI,2008
+336202,2008-09-03,Marrara Cricket Ground,Australia,Bangladesh,Australia,Bangladesh,bat,ODI,2008
+336204,2008-09-06,Marrara Cricket Ground,Australia,Bangladesh,Australia,Australia,bat,ODI,2008
+341302,2008-05-08,Welagedara Stadium,Sri Lanka,India,India,Sri Lanka,bat,ODI,2008
+341306,2008-05-11,Welagedara Stadium,India,Sri Lanka,India,India,bat,ODI,2008
+343732,2008-08-18,Rangiri Dambulla International Stadium,Sri Lanka,India,Sri Lanka,India,bat,ODI,2008
+343733,2008-08-20,Rangiri Dambulla International Stadium,Sri Lanka,India,India,India,field,ODI,2008
+343734,2008-08-24,R Premadasa Stadium,Sri Lanka,India,India,India,bat,ODI,2008
+343736,2008-08-29,R Premadasa Stadium,Sri Lanka,India,Sri Lanka,Sri Lanka,bat,ODI,2008
+343759,2008-04-08,Gaddafi Stadium,Pakistan,Bangladesh,Pakistan,Pakistan,bat,ODI,2008
+343760,2008-04-11,Iqbal Stadium,Pakistan,Bangladesh,Pakistan,Bangladesh,bat,ODI,2008
+343761,2008-04-13,Gaddafi Stadium,Pakistan,Bangladesh,Pakistan,Pakistan,bat,ODI,2008
+343762,2008-04-16,Multan Cricket Stadium,Pakistan,Bangladesh,Pakistan,Bangladesh,bat,ODI,2008
+343763,2008-04-19,National Stadium,Pakistan,Bangladesh,Pakistan,Pakistan,bat,ODI,2008
+345468,2008-06-08,Shere Bangla National Stadium,Bangladesh,Pakistan,Pakistan,Bangladesh,field,ODI,2008
+345469,2008-06-10,Shere Bangla National Stadium,India,Pakistan,India,India,bat,ODI,2008
+345470,2008-06-12,Shere Bangla National Stadium,Bangladesh,India,India,Bangladesh,bat,ODI,2008
+345471,2008-06-14,Shere Bangla National Stadium,India,Pakistan,Pakistan,Pakistan,bat,ODI,2008
+350043,2009-09-04,Kennington Oval,England,Australia,Australia,England,field,ODI,2009
+350044,2009-09-06,Lord's,England,Australia,Australia,England,field,ODI,2009
+350045,2009-09-09,The Rose Bowl,England,Australia,Australia,England,bat,ODI,2009
+350046,2009-09-12,Lord's,England,Australia,Australia,England,bat,ODI,2009
+350047,2009-09-15,Trent Bridge,England,Australia,Australia,England,bat,ODI,2009
+350048,2009-09-17,Trent Bridge,England,Australia,Australia,Australia,bat,ODI,2009
+350049,2009-09-20,Riverside Ground,England,Australia,England,England,field,ODI,2009
+350348,2008-11-07,Senwes Park,South Africa,Bangladesh,South Africa,South Africa,bat,ODI,2008
+350477,2009-04-03,Kingsmead,South Africa,Australia,Australia,Australia,bat,ODI,2009
+350478,2009-04-05,SuperSport Park,South Africa,Australia,South Africa,Australia,bat,ODI,2009
+350479,2009-04-09,Newlands,South Africa,Australia,South Africa,South Africa,bat,ODI,2009
+350480,2009-04-13,St George's Park,South Africa,Australia,South Africa,Australia,field,ODI,2009
+350481,2009-04-17,New Wanderers Stadium,South Africa,Australia,Australia,South Africa,field,ODI,2009
+351684,2009-01-16,Melbourne Cricket Ground,Australia,South Africa,South Africa,Australia,bat,ODI,2009
+351685,2009-01-18,Bellerive Oval,Australia,South Africa,Australia,South Africa,field,ODI,2009
+351686,2009-01-23,Sydney Cricket Ground,Australia,South Africa,South Africa,Australia,bat,ODI,2009
+351687,2009-01-26,Adelaide Oval,Australia,South Africa,South Africa,Australia,bat,ODI,2009
+351688,2009-01-30,Western Australia Cricket Association Ground,Australia,South Africa,South Africa,South Africa,bat,ODI,2009
+351689,2009-02-01,Western Australia Cricket Association Ground,Australia,New Zealand,New Zealand,Australia,bat,ODI,2009
+351690,2009-02-06,Melbourne Cricket Ground,Australia,New Zealand,New Zealand,New Zealand,field,ODI,2009
+351691,2009-02-08,Sydney Cricket Ground,Australia,New Zealand,Australia,New Zealand,field,ODI,2009
+351692,2009-02-10,Adelaide Oval,Australia,New Zealand,Australia,New Zealand,bat,ODI,2009
+351693,2009-02-13,"Brisbane Cricket Ground, Woolloongabba",Australia,New Zealand,,New Zealand,field,ODI,2009
+352665,2009-03-20,Providence Stadium,West Indies,England,England,England,bat,ODI,2009
+352666,2009-03-22,Providence Stadium,West Indies,England,West Indies,West Indies,bat,ODI,2009
+352667,2009-03-27,"Kensington Oval, Bridgetown",West Indies,England,West Indies,West Indies,field,ODI,2009
+352668,2009-03-29,"Kensington Oval, Bridgetown",West Indies,England,England,England,field,ODI,2009
+352669,2009-04-03,"Beausejour Stadium, Gros Islet",West Indies,England,England,West Indies,field,ODI,2009
+357962,2009-03-10,North Sydney Oval,England,India,England,England,field,ODI,2009
+360800,2008-10-31,OUTsurance Oval,South Africa,Kenya,South Africa,South Africa,bat,ODI,2008
+361043,2008-11-14,Madhavrao Scindia Cricket Ground,India,England,India,England,field,ODI,2008
+361044,2008-11-17,Maharani Usharaje Trust Cricket Ground,India,England,India,India,bat,ODI,2008
+361045,2008-11-20,Green Park,India,England,India,England,bat,ODI,2008
+361046,2008-11-23,M Chinnaswamy Stadium,India,England,India,England,field,ODI,2008
+361047,2008-11-26,Barabati Stadium,India,England,India,India,field,ODI,2008
+366341,2008-08-27,R Premadasa Stadium,Sri Lanka,India,India,India,bat,ODI,2008
+366623,2009-03-03,McLean Park,New Zealand,India,India,India,bat,ODI,2009
+366624,2009-03-11,Seddon Park,New Zealand,India,India,New Zealand,bat,ODI,2009
+366625,2009-03-14,Eden Park,New Zealand,India,New Zealand,India,bat,ODI,2009
+366626,2009-03-06,Westpac Stadium,New Zealand,India,,India,bat,ODI,2009
+366627,2009-03-08,AMI Stadium,New Zealand,India,India,New Zealand,field,ODI,2009
+366709,2008-12-31,Queenstown Events Centre,New Zealand,West Indies,,New Zealand,field,ODI,2008
+366711,2009-01-07,Westpac Stadium,New Zealand,West Indies,New Zealand,New Zealand,field,ODI,2009
+374059,2008-11-12,Sheikh Zayed Stadium,Pakistan,West Indies,Pakistan,West Indies,bat,ODI,2008
+374060,2008-11-14,Sheikh Zayed Stadium,Pakistan,West Indies,Pakistan,Pakistan,bat,ODI,2008
+375456,2008-11-20,Harare Sports Club,Zimbabwe,Sri Lanka,Sri Lanka,Sri Lanka,field,ODI,2008
+375457,2008-11-22,Harare Sports Club,Zimbabwe,Sri Lanka,Sri Lanka,Zimbabwe,bat,ODI,2008
+375460,2008-11-24,Harare Sports Club,Zimbabwe,Sri Lanka,Sri Lanka,Zimbabwe,field,ODI,2008
+375462,2008-11-30,Harare Sports Club,Zimbabwe,Sri Lanka,Sri Lanka,Zimbabwe,field,ODI,2008
+377313,2009-06-26,"Sabina Park, Kingston",West Indies,India,India,India,bat,ODI,2009
+377314,2009-06-28,"Sabina Park, Kingston",West Indies,India,West Indies,India,bat,ODI,2009
+377315,2009-07-03,"Beausejour Stadium, Gros Islet",West Indies,India,India,India,field,ODI,2009
+377316,2009-07-05,"Beausejour Stadium, Gros Islet",West Indies,India,,India,field,ODI,2009
+378753,2009-01-10,Shere Bangla National Stadium,Bangladesh,Zimbabwe,Zimbabwe,Bangladesh,field,ODI,2009
+378755,2009-01-14,Shere Bangla National Stadium,Bangladesh,Sri Lanka,Bangladesh,Bangladesh,field,ODI,2009
+378759,2009-01-23,Shere Bangla National Stadium,Bangladesh,Zimbabwe,Bangladesh,Bangladesh,field,ODI,2009
+380715,2009-05-24,County Ground,England,West Indies,England,England,field,ODI,2009
+380716,2009-05-26,Edgbaston,England,West Indies,England,West Indies,field,ODI,2009
+383275,2009-08-27,"Civil Service Cricket Club, Stormont",Ireland,England,England,England,bat,ODI,2009
+383283,2009-06-29,County Ground,England,Australia,England,Australia,bat,ODI,2009
+385025,2009-01-31,Gymkhana Club Ground,Kenya,Zimbabwe,Zimbabwe,Kenya,bat,ODI,2009
+385749,2009-01-20,National Stadium,Pakistan,Sri Lanka,Pakistan,Sri Lanka,bat,ODI,2009
+385750,2009-01-21,National Stadium,Pakistan,Sri Lanka,Sri Lanka,Pakistan,field,ODI,2009
+385751,2009-01-24,Gaddafi Stadium,Pakistan,Sri Lanka,Sri Lanka,Sri Lanka,bat,ODI,2009
+386530,2009-01-28,Rangiri Dambulla International Stadium,Sri Lanka,India,India,India,field,ODI,2009
+386531,2009-01-31,R Premadasa Stadium,Sri Lanka,India,India,India,bat,ODI,2009
+386532,2009-02-03,R Premadasa Stadium,Sri Lanka,India,India,India,bat,ODI,2009
+386533,2009-02-05,R Premadasa Stadium,Sri Lanka,India,India,India,bat,ODI,2009
+386534,2009-02-08,R Premadasa Stadium,Sri Lanka,India,Sri Lanka,Sri Lanka,bat,ODI,2009
+387566,2009-11-22,SuperSport Park,South Africa,England,England,England,field,ODI,2009
+387567,2009-11-27,Newlands,South Africa,England,South Africa,South Africa,bat,ODI,2009
+387568,2009-11-29,St George's Park,South Africa,England,England,South Africa,bat,ODI,2009
+390204,2009-04-01,Willowmoore Park,Ireland,Scotland,Ireland,Ireland,field,ODI,2009
+390227,2009-04-08,Willowmoore Park,Canada,Scotland,Canada,Scotland,field,ODI,2009
+392616,2009-04-22,Dubai Sports City Cricket Stadium,Australia,Pakistan,Pakistan,Australia,bat,ODI,2009
+392617,2009-04-24,Dubai Sports City Cricket Stadium,Australia,Pakistan,Australia,Pakistan,bat,ODI,2009
+392618,2009-04-27,Sheikh Zayed Stadium,Australia,Pakistan,Australia,Australia,bat,ODI,2009
+392619,2009-05-01,Sheikh Zayed Stadium,Australia,Pakistan,Australia,Pakistan,bat,ODI,2009
+392620,2009-05-03,Sheikh Zayed Stadium,Australia,Pakistan,Pakistan,Australia,bat,ODI,2009
+401073,2009-07-26,"Windsor Park, Roseau",West Indies,Bangladesh,Bangladesh,West Indies,field,ODI,2009
+401074,2009-07-28,"Windsor Park, Roseau",West Indies,Bangladesh,Bangladesh,West Indies,bat,ODI,2009
+401075,2009-07-31,"Warner Park, Basseterre",West Indies,Bangladesh,Bangladesh,West Indies,bat,ODI,2009
+403370,2009-07-30,Rangiri Dambulla International Stadium,Sri Lanka,Pakistan,Sri Lanka,Pakistan,field,ODI,2009
+403371,2009-08-01,Rangiri Dambulla International Stadium,Sri Lanka,Pakistan,Sri Lanka,Sri Lanka,field,ODI,2009
+403372,2009-08-03,Rangiri Dambulla International Stadium,Sri Lanka,Pakistan,Sri Lanka,Sri Lanka,field,ODI,2009
+403373,2009-08-07,R Premadasa Stadium,Sri Lanka,Pakistan,Pakistan,Pakistan,bat,ODI,2009
+403374,2009-08-09,R Premadasa Stadium,Sri Lanka,Pakistan,Pakistan,Pakistan,bat,ODI,2009
+403380,2009-09-08,R Premadasa Stadium,Sri Lanka,New Zealand,Sri Lanka,Sri Lanka,bat,ODI,2009
+403381,2009-09-12,R Premadasa Stadium,Sri Lanka,India,Sri Lanka,Sri Lanka,bat,ODI,2009
+403382,2009-09-11,R Premadasa Stadium,India,New Zealand,India,New Zealand,bat,ODI,2009
+403383,2009-09-14,R Premadasa Stadium,Sri Lanka,India,India,India,bat,ODI,2009
+406192,2010-02-07,Melbourne Cricket Ground,Australia,West Indies,Australia,West Indies,field,ODI,2010
+406193,2010-02-09,Adelaide Oval,Australia,West Indies,Australia,West Indies,bat,ODI,2010
+406194,2010-02-12,Sydney Cricket Ground,Australia,West Indies,,West Indies,field,ODI,2010
+406195,2010-02-14,"Brisbane Cricket Ground, Woolloongabba",Australia,West Indies,Australia,West Indies,field,ODI,2010
+406196,2010-02-19,Melbourne Cricket Ground,Australia,West Indies,Australia,Australia,bat,ODI,2010
+406202,2010-01-22,"Brisbane Cricket Ground, Woolloongabba",Australia,Pakistan,Australia,Pakistan,bat,ODI,2010
+406203,2010-01-24,Sydney Cricket Ground,Australia,Pakistan,Australia,Pakistan,field,ODI,2010
+406204,2010-01-26,Adelaide Oval,Australia,Pakistan,Australia,Australia,bat,ODI,2010
+406205,2010-01-29,Western Australia Cricket Association Ground,Australia,Pakistan,Australia,Australia,bat,ODI,2010
+406206,2010-01-31,Western Australia Cricket Association Ground,Australia,Pakistan,Australia,Pakistan,bat,ODI,2010
+410337,2009-08-09,Queens Sports Club,Zimbabwe,Bangladesh,Bangladesh,Bangladesh,field,ODI,2009
+410338,2009-08-11,Queens Sports Club,Zimbabwe,Bangladesh,Bangladesh,Zimbabwe,field,ODI,2009
+410339,2009-08-14,Queens Sports Club,Zimbabwe,Bangladesh,Zimbabwe,Bangladesh,field,ODI,2009
+410340,2009-08-16,Queens Sports Club,Zimbabwe,Bangladesh,Bangladesh,Zimbabwe,bat,ODI,2009
+410341,2009-08-18,Queens Sports Club,Zimbabwe,Bangladesh,Bangladesh,Zimbabwe,bat,ODI,2009
+415162,2009-08-19,Maple Leaf North-West Ground,Canada,Kenya,Canada,Canada,field,ODI,2009
+415273,2009-09-22,SuperSport Park,South Africa,Sri Lanka,Sri Lanka,South Africa,field,ODI,2009
+415274,2009-09-23,New Wanderers Stadium,Pakistan,West Indies,Pakistan,West Indies,bat,ODI,2009
+415275,2009-09-24,SuperSport Park,South Africa,New Zealand,South Africa,South Africa,field,ODI,2009
+415276,2009-09-25,New Wanderers Stadium,England,Sri Lanka,England,England,field,ODI,2009
+415277,2009-09-26,New Wanderers Stadium,Australia,West Indies,Australia,West Indies,field,ODI,2009
+415278,2009-09-26,SuperSport Park,India,Pakistan,Pakistan,Pakistan,bat,ODI,2009
+415279,2009-09-27,New Wanderers Stadium,New Zealand,Sri Lanka,New Zealand,Sri Lanka,field,ODI,2009
+415280,2009-09-27,SuperSport Park,South Africa,England,England,England,bat,ODI,2009
+415281,2009-09-28,SuperSport Park,Australia,India,,Australia,bat,ODI,2009
+415282,2009-09-29,New Wanderers Stadium,England,New Zealand,New Zealand,New Zealand,field,ODI,2009
+415283,2009-09-30,SuperSport Park,Australia,Pakistan,Australia,Australia,field,ODI,2009
+415284,2009-09-30,New Wanderers Stadium,India,West Indies,India,India,field,ODI,2009
+415285,2009-10-02,SuperSport Park,Australia,England,Australia,England,bat,ODI,2009
+415286,2009-10-03,New Wanderers Stadium,New Zealand,Pakistan,New Zealand,Pakistan,bat,ODI,2009
+415287,2009-10-05,SuperSport Park,Australia,New Zealand,Australia,New Zealand,bat,ODI,2009
+416236,2009-10-25,Reliance Stadium,India,Australia,Australia,Australia,bat,ODI,2009
+416237,2009-10-28,"Vidarbha Cricket Association Stadium, Jamtha",India,Australia,India,Australia,field,ODI,2009
+416238,2009-10-31,Feroz Shah Kotla,India,Australia,India,Australia,bat,ODI,2009
+416239,2009-11-02,"Punjab Cricket Association Stadium, Mohali",India,Australia,Australia,India,field,ODI,2009
+416240,2009-11-05,"Rajiv Gandhi International Stadium, Uppal",India,Australia,Australia,Australia,bat,ODI,2009
+416241,2009-11-08,Nehru Stadium,India,Australia,Australia,India,bat,ODI,2009
+422626,2009-10-27,Shere Bangla National Stadium,Bangladesh,Zimbabwe,Zimbabwe,Zimbabwe,field,ODI,2009
+422627,2009-10-29,Shere Bangla National Stadium,Bangladesh,Zimbabwe,Bangladesh,Zimbabwe,bat,ODI,2009
+422628,2009-10-31,Shere Bangla National Stadium,Bangladesh,Zimbabwe,Bangladesh,Bangladesh,field,ODI,2009
+422629,2009-11-03,Zohur Ahmed Chowdhury Stadium,Bangladesh,Zimbabwe,Bangladesh,Zimbabwe,bat,ODI,2009
+422630,2009-11-05,Zohur Ahmed Chowdhury Stadium,Bangladesh,Zimbabwe,Bangladesh,Bangladesh,field,ODI,2009
+423387,2009-10-21,Boland Bank Park,South Africa,West Indies,South Africa,South Africa,field,ODI,2009
+423783,2010-02-05,McLean Park,New Zealand,Bangladesh,New Zealand,New Zealand,bat,ODI,2010
+423784,2010-02-08,University Oval,New Zealand,Bangladesh,New Zealand,New Zealand,field,ODI,2010
+423785,2010-02-11,AMI Stadium,New Zealand,Bangladesh,New Zealand,New Zealand,field,ODI,2010
+423791,2010-03-03,McLean Park,New Zealand,Australia,New Zealand,Australia,bat,ODI,2010
+423792,2010-03-06,Eden Park,New Zealand,Australia,Australia,Australia,bat,ODI,2010
+423793,2010-03-09,Seddon Park,New Zealand,Australia,Australia,Australia,field,ODI,2010
+423794,2010-03-11,Eden Park,New Zealand,Australia,Australia,Australia,field,ODI,2010
+423795,2010-03-13,Westpac Stadium,New Zealand,Australia,New Zealand,Australia,field,ODI,2010
+426384,2010-06-17,Clontarf Cricket Club Ground,Ireland,Australia,Australia,Australia,bat,ODI,2010
+426387,2010-06-22,The Rose Bowl,England,Australia,England,Australia,bat,ODI,2010
+426388,2010-06-24,Sophia Gardens,England,Australia,England,Australia,bat,ODI,2010
+426389,2010-06-27,Old Trafford,England,Australia,England,England,field,ODI,2010
+426390,2010-06-30,Kennington Oval,England,Australia,Australia,England,field,ODI,2010
+426391,2010-07-03,Lord's,England,Australia,Australia,Australia,bat,ODI,2010
+426403,2010-07-08,Trent Bridge,England,Bangladesh,England,Bangladesh,bat,ODI,2010
+426404,2010-07-10,County Ground,England,Bangladesh,Bangladesh,England,field,ODI,2010
+426405,2010-07-12,Edgbaston,England,Bangladesh,England,Bangladesh,field,ODI,2010
+426420,2010-02-28,Shere Bangla National Stadium,Bangladesh,England,England,England,field,ODI,2010
+426421,2010-03-02,Shere Bangla National Stadium,Bangladesh,England,England,England,field,ODI,2010
+426422,2010-03-05,Zohur Ahmed Chowdhury Stadium,Bangladesh,England,England,Bangladesh,field,ODI,2010
+426428,2010-09-10,Riverside Ground,England,Pakistan,England,Pakistan,field,ODI,2010
+426429,2010-09-12,Headingley,England,Pakistan,England,Pakistan,bat,ODI,2010
+426430,2010-09-17,Kennington Oval,England,Pakistan,Pakistan,Pakistan,bat,ODI,2010
+426431,2010-09-20,Lord's,England,Pakistan,Pakistan,Pakistan,bat,ODI,2010
+426432,2010-09-22,The Rose Bowl,England,Pakistan,England,England,bat,ODI,2010
+426720,2009-11-03,Sheikh Zayed Stadium,New Zealand,Pakistan,Pakistan,Pakistan,bat,ODI,2009
+426721,2009-11-06,Sheikh Zayed Stadium,New Zealand,Pakistan,New Zealand,New Zealand,bat,ODI,2009
+426722,2009-11-09,Sheikh Zayed Stadium,New Zealand,Pakistan,New Zealand,New Zealand,bat,ODI,2009
+430508,2009-11-08,Willowmoore Park,South Africa,Zimbabwe,South Africa,Zimbabwe,field,ODI,2009
+430509,2009-11-10,SuperSport Park,South Africa,Zimbabwe,South Africa,Zimbabwe,field,ODI,2009
+430886,2009-12-15,Madhavrao Scindia Cricket Ground,India,Sri Lanka,India,Sri Lanka,field,ODI,2009
+430887,2009-12-18,"Vidarbha Cricket Association Stadium, Jamtha",India,Sri Lanka,Sri Lanka,India,bat,ODI,2009
+430888,2009-12-21,Barabati Stadium,India,Sri Lanka,India,Sri Lanka,bat,ODI,2009
+430889,2009-12-24,Eden Gardens,India,Sri Lanka,India,Sri Lanka,bat,ODI,2009
+430890,2009-12-27,Feroz Shah Kotla,India,Sri Lanka,,India,field,ODI,2009
+433558,2011-02-19,Shere Bangla National Stadium,Bangladesh,India,India,Bangladesh,field,ODI,2011
+433559,2011-02-20,"MA Chidambaram Stadium, Chepauk",Kenya,New Zealand,New Zealand,Kenya,bat,ODI,2011
+433560,2011-02-20,"Mahinda Rajapaksa International Cricket Stadium, Sooriyawewa",Sri Lanka,Canada,Sri Lanka,Sri Lanka,bat,ODI,2011
+433561,2011-02-21,"Sardar Patel Stadium, Motera",Australia,Zimbabwe,Australia,Australia,bat,ODI,2011
+433562,2011-02-22,"Vidarbha Cricket Association Stadium, Jamtha",England,Netherlands,England,Netherlands,bat,ODI,2011
+433563,2011-02-23,"Mahinda Rajapaksa International Cricket Stadium, Sooriyawewa",Kenya,Pakistan,Pakistan,Pakistan,bat,ODI,2011
+433564,2011-02-24,Feroz Shah Kotla,South Africa,West Indies,South Africa,South Africa,field,ODI,2011
+433565,2011-02-25,"Vidarbha Cricket Association Stadium, Jamtha",Australia,New Zealand,Australia,Australia,field,ODI,2011
+433566,2011-02-25,Shere Bangla National Stadium,Bangladesh,Ireland,Bangladesh,Bangladesh,bat,ODI,2011
+433567,2011-02-26,R Premadasa Stadium,Sri Lanka,Pakistan,Pakistan,Pakistan,bat,ODI,2011
+433568,2011-02-27,M Chinnaswamy Stadium,India,England,,India,bat,ODI,2011
+433569,2011-02-28,Feroz Shah Kotla,Netherlands,West Indies,West Indies,Netherlands,field,ODI,2011
+433570,2011-02-28,"Vidarbha Cricket Association Stadium, Jamtha",Canada,Zimbabwe,Zimbabwe,Zimbabwe,bat,ODI,2011
+433571,2011-03-01,R Premadasa Stadium,Sri Lanka,Kenya,Sri Lanka,Kenya,bat,ODI,2011
+433572,2011-03-02,M Chinnaswamy Stadium,England,Ireland,Ireland,England,bat,ODI,2011
+433573,2011-03-03,"Punjab Cricket Association Stadium, Mohali",Netherlands,South Africa,South Africa,Netherlands,field,ODI,2011
+433574,2011-03-03,R Premadasa Stadium,Canada,Pakistan,Pakistan,Pakistan,bat,ODI,2011
+433575,2011-03-04,"Sardar Patel Stadium, Motera",New Zealand,Zimbabwe,New Zealand,Zimbabwe,bat,ODI,2011
+433576,2011-03-04,Shere Bangla National Stadium,Bangladesh,West Indies,West Indies,Bangladesh,bat,ODI,2011
+433577,2011-03-05,R Premadasa Stadium,Sri Lanka,Australia,,Sri Lanka,bat,ODI,2011
+433578,2011-03-06,M Chinnaswamy Stadium,India,Ireland,India,India,field,ODI,2011
+433579,2011-03-06,"MA Chidambaram Stadium, Chepauk",England,South Africa,England,England,bat,ODI,2011
+433580,2011-03-07,Feroz Shah Kotla,Canada,Kenya,Canada,Kenya,bat,ODI,2011
+433581,2011-03-08,Pallekele International Cricket Stadium,New Zealand,Pakistan,New Zealand,New Zealand,bat,ODI,2011
+433582,2011-03-09,Feroz Shah Kotla,India,Netherlands,India,Netherlands,bat,ODI,2011
+433583,2011-03-10,Pallekele International Cricket Stadium,Sri Lanka,Zimbabwe,Sri Lanka,Zimbabwe,field,ODI,2011
+433584,2011-03-11,"Punjab Cricket Association Stadium, Mohali",Ireland,West Indies,West Indies,Ireland,field,ODI,2011
+433585,2011-03-11,Zahur Ahmed Chowdhury Stadium,Bangladesh,England,Bangladesh,Bangladesh,field,ODI,2011
+433586,2011-03-12,"Vidarbha Cricket Association Stadium, Jamtha",India,South Africa,South Africa,India,bat,ODI,2011
+433587,2011-03-13,Wankhede Stadium,Canada,New Zealand,New Zealand,Canada,field,ODI,2011
+433588,2011-03-13,M Chinnaswamy Stadium,Australia,Kenya,Australia,Australia,bat,ODI,2011
+433589,2011-03-14,Pallekele International Cricket Stadium,Pakistan,Zimbabwe,Pakistan,Zimbabwe,bat,ODI,2011
+433590,2011-03-14,Zahur Ahmed Chowdhury Stadium,Bangladesh,Netherlands,Bangladesh,Netherlands,bat,ODI,2011
+433591,2011-03-15,Eden Gardens,Ireland,South Africa,South Africa,Ireland,field,ODI,2011
+433592,2011-03-16,M Chinnaswamy Stadium,Australia,Canada,Australia,Canada,bat,ODI,2011
+433593,2011-03-17,"MA Chidambaram Stadium, Chepauk",England,West Indies,England,England,bat,ODI,2011
+433594,2011-03-18,Wankhede Stadium,New Zealand,Sri Lanka,Sri Lanka,Sri Lanka,bat,ODI,2011
+433595,2011-03-18,Eden Gardens,Ireland,Netherlands,Ireland,Ireland,field,ODI,2011
+433596,2011-03-19,R Premadasa Stadium,Australia,Pakistan,Pakistan,Australia,bat,ODI,2011
+433597,2011-03-19,Shere Bangla National Stadium,Bangladesh,South Africa,South Africa,South Africa,bat,ODI,2011
+433598,2011-03-20,Eden Gardens,Kenya,Zimbabwe,Zimbabwe,Zimbabwe,bat,ODI,2011
+433599,2011-03-20,"MA Chidambaram Stadium, Chepauk",India,West Indies,India,India,bat,ODI,2011
+433600,2011-03-23,Shere Bangla National Stadium,Pakistan,West Indies,Pakistan,West Indies,bat,ODI,2011
+433601,2011-03-24,"Sardar Patel Stadium, Motera",India,Australia,India,Australia,bat,ODI,2011
+433602,2011-03-25,Shere Bangla National Stadium,New Zealand,South Africa,New Zealand,New Zealand,bat,ODI,2011
+433603,2011-03-26,R Premadasa Stadium,Sri Lanka,England,Sri Lanka,England,bat,ODI,2011
+433604,2011-03-29,R Premadasa Stadium,Sri Lanka,New Zealand,Sri Lanka,New Zealand,bat,ODI,2011
+433605,2011-03-30,"Punjab Cricket Association Stadium, Mohali",India,Pakistan,India,India,bat,ODI,2011
+433606,2011-04-02,Wankhede Stadium,India,Sri Lanka,India,Sri Lanka,bat,ODI,2011
+434258,2010-01-04,Shere Bangla National Stadium,Bangladesh,Sri Lanka,Sri Lanka,Sri Lanka,field,ODI,2010
+434259,2010-01-05,Shere Bangla National Stadium,India,Sri Lanka,Sri Lanka,Sri Lanka,field,ODI,2010
+434260,2010-01-07,Shere Bangla National Stadium,Bangladesh,India,India,Bangladesh,bat,ODI,2010
+434261,2010-01-08,Shere Bangla National Stadium,Bangladesh,Sri Lanka,Sri Lanka,Sri Lanka,field,ODI,2010
+434262,2010-01-10,Shere Bangla National Stadium,India,Sri Lanka,India,Sri Lanka,bat,ODI,2010
+434263,2010-01-11,Shere Bangla National Stadium,Bangladesh,India,India,India,field,ODI,2010
+434264,2010-01-13,Shere Bangla National Stadium,India,Sri Lanka,Sri Lanka,Sri Lanka,field,ODI,2010
+439140,2010-03-04,Providence Stadium,West Indies,Zimbabwe,Zimbabwe,Zimbabwe,bat,ODI,2010
+439141,2010-03-06,Providence Stadium,West Indies,Zimbabwe,West Indies,Zimbabwe,bat,ODI,2010
+439142,2010-03-10,"Arnos Vale Ground, Kingstown",West Indies,Zimbabwe,West Indies,Zimbabwe,field,ODI,2010
+439143,2010-03-12,"Arnos Vale Ground, Kingstown",West Indies,Zimbabwe,West Indies,West Indies,field,ODI,2010
+439144,2010-03-14,"Arnos Vale Ground, Kingstown",West Indies,Zimbabwe,West Indies,West Indies,field,ODI,2010
+439147,2010-05-22,"Sir Vivian Richards Stadium, North Sound",West Indies,South Africa,South Africa,West Indies,field,ODI,2010
+439148,2010-05-24,"Sir Vivian Richards Stadium, North Sound",West Indies,South Africa,South Africa,South Africa,bat,ODI,2010
+439149,2010-05-28,"Windsor Park, Roseau",West Indies,South Africa,South Africa,South Africa,bat,ODI,2010
+439150,2010-05-30,"Windsor Park, Roseau",West Indies,South Africa,South Africa,West Indies,bat,ODI,2010
+439151,2010-06-03,"Queen's Park Oval, Port of Spain",West Indies,South Africa,South Africa,West Indies,bat,ODI,2010
+441827,2010-02-21,Sawai Mansingh Stadium,India,South Africa,India,South Africa,field,ODI,2010
+441828,2010-02-24,Captain Roop Singh Stadium,India,South Africa,India,India,bat,ODI,2010
+441829,2010-02-27,"Sardar Patel Stadium, Motera",India,South Africa,South Africa,South Africa,bat,ODI,2010
+446957,2010-11-03,Melbourne Cricket Ground,Australia,Sri Lanka,Sri Lanka,Australia,bat,ODI,2010
+446958,2010-11-05,Sydney Cricket Ground,Australia,Sri Lanka,Sri Lanka,Sri Lanka,bat,ODI,2010
+446959,2010-11-07,"Brisbane Cricket Ground, Woolloongabba",Australia,Sri Lanka,Australia,Sri Lanka,bat,ODI,2010
+446962,2011-01-16,Melbourne Cricket Ground,Australia,England,Australia,England,bat,ODI,2011
+446963,2011-01-21,Bellerive Oval,Australia,England,Australia,England,field,ODI,2011
+446964,2011-01-23,Sydney Cricket Ground,Australia,England,Australia,England,bat,ODI,2011
+446965,2011-01-26,Adelaide Oval,Australia,England,England,England,bat,ODI,2011
+446966,2011-01-30,"Brisbane Cricket Ground, Woolloongabba",Australia,England,Australia,Australia,bat,ODI,2011
+446967,2011-02-02,Sydney Cricket Ground,Australia,England,Australia,England,bat,ODI,2011
+446968,2011-02-06,Western Australia Cricket Association Ground,Australia,England,Australia,Australia,bat,ODI,2011
+450107,2010-07-16,"Civil Service Cricket Club, Stormont",Ireland,Bangladesh,Bangladesh,Ireland,bat,ODI,2010
+450379,2010-07-07,VRA Ground,Canada,Ireland,Ireland,Canada,bat,ODI,2010
+452146,2010-05-28,Queens Sports Club,Zimbabwe,India,Zimbabwe,India,bat,ODI,2010
+452147,2010-05-30,Queens Sports Club,India,Sri Lanka,India,India,field,ODI,2010
+452148,2010-06-01,Queens Sports Club,Zimbabwe,Sri Lanka,Sri Lanka,Sri Lanka,field,ODI,2010
+452149,2010-06-03,Harare Sports Club,Zimbabwe,India,Zimbabwe,Zimbabwe,field,ODI,2010
+452150,2010-06-05,Harare Sports Club,India,Sri Lanka,Sri Lanka,Sri Lanka,field,ODI,2010
+452151,2010-06-07,Harare Sports Club,Zimbabwe,Sri Lanka,Zimbabwe,Zimbabwe,field,ODI,2010
+452152,2010-06-09,Harare Sports Club,Zimbabwe,Sri Lanka,Sri Lanka,Sri Lanka,field,ODI,2010
+455231,2010-06-15,Rangiri Dambulla International Stadium,Sri Lanka,Pakistan,Sri Lanka,Sri Lanka,bat,ODI,2010
+455232,2010-06-16,Rangiri Dambulla International Stadium,Bangladesh,India,India,Bangladesh,bat,ODI,2010
+455233,2010-06-18,Rangiri Dambulla International Stadium,Sri Lanka,Bangladesh,Sri Lanka,Sri Lanka,bat,ODI,2010
+455234,2010-06-19,Rangiri Dambulla International Stadium,India,Pakistan,India,Pakistan,bat,ODI,2010
+455235,2010-06-21,Rangiri Dambulla International Stadium,Bangladesh,Pakistan,Pakistan,Pakistan,bat,ODI,2010
+455236,2010-06-22,Rangiri Dambulla International Stadium,Sri Lanka,India,Sri Lanka,Sri Lanka,field,ODI,2010
+455237,2010-06-24,Rangiri Dambulla International Stadium,Sri Lanka,India,India,India,bat,ODI,2010
+456662,2010-08-10,Rangiri Dambulla International Stadium,India,New Zealand,New Zealand,New Zealand,bat,ODI,2010
+456663,2010-08-16,Rangiri Dambulla International Stadium,Sri Lanka,India,India,Sri Lanka,bat,ODI,2010
+456664,2010-08-13,Rangiri Dambulla International Stadium,Sri Lanka,New Zealand,Sri Lanka,New Zealand,bat,ODI,2010
+456665,2010-08-25,Rangiri Dambulla International Stadium,India,New Zealand,India,India,bat,ODI,2010
+456666,2010-08-22,Rangiri Dambulla International Stadium,Sri Lanka,India,Sri Lanka,India,bat,ODI,2010
+456668,2010-08-28,Rangiri Dambulla International Stadium,Sri Lanka,India,Sri Lanka,Sri Lanka,bat,ODI,2010
+461566,2010-10-29,Sheikh Zayed Stadium,Pakistan,South Africa,South Africa,Pakistan,bat,ODI,2010
+461567,2010-10-31,Sheikh Zayed Stadium,Pakistan,South Africa,Pakistan,South Africa,bat,ODI,2010
+461568,2010-11-02,Dubai International Cricket Stadium,Pakistan,South Africa,South Africa,Pakistan,field,ODI,2010
+461569,2010-11-05,Dubai International Cricket Stadium,Pakistan,South Africa,Pakistan,South Africa,bat,ODI,2010
+461570,2010-11-08,Dubai International Cricket Stadium,Pakistan,South Africa,South Africa,South Africa,bat,ODI,2010
+463143,2010-10-15,OUTsurance Oval,South Africa,Zimbabwe,South Africa,South Africa,bat,ODI,2010
+463144,2010-10-17,Senwes Park,South Africa,Zimbabwe,South Africa,Zimbabwe,bat,ODI,2010
+463145,2010-10-22,Willowmoore Park,South Africa,Zimbabwe,South Africa,South Africa,bat,ODI,2010
+463150,2011-01-12,Kingsmead,South Africa,India,South Africa,South Africa,bat,ODI,2011
+463151,2011-01-15,New Wanderers Stadium,South Africa,India,India,India,bat,ODI,2011
+463152,2011-01-18,Newlands,South Africa,India,India,South Africa,bat,ODI,2011
+463153,2011-01-21,St George's Park,South Africa,India,South Africa,South Africa,bat,ODI,2011
+463154,2011-01-23,SuperSport Park,South Africa,India,South Africa,India,field,ODI,2011
+464529,2010-10-20,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,India,Australia,India,India,field,ODI,2010
+464720,2010-08-18,Clontarf Cricket Club Ground,Ireland,Netherlands,Ireland,Netherlands,bat,ODI,2010
+464723,2010-09-06,"Toronto Cricket, Skating and Curling Club",Canada,Ireland,Canada,Ireland,bat,ODI,2010
+464990,2011-01-31,Sinhalese Sports Club Ground,Sri Lanka,West Indies,,West Indies,bat,ODI,2011
+464991,2011-02-03,Sinhalese Sports Club Ground,Sri Lanka,West Indies,Sri Lanka,Sri Lanka,field,ODI,2011
+464992,2011-02-06,Sinhalese Sports Club Ground,Sri Lanka,West Indies,Sri Lanka,West Indies,field,ODI,2011
+467883,2010-11-28,Nehru Stadium,India,New Zealand,India,New Zealand,field,ODI,2010
+467884,2010-12-01,Sawai Mansingh Stadium,India,New Zealand,India,India,field,ODI,2010
+467885,2010-12-04,Reliance Stadium,India,New Zealand,India,India,field,ODI,2010
+467886,2010-12-07,M Chinnaswamy Stadium,India,New Zealand,India,India,field,ODI,2010
+467887,2010-12-10,"MA Chidambaram Stadium, Chepauk",India,New Zealand,India,New Zealand,bat,ODI,2010
+473315,2010-08-19,Rangiri Dambulla International Stadium,Sri Lanka,New Zealand,,New Zealand,field,ODI,2010
+473923,2011-01-22,Westpac Stadium,New Zealand,Pakistan,New Zealand,Pakistan,bat,ODI,2011
+473924,2011-01-26,Queenstown Events Centre,New Zealand,Pakistan,,New Zealand,field,ODI,2011
+473925,2011-01-29,AMI Stadium,New Zealand,Pakistan,Pakistan,New Zealand,field,ODI,2011
+473926,2011-02-01,McLean Park,New Zealand,Pakistan,Pakistan,New Zealand,bat,ODI,2011
+473927,2011-02-03,Seddon Park,New Zealand,Pakistan,Pakistan,New Zealand,field,ODI,2011
+473928,2011-02-05,Eden Park,New Zealand,Pakistan,New Zealand,Pakistan,field,ODI,2011
+474467,2011-06-28,Kennington Oval,England,Sri Lanka,England,Sri Lanka,field,ODI,2011
+474468,2011-07-01,Headingley,England,Sri Lanka,Sri Lanka,England,field,ODI,2011
+474469,2011-07-03,Lord's,England,Sri Lanka,Sri Lanka,England,bat,ODI,2011
+474470,2011-07-06,Trent Bridge,England,Sri Lanka,England,England,field,ODI,2011
+474471,2011-07-09,Old Trafford,England,Sri Lanka,England,England,bat,ODI,2011
+474477,2011-09-03,Riverside Ground,England,India,,England,field,ODI,2011
+474478,2011-09-06,The Rose Bowl,England,India,England,England,field,ODI,2011
+474479,2011-09-09,Kennington Oval,England,India,England,England,field,ODI,2011
+474480,2011-09-11,Lord's,England,India,,England,field,ODI,2011
+474481,2011-09-16,Sophia Gardens,England,India,England,England,field,ODI,2011
+476596,2010-10-05,Shere Bangla National Stadium,Bangladesh,New Zealand,Bangladesh,Bangladesh,bat,ODI,2010
+476598,2010-10-11,Shere Bangla National Stadium,Bangladesh,New Zealand,Bangladesh,Bangladesh,field,ODI,2010
+476599,2010-10-14,Shere Bangla National Stadium,Bangladesh,New Zealand,Bangladesh,New Zealand,field,ODI,2010
+476600,2010-10-17,Shere Bangla National Stadium,Bangladesh,New Zealand,Bangladesh,Bangladesh,bat,ODI,2010
+483126,2011-08-25,Clontarf Cricket Club Ground,Ireland,England,England,Ireland,field,ODI,2011
+486520,2010-12-01,Shere Bangla National Stadium,Bangladesh,Zimbabwe,Zimbabwe,Bangladesh,field,ODI,2010
+486522,2010-12-03,Shere Bangla National Stadium,Bangladesh,Zimbabwe,Bangladesh,Bangladesh,field,ODI,2010
+486523,2010-12-06,Shere Bangla National Stadium,Bangladesh,Zimbabwe,Bangladesh,Zimbabwe,field,ODI,2010
+486526,2010-12-12,Zahur Ahmed Chowdhury Stadium,Bangladesh,Zimbabwe,Bangladesh,Zimbabwe,bat,ODI,2010
+489213,2011-04-23,"Beausejour Stadium, Gros Islet",West Indies,Pakistan,Pakistan,West Indies,bat,ODI,2011
+489214,2011-04-25,"Beausejour Stadium, Gros Islet",West Indies,Pakistan,Pakistan,Pakistan,field,ODI,2011
+489215,2011-04-28,"Kensington Oval, Bridgetown",West Indies,Pakistan,Pakistan,Pakistan,field,ODI,2011
+489216,2011-05-02,"Kensington Oval, Bridgetown",West Indies,Pakistan,West Indies,West Indies,field,ODI,2011
+489217,2011-05-05,Providence Stadium,West Indies,Pakistan,West Indies,Pakistan,bat,ODI,2011
+489221,2011-06-06,"Queen's Park Oval, Port of Spain",West Indies,India,India,West Indies,bat,ODI,2011
+489222,2011-06-08,"Queen's Park Oval, Port of Spain",West Indies,India,India,India,field,ODI,2011
+489223,2011-06-11,"Sir Vivian Richards Stadium, North Sound",West Indies,India,India,India,field,ODI,2011
+489224,2011-06-13,"Sir Vivian Richards Stadium, North Sound",West Indies,India,West Indies,India,field,ODI,2011
+489225,2011-06-16,"Sabina Park, Kingston",West Indies,India,West Indies,West Indies,field,ODI,2011
+503363,2011-04-09,Shere Bangla National Stadium,Bangladesh,Australia,Australia,Bangladesh,field,ODI,2011
+503364,2011-04-11,Shere Bangla National Stadium,Bangladesh,Australia,Australia,Bangladesh,bat,ODI,2011
+503365,2011-04-13,Shere Bangla National Stadium,Bangladesh,Australia,Australia,Australia,bat,ODI,2011
+504779,2011-06-29,Mannofield Park,Scotland,Netherlands,Scotland,Scotland,field,ODI,2011
+514025,2011-10-19,SuperSport Park,South Africa,Australia,Australia,South Africa,field,ODI,2011
+514026,2011-10-23,St George's Park,South Africa,Australia,South Africa,South Africa,bat,ODI,2011
+514027,2011-10-28,Kingsmead,South Africa,Australia,Australia,South Africa,bat,ODI,2011
+514035,2012-01-11,Boland Park,South Africa,Sri Lanka,South Africa,South Africa,bat,ODI,2012
+514036,2012-01-14,Buffalo Park,South Africa,Sri Lanka,South Africa,South Africa,field,ODI,2012
+514037,2012-01-17,Chevrolet Park,South Africa,Sri Lanka,South Africa,Sri Lanka,bat,ODI,2012
+514038,2012-01-20,De Beers Diamond Oval,South Africa,Sri Lanka,Sri Lanka,South Africa,bat,ODI,2012
+514039,2012-01-22,New Wanderers Stadium,South Africa,Sri Lanka,Sri Lanka,Sri Lanka,field,ODI,2012
+516206,2011-08-10,Pallekele International Cricket Stadium,Sri Lanka,Australia,Australia,Sri Lanka,bat,ODI,2011
+516207,2011-08-14,"Mahinda Rajapaksa International Cricket Stadium, Sooriyawewa",Sri Lanka,Australia,Australia,Sri Lanka,bat,ODI,2011
+516208,2011-08-16,"Mahinda Rajapaksa International Cricket Stadium, Sooriyawewa",Sri Lanka,Australia,Sri Lanka,Australia,field,ODI,2011
+516209,2011-08-20,R Premadasa Stadium,Sri Lanka,Australia,Australia,Sri Lanka,bat,ODI,2011
+516210,2011-08-22,R Premadasa Stadium,Sri Lanka,Australia,Sri Lanka,Sri Lanka,field,ODI,2011
+518956,2012-02-05,Melbourne Cricket Ground,Australia,India,Australia,India,field,ODI,2012
+518957,2012-02-08,Western Australia Cricket Association Ground,India,Sri Lanka,India,Sri Lanka,bat,ODI,2012
+518958,2012-02-10,Western Australia Cricket Association Ground,Australia,Sri Lanka,Australia,Sri Lanka,field,ODI,2012
+518959,2012-02-12,Adelaide Oval,Australia,India,India,Australia,bat,ODI,2012
+518960,2012-02-14,Adelaide Oval,India,Sri Lanka,,Sri Lanka,bat,ODI,2012
+518961,2012-02-17,Sydney Cricket Ground,Australia,Sri Lanka,Sri Lanka,Australia,bat,ODI,2012
+518962,2012-02-19,"Brisbane Cricket Ground, Woolloongabba",Australia,India,Australia,Australia,bat,ODI,2012
+518963,2012-02-21,"Brisbane Cricket Ground, Woolloongabba",India,Sri Lanka,Sri Lanka,Sri Lanka,bat,ODI,2012
+518964,2012-02-24,Bellerive Oval,Australia,Sri Lanka,Sri Lanka,Australia,bat,ODI,2012
+518965,2012-02-26,Sydney Cricket Ground,Australia,India,Australia,Australia,bat,ODI,2012
+518966,2012-02-28,Bellerive Oval,India,Sri Lanka,India,India,field,ODI,2012
+518967,2012-03-02,Melbourne Cricket Ground,Australia,Sri Lanka,Sri Lanka,Sri Lanka,bat,ODI,2012
+518968,2012-03-04,"Brisbane Cricket Ground, Woolloongabba",Australia,Sri Lanka,Australia,Australia,bat,ODI,2012
+518969,2012-03-06,Adelaide Oval,Australia,Sri Lanka,Sri Lanka,Australia,bat,ODI,2012
+518970,2012-03-08,Adelaide Oval,Australia,Sri Lanka,Australia,Sri Lanka,field,ODI,2012
+520592,2012-02-03,University Oval,New Zealand,Zimbabwe,New Zealand,Zimbabwe,field,ODI,2012
+520593,2012-02-06,Cobham Oval (New),New Zealand,Zimbabwe,New Zealand,Zimbabwe,field,ODI,2012
+520594,2012-02-09,McLean Park,New Zealand,Zimbabwe,New Zealand,New Zealand,bat,ODI,2012
+520600,2012-02-25,Westpac Stadium,New Zealand,South Africa,South Africa,New Zealand,bat,ODI,2012
+520601,2012-02-29,McLean Park,New Zealand,South Africa,South Africa,South Africa,field,ODI,2012
+520602,2012-03-03,Eden Park,New Zealand,South Africa,South Africa,South Africa,field,ODI,2012
+521218,2011-10-14,"Rajiv Gandhi International Stadium, Uppal",India,England,India,India,bat,ODI,2011
+521219,2011-10-17,Feroz Shah Kotla,India,England,India,England,bat,ODI,2011
+521220,2011-10-20,"Punjab Cricket Association Stadium, Mohali",India,England,India,England,bat,ODI,2011
+521221,2011-10-23,Wankhede Stadium,India,England,India,England,bat,ODI,2011
+521222,2011-10-25,Eden Gardens,India,England,India,England,field,ODI,2011
+522246,2011-08-12,Harare Sports Club,Zimbabwe,Bangladesh,Zimbabwe,Zimbabwe,field,ODI,2011
+522247,2011-08-14,Harare Sports Club,Zimbabwe,Bangladesh,Zimbabwe,Zimbabwe,field,ODI,2011
+522248,2011-08-16,Harare Sports Club,Zimbabwe,Bangladesh,Zimbabwe,Bangladesh,field,ODI,2011
+522249,2011-08-19,Queens Sports Club,Zimbabwe,Bangladesh,Bangladesh,Bangladesh,field,ODI,2011
+522250,2011-08-21,Queens Sports Club,Zimbabwe,Bangladesh,Bangladesh,Zimbabwe,field,ODI,2011
+523732,2011-09-08,Queens Sports Club,Zimbabwe,Pakistan,Pakistan,Pakistan,bat,ODI,2011
+523733,2011-09-11,Harare Sports Club,Zimbabwe,Pakistan,Pakistan,Zimbabwe,bat,ODI,2011
+523734,2011-09-14,Harare Sports Club,Zimbabwe,Pakistan,Pakistan,Zimbabwe,field,ODI,2011
+523804,2011-09-19,Clontarf Cricket Club Ground,Ireland,Canada,Ireland,Canada,field,ODI,2011
+523805,2011-09-20,Clontarf Cricket Club Ground,Ireland,Canada,Ireland,Ireland,bat,ODI,2011
+527014,2011-10-20,Harare Sports Club,Zimbabwe,New Zealand,New Zealand,Zimbabwe,bat,ODI,2011
+527015,2011-10-22,Harare Sports Club,Zimbabwe,New Zealand,New Zealand,New Zealand,field,ODI,2011
+527016,2011-10-25,Queens Sports Club,Zimbabwe,New Zealand,Zimbabwe,New Zealand,bat,ODI,2011
+527679,2011-10-21,Senwes Park,South Africa,England,England,South Africa,field,ODI,2011
+527680,2011-10-23,Senwes Park,South Africa,England,England,South Africa,field,ODI,2011
+527681,2011-10-25,Senwes Park,South Africa,England,England,England,field,ODI,2011
+530427,2011-11-11,Dubai International Cricket Stadium,Pakistan,Sri Lanka,Pakistan,Sri Lanka,bat,ODI,2011
+530428,2011-11-14,Dubai International Cricket Stadium,Pakistan,Sri Lanka,Sri Lanka,Sri Lanka,bat,ODI,2011
+530429,2011-11-18,Dubai International Cricket Stadium,Pakistan,Sri Lanka,Pakistan,Pakistan,bat,ODI,2011
+530430,2011-11-20,Sharjah Cricket Stadium,Pakistan,Sri Lanka,Pakistan,Pakistan,bat,ODI,2011
+530431,2011-11-23,Sheikh Zayed Stadium,Pakistan,Sri Lanka,Pakistan,Sri Lanka,bat,ODI,2011
+531631,2012-02-13,Sheikh Zayed Stadium,England,Pakistan,England,England,bat,ODI,2012
+531632,2012-02-15,Sheikh Zayed Stadium,England,Pakistan,England,England,bat,ODI,2012
+531633,2012-02-18,Dubai International Cricket Stadium,England,Pakistan,England,Pakistan,bat,ODI,2012
+531634,2012-02-21,Dubai International Cricket Stadium,England,Pakistan,England,Pakistan,bat,ODI,2012
+531983,2011-10-13,Shere Bangla National Stadium,Bangladesh,West Indies,West Indies,Bangladesh,field,ODI,2011
+531984,2011-10-15,Shere Bangla National Stadium,Bangladesh,West Indies,West Indies,Bangladesh,bat,ODI,2011
+531985,2011-10-18,Zahur Ahmed Chowdhury Stadium,Bangladesh,West Indies,Bangladesh,Bangladesh,field,ODI,2011
+534209,2012-06-16,The Rose Bowl,England,West Indies,England,West Indies,field,ODI,2012
+534210,2012-06-19,Kennington Oval,England,West Indies,England,England,field,ODI,2012
+534214,2012-06-23,"Civil Service Cricket Club, Stormont",Ireland,Australia,,Australia,field,ODI,2012
+534215,2012-06-29,Lord's,England,Australia,England,Australia,field,ODI,2012
+534216,2012-07-01,Kennington Oval,England,Australia,England,Australia,bat,ODI,2012
+534218,2012-07-07,Riverside Ground,England,Australia,England,England,field,ODI,2012
+534219,2012-07-10,Old Trafford,England,Australia,England,England,field,ODI,2012
+534228,2012-08-24,Sophia Gardens,England,South Africa,,South Africa,field,ODI,2012
+534229,2012-08-28,The Rose Bowl,England,South Africa,South Africa,South Africa,bat,ODI,2012
+534230,2012-08-31,Kennington Oval,England,South Africa,England,South Africa,bat,ODI,2012
+534231,2012-09-02,Lord's,England,South Africa,England,England,field,ODI,2012
+534232,2012-09-05,Trent Bridge,England,South Africa,South Africa,England,bat,ODI,2012
+535794,2012-03-11,Shere Bangla National Stadium,Bangladesh,Pakistan,Pakistan,Bangladesh,field,ODI,2012
+535795,2012-03-13,Shere Bangla National Stadium,India,Sri Lanka,India,Sri Lanka,field,ODI,2012
+535796,2012-03-15,Shere Bangla National Stadium,Pakistan,Sri Lanka,Pakistan,Sri Lanka,bat,ODI,2012
+535797,2012-03-16,Shere Bangla National Stadium,Bangladesh,India,Bangladesh,Bangladesh,field,ODI,2012
+535798,2012-03-18,Shere Bangla National Stadium,India,Pakistan,India,Pakistan,bat,ODI,2012
+535799,2012-03-20,Shere Bangla National Stadium,Bangladesh,Sri Lanka,Bangladesh,Bangladesh,field,ODI,2012
+535800,2012-03-22,Shere Bangla National Stadium,Bangladesh,Pakistan,Pakistan,Bangladesh,field,ODI,2012
+536929,2011-11-29,Barabati Stadium,India,West Indies,India,India,field,ODI,2011
+536930,2011-12-02,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,India,West Indies,India,India,field,ODI,2011
+536931,2011-12-05,"Sardar Patel Stadium, Motera",India,West Indies,West Indies,India,field,ODI,2011
+536932,2011-12-08,Holkar Cricket Stadium,India,West Indies,India,India,bat,ODI,2011
+536933,2011-12-11,"MA Chidambaram Stadium, Chepauk",India,West Indies,India,India,bat,ODI,2011
+538069,2011-12-01,Shere Bangla National Stadium,Bangladesh,Pakistan,Pakistan,Bangladesh,bat,ODI,2011
+538070,2011-12-03,Shere Bangla National Stadium,Bangladesh,Pakistan,Pakistan,Pakistan,bat,ODI,2011
+538071,2011-12-06,Zahur Ahmed Chowdhury Stadium,Bangladesh,Pakistan,Pakistan,Pakistan,bat,ODI,2011
+540168,2012-03-16,"Arnos Vale Ground, Kingstown",West Indies,Australia,Australia,Australia,bat,ODI,2012
+540169,2012-03-18,"Arnos Vale Ground, Kingstown",West Indies,Australia,West Indies,West Indies,field,ODI,2012
+540170,2012-03-20,"Arnos Vale Ground, Kingstown",West Indies,Australia,,Australia,bat,ODI,2012
+540171,2012-03-23,"Beausejour Stadium, Gros Islet",West Indies,Australia,West Indies,Australia,field,ODI,2012
+540172,2012-03-25,"Beausejour Stadium, Gros Islet",West Indies,Australia,Australia,West Indies,field,ODI,2012
+542852,2012-07-01,Lord's,England,India,India,England,bat,ODI,2012
+542853,2012-07-04,County Ground,England,India,India,England,field,ODI,2012
+542854,2012-07-05,County Ground,England,India,England,England,field,ODI,2012
+542856,2012-07-11,Sir Paul Getty's Ground,England,India,England,England,field,ODI,2012
+543881,2012-02-18,Mombasa Sports Club Ground,Kenya,Ireland,Kenya,Ireland,bat,ODI,2012
+543882,2012-02-20,Mombasa Sports Club Ground,Kenya,Ireland,Ireland,Ireland,bat,ODI,2012
+560923,2012-07-05,"Sabina Park, Kingston",West Indies,New Zealand,West Indies,West Indies,field,ODI,2012
+560924,2012-07-07,"Sabina Park, Kingston",West Indies,New Zealand,West Indies,New Zealand,field,ODI,2012
+560925,2012-07-11,"Warner Park, Basseterre",West Indies,New Zealand,New Zealand,West Indies,field,ODI,2012
+560926,2012-07-14,"Warner Park, Basseterre",West Indies,New Zealand,West Indies,West Indies,bat,ODI,2012
+560927,2012-07-16,"Warner Park, Basseterre",West Indies,New Zealand,West Indies,West Indies,bat,ODI,2012
+562439,2012-06-07,Pallekele International Cricket Stadium,Sri Lanka,Pakistan,Pakistan,Sri Lanka,bat,ODI,2012
+562440,2012-06-09,Pallekele International Cricket Stadium,Sri Lanka,Pakistan,Sri Lanka,Sri Lanka,bat,ODI,2012
+562441,2012-06-13,R Premadasa Stadium,Sri Lanka,Pakistan,,Pakistan,bat,ODI,2012
+562442,2012-06-16,R Premadasa Stadium,Sri Lanka,Pakistan,Sri Lanka,Sri Lanka,bat,ODI,2012
+562443,2012-06-18,R Premadasa Stadium,Sri Lanka,Pakistan,Sri Lanka,Pakistan,bat,ODI,2012
+564781,2012-07-21,"Mahinda Rajapaksa International Cricket Stadium, Sooriyawewa",Sri Lanka,India,India,India,bat,ODI,2012
+564782,2012-07-24,"Mahinda Rajapaksa International Cricket Stadium, Sooriyawewa",Sri Lanka,India,Sri Lanka,India,bat,ODI,2012
+564783,2012-07-28,R Premadasa Stadium,Sri Lanka,India,India,Sri Lanka,bat,ODI,2012
+564784,2012-07-31,R Premadasa Stadium,Sri Lanka,India,India,Sri Lanka,bat,ODI,2012
+564785,2012-08-04,Pallekele International Cricket Stadium,Sri Lanka,India,India,India,bat,ODI,2012
+565812,2013-01-11,Saurashtra Cricket Association Stadium,India,England,England,England,bat,ODI,2013
+565813,2013-01-15,Nehru Stadium,India,England,India,India,bat,ODI,2013
+565814,2013-01-19,JSCA International Stadium Complex,India,England,India,India,field,ODI,2013
+565815,2013-01-23,"Punjab Cricket Association Stadium, Mohali",India,England,India,India,field,ODI,2013
+565816,2013-01-27,Himachal Pradesh Cricket Association Stadium,India,England,England,England,field,ODI,2013
+566923,2013-05-31,Lord's,England,New Zealand,New Zealand,New Zealand,field,ODI,2013
+566924,2013-06-02,The Rose Bowl,England,New Zealand,New Zealand,New Zealand,bat,ODI,2013
+566925,2013-06-05,Trent Bridge,England,New Zealand,England,New Zealand,field,ODI,2013
+566940,2013-09-03,"The Village, Malahide",Ireland,England,England,England,field,ODI,2013
+566942,2013-09-08,Old Trafford,England,Australia,Australia,England,field,ODI,2013
+566943,2013-09-11,Edgbaston,England,Australia,,Australia,field,ODI,2013
+566944,2013-09-14,Sophia Gardens,England,Australia,England,England,field,ODI,2013
+566945,2013-09-16,The Rose Bowl,England,Australia,Australia,Australia,bat,ODI,2013
+566946,2013-06-19,Kennington Oval,England,South Africa,England,England,field,ODI,2013
+566947,2013-06-20,Sophia Gardens,India,Sri Lanka,India,India,field,ODI,2013
+566948,2013-06-23,Edgbaston,England,India,India,England,field,ODI,2013
+567358,2013-01-19,Boland Park,South Africa,New Zealand,New Zealand,New Zealand,field,ODI,2013
+567359,2013-01-22,De Beers Diamond Oval,South Africa,New Zealand,New Zealand,South Africa,field,ODI,2013
+567360,2013-01-25,Senwes Park,South Africa,New Zealand,South Africa,New Zealand,bat,ODI,2013
+567368,2013-03-10,Chevrolet Park,South Africa,Pakistan,South Africa,Pakistan,field,ODI,2013
+567369,2013-03-15,SuperSport Park,South Africa,Pakistan,Pakistan,South Africa,bat,ODI,2013
+567370,2013-03-17,New Wanderers Stadium,South Africa,Pakistan,South Africa,Pakistan,field,ODI,2013
+567371,2013-03-21,Kingsmead,South Africa,Pakistan,Pakistan,South Africa,bat,ODI,2013
+567372,2013-03-24,Willowmoore Park,South Africa,Pakistan,South Africa,Pakistan,bat,ODI,2013
+569240,2013-02-17,Seddon Park,New Zealand,England,New Zealand,New Zealand,field,ODI,2013
+569241,2013-02-20,McLean Park,New Zealand,England,England,England,field,ODI,2013
+569242,2013-02-23,Eden Park,New Zealand,England,England,England,field,ODI,2013
+571145,2012-08-28,Sharjah Cricket Stadium,Australia,Pakistan,Australia,Pakistan,bat,ODI,2012
+571146,2012-08-31,Sheikh Zayed Stadium,Australia,Pakistan,Pakistan,Australia,bat,ODI,2012
+571147,2012-09-03,Sharjah Cricket Stadium,Australia,Pakistan,Australia,Australia,field,ODI,2012
+573014,2013-01-11,Melbourne Cricket Ground,Australia,Sri Lanka,Australia,Australia,bat,ODI,2013
+573015,2013-01-13,Adelaide Oval,Australia,Sri Lanka,Sri Lanka,Sri Lanka,field,ODI,2013
+573016,2013-01-18,"Brisbane Cricket Ground, Woolloongabba",Australia,Sri Lanka,Sri Lanka,Australia,bat,ODI,2013
+573017,2013-01-20,Sydney Cricket Ground,Australia,Sri Lanka,,Australia,bat,ODI,2013
+573018,2013-01-23,Bellerive Oval,Australia,Sri Lanka,Australia,Sri Lanka,field,ODI,2013
+573022,2013-02-01,Western Australia Cricket Association Ground,Australia,West Indies,Australia,West Indies,bat,ODI,2013
+573023,2013-02-03,Western Australia Cricket Association Ground,Australia,West Indies,Australia,West Indies,field,ODI,2013
+573024,2013-02-06,Manuka Oval,Australia,West Indies,Australia,Australia,bat,ODI,2013
+573025,2013-02-08,Sydney Cricket Ground,Australia,West Indies,Australia,West Indies,bat,ODI,2013
+573026,2013-02-10,Melbourne Cricket Ground,Australia,West Indies,Australia,West Indies,field,ODI,2013
+578614,2013-06-06,Sophia Gardens,India,South Africa,India,South Africa,field,ODI,2013
+578615,2013-06-07,Kennington Oval,Pakistan,West Indies,West Indies,West Indies,field,ODI,2013
+578616,2013-06-08,Edgbaston,England,Australia,England,England,bat,ODI,2013
+578617,2013-06-09,Sophia Gardens,New Zealand,Sri Lanka,New Zealand,Sri Lanka,bat,ODI,2013
+578618,2013-06-10,Edgbaston,Pakistan,South Africa,South Africa,South Africa,bat,ODI,2013
+578619,2013-06-11,Kennington Oval,India,West Indies,India,India,field,ODI,2013
+578620,2013-06-12,Edgbaston,Australia,New Zealand,,Australia,bat,ODI,2013
+578621,2013-06-13,Kennington Oval,England,Sri Lanka,Sri Lanka,Sri Lanka,field,ODI,2013
+578622,2013-06-14,Sophia Gardens,South Africa,West Indies,,West Indies,field,ODI,2013
+578623,2013-06-15,Edgbaston,India,Pakistan,India,India,field,ODI,2013
+578624,2013-06-16,Sophia Gardens,England,New Zealand,England,New Zealand,field,ODI,2013
+578625,2013-06-17,Kennington Oval,Australia,Sri Lanka,Sri Lanka,Australia,field,ODI,2013
+582188,2012-11-04,Pallekele International Cricket Stadium,Sri Lanka,New Zealand,Sri Lanka,New Zealand,bat,ODI,2012
+582189,2012-11-06,Pallekele International Cricket Stadium,Sri Lanka,New Zealand,Sri Lanka,Sri Lanka,field,ODI,2012
+582190,2012-11-10,"Mahinda Rajapaksa International Cricket Stadium, Sooriyawewa",Sri Lanka,New Zealand,Sri Lanka,Sri Lanka,field,ODI,2012
+582191,2012-11-12,"Mahinda Rajapaksa International Cricket Stadium, Sooriyawewa",Sri Lanka,New Zealand,,New Zealand,field,ODI,2012
+584546,2012-12-12,Sydney Cricket Ground,Australia,New Zealand,New Zealand,Australia,bat,ODI,2012
+584547,2012-12-14,North Sydney Oval,Australia,New Zealand,Australia,Australia,field,ODI,2012
+584549,2012-12-19,North Sydney Oval,Australia,New Zealand,Australia,Australia,bat,ODI,2012
+587471,2012-11-30,Sheikh Abu Naser Stadium,Bangladesh,West Indies,Bangladesh,West Indies,bat,ODI,2012
+587472,2012-12-02,Sheikh Abu Naser Stadium,Bangladesh,West Indies,Bangladesh,West Indies,field,ODI,2012
+587473,2012-12-05,Shere Bangla National Stadium,Bangladesh,West Indies,West Indies,West Indies,field,ODI,2012
+587474,2012-12-07,Shere Bangla National Stadium,Bangladesh,West Indies,West Indies,Bangladesh,field,ODI,2012
+587475,2012-12-08,Shere Bangla National Stadium,Bangladesh,West Indies,Bangladesh,Bangladesh,field,ODI,2012
+589308,2012-12-30,"MA Chidambaram Stadium, Chepauk",India,Pakistan,Pakistan,Pakistan,field,ODI,2012
+589309,2013-01-03,Eden Gardens,India,Pakistan,Pakistan,India,field,ODI,2013
+589310,2013-01-06,Feroz Shah Kotla,India,Pakistan,India,India,bat,ODI,2013
+592266,2013-03-11,ICC Global Cricket Academy,Canada,Kenya,Kenya,Canada,bat,ODI,2013
+593723,2013-08-20,Lord's,England,Australia,Australia,Australia,bat,ODI,2013
+593724,2013-08-23,County Ground,England,Australia,England,England,bat,ODI,2013
+593725,2013-08-25,County Ground,England,Australia,England,Australia,bat,ODI,2013
+593983,2013-02-22,"National Cricket Stadium, St George's",West Indies,Zimbabwe,West Indies,Zimbabwe,field,ODI,2013
+593985,2013-02-26,"National Cricket Stadium, St George's",West Indies,Zimbabwe,West Indies,Zimbabwe,bat,ODI,2013
+594891,2013-01-31,Brabourne Stadium,India,West Indies,India,West Indies,field,ODI,2013
+594894,2013-02-01,Brabourne Stadium,England,Sri Lanka,Sri Lanka,Sri Lanka,field,ODI,2013
+594897,2013-02-03,Brabourne Stadium,India,England,England,India,field,ODI,2013
+594901,2013-02-05,Brabourne Stadium,India,Sri Lanka,Sri Lanka,Sri Lanka,bat,ODI,2013
+594904,2013-02-08,Brabourne Stadium,Australia,England,Australia,England,field,ODI,2013
+594907,2013-02-10,Brabourne Stadium,Australia,Sri Lanka,Australia,Australia,field,ODI,2013
+594909,2013-02-11,Brabourne Stadium,New Zealand,West Indies,West Indies,New Zealand,field,ODI,2013
+594912,2013-02-13,Brabourne Stadium,England,New Zealand,England,England,bat,ODI,2013
+594914,2013-02-15,Brabourne Stadium,England,New Zealand,England,England,field,ODI,2013
+594915,2013-02-17,Brabourne Stadium,Australia,West Indies,Australia,Australia,bat,ODI,2013
+597923,2013-06-28,"Sabina Park, Kingston",West Indies,Sri Lanka,West Indies,West Indies,field,ODI,2013
+597924,2013-06-30,"Sabina Park, Kingston",West Indies,India,West Indies,West Indies,field,ODI,2013
+597925,2013-07-02,"Sabina Park, Kingston",India,Sri Lanka,Sri Lanka,India,field,ODI,2013
+597926,2013-07-05,"Queen's Park Oval, Port of Spain",West Indies,India,India,West Indies,field,ODI,2013
+597927,2013-07-07,"Queen's Park Oval, Port of Spain",West Indies,Sri Lanka,Sri Lanka,West Indies,field,ODI,2013
+597928,2013-07-09,"Queen's Park Oval, Port of Spain",India,Sri Lanka,India,Sri Lanka,field,ODI,2013
+597929,2013-07-11,"Queen's Park Oval, Port of Spain",India,Sri Lanka,India,India,field,ODI,2013
+601077,2013-05-17,"Grange Cricket Club Ground, Raeburn Place",Scotland,Pakistan,Pakistan,Pakistan,bat,ODI,2013
+601612,2013-05-23,Clontarf Cricket Club Ground,Ireland,Pakistan,,Pakistan,bat,ODI,2013
+601613,2013-05-26,Clontarf Cricket Club Ground,Ireland,Pakistan,Pakistan,Pakistan,field,ODI,2013
+602474,2013-03-23,"Mahinda Rajapaksa International Cricket Stadium, Sooriyawewa",Sri Lanka,Bangladesh,Sri Lanka,Sri Lanka,field,ODI,2013
+602475,2013-03-25,"Mahinda Rajapaksa International Cricket Stadium, Sooriyawewa",Sri Lanka,Bangladesh,,Bangladesh,field,ODI,2013
+602476,2013-03-28,Pallekele International Cricket Stadium,Sri Lanka,Bangladesh,Bangladesh,Sri Lanka,bat,ODI,2013
+603239,2013-02-22,Rangiri Dambulla International Stadium,Sri Lanka,West Indies,West Indies,Sri Lanka,bat,ODI,2013
+603240,2013-02-24,Rangiri Dambulla International Stadium,Sri Lanka,West Indies,Sri Lanka,West Indies,bat,ODI,2013
+603241,2013-02-26,Rangiri Dambulla International Stadium,Sri Lanka,West Indies,West Indies,Sri Lanka,field,ODI,2013
+623573,2013-05-03,Queens Sports Club,Zimbabwe,Bangladesh,Bangladesh,Zimbabwe,field,ODI,2013
+623574,2013-05-05,Queens Sports Club,Zimbabwe,Bangladesh,Zimbabwe,Zimbabwe,field,ODI,2013
+623575,2013-05-08,Queens Sports Club,Zimbabwe,Bangladesh,Zimbabwe,Zimbabwe,field,ODI,2013
+627006,2013-07-01,Louth Cricket Club,England,Pakistan,England,England,bat,ODI,2013
+627007,2013-07-03,Haslegrave Ground,England,Pakistan,England,Pakistan,bat,ODI,2013
+631138,2013-07-07,VRA Ground,Netherlands,Ireland,Ireland,Ireland,bat,ODI,2013
+635653,2013-07-20,R Premadasa Stadium,Sri Lanka,South Africa,Sri Lanka,South Africa,field,ODI,2013
+635654,2013-07-23,R Premadasa Stadium,Sri Lanka,South Africa,Sri Lanka,Sri Lanka,bat,ODI,2013
+635655,2013-07-26,Pallekele International Cricket Stadium,Sri Lanka,South Africa,South Africa,South Africa,bat,ODI,2013
+635656,2013-07-28,Pallekele International Cricket Stadium,Sri Lanka,South Africa,Sri Lanka,South Africa,bat,ODI,2013
+635657,2013-07-31,R Premadasa Stadium,Sri Lanka,South Africa,Sri Lanka,Sri Lanka,bat,ODI,2013
+636159,2014-01-12,Melbourne Cricket Ground,Australia,England,Australia,England,bat,ODI,2014
+636160,2014-01-17,"Brisbane Cricket Ground, Woolloongabba",Australia,England,Australia,England,bat,ODI,2014
+636161,2014-01-19,Sydney Cricket Ground,Australia,England,Australia,England,bat,ODI,2014
+636162,2014-01-24,Western Australia Cricket Association Ground,Australia,England,England,Australia,field,ODI,2014
+636163,2014-01-26,Adelaide Oval,Australia,England,Australia,Australia,bat,ODI,2014
+636533,2014-02-28,"Sir Vivian Richards Stadium, North Sound",West Indies,England,West Indies,England,field,ODI,2014
+636534,2014-03-02,"Sir Vivian Richards Stadium, North Sound",West Indies,England,England,England,field,ODI,2014
+636535,2014-03-05,"Sir Vivian Richards Stadium, North Sound",West Indies,England,England,West Indies,field,ODI,2014
+643665,2013-07-24,Harare Sports Club,Zimbabwe,India,India,India,field,ODI,2013
+643667,2013-07-26,Harare Sports Club,Zimbabwe,India,India,Zimbabwe,field,ODI,2013
+643669,2013-07-28,Harare Sports Club,Zimbabwe,India,India,India,field,ODI,2013
+643675,2013-08-01,Queens Sports Club,Zimbabwe,India,India,India,field,ODI,2013
+643677,2013-08-03,Queens Sports Club,Zimbabwe,India,India,India,field,ODI,2013
+644943,2013-07-17,"Observatory Lane, Rathmines",Ireland,Pakistan,Pakistan,Pakistan,bat,ODI,2013
+644945,2013-07-19,YMCA Cricket Club,Ireland,Pakistan,Pakistan,Pakistan,bat,ODI,2013
+645635,2013-07-14,Providence Stadium,West Indies,Pakistan,Pakistan,West Indies,field,ODI,2013
+645637,2013-07-16,Providence Stadium,West Indies,Pakistan,West Indies,Pakistan,field,ODI,2013
+645639,2013-07-19,"Beausejour Stadium, Gros Islet",West Indies,Pakistan,,West Indies,field,ODI,2013
+645641,2013-07-21,"Beausejour Stadium, Gros Islet",West Indies,Pakistan,Pakistan,Pakistan,field,ODI,2013
+645643,2013-07-24,"Beausejour Stadium, Gros Islet",West Indies,Pakistan,Pakistan,Pakistan,field,ODI,2013
+647249,2013-10-13,Maharashtra Cricket Association Stadium,India,Australia,Australia,Australia,bat,ODI,2013
+647251,2013-10-16,Sawai Mansingh Stadium,India,Australia,India,Australia,bat,ODI,2013
+647253,2013-10-19,"Punjab Cricket Association Stadium, Mohali",India,Australia,Australia,Australia,field,ODI,2013
+647255,2013-10-23,JSCA International Stadium Complex,India,Australia,,India,field,ODI,2013
+647259,2013-10-30,"Vidarbha Cricket Association Stadium, Jamtha",India,Australia,India,India,field,ODI,2013
+647261,2013-11-02,M Chinnaswamy Stadium,India,Australia,India,Australia,field,ODI,2013
+64814,2002-12-29,"McLean Park, Napier",New Zealand,India,New Zealand,India,field,ODI,2002
+64815,2003-01-01,"Jade Stadium, Christchurch",India,New Zealand,New Zealand,India,bat,ODI,2003
+64816,2003-01-04,"Davies Park, Queenstown",India,New Zealand,New Zealand,New Zealand,field,ODI,2003
+64817,2003-01-08,"Westpac Stadium, Wellington",New Zealand,India,India,New Zealand,bat,ODI,2003
+64819,2003-01-14,"Westpac Park, Hamilton",India,New Zealand,New Zealand,New Zealand,field,ODI,2003
+64820,2003-05-17,"Sabina Park, Kingston, Jamaica",Australia,West Indies,Australia,West Indies,field,ODI,2003
+64825,2003-05-30,"Queen's Park (New), St George's, Grenada",Australia,West Indies,West Indies,Australia,bat,ODI,2003
+64826,2003-06-01,"Queen's Park (New), St George's, Grenada",Australia,West Indies,West Indies,Australia,bat,ODI,2003
+64827,2003-06-07,"Kensington Oval, Bridgetown, Barbados",Sri Lanka,West Indies,Sri Lanka,West Indies,field,ODI,2003
+64829,2003-06-11,"Arnos Vale Ground, Kingstown, St Vincent",Sri Lanka,West Indies,West Indies,West Indies,field,ODI,2003
+64830,2003-08-02,"Bundaberg Rum Stadium, Cairns",Bangladesh,Australia,Australia,Australia,field,ODI,2003
+64831,2003-08-03,"Bundaberg Rum Stadium, Cairns",Bangladesh,Australia,Australia,Bangladesh,bat,ODI,2003
+64832,2003-08-06,"Marrara Cricket Ground, Darwin",Australia,Bangladesh,Australia,Australia,bat,ODI,2003
+64833,2003-09-09,Multan Cricket Stadium,Pakistan,Bangladesh,Pakistan,Pakistan,bat,ODI,2003
+64836,2003-09-18,Rawalpindi Cricket Stadium,Bangladesh,Pakistan,Pakistan,Bangladesh,bat,ODI,2003
+64837,2003-09-21,"National Stadium, Karachi",Pakistan,Bangladesh,Pakistan,Pakistan,bat,ODI,2003
+64838,2003-10-03,"Gaddafi Stadium, Lahore",Pakistan,South Africa,Pakistan,Pakistan,bat,ODI,2003
+64839,2003-10-05,"Gaddafi Stadium, Lahore",Pakistan,South Africa,Pakistan,South Africa,field,ODI,2003
+64840,2003-10-07,"Iqbal Stadium, Faisalabad",Pakistan,South Africa,South Africa,Pakistan,bat,ODI,2003
+64841,2003-10-10,Rawalpindi Cricket Stadium,Pakistan,South Africa,South Africa,Pakistan,bat,ODI,2003
+64842,2003-10-12,Rawalpindi Cricket Stadium,Pakistan,South Africa,South Africa,Pakistan,bat,ODI,2003
+64843,2003-11-07,"MA Aziz Stadium, Chittagong",Bangladesh,England,England,Bangladesh,bat,ODI,2003
+64844,2003-11-10,"Bangabandhu National Stadium, Dhaka",Bangladesh,England,England,Bangladesh,bat,ODI,2003
+64845,2003-11-12,"Bangabandhu National Stadium, Dhaka",Bangladesh,England,England,Bangladesh,bat,ODI,2003
+64846,2003-11-18,Rangiri Dambulla International Stadium,England,Sri Lanka,Sri Lanka,England,bat,ODI,2003
+64848,2003-11-23,"Queens Sports Club, Bulawayo",West Indies,Zimbabwe,Zimbabwe,West Indies,bat,ODI,2003
+64849,2003-11-26,Harare Sports Club,Zimbabwe,West Indies,Zimbabwe,West Indies,field,ODI,2003
+64850,2003-11-29,"Gaddafi Stadium, Lahore",New Zealand,Pakistan,Pakistan,New Zealand,bat,ODI,2003
+64851,2003-11-29,Harare Sports Club,West Indies,Zimbabwe,West Indies,Zimbabwe,field,ODI,2003
+64852,2003-11-30,Harare Sports Club,Zimbabwe,West Indies,West Indies,Zimbabwe,bat,ODI,2003
+64853,2003-12-01,"Gaddafi Stadium, Lahore",Pakistan,New Zealand,Pakistan,Pakistan,bat,ODI,2003
+64855,2003-12-05,Rawalpindi Cricket Stadium,New Zealand,Pakistan,Pakistan,New Zealand,bat,ODI,2003
+64857,2004-01-03,Eden Park,Pakistan,New Zealand,New Zealand,New Zealand,field,ODI,2004
+64862,2004-01-25,Newlands,South Africa,West Indies,South Africa,South Africa,bat,ODI,2004
+64864,2004-01-30,Kingsmead,West Indies,South Africa,,West Indies,bat,ODI,2004
+64865,2004-02-01,SuperSport Park,South Africa,West Indies,West Indies,South Africa,bat,ODI,2004
+648651,2013-12-05,New Wanderers Stadium,South Africa,India,South Africa,India,field,ODI,2013
+648653,2013-12-08,Kingsmead,South Africa,India,South Africa,India,field,ODI,2013
+648655,2013-12-11,SuperSport Park,South Africa,India,,South Africa,bat,ODI,2013
+64870,2004-02-20,Rangiri Dambulla International Stadium,Australia,Sri Lanka,Australia,Australia,bat,ODI,2004
+64871,2004-02-22,Rangiri Dambulla International Stadium,Sri Lanka,Australia,Sri Lanka,Sri Lanka,bat,ODI,2004
+64872,2004-02-25,Carisbrook,South Africa,New Zealand,New Zealand,New Zealand,field,ODI,2004
+64874,2004-02-27,R.Premadasa Stadium,Australia,Sri Lanka,Australia,Australia,bat,ODI,2004
+64881,2004-03-14,Harare Sports Club,Bangladesh,Zimbabwe,Zimbabwe,Bangladesh,bat,ODI,2004
+64882,2004-03-16,Rawalpindi Cricket Stadium,Pakistan,India,Pakistan,Pakistan,bat,ODI,2004
+64883,2004-03-19,Arbab Niaz Stadium,India,Pakistan,Pakistan,Pakistan,field,ODI,2004
+64884,2004-03-21,Gaddafi Stadium,Pakistan,India,India,Pakistan,bat,ODI,2004
+64885,2004-03-24,Gaddafi Stadium,India,Pakistan,India,Pakistan,field,ODI,2004
+64887,2004-04-20,Queens Sports Club,Zimbabwe,Sri Lanka,Sri Lanka,Sri Lanka,field,ODI,2004
+64889,2004-04-24,Queen's Park Oval,West Indies,England,,West Indies,bat,ODI,2004
+64891,2004-04-27,Harare Sports Club,Sri Lanka,Zimbabwe,Sri Lanka,Zimbabwe,field,ODI,2004
+64894,2004-05-02,Daren Sammy National Cricket Stadium,England,West Indies,West Indies,West Indies,field,ODI,2004
+64896,2004-05-15,Arnos Vale Ground,Bangladesh,West Indies,West Indies,West Indies,field,ODI,2004
+64897,2004-05-16,Arnos Vale Ground,West Indies,Bangladesh,West Indies,Bangladesh,field,ODI,2004
+64898,2004-05-19,National Cricket Stadium,Bangladesh,West Indies,West Indies,Bangladesh,bat,ODI,2004
+64899,2004-05-25,Harare Sports Club,Zimbabwe,Australia,Australia,Zimbabwe,bat,ODI,2004
+64900,2004-05-27,Harare Sports Club,Australia,Zimbabwe,Australia,Zimbabwe,field,ODI,2004
+64901,2004-05-29,Harare Sports Club,Zimbabwe,Australia,Australia,Australia,field,ODI,2004
+64905,2004-08-28,Rangiri Dambulla International Stadium,South Africa,Sri Lanka,Sri Lanka,Sri Lanka,field,ODI,2004
+64906,2004-08-31,Sinhalese Sports Club,Sri Lanka,South Africa,Sri Lanka,South Africa,field,ODI,2004
+64907,2004-11-02,MA Aziz Stadium,New Zealand,Bangladesh,New Zealand,New Zealand,bat,ODI,2004
+649091,2013-10-30,Sharjah Cricket Stadium,Pakistan,South Africa,South Africa,South Africa,bat,ODI,2013
+649093,2013-11-01,Dubai International Cricket Stadium,Pakistan,South Africa,Pakistan,Pakistan,bat,ODI,2013
+649095,2013-11-06,Sheikh Zayed Stadium,Pakistan,South Africa,South Africa,South Africa,bat,ODI,2013
+649097,2013-11-08,Sheikh Zayed Stadium,Pakistan,South Africa,South Africa,South Africa,bat,ODI,2013
+649099,2013-11-11,Sharjah Cricket Stadium,Pakistan,South Africa,South Africa,South Africa,bat,ODI,2013
+64910,2004-11-28,Harare Sports Club,Zimbabwe,England,England,England,field,ODI,2004
+64911,2004-12-01,Harare Sports Club,England,Zimbabwe,England,England,bat,ODI,2004
+64913,2004-12-05,Queens Sports Club,England,Zimbabwe,England,England,bat,ODI,2004
+64914,2004-12-23,MA Aziz Stadium,India,Bangladesh,India,Bangladesh,field,ODI,2004
+64917,2004-12-27,Bangabandhu National Stadium,India,Bangladesh,India,India,bat,ODI,2004
+64919,2005-01-24,MA Aziz Stadium,Zimbabwe,Bangladesh,Zimbabwe,Zimbabwe,bat,ODI,2005
+64922,2005-01-30,The Wanderers Stadium,South Africa,England,England,England,field,ODI,2005
+64923,2005-01-31,Bangabandhu National Stadium,Zimbabwe,Bangladesh,Bangladesh,Zimbabwe,bat,ODI,2005
+64924,2005-02-02,Mangaung Oval,England,South Africa,,South Africa,field,ODI,2005
+64925,2005-02-04,St George's Park,England,South Africa,South Africa,England,bat,ODI,2005
+64926,2005-02-06,Newlands,South Africa,England,South Africa,England,field,ODI,2005
+64927,2005-02-09,Buffalo Park,South Africa,England,South Africa,South Africa,bat,ODI,2005
+64928,2005-02-11,Kingsmead,South Africa,England,,South Africa,bat,ODI,2005
+64929,2005-02-13,SuperSport Park,England,South Africa,South Africa,South Africa,field,ODI,2005
+64932,2005-02-25,The Wanderers Stadium,South Africa,Zimbabwe,South Africa,Zimbabwe,field,ODI,2005
+64933,2005-02-26,Eden Park,Australia,New Zealand,Australia,Australia,bat,ODI,2005
+64934,2005-02-27,Kingsmead,South Africa,Zimbabwe,South Africa,Zimbabwe,field,ODI,2005
+64935,2005-03-01,Basin Reserve,New Zealand,Australia,Australia,Australia,field,ODI,2005
+64936,2005-03-02,St George's Park,Zimbabwe,South Africa,South Africa,Zimbabwe,bat,ODI,2005
+64939,2005-04-05,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,India,Pakistan,India,India,bat,ODI,2005
+64941,2005-04-12,"Sardar Patel (Gujarat) Stadium, Motera",India,Pakistan,Pakistan,India,bat,ODI,2005
+64942,2005-04-15,Green Park,India,Pakistan,Pakistan,India,bat,ODI,2005
+64943,2005-04-17,Arun Jaitley Stadium,Pakistan,India,Pakistan,Pakistan,bat,ODI,2005
+65029,2003-06-17,"Old Trafford, Manchester",England,Pakistan,Pakistan,England,bat,ODI,2003
+65030,2003-06-20,"Kennington Oval, London",Pakistan,England,England,Pakistan,bat,ODI,2003
+65031,2003-06-22,"Lord's, London",Pakistan,England,England,England,field,ODI,2003
+65032,2004-09-01,Trent Bridge,India,England,England,England,field,ODI,2004
+65033,2004-09-03,Kennington Oval,England,India,England,India,field,ODI,2004
+65034,2004-09-05,Lord's,India,England,India,India,bat,ODI,2004
+65235,2003-02-09,"Newlands, Cape Town",West Indies,South Africa,West Indies,West Indies,bat,ODI,2003
+65236,2003-02-10,Harare Sports Club,Zimbabwe,Namibia,Zimbabwe,Namibia,field,ODI,2003
+65237,2003-02-10,"Goodyear Park, Bloemfontein",Sri Lanka,New Zealand,Sri Lanka,New Zealand,field,ODI,2003
+65238,2003-02-11,"New Wanderers Stadium, Johannesburg",Australia,Pakistan,Australia,Pakistan,field,ODI,2003
+65239,2003-02-11,"Kingsmead, Durban",Canada,Bangladesh,Canada,Canada,bat,ODI,2003
+65240,2003-02-12,"North West Cricket Stadium, Potchefstroom",Kenya,South Africa,South Africa,Kenya,bat,ODI,2003
+65241,2003-02-12,"Boland Bank Park, Paarl",India,Netherlands,India,India,bat,ODI,2003
+65242,2003-02-13,"St George's Park, Port Elizabeth",New Zealand,West Indies,New Zealand,West Indies,field,ODI,2003
+65244,2003-02-15,"SuperSport Park, Centurion",India,Australia,Australia,India,bat,ODI,2003
+65245,2003-02-15,"Newlands, Cape Town",Canada,Kenya,Kenya,Canada,bat,ODI,2003
+65246,2003-02-16,"Buffalo Park, East London",Netherlands,England,England,England,field,ODI,2003
+65247,2003-02-16,"De Beers Diamond Oval, Kimberley",Pakistan,Namibia,Pakistan,Pakistan,bat,ODI,2003
+65248,2003-02-16,"New Wanderers Stadium, Johannesburg",South Africa,New Zealand,New Zealand,South Africa,bat,ODI,2003
+65249,2003-02-18,"Willowmoore Park, Benoni",West Indies,Bangladesh,,Bangladesh,field,ODI,2003
+65250,2003-02-19,Harare Sports Club,India,Zimbabwe,India,Zimbabwe,field,ODI,2003
+65251,2003-02-19,"Boland Bank Park, Paarl",Canada,Sri Lanka,Sri Lanka,Sri Lanka,field,ODI,2003
+65252,2003-02-19,"St George's Park, Port Elizabeth",England,Namibia,England,Namibia,field,ODI,2003
+65254,2003-02-22,"Goodyear Park, Bloemfontein",Bangladesh,South Africa,South Africa,South Africa,field,ODI,2003
+65255,2003-02-22,"Newlands, Cape Town",England,Pakistan,England,England,bat,ODI,2003
+65256,2003-02-23,"SuperSport Park, Centurion",Canada,West Indies,West Indies,West Indies,field,ODI,2003
+65257,2003-02-23,"City Oval, Pietermaritzburg",India,Namibia,India,Namibia,field,ODI,2003
+65258,2003-02-24,"Gymkhana Club Ground, Nairobi",Kenya,Sri Lanka,Kenya,Sri Lanka,field,ODI,2003
+65259,2003-02-24,"Queens Sports Club, Bulawayo",Zimbabwe,Australia,Australia,Zimbabwe,bat,ODI,2003
+65260,2003-02-25,"Boland Bank Park, Paarl",Pakistan,Netherlands,Pakistan,Netherlands,field,ODI,2003
+65261,2003-02-26,"De Beers Diamond Oval, Kimberley",Bangladesh,New Zealand,New Zealand,Bangladesh,bat,ODI,2003
+65262,2003-02-26,"Kingsmead, Durban",India,England,India,India,bat,ODI,2003
+65263,2003-02-27,"North West Cricket Stadium, Potchefstroom",Australia,Namibia,Australia,Australia,bat,ODI,2003
+65264,2003-02-27,"Buffalo Park, East London",South Africa,Canada,South Africa,Canada,field,ODI,2003
+65265,2003-02-28,"Queens Sports Club, Bulawayo",Zimbabwe,Netherlands,Zimbabwe,Netherlands,field,ODI,2003
+65266,2003-02-28,"Newlands, Cape Town",Sri Lanka,West Indies,Sri Lanka,Sri Lanka,bat,ODI,2003
+65267,2003-03-01,"New Wanderers Stadium, Johannesburg",Kenya,Bangladesh,Kenya,Kenya,bat,ODI,2003
+65268,2003-03-01,"SuperSport Park, Centurion",Pakistan,India,India,Pakistan,bat,ODI,2003
+65269,2003-03-02,"St George's Park, Port Elizabeth",England,Australia,Australia,England,bat,ODI,2003
+65270,2003-03-03,"Willowmoore Park, Benoni",Canada,New Zealand,New Zealand,New Zealand,field,ODI,2003
+65271,2003-03-03,"Goodyear Park, Bloemfontein",Netherlands,Namibia,Netherlands,Netherlands,bat,ODI,2003
+65272,2003-03-03,"Kingsmead, Durban",Sri Lanka,South Africa,,Sri Lanka,bat,ODI,2003
+65273,2003-03-04,"Queens Sports Club, Bulawayo",Pakistan,Zimbabwe,,Pakistan,bat,ODI,2003
+65275,2003-03-07,"SuperSport Park, Centurion",Australia,Sri Lanka,Australia,Australia,bat,ODI,2003
+65276,2003-03-07,"Newlands, Cape Town",Kenya,India,India,Kenya,bat,ODI,2003
+65277,2003-03-08,"Goodyear Park, Bloemfontein",Zimbabwe,New Zealand,New Zealand,Zimbabwe,bat,ODI,2003
+65278,2003-03-10,"New Wanderers Stadium, Johannesburg",India,Sri Lanka,India,Sri Lanka,field,ODI,2003
+65279,2003-03-11,"St George's Park, Port Elizabeth",Australia,New Zealand,Australia,New Zealand,field,ODI,2003
+65280,2003-03-12,"Goodyear Park, Bloemfontein",Zimbabwe,Kenya,Kenya,Zimbabwe,bat,ODI,2003
+65281,2003-03-14,"SuperSport Park, Centurion",New Zealand,India,India,India,field,ODI,2003
+65282,2003-03-15,"Buffalo Park, East London",Sri Lanka,Zimbabwe,Sri Lanka,Sri Lanka,bat,ODI,2003
+65283,2003-03-15,"Kingsmead, Durban",Kenya,Australia,Australia,Australia,field,ODI,2003
+65284,2003-03-18,"St George's Park, Port Elizabeth",Australia,Sri Lanka,Australia,Australia,bat,ODI,2003
+65285,2003-03-20,"Kingsmead, Durban",India,Kenya,India,India,bat,ODI,2003
+65286,2003-03-23,"New Wanderers Stadium, Johannesburg",Australia,India,Australia,India,field,ODI,2003
+65634,2003-01-09,Sydney Cricket Ground,Sri Lanka,Australia,Sri Lanka,Australia,field,ODI,2003
+65635,2003-01-11,"Bellerive Oval, Hobart",Australia,England,Australia,Australia,bat,ODI,2003
+65636,2003-01-13,Sydney Cricket Ground,Sri Lanka,England,Sri Lanka,Sri Lanka,bat,ODI,2003
+65637,2003-01-15,"Brisbane Cricket Ground, Woolloongabba, Brisbane",Sri Lanka,Australia,Australia,Sri Lanka,bat,ODI,2003
+65638,2003-01-17,Adelaide Oval,England,Sri Lanka,England,England,bat,ODI,2003
+65639,2003-01-19,Adelaide Oval,England,Australia,Australia,England,bat,ODI,2003
+656399,2015-02-14,Hagley Oval,New Zealand,Sri Lanka,New Zealand,Sri Lanka,field,ODI,2015
+65640,2003-01-21,Melbourne Cricket Ground,Sri Lanka,Australia,Australia,Sri Lanka,bat,ODI,2003
+656401,2015-02-14,Melbourne Cricket Ground,Australia,England,Australia,England,field,ODI,2015
+656403,2015-02-15,Seddon Park,South Africa,Zimbabwe,South Africa,Zimbabwe,field,ODI,2015
+656405,2015-02-15,Adelaide Oval,India,Pakistan,India,India,bat,ODI,2015
+656407,2015-02-16,Saxton Oval,Ireland,West Indies,Ireland,Ireland,field,ODI,2015
+656409,2015-02-17,University Oval,New Zealand,Scotland,New Zealand,New Zealand,field,ODI,2015
+65641,2003-01-23,Sydney Cricket Ground,England,Australia,Australia,England,bat,ODI,2003
+656413,2015-02-19,Saxton Oval,United Arab Emirates,Zimbabwe,Zimbabwe,Zimbabwe,field,ODI,2015
+656415,2015-02-20,Westpac Stadium,New Zealand,England,New Zealand,England,bat,ODI,2015
+656417,2015-02-21,Hagley Oval,Pakistan,West Indies,West Indies,Pakistan,field,ODI,2015
+65642,2003-01-25,Melbourne Cricket Ground,Australia,England,Australia,Australia,bat,ODI,2003
+656423,2015-02-22,Melbourne Cricket Ground,India,South Africa,India,India,bat,ODI,2015
+656425,2015-02-23,Hagley Oval,England,Scotland,England,Scotland,field,ODI,2015
+656427,2015-02-24,Manuka Oval,West Indies,Zimbabwe,West Indies,West Indies,bat,ODI,2015
+656429,2015-02-25,"Brisbane Cricket Ground, Woolloongabba",Ireland,United Arab Emirates,Ireland,Ireland,field,ODI,2015
+65643,2004-01-09,Melbourne Cricket Ground,Australia,India,Australia,Australia,bat,ODI,2004
+656433,2015-02-26,Melbourne Cricket Ground,Bangladesh,Sri Lanka,Sri Lanka,Sri Lanka,bat,ODI,2015
+656435,2015-02-27,Sydney Cricket Ground,South Africa,West Indies,South Africa,South Africa,bat,ODI,2015
+656437,2015-02-28,Eden Park,New Zealand,Australia,New Zealand,Australia,bat,ODI,2015
+656439,2015-02-28,Western Australia Cricket Association Ground,India,United Arab Emirates,India,United Arab Emirates,bat,ODI,2015
+65644,2004-01-11,Sydney Cricket Ground,Australia,Zimbabwe,Australia,Australia,bat,ODI,2004
+656441,2015-03-01,Westpac Stadium,England,Sri Lanka,Sri Lanka,England,bat,ODI,2015
+656443,2015-03-01,"Brisbane Cricket Ground, Woolloongabba",Pakistan,Zimbabwe,Pakistan,Pakistan,bat,ODI,2015
+656445,2015-03-03,Manuka Oval,Ireland,South Africa,South Africa,South Africa,bat,ODI,2015
+656447,2015-03-04,McLean Park,Pakistan,United Arab Emirates,Pakistan,United Arab Emirates,field,ODI,2015
+65645,2004-01-14,Bellerive Oval,Zimbabwe,India,India,Zimbabwe,bat,ODI,2004
+656451,2015-03-05,Saxton Oval,Bangladesh,Scotland,Bangladesh,Bangladesh,field,ODI,2015
+656453,2015-03-06,Western Australia Cricket Association Ground,India,West Indies,India,West Indies,bat,ODI,2015
+656455,2015-03-07,Eden Park,Pakistan,South Africa,Pakistan,South Africa,field,ODI,2015
+656457,2015-03-07,Bellerive Oval,Ireland,Zimbabwe,Ireland,Zimbabwe,field,ODI,2015
+65646,2004-01-16,Bellerive Oval,Australia,Zimbabwe,Australia,Australia,bat,ODI,2004
+656461,2015-03-08,Sydney Cricket Ground,Australia,Sri Lanka,Australia,Australia,bat,ODI,2015
+656463,2015-03-09,Adelaide Oval,Bangladesh,England,Bangladesh,England,field,ODI,2015
+656465,2015-03-10,Seddon Park,India,Ireland,India,Ireland,bat,ODI,2015
+656467,2015-03-11,Bellerive Oval,Scotland,Sri Lanka,Sri Lanka,Sri Lanka,bat,ODI,2015
+656469,2015-03-12,Westpac Stadium,South Africa,United Arab Emirates,South Africa,United Arab Emirates,field,ODI,2015
+65647,2004-01-18,Brisbane Cricket Ground,India,Australia,India,India,bat,ODI,2004
+656471,2015-03-13,Seddon Park,New Zealand,Bangladesh,New Zealand,New Zealand,field,ODI,2015
+656475,2015-03-14,Eden Park,India,Zimbabwe,India,India,field,ODI,2015
+656477,2015-03-14,Bellerive Oval,Australia,Scotland,Australia,Australia,field,ODI,2015
+656479,2015-03-15,McLean Park,United Arab Emirates,West Indies,West Indies,West Indies,field,ODI,2015
+65648,2004-01-20,Brisbane Cricket Ground,India,Zimbabwe,India,India,bat,ODI,2004
+656481,2015-03-15,Adelaide Oval,Ireland,Pakistan,Pakistan,Ireland,bat,ODI,2015
+656483,2015-03-18,Sydney Cricket Ground,South Africa,Sri Lanka,South Africa,Sri Lanka,bat,ODI,2015
+656485,2015-03-19,Melbourne Cricket Ground,Bangladesh,India,India,India,bat,ODI,2015
+656487,2015-03-20,Adelaide Oval,Australia,Pakistan,Australia,Pakistan,bat,ODI,2015
+656489,2015-03-21,Westpac Stadium,New Zealand,West Indies,New Zealand,New Zealand,bat,ODI,2015
+65649,2004-01-22,Sydney Cricket Ground,India,Australia,Australia,India,bat,ODI,2004
+656491,2015-03-24,Eden Park,New Zealand,South Africa,New Zealand,South Africa,bat,ODI,2015
+656493,2015-03-26,Sydney Cricket Ground,Australia,India,Australia,Australia,bat,ODI,2015
+656495,2015-03-29,Melbourne Cricket Ground,Australia,New Zealand,Australia,New Zealand,bat,ODI,2015
+65652,2004-01-29,Melbourne Cricket Ground,Australia,Zimbabwe,,Zimbabwe,field,ODI,2004
+65653,2004-02-01,W.A.C.A. Ground,India,Australia,Australia,India,bat,ODI,2004
+65655,2004-02-06,Melbourne Cricket Ground,India,Australia,Australia,India,bat,ODI,2004
+65656,2004-02-08,Sydney Cricket Ground,Australia,India,Australia,Australia,bat,ODI,2004
+65659,2005-01-19,"Brisbane Cricket Ground, Woolloongabba",West Indies,Pakistan,Pakistan,Pakistan,field,ODI,2005
+65660,2005-01-21,"Brisbane Cricket Ground, Woolloongabba",West Indies,Australia,,West Indies,bat,ODI,2005
+65661,2005-01-23,Sydney Cricket Ground,Pakistan,Australia,Australia,Australia,field,ODI,2005
+65662,2005-01-26,Adelaide Oval,Australia,West Indies,Australia,Australia,bat,ODI,2005
+65664,2005-01-30,W.A.C.A. Ground,Australia,Pakistan,Pakistan,Australia,bat,ODI,2005
+65665,2005-02-01,W.A.C.A. Ground,Pakistan,West Indies,Pakistan,West Indies,field,ODI,2005
+65666,2005-02-04,Melbourne Cricket Ground,Australia,Pakistan,Australia,Australia,bat,ODI,2005
+65708,2004-07-17,Sinhalese Sports Club,Pakistan,Bangladesh,Pakistan,Pakistan,bat,ODI,2004
+65713,2004-07-21,R.Premadasa Stadium,Pakistan,Sri Lanka,Sri Lanka,Pakistan,bat,ODI,2004
+65714,2004-07-23,R.Premadasa Stadium,Bangladesh,Sri Lanka,Sri Lanka,Bangladesh,bat,ODI,2004
+65716,2004-07-27,R.Premadasa Stadium,India,Sri Lanka,India,India,bat,ODI,2004
+65718,2004-08-01,R.Premadasa Stadium,Sri Lanka,India,Sri Lanka,Sri Lanka,bat,ODI,2004
+657637,2013-12-18,Sharjah Cricket Stadium,Pakistan,Sri Lanka,Pakistan,Pakistan,bat,ODI,2013
+657639,2013-12-20,Dubai International Cricket Stadium,Pakistan,Sri Lanka,Sri Lanka,Sri Lanka,field,ODI,2013
+657641,2013-12-22,Sharjah Cricket Stadium,Pakistan,Sri Lanka,Pakistan,Sri Lanka,field,ODI,2013
+657643,2013-12-25,Sheikh Zayed Stadium,Pakistan,Sri Lanka,Pakistan,Sri Lanka,bat,ODI,2013
+657645,2013-12-27,Sheikh Zayed Stadium,Pakistan,Sri Lanka,Sri Lanka,Pakistan,bat,ODI,2013
+65803,2003-04-03,Sharjah Cricket Association Stadium,Pakistan,Zimbabwe,Pakistan,Pakistan,bat,ODI,2003
+65804,2003-04-04,Sharjah Cricket Association Stadium,Sri Lanka,Pakistan,Pakistan,Sri Lanka,bat,ODI,2003
+65805,2003-04-05,Sharjah Cricket Association Stadium,Kenya,Zimbabwe,Zimbabwe,Kenya,bat,ODI,2003
+65806,2003-04-06,Sharjah Cricket Association Stadium,Sri Lanka,Kenya,Sri Lanka,Sri Lanka,bat,ODI,2003
+65807,2003-04-07,Sharjah Cricket Association Stadium,Sri Lanka,Zimbabwe,Zimbabwe,Sri Lanka,bat,ODI,2003
+65808,2003-04-08,Sharjah Cricket Association Stadium,Pakistan,Kenya,Pakistan,Pakistan,bat,ODI,2003
+65809,2003-04-10,Sharjah Cricket Association Stadium,Zimbabwe,Pakistan,Pakistan,Zimbabwe,bat,ODI,2003
+659549,2013-08-27,Harare Sports Club,Zimbabwe,Pakistan,Zimbabwe,Pakistan,bat,ODI,2013
+659551,2013-08-29,Harare Sports Club,Zimbabwe,Pakistan,Pakistan,Zimbabwe,field,ODI,2013
+659553,2013-08-31,Harare Sports Club,Zimbabwe,Pakistan,Pakistan,Zimbabwe,field,ODI,2013
+660825,2013-08-27,Maple Leaf North-West Ground,Canada,Netherlands,,Canada,field,ODI,2013
+660827,2013-08-29,Maple Leaf North-West Ground,Canada,Netherlands,Netherlands,Netherlands,field,ODI,2013
+660837,2013-09-06,"Civil Service Cricket Club, Stormont",Ireland,Scotland,Ireland,Scotland,bat,ODI,2013
+661685,2013-12-26,Eden Park,New Zealand,West Indies,West Indies,West Indies,field,ODI,2013
+661689,2014-01-01,Queenstown Events Centre,New Zealand,West Indies,New Zealand,West Indies,field,ODI,2014
+661691,2014-01-04,Saxton Oval,New Zealand,West Indies,New Zealand,New Zealand,bat,ODI,2014
+661693,2014-01-08,Seddon Park,New Zealand,West Indies,West Indies,New Zealand,field,ODI,2014
+66196,2004-09-10,Edgbaston,England,Zimbabwe,England,Zimbabwe,field,ODI,2004
+66197,2004-09-10,Kennington Oval,New Zealand,United States of America,New Zealand,United States of America,field,ODI,2004
+66198,2004-09-11,The Rose Bowl,India,Kenya,India,Kenya,field,ODI,2004
+66200,2004-09-13,The Rose Bowl,United States of America,Australia,Australia,Australia,field,ODI,2004
+66201,2004-09-14,Kennington Oval,Zimbabwe,Sri Lanka,Sri Lanka,Sri Lanka,field,ODI,2004
+66202,2004-09-14,Edgbaston,Kenya,Pakistan,Pakistan,Pakistan,field,ODI,2004
+66203,2004-09-15,The Rose Bowl,West Indies,Bangladesh,West Indies,Bangladesh,field,ODI,2004
+66204,2004-09-16,Kennington Oval,New Zealand,Australia,Australia,Australia,field,ODI,2004
+66205,2004-09-17,The Rose Bowl,England,Sri Lanka,England,Sri Lanka,field,ODI,2004
+66206,2004-09-18,Kennington Oval,South Africa,West Indies,West Indies,West Indies,field,ODI,2004
+66207,2004-09-19,Edgbaston,India,Pakistan,Pakistan,Pakistan,field,ODI,2004
+66208,2004-09-21,Edgbaston,Australia,England,England,England,field,ODI,2004
+66209,2004-09-22,The Rose Bowl,Pakistan,West Indies,West Indies,Pakistan,bat,ODI,2004
+66210,2004-09-25,Kennington Oval,England,West Indies,West Indies,West Indies,field,ODI,2004
+66293,2003-06-26,"Trent Bridge, Nottingham",England,Zimbabwe,Zimbabwe,Zimbabwe,field,ODI,2003
+66294,2003-06-28,"Kennington Oval, London",South Africa,England,England,South Africa,bat,ODI,2003
+66295,2003-06-29,"St Lawrence Ground, Canterbury",South Africa,Zimbabwe,South Africa,Zimbabwe,field,ODI,2003
+66296,2003-07-01,"Headingley, Leeds",England,Zimbabwe,,Zimbabwe,field,ODI,2003
+66297,2003-07-03,"Old Trafford, Manchester",England,South Africa,South Africa,England,bat,ODI,2003
+66299,2003-07-06,"The Royal & Sun Alliance County Ground, Bristol",Zimbabwe,England,England,England,field,ODI,2003
+66301,2003-07-10,"The Rose Bowl, Southampton",Zimbabwe,South Africa,South Africa,Zimbabwe,bat,ODI,2003
+66302,2003-07-12,"Lord's, London",South Africa,England,England,England,field,ODI,2003
+66304,2004-06-27,Trent Bridge,England,West Indies,West Indies,West Indies,field,ODI,2004
+66305,2004-06-29,Riverside Ground,England,New Zealand,New Zealand,New Zealand,field,ODI,2004
+66306,2004-07-01,Headingley,West Indies,England,England,England,field,ODI,2004
+66309,2004-07-06,Lord's,England,West Indies,West Indies,West Indies,field,ODI,2004
+66311,2004-07-10,Lord's,New Zealand,West Indies,New Zealand,West Indies,field,ODI,2004
+66356,2003-04-21,"Bangabandhu National Stadium, Dhaka",India,South Africa,,India,bat,ODI,2003
+66357,2003-05-10,Rangiri Dambulla International Stadium,Pakistan,Sri Lanka,Pakistan,Sri Lanka,field,ODI,2003
+66358,2003-05-11,Rangiri Dambulla International Stadium,Pakistan,New Zealand,New Zealand,New Zealand,field,ODI,2003
+66361,2003-05-19,Rangiri Dambulla International Stadium,New Zealand,Sri Lanka,New Zealand,Sri Lanka,field,ODI,2003
+66363,2003-05-23,Rangiri Dambulla International Stadium,Pakistan,New Zealand,New Zealand,Pakistan,bat,ODI,2003
+66364,2003-10-23,"MA Chidambaram Stadium, Chepauk, Chennai",India,New Zealand,,India,bat,ODI,2003
+66365,2003-10-26,"Captain Roop Singh Stadium, Gwalior",India,Australia,India,India,bat,ODI,2003
+66366,2003-10-29,"Nahar Singh Stadium, Faridabad",New Zealand,Australia,Australia,New Zealand,bat,ODI,2003
+66367,2003-11-01,"Wankhede Stadium, Mumbai",Australia,India,Australia,Australia,bat,ODI,2003
+66368,2003-11-03,"Nehru Stadium, Poona",New Zealand,Australia,Australia,Australia,field,ODI,2003
+66369,2003-11-06,"Barabati Stadium, Cuttack",India,New Zealand,New Zealand,India,bat,ODI,2003
+66372,2003-11-15,"Lal Bahadur Shastri Stadium, Hyderabad, Deccan",India,New Zealand,India,India,bat,ODI,2003
+66374,2004-08-21,VRA Cricket Ground,Pakistan,India,Pakistan,India,field,ODI,2004
+66375,2004-08-23,VRA Cricket Ground,Australia,India,,Australia,bat,ODI,2004
+66377,2004-09-04,Lord's,Australia,Pakistan,Australia,Pakistan,field,ODI,2004
+66378,2004-09-30,Multan Cricket Stadium,Pakistan,Zimbabwe,Pakistan,Pakistan,bat,ODI,2004
+66379,2004-10-03,Arbab Niaz Stadium,Zimbabwe,Pakistan,Pakistan,Pakistan,field,ODI,2004
+66380,2004-10-06,National Stadium,Sri Lanka,Pakistan,Pakistan,Sri Lanka,bat,ODI,2004
+66381,2004-10-09,Rawalpindi Cricket Stadium,Zimbabwe,Sri Lanka,Sri Lanka,Sri Lanka,field,ODI,2004
+66383,2004-10-16,Gaddafi Stadium,Sri Lanka,Pakistan,Sri Lanka,Pakistan,field,ODI,2004
+66385,2004-12-05,Docklands Stadium,Australia,New Zealand,New Zealand,New Zealand,field,ODI,2004
+66386,2004-12-08,Sydney Cricket Ground,Australia,New Zealand,Australia,Australia,bat,ODI,2004
+664299,2013-09-20,Willowmoore Park,South Africa,Bangladesh,South Africa,South Africa,field,ODI,2013
+664303,2013-09-24,SuperSport Park,South Africa,Bangladesh,South Africa,South Africa,field,ODI,2013
+666039,2014-01-19,Melbourne Cricket Ground,Australia,England,England,Australia,bat,ODI,2014
+666041,2014-01-23,Melbourne Cricket Ground,Australia,England,Australia,Australia,bat,ODI,2014
+666043,2014-01-26,Bellerive Oval,Australia,England,Australia,England,bat,ODI,2014
+667641,2014-01-19,McLean Park,New Zealand,India,New Zealand,India,field,ODI,2014
+667643,2014-01-22,Seddon Park,New Zealand,India,New Zealand,India,field,ODI,2014
+667645,2014-01-25,Eden Park,New Zealand,India,,India,field,ODI,2014
+667647,2014-01-28,Seddon Park,New Zealand,India,New Zealand,India,bat,ODI,2014
+667649,2014-01-31,Westpac Stadium,New Zealand,India,New Zealand,India,field,ODI,2014
+667723,2014-08-27,Sophia Gardens,England,India,India,England,field,ODI,2014
+667725,2014-08-30,Trent Bridge,England,India,India,India,field,ODI,2014
+667727,2014-09-02,Edgbaston,England,India,India,India,field,ODI,2014
+667729,2014-09-05,Headingley,England,India,England,India,field,ODI,2014
+667889,2014-05-22,Kennington Oval,England,Sri Lanka,England,Sri Lanka,field,ODI,2014
+667891,2014-05-25,Riverside Ground,England,Sri Lanka,Sri Lanka,England,field,ODI,2014
+667893,2014-05-28,Old Trafford,England,Sri Lanka,England,England,field,ODI,2014
+667895,2014-05-31,Lord's,England,Sri Lanka,Sri Lanka,England,field,ODI,2014
+667897,2014-06-03,Edgbaston,England,Sri Lanka,Sri Lanka,England,bat,ODI,2014
+668511,2013-10-26,Senwes Park,South Africa,Sri Lanka,South Africa,Sri Lanka,field,ODI,2013
+668513,2013-10-28,Senwes Park,South Africa,Sri Lanka,,South Africa,field,ODI,2013
+668953,2013-10-29,Shere Bangla National Stadium,Bangladesh,New Zealand,Bangladesh,New Zealand,field,ODI,2013
+668955,2013-10-31,Shere Bangla National Stadium,Bangladesh,New Zealand,Bangladesh,Bangladesh,bat,ODI,2013
+668957,2013-11-03,Khan Shaheb Osman Ali Stadium,Bangladesh,New Zealand,Bangladesh,Bangladesh,field,ODI,2013
+668961,2013-11-10,"Mahinda Rajapaksa International Cricket Stadium, Sooriyawewa",Sri Lanka,New Zealand,,New Zealand,field,ODI,2013
+668963,2013-11-12,"Mahinda Rajapaksa International Cricket Stadium, Sooriyawewa",Sri Lanka,New Zealand,New Zealand,Sri Lanka,bat,ODI,2013
+668965,2013-11-16,Rangiri Dambulla International Stadium,Sri Lanka,New Zealand,Sri Lanka,New Zealand,field,ODI,2013
