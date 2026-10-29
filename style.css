@@ -175,3 +175,10 @@ footer{text-align:center;color:#7890b1;font-size:12px;padding:26px 0 14px}
 #methodPanel p{color:var(--muted);line-height:1.65}
 #methodPanel strong{color:var(--text)}
 #sourcesPanel{margin-top:18px}
+
+/* Cricket views separate incomparable IPL player and international team observations. */
+.cricket-views{display:none;margin-bottom:18px;padding:17px 20px}
+body:has(.nav[data-sport="Cricket"].active) .cricket-views{display:block}
+.cricket-view-buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.cricket-view-buttons button{cursor:pointer;color:var(--text);padding:12px 15px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.04);font:inherit}
+.cricket-view-buttons button.selected{border-color:var(--accent);background:rgba(166,236,106,.18)}
