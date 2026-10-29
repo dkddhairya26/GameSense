@@ -51,7 +51,7 @@ const defs = {
     accent: '#a6ec6a', accent2: '#ffd966',
     metrics: {
       runs: 'Batting runs', wickets: 'Bowling wickets', games: 'Matches played',
-      strike_rate: 'Average recorded strike rate', wins:'Match wins (international)', losses:'Match losses (international)', win_rate:'Win rate % (international)', performance_score: 'GameSense rating (0–100)'
+      strike_rate: 'Batting strike rate', batting_average:'Batting average', highest_score:'Highest score', hundreds:'Centuries', fifties:'Half-centuries', fours:'Fours', sixes:'Sixes', innings:'Innings', wins:'Match wins (international)', losses:'Match losses (international)', win_rate:'Win rate % (international)', performance_score: 'GameSense rating (0–100)'
     }
   },
   F1: {
@@ -230,7 +230,14 @@ async function load() {
       loadedMatchRows++;
     }
   }
-  $('heroCoverage').title=loadedMatchRows.toLocaleString()+' international match results loaded.';
+  $('heroCoverage').title=loadedMatchRows.toLocaleString()+' international matches loaded.';
+  // Career snapshots from attributed external source: format-specific, not per-season records.
+  try {
+    const records=await fetchDataset('cricket-international-players.json','json');
+    if(!Array.isArray(records)||!records.length)throw Error('International player snapshots unavailable');
+    all.push(...records.map(r=>norm(r,'Cricket')));
+  }catch(e){failures.push('cricket-international-players.json: '+e.message);}
+
   try {
     const saved = localStorage.getItem('gamesense-imports');
     if (saved) imports = JSON.parse(saved).map(r => norm(r));
@@ -282,6 +289,7 @@ function ratingValue(r){
   }
   if(sport==='Cricket'){
     if(r.record_kind==='international_team_match')return r.outcome==='U'?null:r.wins?100:r.draws?50:0;
+    if(r.record_kind==='international_player_career')return r.games>0?clamp(1.4*(r.runs||0)/r.games):null;
     if(!r.games)return null;
     return clamp(1.25*(r.runs||0)/r.games+17*(r.wickets||0)/r.games);
   }
@@ -299,7 +307,7 @@ function metricValue(r,m){
   return typeof r[m]==='number'&&Number.isFinite(r[m])?r[m]:null;
 }
 // Rates and positions are means. Totals are sums. Missing metrics are excluded, not invented.
-function averaged(m){return m.endsWith('_position')||['performance_score','strike_rate','economy','win_rate'].includes(m);}
+function averaged(m){return m.endsWith('_position')||['performance_score','strike_rate','economy','win_rate','batting_average'].includes(m);}
 function aggregate(records, metric) {
   const groups = new Map();
   for (const row of records) {
@@ -359,10 +367,11 @@ function renderAnalyticalCharts(records,leaders,metric){
   }
   const values=[...byYear].sort((a,b)=>a[0].localeCompare(b[0],undefined,{numeric:true}))
     .map(([year,x])=>({year,value:averaged(metric)?x.sum/x.n:x.sum,n:x.n}));
-  $('timeChartNote').textContent=values.length
+  const isCareerSnapshot=sport==='Cricket'&&records.length&&records.every(r=>r.record_kind==='international_player_career');
+  $('timeChartNote').textContent=isCareerSnapshot?'Career totals only — yearly trends are unavailable in this source snapshot.':values.length
     ? 'Yearly '+(averaged(metric)?'average':'total')+' of '+label.toLowerCase()+' · '+values.length+' observed years'
     : 'No available numeric values for this metric. Change sport, season or metric.';
-  if(!values.length){
+  if(!values.length||isCareerSnapshot){
     $('timeChart').innerHTML='<p class="chart-empty">No matching historical trend data.</p>';
   }else{
     const w=680,h=240,p={l:46,r:18,t:18,b:34},iw=w-p.l-p.r,ih=h-p.t-p.b;
@@ -431,7 +440,7 @@ function render() {
   $('ratingFormula').textContent={
     Soccer:'30 + 30×win + 10×draw + 12×goal difference per match (0–100)',
     NBA:'2×points per game + 1.3×rebounds per game + 1.5×assists per game (0–100)',
-    Cricket:competition.startsWith('International ')?'International match index: win 100, loss 0; unreported outcomes excluded. Win rate = wins ÷ decided matches.':'IPL index: 1.25×runs per match + 17×wickets per match (0–100)',
+    Cricket:competition.endsWith(' Players')?'Historical international career snapshot: runs, batting average and strike rate per format; GameSense rating = 1.4 × runs/matches capped at 100. Not official or time-series data.':competition.startsWith('International ')?'International team match index: win 100, loss 0; unknown results excluded. Win rate excludes unknown matches.':'IPL index: 1.25×runs per match + 17×wickets per match (0–100)',
     F1:'100 − 7×(classified finishing position − 1) per race (0–100)'
   }[sport]+' · Experimental GameSense indicator, not official or predictive.';
   const top = ranking.slice(0, 10);
@@ -482,6 +491,9 @@ function renderRecentForm(leader){
   } else if(sport==='F1'){
     let a=sample.map(r=>r.finish_position).filter(v=>v>0);
     $('formSummary').textContent=leader.name+': '+(a.length?'average classified finish P'+number(a.reduce((p,c)=>p+c,0)/a.length):'no classified results')+' across latest '+sample.length+' races.';
+  } else if(sport==='Cricket'&&sample[0].record_kind==='international_player_career'){
+    const record=sample[0];
+    $('formSummary').textContent=leader.name+' · '+record.team+' · '+number(record.runs)+' career runs across '+number(record.games)+' matches. This is a historical format-specific career snapshot, not recent form.';
   } else if(sport==='Cricket'&&sample[0].record_kind==='international_team_match'){
     $('formSummary').textContent=leader.name+': '+rr.slice(0,5).map(r=>r.outcome||'D').reverse().join(' · ')+' · recent observed international matches, oldest to newest (U = outcome unreported).';
   } else {
@@ -517,10 +529,10 @@ async function resolvePortrait(name) {
 function teamInfo(g){
   if(!g)return 'Select a competitor';
   if(sport==='Soccer')return 'Football club · '+g.name;
-  if(sport==='Cricket'&&$('competition').value.startsWith('International '))return 'National team · '+g.name;
+  if(sport==='Cricket'&&$('competition').value.startsWith('International ')&&!$('competition').value.endsWith(' Players'))return 'National team · '+g.name;
   const list=filtered.filter(r=>r.competitor_id===g.id&&r.team).sort((a,b)=>String(b.date||b.season).localeCompare(String(a.date||a.season),undefined,{numeric:true}));
   const t=list[0]?.team;
-  if(t)return (sport==='F1'?'Constructor · ':'Team · ')+(teamNames[t]||t);
+  if(t)return (sport==='F1'?'Constructor · ':sport==='Cricket'&&$('competition').value.endsWith(' Players')?'Country · ':'Team · ')+(teamNames[t]||t);
   return sport==='Cricket'?'IPL athlete · historical team not in source':'Team not recorded in the selected data';
 }
 let profileVersion=0, leaderVersion=0;
@@ -628,7 +640,7 @@ function selectCricketView(c){
     return;
   }
   $('competition').value=c;
-  $('metric').value=c.startsWith('International ')?'wins':'runs';
+  $('metric').value=c.startsWith('International ')&&!c.endsWith(' Players')?'wins':'runs';
   document.querySelectorAll('[data-cricket-view]').forEach(b=>b.classList.toggle('selected',b.dataset.cricketView===c));
   const cricketPanel=$('cricketFormats'); if(cricketPanel)cricketPanel.hidden=false;
   render();
@@ -636,7 +648,7 @@ function selectCricketView(c){
 document.querySelectorAll('[data-cricket-view]').forEach(b=>b.addEventListener('click',()=>selectCricketView(b.dataset.cricketView)));
 $('competition').addEventListener('change',()=>{
   if(sport!=='Cricket')return;
-  let international=$('competition').value.startsWith('International ');
+  let international=$('competition').value.startsWith('International ')&&!$('competition').value.endsWith(' Players');
   if(international&&['runs','wickets','strike_rate'].includes($('metric').value))$('metric').value='wins';
   if(!international&&['wins','losses','win_rate'].includes($('metric').value))$('metric').value='runs';
 });
