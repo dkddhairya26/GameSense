@@ -240,3 +240,21 @@ body{background-color:#080f20;background-image:radial-gradient(ellipse at 75% -1
 @keyframes barGrow{from{transform:scaleY(.08)}to{transform:scaleY(1)}}
 @media(max-width:700px){.hero-side .leader-stat{padding-left:95px}.athlete-card{min-height:100px}.hero-ring{right:-10%;top:-170px}.hero h1{font-size:32px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* Two interactive, accessible data visualisations. */
+.insight-graphs{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:18px 0}
+.chart-panel{min-width:0;min-height:370px;padding:21px 22px}
+.chart-panel .panel-head{margin-bottom:5px}
+.chart-note{font-size:11px;color:var(--muted);line-height:1.5;min-height:34px;margin:8px 0 2px}
+.chart-viewport{width:100%;display:flex;align-items:center;min-height:245px;overflow:hidden}
+.analytics-svg{width:100%;height:auto;min-height:220px;overflow:visible}
+.chart-empty{color:var(--muted);font-size:13px;padding:50px 10px}
+.analytics-svg [tabindex]:focus{outline:2px solid var(--accent);outline-offset:3px}
+.line-draw{stroke-dasharray:1600;stroke-dashoffset:1600;animation:revealTrend 1.6s ease forwards}
+.comparison-bar{transform-origin:164px center;animation:revealBar .85s ease backwards;cursor:crosshair}
+.analytics-svg circle{transition:r .18s,fill .18s;cursor:crosshair}
+.analytics-svg circle:hover{r:7;fill:var(--accent-2)}
+@keyframes revealTrend{to{stroke-dashoffset:0}}
+@keyframes revealBar{from{transform:scaleX(.02)}to{transform:scaleX(1)}}
+@media(max-width:1150px){.insight-graphs{grid-template-columns:1fr}.chart-panel{min-height:310px}}
+@media(prefers-reduced-motion:reduce){.line-draw{stroke-dashoffset:0!important}.comparison-bar{animation:none!important}}
