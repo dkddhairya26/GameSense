@@ -338,6 +338,69 @@ function updateControls() {
   render();
 }
 
+
+/** Chart renderer: SVG is self-contained, responsive, tooltip accessible and has no external CDNs.
+ * Line chart aggregates the current metric per observed year. Bar chart uses current ranking.
+ * Missing values are ignored. Position metrics sort ascending; win rate uses only decided games. */
+function renderAnalyticalCharts(records,leaders,metric){
+  const label=defs[sport].metrics[metric]||metric;
+  $('timeChartMetric').textContent=label;
+  const byYear=new Map();
+  for(const r of records){
+    const v=metricValue(r,metric);
+    if(v===null||!Number.isFinite(v))continue;
+    const y=String(r.season||'').match(/(?:19|20)\\d{2}/)?.[0]||String(r.season||'Unknown');
+    const cur=byYear.get(y)||{sum:0,n:0};
+    cur.sum+=v;cur.n++;
+    byYear.set(y,cur);
+  }
+  const values=[...byYear].sort((a,b)=>a[0].localeCompare(b[0],undefined,{numeric:true}))
+    .map(([year,x])=>({year,value:averaged(metric)?x.sum/x.n:x.sum,n:x.n}));
+  $('timeChartNote').textContent=values.length
+    ? 'Yearly '+(averaged(metric)?'average':'total')+' of '+label.toLowerCase()+' · '+values.length+' observed years'
+    : 'No available numeric values for this metric. Change sport, season or metric.';
+  if(!values.length){
+    $('timeChart').innerHTML='<p class="chart-empty">No matching historical trend data.</p>';
+  }else{
+    const w=680,h=240,p={l:46,r:18,t:18,b:34},iw=w-p.l-p.r,ih=h-p.t-p.b;
+    const min=0,max=Math.max(...values.map(o=>o.value),1);
+    const points=values.map((o,i)=>{
+      const x=p.l+(values.length===1?.5:i/(values.length-1))*iw;
+      const y=p.t+ih*(1-(o.value-min)/(max-min));
+      return {...o,x,y};
+    });
+    const grid=[0,.25,.5,.75,1].map(a=>{
+      const y=p.t+ih*(1-a),v=min+(max-min)*a;
+      return '<line x1="'+p.l+'" y1="'+y+'" x2="'+(w-p.r)+'" y2="'+y+'" stroke="rgba(174,205,246,.13)" stroke-dasharray="4 6"/>'+
+        '<text x="'+(p.l-9)+'" y="'+(y+4)+'" text-anchor="end" fill="#93a7c4" font-size="11">'+number(v)+'</text>';
+    }).join('');
+    const path=points.map((o,i)=>(i===0?'M':'L')+o.x.toFixed(2)+' '+o.y.toFixed(2)).join(' ');
+    const area=path+' L '+points.at(-1).x.toFixed(2)+' '+(h-p.b)+' L '+points[0].x.toFixed(2)+' '+(h-p.b)+' Z';
+    const step=Math.max(1,Math.ceil(values.length/7));
+    const marks=points.map((o,i)=>
+      '<circle cx="'+o.x+'" cy="'+o.y+'" r="4.2" fill="var(--accent)" stroke="#0b192d" stroke-width="2" tabindex="0">'+
+      '<title>'+escapeHtml(o.year+': '+number(o.value)+' '+label)+'</title></circle>'+
+      (i%step===0||i===points.length-1?'<text x="'+o.x+'" y="'+(h-8)+'" fill="#93a7c4" text-anchor="middle" font-size="11">'+escapeHtml(o.year)+'</text>':'')
+    ).join('');
+    $('timeChart').innerHTML='<svg class="analytics-svg" viewBox="0 0 '+w+' '+h+'" role="img" aria-label="'+escapeHtml(label)+' trend by year">'+
+      '<defs><linearGradient id="time-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="var(--accent)" stop-opacity=".30"/><stop offset="100%" stop-color="var(--accent)" stop-opacity="0"/></linearGradient></defs>'+
+      grid+'<path d="'+area+'" fill="url(#time-fill)"/><path class="line-draw" d="'+path+'" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>'+marks+'</svg>';
+  }
+  const top=leaders.slice(0,7);
+  $('rankChartNote').textContent='Top '+top.length+' competitors by '+label.toLowerCase()+' · hover or focus bars for values';
+  if(!top.length){$('rankChart').innerHTML='<p class="chart-empty">No ranked competitors for this selection.</p>';return}
+  const w=680,h=270,left=164,right=70,bar=22,space=36,max=Math.max(...top.map(o=>o.metric),1);
+  const rows=top.map((g,i)=>{
+    const y=17+i*space,ww=(w-left-right)*Math.max(0,g.metric)/max;
+    const name=g.name.length>21?g.name.slice(0,19)+'…':g.name;
+    return '<text x="'+(left-10)+'" y="'+(y+15)+'" text-anchor="end" fill="#d8e7f9" font-size="12">'+escapeHtml(name)+'</text>'+
+      '<rect x="'+left+'" y="'+y+'" width="'+(w-left-right)+'" height="'+bar+'" rx="6" fill="rgba(166,199,235,.07)"/>'+
+      '<rect class="comparison-bar" x="'+left+'" y="'+y+'" width="'+ww+'" height="'+bar+'" rx="6" fill="var(--accent)" opacity="'+(1-i*.075)+'" tabindex="0"><title>'+escapeHtml(g.name)+': '+number(g.metric)+' '+escapeHtml(label)+'</title></rect>'+
+      '<text x="'+(left+ww+8)+'" y="'+(y+15)+'" fill="#d8e7f9" font-size="12">'+number(g.metric)+'</text>';
+  }).join('');
+  $('rankChart').innerHTML='<svg class="analytics-svg" viewBox="0 0 '+w+' '+h+'" role="img" aria-label="Competitor ranking by '+escapeHtml(label)+'">'+rows+'</svg>';
+}
+
 function render() {
   const season = $('season').value;
   const competition = $('competition').value;
