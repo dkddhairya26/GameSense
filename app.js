@@ -279,7 +279,12 @@ async function load() {
 }
 
 function rows() {
-  return [...all, ...imports].filter(r => String(r.sport).toLowerCase() === sport.toLowerCase());
+  return [...all, ...imports].filter(r => {
+    if(String(r.sport).trim().toLowerCase()!==sport.toLowerCase())return false;
+    if(sport==='F1')return numeric(r.finish_position)!==null||numeric(r.grid_position)!==null;
+    if(sport==='NBA')return numeric(r.finish_position)===null&&!String(r.competitor_id||'').startsWith('f1:');
+    return true;
+  });
 }
 
 function options(values, selected) {
@@ -897,7 +902,11 @@ $('upload').addEventListener('change', async (e) => {
     let parsed = file.name.toLowerCase().endsWith('.json') ? JSON.parse(text) : parseCSV(text);
     if (!Array.isArray(parsed)) parsed = parsed.records || parsed.data || [];
     if (!Array.isArray(parsed)) throw new Error('Expected an array of rows.');
-    const good = parsed.map(r => norm(r, sport)).filter(x => x.competitor && x.season && x.sport === sport);
+    const good = parsed
+      .filter(r=>!r.sport||String(r.sport).toLowerCase()===sport.toLowerCase())
+      .map(r=>norm(r,r.sport||sport))
+      .filter(x=>x.competitor&&x.season&&x.sport.toLowerCase()===sport.toLowerCase()&&
+        (sport!=='F1'||numeric(x.finish_position)!==null||numeric(x.grid_position)!==null));
     if (!good.length) throw new Error(`No ${sport} rows found with competitor and season fields.`);
     imports.push(...good);
     localStorage.setItem('gamesense-imports', JSON.stringify(imports));
@@ -990,6 +999,14 @@ $('competition').addEventListener('change',()=>{
   syncCricketMetricOptions();
   if(international&&['runs','wickets','strike_rate'].includes($('metric').value))$('metric').value='wins';
   if(!international&&['wins','losses','win_rate'].includes($('metric').value))$('metric').value='runs';
+});
+$('competition').addEventListener('change',()=>{
+  if(sport!=='Soccer')return;
+  const value=$('competition').value;
+  if(value==='Premier League · Player 2024/25')footballMode='players';
+  else if(value!=='All competitions')footballMode='clubs';
+  syncFootballMetricOptions();
+  document.querySelectorAll('[data-football-view]').forEach(b=>b.classList.toggle('selected',b.dataset.footballView===footballMode));
 });
 ['season', 'competition', 'metric', 'search'].forEach(id => {
   $(id).addEventListener(id === 'search' ? 'input' : 'change', render);
