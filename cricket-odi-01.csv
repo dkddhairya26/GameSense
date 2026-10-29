@@ -1,0 +1,901 @@
+match_id,date,venue,team1,team2,winner,toss_winner,toss_decision,format,year
+1000887,2017-01-13,"Brisbane Cricket Ground, Woolloongabba",Australia,Pakistan,Australia,Australia,bat,ODI,2017
+1000889,2017-01-15,Melbourne Cricket Ground,Australia,Pakistan,Pakistan,Australia,bat,ODI,2017
+1000891,2017-01-19,Western Australia Cricket Association Ground,Australia,Pakistan,Australia,Australia,field,ODI,2017
+1000893,2017-01-22,Sydney Cricket Ground,Australia,Pakistan,Australia,Australia,bat,ODI,2017
+1000895,2017-01-26,Adelaide Oval,Australia,Pakistan,Australia,Australia,bat,ODI,2017
+1001371,2016-12-04,Sydney Cricket Ground,Australia,New Zealand,Australia,Australia,bat,ODI,2016
+1001373,2016-12-06,Manuka Oval,Australia,New Zealand,Australia,New Zealand,field,ODI,2016
+1001375,2016-12-09,Melbourne Cricket Ground,Australia,New Zealand,Australia,Australia,bat,ODI,2016
+1004283,2016-09-08,"Grange Cricket Club Ground, Raeburn Place",Scotland,Hong Kong,,Hong Kong,field,ODI,2016
+1004285,2016-09-10,"Grange Cricket Club Ground, Raeburn Place",Scotland,Hong Kong,Scotland,Scotland,bat,ODI,2016
+1007649,2016-06-11,Harare Sports Club,Zimbabwe,India,India,India,field,ODI,2016
+1007651,2016-06-13,Harare Sports Club,Zimbabwe,India,India,India,field,ODI,2016
+1007653,2016-06-15,Harare Sports Club,Zimbabwe,India,India,Zimbabwe,bat,ODI,2016
+1019973,2016-12-26,Hagley Oval,New Zealand,Bangladesh,New Zealand,New Zealand,bat,ODI,2016
+1019975,2016-12-29,Saxton Oval,New Zealand,Bangladesh,New Zealand,Bangladesh,field,ODI,2016
+1019977,2016-12-31,Saxton Oval,New Zealand,Bangladesh,New Zealand,Bangladesh,bat,ODI,2016
+1020013,2017-01-30,Eden Park,New Zealand,Australia,New Zealand,Australia,field,ODI,2017
+1020017,2017-02-05,Seddon Park,New Zealand,Australia,New Zealand,New Zealand,bat,ODI,2017
+1020031,2017-02-19,Seddon Park,New Zealand,South Africa,South Africa,South Africa,field,ODI,2017
+1020033,2017-02-22,Hagley Oval,New Zealand,South Africa,New Zealand,South Africa,field,ODI,2017
+1020035,2017-02-25,Westpac Stadium,New Zealand,South Africa,South Africa,South Africa,bat,ODI,2017
+1020037,2017-03-01,Seddon Park,New Zealand,South Africa,New Zealand,South Africa,bat,ODI,2017
+1020039,2017-03-04,Eden Park,New Zealand,South Africa,South Africa,South Africa,field,ODI,2017
+1022347,2017-06-01,Kennington Oval,England,Bangladesh,England,England,field,ODI,2017
+1022349,2017-06-02,Edgbaston,Australia,New Zealand,,New Zealand,bat,ODI,2017
+1022351,2017-06-03,Kennington Oval,South Africa,Sri Lanka,South Africa,Sri Lanka,field,ODI,2017
+1022353,2017-06-04,Edgbaston,India,Pakistan,India,Pakistan,field,ODI,2017
+1022355,2017-06-05,Kennington Oval,Australia,Bangladesh,,Bangladesh,bat,ODI,2017
+1022357,2017-06-06,Sophia Gardens,England,New Zealand,England,New Zealand,field,ODI,2017
+1022359,2017-06-07,Edgbaston,Pakistan,South Africa,Pakistan,South Africa,bat,ODI,2017
+1022361,2017-06-08,Kennington Oval,India,Sri Lanka,Sri Lanka,Sri Lanka,field,ODI,2017
+1022363,2017-06-09,Sophia Gardens,Bangladesh,New Zealand,Bangladesh,New Zealand,bat,ODI,2017
+1022365,2017-06-10,Edgbaston,England,Australia,England,England,field,ODI,2017
+1022367,2017-06-11,Kennington Oval,India,South Africa,India,India,field,ODI,2017
+1022369,2017-06-12,Sophia Gardens,Pakistan,Sri Lanka,Pakistan,Pakistan,field,ODI,2017
+1022371,2017-06-14,Sophia Gardens,England,Pakistan,Pakistan,Pakistan,field,ODI,2017
+1022373,2017-06-15,Edgbaston,Bangladesh,India,India,India,field,ODI,2017
+1022375,2017-06-18,Kennington Oval,India,Pakistan,Pakistan,India,field,ODI,2017
+1026847,2016-11-04,"Mission Road Ground, Mong Kok",Hong Kong,Papua New Guinea,Hong Kong,Hong Kong,bat,ODI,2016
+1026849,2016-11-06,"Mission Road Ground, Mong Kok",Hong Kong,Papua New Guinea,Papua New Guinea,Papua New Guinea,bat,ODI,2016
+1026851,2016-11-08,"Mission Road Ground, Mong Kok",Hong Kong,Papua New Guinea,Hong Kong,Papua New Guinea,bat,ODI,2016
+1027315,2017-03-03,"Sir Vivian Richards Stadium, North Sound",West Indies,England,England,West Indies,field,ODI,2017
+1027317,2017-03-05,"Sir Vivian Richards Stadium, North Sound",West Indies,England,England,West Indies,bat,ODI,2017
+1027319,2017-03-09,"Kensington Oval, Bridgetown",West Indies,England,England,West Indies,field,ODI,2017
+1029001,2017-05-05,County Ground,England,Ireland,England,Ireland,bat,ODI,2017
+1029003,2017-05-07,Lord's,England,Ireland,England,Ireland,field,ODI,2017
+1029819,2016-10-07,Shere Bangla National Stadium,Bangladesh,England,England,England,bat,ODI,2016
+1029821,2016-10-09,Shere Bangla National Stadium,Bangladesh,England,Bangladesh,England,field,ODI,2016
+1029823,2016-10-12,Zahur Ahmed Chowdhury Stadium,Bangladesh,England,England,England,field,ODI,2016
+1030219,2016-10-16,Himachal Pradesh Cricket Association Stadium,India,New Zealand,India,India,field,ODI,2016
+1030221,2016-10-20,Feroz Shah Kotla,India,New Zealand,New Zealand,India,field,ODI,2016
+1030223,2016-10-23,"Punjab Cricket Association Stadium, Mohali",India,New Zealand,India,India,field,ODI,2016
+1030225,2016-10-26,JSCA International Stadium Complex,India,New Zealand,New Zealand,New Zealand,bat,ODI,2016
+1030227,2016-10-29,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,India,New Zealand,India,India,bat,ODI,2016
+1031425,2017-05-24,Headingley,England,South Africa,England,South Africa,field,ODI,2017
+1031427,2017-05-27,The Rose Bowl,England,South Africa,England,South Africa,field,ODI,2017
+1031429,2017-05-29,Lord's,England,South Africa,South Africa,South Africa,field,ODI,2017
+1031667,2017-09-19,Old Trafford,West Indies,England,England,West Indies,bat,ODI,2017
+1031669,2017-09-21,Trent Bridge,England,West Indies,,West Indies,field,ODI,2017
+1031671,2017-09-24,County Ground,England,West Indies,England,West Indies,field,ODI,2017
+1031673,2017-09-27,Kennington Oval,West Indies,England,England,England,field,ODI,2017
+1031675,2017-09-29,The Rose Bowl,West Indies,England,England,England,field,ODI,2017
+1033361,2017-05-12,Malahide,Ireland,Bangladesh,,Ireland,field,ODI,2017
+1033363,2017-05-14,Malahide,Ireland,New Zealand,New Zealand,Ireland,field,ODI,2017
+1033365,2017-05-17,Clontarf Cricket Club Ground,Bangladesh,New Zealand,New Zealand,New Zealand,field,ODI,2017
+1033367,2017-05-19,Malahide,Ireland,Bangladesh,Bangladesh,Bangladesh,field,ODI,2017
+1033369,2017-05-21,Malahide,Ireland,New Zealand,New Zealand,Ireland,field,ODI,2017
+1033371,2017-05-24,Clontarf Cricket Club Ground,Bangladesh,New Zealand,Bangladesh,Bangladesh,field,ODI,2017
+1034819,2017-01-15,Maharashtra Cricket Association Stadium,India,England,India,India,field,ODI,2017
+1034821,2017-01-19,Barabati Stadium,India,England,India,England,field,ODI,2017
+1034823,2017-01-22,Eden Gardens,India,England,England,India,field,ODI,2017
+1041523,2017-01-18,Sheikh Kamal International Cricket Stadium,Bangladesh,South Africa,South Africa,South Africa,bat,ODI,2017
+1041525,2017-01-20,Sheikh Kamal International Cricket Stadium,Bangladesh,South Africa,South Africa,Bangladesh,bat,ODI,2017
+1043953,2016-11-18,Manuka Oval,Australia,South Africa,Australia,South Africa,bat,ODI,2016
+1043955,2016-11-20,Manuka Oval,Australia,South Africa,Australia,Australia,bat,ODI,2016
+1043961,2016-11-29,International Sports Stadium,Australia,South Africa,Australia,South Africa,field,ODI,2016
+1044203,2016-09-18,Rangiri Dambulla International Stadium,Sri Lanka,Australia,Australia,Sri Lanka,bat,ODI,2016
+1044209,2016-09-25,Khettarama Stadium,Sri Lanka,Australia,Australia,Australia,bat,ODI,2016
+1050223,2016-09-30,Sharjah Cricket Stadium,Pakistan,West Indies,Pakistan,West Indies,field,ODI,2016
+1050225,2016-10-02,Sharjah Cricket Stadium,Pakistan,West Indies,Pakistan,Pakistan,bat,ODI,2016
+1050227,2016-10-05,Sheikh Zayed Stadium,Pakistan,West Indies,Pakistan,Pakistan,bat,ODI,2016
+1050607,2016-11-11,Bert Sutcliffe Oval,New Zealand,Pakistan,New Zealand,New Zealand,bat,ODI,2016
+1050609,2016-11-13,Bert Sutcliffe Oval,New Zealand,Pakistan,New Zealand,Pakistan,bat,ODI,2016
+1050611,2016-11-17,Saxton Oval,New Zealand,Pakistan,New Zealand,New Zealand,field,ODI,2016
+1050623,2017-02-26,Eden Park No 2,New Zealand,Australia,New Zealand,Australia,bat,ODI,2017
+1050625,2017-03-02,Bay Oval,New Zealand,Australia,Australia,Australia,field,ODI,2017
+1050627,2017-03-05,Bay Oval,New Zealand,Australia,Australia,Australia,field,ODI,2017
+1059195,2016-11-15,R Premadasa Stadium,Sri Lanka,England,England,Sri Lanka,bat,ODI,2016
+1059196,2016-11-17,R Premadasa Stadium,Sri Lanka,England,England,England,bat,ODI,2016
+1059710,2016-11-14,Harare Sports Club,Zimbabwe,Sri Lanka,Sri Lanka,Sri Lanka,field,ODI,2016
+1059711,2016-11-16,Harare Sports Club,Sri Lanka,West Indies,West Indies,Sri Lanka,field,ODI,2016
+1059712,2016-11-19,Queens Sports Club,Zimbabwe,West Indies,,Zimbabwe,bat,ODI,2016
+1059713,2016-11-21,Queens Sports Club,Zimbabwe,Sri Lanka,,Zimbabwe,bat,ODI,2016
+1059714,2016-11-23,Queens Sports Club,Sri Lanka,West Indies,Sri Lanka,West Indies,field,ODI,2016
+1059715,2016-11-25,Queens Sports Club,Zimbabwe,West Indies,Zimbabwe,Zimbabwe,bat,ODI,2016
+1059716,2016-11-27,Queens Sports Club,Zimbabwe,Sri Lanka,Sri Lanka,Zimbabwe,bat,ODI,2016
+1062580,2016-11-09,Sinhalese Sports Club Ground,Sri Lanka,England,England,Sri Lanka,bat,ODI,2016
+1068737,2017-04-02,Sheikh Zayed Stadium,United Arab Emirates,Papua New Guinea,Papua New Guinea,Papua New Guinea,bat,ODI,2017
+1072310,2018-01-14,Melbourne Cricket Ground,Australia,England,England,England,field,ODI,2018
+1072311,2018-01-19,"Brisbane Cricket Ground, Woolloongabba",Australia,England,England,Australia,bat,ODI,2018
+1072312,2018-01-21,Sydney Cricket Ground,England,Australia,England,Australia,field,ODI,2018
+1072313,2018-01-26,Adelaide Oval,England,Australia,Australia,Australia,field,ODI,2018
+1072314,2018-01-28,Perth Stadium,England,Australia,England,Australia,field,ODI,2018
+1073401,2017-02-07,P Sara Oval,Sri Lanka,India,India,India,bat,ODI,2017
+1073403,2017-02-07,Nondescripts Cricket Club Ground,Pakistan,South Africa,South Africa,South Africa,bat,ODI,2017
+1073405,2017-02-08,Nondescripts Cricket Club Ground,Sri Lanka,Ireland,Sri Lanka,Sri Lanka,bat,ODI,2017
+1073408,2017-02-08,P Sara Oval,Bangladesh,Pakistan,Pakistan,Pakistan,bat,ODI,2017
+1073411,2017-02-10,P Sara Oval,India,Ireland,India,India,bat,ODI,2017
+1073413,2017-02-11,P Sara Oval,Bangladesh,South Africa,South Africa,Bangladesh,bat,ODI,2017
+1073421,2017-02-15,P Sara Oval,India,South Africa,India,South Africa,field,ODI,2017
+1073422,2017-02-15,Nondescripts Cricket Club Ground,Sri Lanka,Pakistan,Sri Lanka,Sri Lanka,field,ODI,2017
+1073423,2017-02-15,Colombo Cricket Club Ground,Bangladesh,Ireland,Bangladesh,Bangladesh,field,ODI,2017
+1073424,2017-02-17,P Sara Oval,Sri Lanka,South Africa,South Africa,Sri Lanka,bat,ODI,2017
+1073425,2017-02-17,Nondescripts Cricket Club Ground,Bangladesh,India,India,India,field,ODI,2017
+1073426,2017-02-17,Colombo Cricket Club Ground,Ireland,Pakistan,Pakistan,Pakistan,bat,ODI,2017
+1073427,2017-02-19,P Sara Oval,India,Pakistan,India,India,field,ODI,2017
+1073428,2017-02-19,Nondescripts Cricket Club Ground,Sri Lanka,Bangladesh,Sri Lanka,Bangladesh,field,ODI,2017
+1073429,2017-02-19,Colombo Cricket Club Ground,Ireland,South Africa,South Africa,Ireland,bat,ODI,2017
+1073430,2017-02-21,P Sara Oval,India,South Africa,India,South Africa,bat,ODI,2017
+1075504,2017-10-15,Diamond Oval,Bangladesh,South Africa,South Africa,Bangladesh,bat,ODI,2017
+1075505,2017-10-18,Boland Park,South Africa,Bangladesh,South Africa,Bangladesh,field,ODI,2017
+1075506,2017-10-22,Buffalo Park,South Africa,Bangladesh,South Africa,South Africa,bat,ODI,2017
+1077949,2017-04-07,Providence Stadium,West Indies,Pakistan,West Indies,West Indies,field,ODI,2017
+1077950,2017-04-09,Providence Stadium,West Indies,Pakistan,Pakistan,West Indies,field,ODI,2017
+1077951,2017-04-11,Providence Stadium,West Indies,Pakistan,Pakistan,West Indies,bat,ODI,2017
+1078659,2017-01-22,Sheikh Zayed Stadium,Hong Kong,Scotland,Hong Kong,Hong Kong,field,ODI,2017
+1078660,2017-01-24,Dubai International Cricket Stadium,United Arab Emirates,Scotland,United Arab Emirates,Scotland,bat,ODI,2017
+1078661,2017-01-26,Dubai International Cricket Stadium,United Arab Emirates,Hong Kong,United Arab Emirates,United Arab Emirates,field,ODI,2017
+1080630,2017-03-02,ICC Global Cricket Academy,United Arab Emirates,Ireland,Ireland,United Arab Emirates,field,ODI,2017
+1080631,2017-03-04,ICC Global Cricket Academy,United Arab Emirates,Ireland,Ireland,United Arab Emirates,bat,ODI,2017
+1083446,2017-03-25,Rangiri Dambulla International Stadium,Sri Lanka,Bangladesh,Bangladesh,Sri Lanka,field,ODI,2017
+1083447,2017-03-28,Rangiri Dambulla International Stadium,Sri Lanka,Bangladesh,,Sri Lanka,bat,ODI,2017
+1083448,2017-04-01,Sinhalese Sports Club Ground,Sri Lanka,Bangladesh,Sri Lanka,Bangladesh,field,ODI,2017
+1085945,2017-06-24,County Ground,New Zealand,Sri Lanka,New Zealand,New Zealand,field,ODI,2017
+1085946,2017-06-24,County Ground,England,India,India,England,field,ODI,2017
+1085947,2017-06-25,Grace Road,Pakistan,South Africa,South Africa,South Africa,field,ODI,2017
+1085948,2017-06-26,County Ground,Australia,West Indies,Australia,West Indies,bat,ODI,2017
+1085949,2017-06-27,Grace Road,England,Pakistan,England,Pakistan,field,ODI,2017
+1085951,2017-06-29,County Ground,India,West Indies,India,India,field,ODI,2017
+1085952,2017-06-29,County Ground,Australia,Sri Lanka,Australia,Australia,field,ODI,2017
+1085953,2017-07-02,County Ground,England,Sri Lanka,England,Sri Lanka,bat,ODI,2017
+1085954,2017-07-02,County Ground,Australia,New Zealand,Australia,New Zealand,bat,ODI,2017
+1085955,2017-07-02,County Ground,India,Pakistan,India,India,bat,ODI,2017
+1085956,2017-07-02,Grace Road,South Africa,West Indies,South Africa,South Africa,field,ODI,2017
+1085957,2017-07-05,County Ground,England,South Africa,England,England,bat,ODI,2017
+1085958,2017-07-05,County Ground,India,Sri Lanka,India,India,bat,ODI,2017
+1085959,2017-07-05,Grace Road,Australia,Pakistan,Australia,Australia,bat,ODI,2017
+1085960,2017-07-06,County Ground,New Zealand,West Indies,New Zealand,New Zealand,field,ODI,2017
+1085961,2017-07-08,County Ground,New Zealand,Pakistan,New Zealand,Pakistan,bat,ODI,2017
+1085962,2017-07-08,Grace Road,India,South Africa,South Africa,India,field,ODI,2017
+1085963,2017-07-09,County Ground,England,Australia,England,England,bat,ODI,2017
+1085964,2017-07-09,County Ground,Sri Lanka,West Indies,West Indies,Sri Lanka,field,ODI,2017
+1085965,2017-07-11,Grace Road,Pakistan,West Indies,West Indies,Pakistan,field,ODI,2017
+1085966,2017-07-12,County Ground,South Africa,Sri Lanka,South Africa,Sri Lanka,bat,ODI,2017
+1085967,2017-07-12,County Ground,Australia,India,Australia,Australia,field,ODI,2017
+1085968,2017-07-12,County Ground,England,New Zealand,England,England,bat,ODI,2017
+1085969,2017-07-15,County Ground,Australia,South Africa,Australia,Australia,bat,ODI,2017
+1085970,2017-07-15,County Ground,England,West Indies,England,West Indies,field,ODI,2017
+1085971,2017-07-15,County Ground,India,New Zealand,India,New Zealand,field,ODI,2017
+1085972,2017-07-15,Grace Road,Pakistan,Sri Lanka,Sri Lanka,Sri Lanka,bat,ODI,2017
+1085973,2017-07-18,County Ground,South Africa,England,England,South Africa,bat,ODI,2017
+1085974,2017-07-20,County Ground,India,Australia,India,India,bat,ODI,2017
+1085975,2017-07-23,Lord's,England,India,England,England,bat,ODI,2017
+1086063,2017-10-22,Allan Border Field,England,Australia,Australia,Australia,field,ODI,2017
+1086064,2017-10-26,International Sports Stadium,Australia,England,Australia,England,field,ODI,2017
+1089183,2017-04-04,Sheikh Zayed Stadium,United Arab Emirates,Papua New Guinea,United Arab Emirates,United Arab Emirates,bat,ODI,2017
+1089419,2017-06-15,"Grange Cricket Club Ground, Raeburn Place",Scotland,Zimbabwe,Scotland,Scotland,bat,ODI,2017
+1089420,2017-06-17,"Grange Cricket Club Ground, Raeburn Place",Scotland,Zimbabwe,Zimbabwe,Scotland,bat,ODI,2017
+1089521,2017-05-07,North-West University No1 Ground,India,Ireland,India,India,field,ODI,2017
+1089522,2017-05-09,North-West University No1 Ground,South Africa,India,India,India,field,ODI,2017
+1089524,2017-05-11,Senwes Park,South Africa,Ireland,South Africa,South Africa,bat,ODI,2017
+1089528,2017-05-17,Senwes Park,South Africa,India,South Africa,India,field,ODI,2017
+1089530,2017-05-19,North-West University No1 Ground,South Africa,Ireland,South Africa,South Africa,bat,ODI,2017
+1089533,2017-05-21,Senwes Park,South Africa,India,India,India,field,ODI,2017
+1098206,2017-06-23,"Queen's Park Oval, Port of Spain",West Indies,India,,West Indies,field,ODI,2017
+1098207,2017-06-25,"Queen's Park Oval, Port of Spain",West Indies,India,India,West Indies,field,ODI,2017
+1098208,2017-06-30,"Sir Vivian Richards Stadium, North Sound",West Indies,India,India,West Indies,field,ODI,2017
+1098209,2017-07-02,"Sir Vivian Richards Stadium, North Sound",West Indies,India,West Indies,West Indies,bat,ODI,2017
+1098210,2017-07-06,"Sabina Park, Kingston",West Indies,India,India,West Indies,bat,ODI,2017
+1104478,2017-06-30,Galle International Stadium,Sri Lanka,Zimbabwe,Zimbabwe,Sri Lanka,bat,ODI,2017
+1104479,2017-07-02,Galle International Stadium,Sri Lanka,Zimbabwe,Sri Lanka,Sri Lanka,field,ODI,2017
+1104480,2017-07-06,"Mahinda Rajapaksa International Cricket Stadium, Sooriyawewa",Sri Lanka,Zimbabwe,Sri Lanka,Sri Lanka,field,ODI,2017
+1104481,2017-07-08,"Mahinda Rajapaksa International Cricket Stadium, Sooriyawewa",Sri Lanka,Zimbabwe,Zimbabwe,Sri Lanka,bat,ODI,2017
+1104482,2017-07-10,"Mahinda Rajapaksa International Cricket Stadium, Sooriyawewa",Sri Lanka,Zimbabwe,Zimbabwe,Zimbabwe,field,ODI,2017
+1109605,2017-08-20,Rangiri Dambulla International Stadium,Sri Lanka,India,India,India,field,ODI,2017
+1109606,2017-08-24,Pallekele International Cricket Stadium,Sri Lanka,India,India,India,field,ODI,2017
+1109607,2017-08-27,Pallekele International Cricket Stadium,Sri Lanka,India,India,Sri Lanka,bat,ODI,2017
+1109608,2017-08-31,"R.Premadasa Stadium, Khettarama",India,Sri Lanka,India,India,bat,ODI,2017
+1109609,2017-09-03,"R.Premadasa Stadium, Khettarama",Sri Lanka,India,India,Sri Lanka,bat,ODI,2017
+1115775,2018-02-25,Seddon Park,England,New Zealand,New Zealand,New Zealand,field,ODI,2018
+1115776,2018-02-28,Bay Oval,New Zealand,England,England,England,field,ODI,2018
+1115777,2018-03-03,Westpac Stadium,England,New Zealand,England,New Zealand,field,ODI,2018
+1115778,2018-03-07,University Oval,England,New Zealand,New Zealand,New Zealand,field,ODI,2018
+1115779,2018-03-10,Hagley Oval,New Zealand,England,England,England,field,ODI,2018
+1115795,2017-12-20,Cobham Oval (New),West Indies,New Zealand,New Zealand,New Zealand,field,ODI,2017
+1115796,2017-12-23,Hagley Oval,New Zealand,West Indies,New Zealand,West Indies,field,ODI,2017
+1115797,2017-12-26,Hagley Oval,New Zealand,West Indies,New Zealand,New Zealand,bat,ODI,2017
+1115802,2018-01-06,Basin Reserve,New Zealand,Pakistan,New Zealand,Pakistan,field,ODI,2018
+1115803,2018-01-09,Saxton Oval,Pakistan,New Zealand,New Zealand,Pakistan,bat,ODI,2018
+1115804,2018-01-13,University Oval,New Zealand,Pakistan,New Zealand,New Zealand,bat,ODI,2018
+1115805,2018-01-16,Seddon Park,Pakistan,New Zealand,New Zealand,Pakistan,bat,ODI,2018
+1115806,2018-01-19,Basin Reserve,New Zealand,Pakistan,New Zealand,New Zealand,bat,ODI,2018
+1119496,2017-09-17,"MA Chidambaram Stadium, Chepauk",India,Australia,India,India,bat,ODI,2017
+1119497,2017-09-21,Eden Gardens,India,Australia,India,India,bat,ODI,2017
+1119498,2017-09-24,Holkar Cricket Stadium,Australia,India,India,Australia,bat,ODI,2017
+1119499,2017-09-28,M.Chinnaswamy Stadium,Australia,India,Australia,Australia,bat,ODI,2017
+1119500,2017-10-01,"Vidarbha Cricket Association Stadium, Jamtha",Australia,India,India,Australia,bat,ODI,2017
+1119537,2018-06-13,Kennington Oval,Australia,England,England,Australia,bat,ODI,2018
+1119538,2018-06-16,Sophia Gardens,England,Australia,England,Australia,field,ODI,2018
+1119539,2018-06-19,Trent Bridge,England,Australia,England,Australia,field,ODI,2018
+1119540,2018-06-21,Riverside Ground,Australia,England,England,Australia,bat,ODI,2018
+1119541,2018-06-24,Old Trafford,Australia,England,England,Australia,bat,ODI,2018
+1119546,2018-07-12,Trent Bridge,England,India,India,India,field,ODI,2018
+1119547,2018-07-14,Lord's,England,India,England,England,bat,ODI,2018
+1119548,2018-07-17,Headingley,India,England,England,England,field,ODI,2018
+1120090,2017-10-22,Wankhede Stadium,India,New Zealand,New Zealand,India,bat,ODI,2017
+1120091,2017-10-25,Maharashtra Cricket Association Stadium,New Zealand,India,India,New Zealand,bat,ODI,2017
+1120092,2017-10-29,Green Park,India,New Zealand,India,New Zealand,field,ODI,2017
+1120286,2017-10-13,Dubai International Cricket Stadium,Pakistan,Sri Lanka,Pakistan,Sri Lanka,field,ODI,2017
+1120287,2017-10-16,Sheikh Zayed Stadium,Pakistan,Sri Lanka,Pakistan,Pakistan,bat,ODI,2017
+1120288,2017-10-18,Sheikh Zayed Stadium,Sri Lanka,Pakistan,Pakistan,Sri Lanka,bat,ODI,2017
+1120289,2017-10-20,Sharjah Cricket Stadium,Sri Lanka,Pakistan,Pakistan,Sri Lanka,bat,ODI,2017
+1120290,2017-10-23,Sharjah Cricket Stadium,Sri Lanka,Pakistan,Pakistan,Sri Lanka,bat,ODI,2017
+1122279,2018-02-01,Kingsmead,South Africa,India,India,South Africa,bat,ODI,2018
+1122280,2018-02-04,SuperSport Park,South Africa,India,India,India,field,ODI,2018
+1122281,2018-02-07,Newlands,India,South Africa,India,South Africa,field,ODI,2018
+1122282,2018-02-10,The Wanderers Stadium,India,South Africa,South Africa,India,bat,ODI,2018
+1122283,2018-02-13,St George's Park,India,South Africa,India,South Africa,field,ODI,2018
+1122284,2018-02-16,SuperSport Park,South Africa,India,India,India,field,ODI,2018
+1122726,2017-12-10,Himachal Pradesh Cricket Association Stadium,India,Sri Lanka,Sri Lanka,Sri Lanka,field,ODI,2017
+1122727,2017-12-13,"Punjab Cricket Association IS Bindra Stadium, Mohali",India,Sri Lanka,India,Sri Lanka,field,ODI,2017
+1122728,2017-12-17,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,Sri Lanka,India,India,India,field,ODI,2017
+1122904,2017-10-31,Sharjah Cricket Stadium,New Zealand,Pakistan,New Zealand,New Zealand,bat,ODI,2017
+1122905,2017-11-02,Sharjah Cricket Stadium,Pakistan,New Zealand,New Zealand,Pakistan,bat,ODI,2017
+1122906,2017-11-05,Sharjah Cricket Stadium,New Zealand,Pakistan,Pakistan,New Zealand,bat,ODI,2017
+1123204,2018-02-07,Diamond Oval,India,South Africa,India,South Africa,field,ODI,2018
+1123205,2018-02-10,Senwes Park,India,South Africa,South Africa,India,bat,ODI,2018
+1124089,2017-12-06,ICC Academy,Hong Kong,Papua New Guinea,Hong Kong,Papua New Guinea,field,ODI,2017
+1126717,2018-06-09,"County Ground, New Road",England,South Africa,South Africa,England,bat,ODI,2018
+1126718,2018-06-12,County Ground,England,South Africa,England,South Africa,field,ODI,2018
+1126719,2018-06-15,St Lawrence Ground,South Africa,England,England,South Africa,bat,ODI,2018
+1126727,2018-07-07,Headingley,England,New Zealand,England,England,bat,ODI,2018
+1126728,2018-07-10,County Ground,England,New Zealand,England,England,bat,ODI,2018
+1126729,2018-07-13,Grace Road,England,New Zealand,New Zealand,England,bat,ODI,2018
+1130737,2018-01-15,"Shere Bangla National Stadium, Mirpur",Zimbabwe,Bangladesh,Bangladesh,Bangladesh,field,ODI,2018
+1130738,2018-01-17,"Shere Bangla National Stadium, Mirpur",Zimbabwe,Sri Lanka,Zimbabwe,Sri Lanka,field,ODI,2018
+1130739,2018-01-19,"Shere Bangla National Stadium, Mirpur",Bangladesh,Sri Lanka,Bangladesh,Bangladesh,bat,ODI,2018
+1130740,2018-01-21,"Shere Bangla National Stadium, Mirpur",Zimbabwe,Sri Lanka,Sri Lanka,Zimbabwe,bat,ODI,2018
+1130741,2018-01-23,"Shere Bangla National Stadium, Mirpur",Bangladesh,Zimbabwe,Bangladesh,Bangladesh,bat,ODI,2018
+1130742,2018-01-25,"Shere Bangla National Stadium, Mirpur",Bangladesh,Sri Lanka,Sri Lanka,Bangladesh,bat,ODI,2018
+1130743,2018-01-27,"Shere Bangla National Stadium, Mirpur",Sri Lanka,Bangladesh,Sri Lanka,Sri Lanka,bat,ODI,2018
+1131232,2018-03-12,Reliance Stadium,India,Australia,Australia,India,bat,ODI,2018
+1131233,2018-03-15,Reliance Stadium,Australia,India,Australia,India,field,ODI,2018
+1131274,2018-01-11,ICC Academy,United Arab Emirates,Ireland,Ireland,Ireland,field,ODI,2018
+1131275,2018-01-13,ICC Academy,Ireland,United Arab Emirates,Ireland,Ireland,bat,ODI,2018
+1131276,2018-01-16,ICC Academy,Scotland,Ireland,Ireland,Ireland,field,ODI,2018
+1131277,2018-01-18,ICC Academy,Ireland,Scotland,Ireland,Ireland,bat,ODI,2018
+1131278,2018-01-21,ICC Academy,Scotland,United Arab Emirates,Scotland,United Arab Emirates,field,ODI,2018
+1131279,2018-01-23,ICC Academy,Scotland,United Arab Emirates,United Arab Emirates,Scotland,bat,ODI,2018
+1131777,2018-04-09,"Vidarbha Cricket Association Stadium, Jamtha",India,England,England,India,bat,ODI,2018
+1131778,2018-04-12,"Vidarbha Cricket Association Stadium, Jamtha",England,India,India,England,bat,ODI,2018
+1133002,2018-03-06,Harare Sports Club,Papua New Guinea,Ireland,Ireland,Ireland,field,ODI,2018
+1133003,2018-03-06,Old Hararians,West Indies,United Arab Emirates,West Indies,West Indies,bat,ODI,2018
+1133005,2018-03-06,Bulawayo Athletic Club,Hong Kong,Scotland,Scotland,Scotland,field,ODI,2018
+1133007,2018-03-08,Old Hararians,Papua New Guinea,West Indies,West Indies,Papua New Guinea,bat,ODI,2018
+1133010,2018-03-10,Harare Sports Club,West Indies,Ireland,West Indies,Ireland,field,ODI,2018
+1133012,2018-03-10,Queens Sports Club,Zimbabwe,Hong Kong,Zimbabwe,Hong Kong,field,ODI,2018
+1133015,2018-03-12,Old Hararians,Ireland,United Arab Emirates,Ireland,United Arab Emirates,field,ODI,2018
+1133017,2018-03-12,Queens Sports Club,Zimbabwe,Scotland,,Zimbabwe,bat,ODI,2018
+1133019,2018-03-15,Queens Sports Club,Scotland,United Arab Emirates,Scotland,Scotland,bat,ODI,2018
+1133022,2018-03-16,Harare Sports Club,Zimbabwe,Ireland,Zimbabwe,Ireland,field,ODI,2018
+1133023,2018-03-17,Old Hararians,Papua New Guinea,Hong Kong,Papua New Guinea,Papua New Guinea,bat,ODI,2018
+1133025,2018-03-18,Harare Sports Club,Ireland,Scotland,Ireland,Scotland,field,ODI,2018
+1133026,2018-03-19,Harare Sports Club,Zimbabwe,West Indies,West Indies,Zimbabwe,bat,ODI,2018
+1133028,2018-03-21,Harare Sports Club,West Indies,Scotland,West Indies,Scotland,field,ODI,2018
+1133029,2018-03-22,Harare Sports Club,United Arab Emirates,Zimbabwe,United Arab Emirates,Zimbabwe,field,ODI,2018
+1134540,2018-03-04,Harare Sports Club,United Arab Emirates,Papua New Guinea,United Arab Emirates,Papua New Guinea,field,ODI,2018
+1138191,2018-03-04,Bert Sutcliffe Oval,New Zealand,West Indies,New Zealand,West Indies,field,ODI,2018
+1138192,2018-03-08,Bert Sutcliffe Oval,West Indies,New Zealand,New Zealand,New Zealand,field,ODI,2018
+1138193,2018-03-11,Hagley Oval,New Zealand,West Indies,New Zealand,West Indies,field,ODI,2018
+1138200,2018-03-22,Rangiri Dambulla International Stadium,Pakistan,Sri Lanka,Pakistan,Pakistan,bat,ODI,2018
+1138201,2018-03-24,Rangiri Dambulla International Stadium,Pakistan,Sri Lanka,Pakistan,Pakistan,bat,ODI,2018
+1140379,2018-10-10,Rangiri Dambulla International Stadium,England,Sri Lanka,,Sri Lanka,field,ODI,2018
+1140380,2018-10-13,Rangiri Dambulla International Stadium,England,Sri Lanka,England,Sri Lanka,field,ODI,2018
+1140381,2018-10-17,Pallekele International Cricket Stadium,Sri Lanka,England,England,England,field,ODI,2018
+1140382,2018-10-20,Pallekele International Cricket Stadium,Sri Lanka,England,England,England,field,ODI,2018
+1140383,2018-10-23,"R.Premadasa Stadium, Khettarama",Sri Lanka,England,Sri Lanka,Sri Lanka,bat,ODI,2018
+1142584,2018-07-29,Rangiri Dambulla International Stadium,Sri Lanka,South Africa,South Africa,Sri Lanka,bat,ODI,2018
+1142585,2018-08-01,Rangiri Dambulla International Stadium,Sri Lanka,South Africa,South Africa,Sri Lanka,bat,ODI,2018
+1142586,2018-08-05,Pallekele International Cricket Stadium,South Africa,Sri Lanka,South Africa,Sri Lanka,field,ODI,2018
+1142587,2018-08-08,Pallekele International Cricket Stadium,Sri Lanka,South Africa,Sri Lanka,South Africa,field,ODI,2018
+1142588,2018-08-12,"R.Premadasa Stadium, Khettarama",Sri Lanka,South Africa,Sri Lanka,Sri Lanka,bat,ODI,2018
+1142920,2018-07-13,Queens Sports Club,Pakistan,Zimbabwe,Pakistan,Zimbabwe,field,ODI,2018
+1142921,2018-07-16,Queens Sports Club,Zimbabwe,Pakistan,Pakistan,Zimbabwe,bat,ODI,2018
+1142922,2018-07-18,Queens Sports Club,Zimbabwe,Pakistan,Pakistan,Zimbabwe,bat,ODI,2018
+1142923,2018-07-20,Queens Sports Club,Pakistan,Zimbabwe,Pakistan,Pakistan,bat,ODI,2018
+1142924,2018-07-22,Queens Sports Club,Pakistan,Zimbabwe,Pakistan,Pakistan,bat,ODI,2018
+1144146,2018-09-30,Diamond Oval,Zimbabwe,South Africa,South Africa,South Africa,field,ODI,2018
+1144147,2018-10-03,Mangaung Oval,South Africa,Zimbabwe,South Africa,South Africa,bat,ODI,2018
+1144148,2018-10-06,Boland Park,Zimbabwe,South Africa,South Africa,Zimbabwe,bat,ODI,2018
+1144156,2019-01-19,St George's Park,South Africa,Pakistan,Pakistan,South Africa,bat,ODI,2019
+1144157,2019-01-22,Kingsmead,South Africa,Pakistan,South Africa,South Africa,field,ODI,2019
+1144158,2019-01-25,SuperSport Park,South Africa,Pakistan,South Africa,Pakistan,bat,ODI,2019
+1144159,2019-01-27,The Wanderers Stadium,South Africa,Pakistan,Pakistan,Pakistan,field,ODI,2019
+1144160,2019-01-30,Newlands,South Africa,Pakistan,South Africa,South Africa,field,ODI,2019
+1144167,2019-03-03,The Wanderers Stadium,South Africa,Sri Lanka,South Africa,South Africa,field,ODI,2019
+1144168,2019-03-06,SuperSport Park,South Africa,Sri Lanka,South Africa,Sri Lanka,field,ODI,2019
+1144169,2019-03-10,Kingsmead,South Africa,Sri Lanka,South Africa,Sri Lanka,field,ODI,2019
+1144170,2019-03-13,St George's Park,South Africa,Sri Lanka,South Africa,South Africa,field,ODI,2019
+1144171,2019-03-16,Newlands,South Africa,Sri Lanka,South Africa,Sri Lanka,bat,ODI,2019
+1144435,2018-05-04,Senwes Park,South Africa,Bangladesh,South Africa,South Africa,bat,ODI,2018
+1144436,2018-05-06,Senwes Park,Bangladesh,South Africa,South Africa,Bangladesh,bat,ODI,2018
+1144437,2018-05-09,Diamond Oval,Bangladesh,South Africa,South Africa,South Africa,field,ODI,2018
+1144438,2018-05-11,Diamond Oval,South Africa,Bangladesh,South Africa,South Africa,bat,ODI,2018
+1144439,2018-05-14,Mangaung Oval,Bangladesh,South Africa,South Africa,South Africa,field,ODI,2018
+1144483,2019-05-30,Kennington Oval,England,South Africa,England,South Africa,field,ODI,2019
+1144484,2019-05-31,Trent Bridge,Pakistan,West Indies,West Indies,West Indies,field,ODI,2019
+1144485,2019-06-01,Sophia Gardens,New Zealand,Sri Lanka,New Zealand,New Zealand,field,ODI,2019
+1144487,2019-06-02,Kennington Oval,Bangladesh,South Africa,Bangladesh,South Africa,field,ODI,2019
+1144488,2019-06-03,Trent Bridge,England,Pakistan,Pakistan,England,field,ODI,2019
+1144490,2019-06-05,The Rose Bowl,India,South Africa,India,South Africa,bat,ODI,2019
+1144491,2019-06-05,Kennington Oval,Bangladesh,New Zealand,New Zealand,New Zealand,field,ODI,2019
+1144492,2019-06-06,Trent Bridge,Australia,West Indies,Australia,West Indies,field,ODI,2019
+1144494,2019-06-08,Sophia Gardens,England,Bangladesh,England,Bangladesh,field,ODI,2019
+1144496,2019-06-09,Kennington Oval,Australia,India,India,India,bat,ODI,2019
+1144497,2019-06-10,The Rose Bowl,South Africa,West Indies,,West Indies,field,ODI,2019
+1144499,2019-06-12,The Cooper Associates County Ground,Australia,Pakistan,Australia,Pakistan,field,ODI,2019
+1144501,2019-06-14,The Rose Bowl,England,West Indies,England,England,field,ODI,2019
+1144502,2019-06-15,Kennington Oval,Australia,Sri Lanka,Australia,Sri Lanka,field,ODI,2019
+1144504,2019-06-16,Old Trafford,India,Pakistan,India,Pakistan,field,ODI,2019
+1144505,2019-06-17,The Cooper Associates County Ground,Bangladesh,West Indies,Bangladesh,Bangladesh,field,ODI,2019
+1144507,2019-06-19,Edgbaston,New Zealand,South Africa,New Zealand,New Zealand,field,ODI,2019
+1144508,2019-06-20,Trent Bridge,Australia,Bangladesh,Australia,Australia,bat,ODI,2019
+1144509,2019-06-21,Headingley,England,Sri Lanka,Sri Lanka,Sri Lanka,bat,ODI,2019
+1144511,2019-06-22,Old Trafford,New Zealand,West Indies,New Zealand,West Indies,field,ODI,2019
+1144512,2019-06-23,Lord's,Pakistan,South Africa,Pakistan,Pakistan,bat,ODI,2019
+1144514,2019-06-25,Lord's,England,Australia,Australia,England,field,ODI,2019
+1144515,2019-06-26,Edgbaston,New Zealand,Pakistan,Pakistan,New Zealand,bat,ODI,2019
+1144516,2019-06-27,Old Trafford,India,West Indies,India,India,bat,ODI,2019
+1144517,2019-06-28,Riverside Ground,South Africa,Sri Lanka,South Africa,South Africa,field,ODI,2019
+1144519,2019-06-29,Lord's,Australia,New Zealand,Australia,Australia,bat,ODI,2019
+1144520,2019-06-30,Edgbaston,England,India,England,England,bat,ODI,2019
+1144521,2019-07-01,Riverside Ground,Sri Lanka,West Indies,Sri Lanka,West Indies,field,ODI,2019
+1144522,2019-07-02,Edgbaston,Bangladesh,India,India,India,bat,ODI,2019
+1144523,2019-07-03,Riverside Ground,England,New Zealand,England,England,bat,ODI,2019
+1144525,2019-07-05,Lord's,Bangladesh,Pakistan,Pakistan,Pakistan,bat,ODI,2019
+1144526,2019-07-06,Headingley,India,Sri Lanka,India,Sri Lanka,bat,ODI,2019
+1144527,2019-07-06,Old Trafford,Australia,South Africa,South Africa,South Africa,bat,ODI,2019
+1144528,2019-07-09,Old Trafford,India,New Zealand,New Zealand,New Zealand,bat,ODI,2019
+1144529,2019-07-11,Edgbaston,Australia,England,England,Australia,bat,ODI,2019
+1144530,2019-07-14,Lord's,England,New Zealand,,New Zealand,bat,ODI,2019
+1144982,2019-02-22,W.A.C.A. Ground,Australia,New Zealand,Australia,New Zealand,field,ODI,2019
+1144983,2019-02-24,Karen Rolton Oval,Australia,New Zealand,Australia,New Zealand,field,ODI,2019
+1144984,2019-03-03,Junction Oval,Australia,New Zealand,Australia,New Zealand,bat,ODI,2019
+1144986,2018-11-04,Perth Stadium,Australia,South Africa,South Africa,South Africa,field,ODI,2018
+1144987,2018-11-09,Adelaide Oval,Australia,South Africa,Australia,South Africa,field,ODI,2018
+1144988,2018-11-11,Bellerive Oval,South Africa,Australia,South Africa,Australia,field,ODI,2018
+1144997,2019-01-12,Sydney Cricket Ground,Australia,India,Australia,Australia,bat,ODI,2019
+1144998,2019-01-15,Adelaide Oval,Australia,India,India,Australia,bat,ODI,2019
+1144999,2019-01-18,Melbourne Cricket Ground,Australia,India,India,India,field,ODI,2019
+1145892,2018-06-10,The Vineyard,New Zealand,Ireland,New Zealand,New Zealand,bat,ODI,2018
+1146720,2018-07-22,Providence Stadium,Bangladesh,West Indies,Bangladesh,Bangladesh,bat,ODI,2018
+1146721,2018-07-25,Providence Stadium,West Indies,Bangladesh,West Indies,Bangladesh,field,ODI,2018
+1146722,2018-07-28,"Warner Park, Basseterre",Bangladesh,West Indies,Bangladesh,Bangladesh,bat,ODI,2018
+1152841,2019-05-08,Kennington Oval,England,Pakistan,,England,field,ODI,2019
+1152842,2019-05-11,The Rose Bowl,England,Pakistan,England,Pakistan,field,ODI,2019
+1152843,2019-05-14,County Ground,England,Pakistan,England,England,field,ODI,2019
+1152844,2019-05-17,Trent Bridge,England,Pakistan,England,England,field,ODI,2019
+1152845,2019-05-19,Headingley,England,Pakistan,England,England,bat,ODI,2019
+1153243,2018-09-15,Dubai International Cricket Stadium,Bangladesh,Sri Lanka,Bangladesh,Bangladesh,bat,ODI,2018
+1153244,2018-09-16,Dubai International Cricket Stadium,Hong Kong,Pakistan,Pakistan,Hong Kong,bat,ODI,2018
+1153246,2018-09-18,Dubai International Cricket Stadium,India,Hong Kong,India,Hong Kong,field,ODI,2018
+1153247,2018-09-19,Dubai International Cricket Stadium,Pakistan,India,India,Pakistan,bat,ODI,2018
+1153249,2018-09-21,Dubai International Cricket Stadium,Bangladesh,India,India,India,field,ODI,2018
+1153251,2018-09-23,Dubai International Cricket Stadium,Pakistan,India,India,Pakistan,bat,ODI,2018
+1153254,2018-09-26,Sheikh Zayed Stadium,Bangladesh,Pakistan,Bangladesh,Bangladesh,bat,ODI,2018
+1153255,2018-09-28,Dubai International Cricket Stadium,Bangladesh,India,India,India,field,ODI,2018
+1153314,2018-12-09,"Shere Bangla National Stadium, Mirpur",Bangladesh,West Indies,Bangladesh,West Indies,bat,ODI,2018
+1153315,2018-12-11,"Shere Bangla National Stadium, Mirpur",Bangladesh,West Indies,West Indies,West Indies,field,ODI,2018
+1153316,2018-12-14,Sylhet International Cricket Stadium,Bangladesh,West Indies,Bangladesh,Bangladesh,field,ODI,2018
+1153635,2018-10-21,"Shere Bangla National Stadium, Mirpur",Bangladesh,Zimbabwe,Bangladesh,Bangladesh,bat,ODI,2018
+1153636,2018-10-24,Zahur Ahmed Chowdhury Stadium,Zimbabwe,Bangladesh,Bangladesh,Bangladesh,field,ODI,2018
+1153637,2018-10-26,Zahur Ahmed Chowdhury Stadium,Zimbabwe,Bangladesh,Bangladesh,Bangladesh,field,ODI,2018
+1153691,2019-01-23,McLean Park,New Zealand,India,India,New Zealand,bat,ODI,2019
+1153692,2019-01-26,Bay Oval,New Zealand,India,India,India,bat,ODI,2019
+1153693,2019-01-28,Bay Oval,New Zealand,India,India,New Zealand,bat,ODI,2019
+1153694,2019-01-31,Seddon Park,New Zealand,India,New Zealand,New Zealand,field,ODI,2019
+1153695,2019-02-03,Westpac Stadium,New Zealand,India,India,India,bat,ODI,2019
+1153840,2019-01-03,Bay Oval,New Zealand,Sri Lanka,New Zealand,New Zealand,bat,ODI,2019
+1153841,2019-01-05,Bay Oval,New Zealand,Sri Lanka,New Zealand,New Zealand,bat,ODI,2019
+1153842,2019-01-08,Saxton Oval,New Zealand,Sri Lanka,New Zealand,Sri Lanka,field,ODI,2019
+1153844,2019-02-13,McLean Park,New Zealand,Bangladesh,New Zealand,Bangladesh,bat,ODI,2019
+1153845,2019-02-16,Hagley Oval,New Zealand,Bangladesh,New Zealand,New Zealand,field,ODI,2019
+1153846,2019-02-20,University Oval,New Zealand,Bangladesh,New Zealand,Bangladesh,field,ODI,2019
+1153855,2019-01-24,McLean Park,New Zealand,India,India,India,field,ODI,2019
+1153856,2019-01-29,Bay Oval,New Zealand,India,India,India,field,ODI,2019
+1153857,2019-02-01,Seddon Park,New Zealand,India,New Zealand,New Zealand,field,ODI,2019
+1154649,2018-08-30,Kinrara Academy Oval,United Arab Emirates,Nepal,United Arab Emirates,Nepal,field,ODI,2018
+1156212,2018-09-16,"Kensington Oval, Bridgetown",South Africa,West Indies,South Africa,West Indies,field,ODI,2018
+1156214,2018-09-22,"Kensington Oval, Bridgetown",West Indies,South Africa,West Indies,West Indies,bat,ODI,2018
+1157378,2018-11-07,Sheikh Zayed Stadium,New Zealand,Pakistan,New Zealand,New Zealand,bat,ODI,2018
+1157379,2018-11-09,Sheikh Zayed Stadium,New Zealand,Pakistan,Pakistan,New Zealand,bat,ODI,2018
+1157380,2018-11-11,Dubai International Cricket Stadium,Pakistan,New Zealand,,Pakistan,bat,ODI,2018
+1157706,2018-09-11,Galle International Stadium,Sri Lanka,India,India,Sri Lanka,bat,ODI,2018
+1157707,2018-09-13,Galle International Stadium,India,Sri Lanka,India,India,bat,ODI,2018
+1157708,2018-09-16,Chilaw Marians Cricket Club Ground,India,Sri Lanka,Sri Lanka,Sri Lanka,field,ODI,2018
+1157754,2018-10-21,Barsapara Cricket Stadium,West Indies,India,India,India,field,ODI,2018
+1157755,2018-10-24,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,India,West Indies,,India,bat,ODI,2018
+1157756,2018-10-27,Maharashtra Cricket Association Stadium,West Indies,India,West Indies,India,field,ODI,2018
+1157757,2018-10-29,Brabourne Stadium,India,West Indies,India,India,bat,ODI,2018
+1157758,2018-11-01,Greenfield International Stadium,West Indies,India,India,West Indies,bat,ODI,2018
+1158066,2019-02-20,"Kensington Oval, Barbados",West Indies,England,England,West Indies,bat,ODI,2019
+1158067,2019-02-22,"Kensington Oval, Barbados",West Indies,England,West Indies,England,field,ODI,2019
+1158069,2019-02-27,"National Cricket Stadium, Grenada",West Indies,England,England,West Indies,field,ODI,2019
+1158070,2019-03-02,"Darren Sammy National Cricket Stadium, St Lucia",West Indies,England,West Indies,West Indies,field,ODI,2019
+1161014,2019-05-03,"The Village, Malahide",Ireland,England,England,England,field,ODI,2019
+1161228,2018-10-18,Kinrara Academy Oval,Pakistan,Australia,Australia,Pakistan,bat,ODI,2018
+1161229,2018-10-20,Kinrara Academy Oval,Australia,Pakistan,Australia,Australia,bat,ODI,2018
+1161230,2018-10-22,Kinrara Academy Oval,Australia,Pakistan,Australia,Australia,bat,ODI,2018
+1168016,2019-06-06,Grace Road,England,West Indies,England,England,bat,ODI,2019
+1168017,2019-06-09,"County Ground, New Road",England,West Indies,England,England,bat,ODI,2019
+1168018,2019-06-13,County Ground,England,West Indies,England,West Indies,field,ODI,2019
+1168022,2019-07-02,Grace Road,England,Australia,Australia,Australia,field,ODI,2019
+1168023,2019-07-04,Grace Road,England,Australia,Australia,England,bat,ODI,2019
+1168024,2019-07-07,St Lawrence Ground,England,Australia,Australia,England,field,ODI,2019
+1168164,2019-02-11,Senwes Park,South Africa,Sri Lanka,South Africa,Sri Lanka,field,ODI,2019
+1168165,2019-02-14,Senwes Park,South Africa,Sri Lanka,South Africa,Sri Lanka,field,ODI,2019
+1168166,2019-02-17,Senwes Park,South Africa,Sri Lanka,South Africa,Sri Lanka,bat,ODI,2019
+1168242,2019-03-02,"Rajiv Gandhi International Stadium, Uppal",India,Australia,India,Australia,bat,ODI,2019
+1168243,2019-03-05,"Vidarbha Cricket Association Stadium, Jamtha",India,Australia,India,Australia,field,ODI,2019
+1168244,2019-03-08,JSCA International Stadium Complex,India,Australia,Australia,India,field,ODI,2019
+1168245,2019-03-10,"Punjab Cricket Association IS Bindra Stadium, Mohali",India,Australia,Australia,India,bat,ODI,2019
+1168246,2019-03-13,Arun Jaitley Stadium,India,Australia,Australia,Australia,bat,ODI,2019
+1168508,2019-05-05,Castle Avenue,Ireland,West Indies,West Indies,Ireland,field,ODI,2019
+1168509,2019-05-07,Castle Avenue,Bangladesh,West Indies,Bangladesh,West Indies,bat,ODI,2019
+1168511,2019-05-11,"The Village, Malahide",Ireland,West Indies,West Indies,Ireland,bat,ODI,2019
+1168512,2019-05-13,"The Village, Malahide",Bangladesh,West Indies,Bangladesh,West Indies,bat,ODI,2019
+1168513,2019-05-15,Castle Avenue,Ireland,Bangladesh,Bangladesh,Ireland,bat,ODI,2019
+1168514,2019-05-17,"The Village, Malahide",Bangladesh,West Indies,Bangladesh,Bangladesh,field,ODI,2019
+1168517,2019-07-01,"Bready Cricket Club, Magheramason",Ireland,Zimbabwe,Ireland,Ireland,field,ODI,2019
+1168518,2019-07-04,"Civil Service Cricket Club, Stormont",Ireland,Zimbabwe,Ireland,Zimbabwe,field,ODI,2019
+1168519,2019-07-07,"Civil Service Cricket Club, Stormont",Ireland,Zimbabwe,Ireland,Zimbabwe,bat,ODI,2019
+1169332,2019-05-21,"Grange Cricket Club, Raeburn Place",Scotland,Sri Lanka,Sri Lanka,Scotland,field,ODI,2019
+1170454,2019-01-25,ICC Academy,United Arab Emirates,Nepal,United Arab Emirates,United Arab Emirates,field,ODI,2019
+1170455,2019-01-26,ICC Academy,United Arab Emirates,Nepal,Nepal,Nepal,bat,ODI,2019
+1170456,2019-01-28,ICC Academy,United Arab Emirates,Nepal,Nepal,Nepal,field,ODI,2019
+1172160,2019-02-22,Wankhede Stadium,India,England,India,England,field,ODI,2019
+1172161,2019-02-25,Wankhede Stadium,India,England,India,England,bat,ODI,2019
+1172162,2019-02-28,Wankhede Stadium,India,England,England,India,bat,ODI,2019
+1172210,2019-02-07,Dubai International Cricket Stadium,Pakistan,West Indies,West Indies,West Indies,bat,ODI,2019
+1172211,2019-02-09,ICC Academy,Pakistan,West Indies,Pakistan,Pakistan,bat,ODI,2019
+1174238,2019-03-22,Sharjah Cricket Stadium,Australia,Pakistan,Australia,Pakistan,bat,ODI,2019
+1174239,2019-03-24,Sharjah Cricket Stadium,Australia,Pakistan,Australia,Pakistan,bat,ODI,2019
+1174240,2019-03-27,Sheikh Zayed Stadium,Australia,Pakistan,Australia,Australia,bat,ODI,2019
+1174241,2019-03-29,Dubai International Cricket Stadium,Australia,Pakistan,Australia,Pakistan,field,ODI,2019
+1174242,2019-03-31,Dubai International Cricket Stadium,Australia,Pakistan,Australia,Pakistan,field,ODI,2019
+1174844,2019-04-27,Affies Park,Papua New Guinea,United States of America,Papua New Guinea,Papua New Guinea,field,ODI,2019
+1174845,2019-04-27,Wanderers Cricket Ground,Namibia,Oman,Namibia,Namibia,bat,ODI,2019
+1176432,2019-03-16,"Mahinda Rajapaksa International Cricket Stadium, Sooriyawewa",Sri Lanka,England,England,Sri Lanka,field,ODI,2019
+1176433,2019-03-18,"Mahinda Rajapaksa International Cricket Stadium, Sooriyawewa",Sri Lanka,England,England,Sri Lanka,bat,ODI,2019
+1176434,2019-03-21,FTZ Sports Complex (BOI),Sri Lanka,England,England,Sri Lanka,bat,ODI,2019
+1177015,2019-05-06,Senwes Park,South Africa,Pakistan,Pakistan,Pakistan,field,ODI,2019
+1177016,2019-05-09,Senwes Park,South Africa,Pakistan,South Africa,South Africa,field,ODI,2019
+1177017,2019-05-12,Willowmoore Park,South Africa,Pakistan,,Pakistan,field,ODI,2019
+1179272,2019-04-10,Harare Sports Club,Zimbabwe,United Arab Emirates,Zimbabwe,Zimbabwe,field,ODI,2019
+1179273,2019-04-12,Harare Sports Club,Zimbabwe,United Arab Emirates,Zimbabwe,Zimbabwe,field,ODI,2019
+1179275,2019-04-16,Harare Sports Club,Zimbabwe,United Arab Emirates,Zimbabwe,United Arab Emirates,bat,ODI,2019
+1183513,2019-10-05,Allan Border Field,Australia,Sri Lanka,Australia,Australia,bat,ODI,2019
+1183514,2019-10-07,Allan Border Field,Australia,Sri Lanka,Australia,Australia,bat,ODI,2019
+1183515,2019-10-09,Allan Border Field,Australia,Sri Lanka,Australia,Sri Lanka,bat,ODI,2019
+1183537,2020-03-13,Sydney Cricket Ground,Australia,New Zealand,Australia,Australia,bat,ODI,2020
+1185310,2020-02-04,Newlands,South Africa,England,South Africa,South Africa,field,ODI,2020
+1185311,2020-02-07,Kingsmead,South Africa,England,,England,field,ODI,2020
+1185312,2020-02-09,The Wanderers Stadium,South Africa,England,England,England,field,ODI,2020
+1185319,2020-02-29,Boland Park,South Africa,Australia,South Africa,South Africa,bat,ODI,2020
+1185320,2020-03-04,Mangaung Oval,South Africa,Australia,South Africa,Australia,bat,ODI,2020
+1185321,2020-03-07,Senwes Park,South Africa,Australia,South Africa,South Africa,field,ODI,2020
+1187021,2019-12-15,"MA Chidambaram Stadium, Chepauk",India,West Indies,West Indies,West Indies,field,ODI,2019
+1187022,2019-12-18,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,India,West Indies,India,West Indies,field,ODI,2019
+1187023,2019-12-22,Barabati Stadium,India,West Indies,India,India,field,ODI,2019
+1187027,2020-01-14,Wankhede Stadium,India,Australia,Australia,Australia,field,ODI,2020
+1187028,2020-01-17,Saurashtra Cricket Association Stadium,India,Australia,India,Australia,field,ODI,2020
+1187029,2020-01-19,M.Chinnaswamy Stadium,India,Australia,India,Australia,bat,ODI,2020
+1187682,2020-02-05,Seddon Park,New Zealand,India,New Zealand,New Zealand,field,ODI,2020
+1187683,2020-02-08,Eden Park,New Zealand,India,New Zealand,India,field,ODI,2020
+1187684,2020-02-11,Bay Oval,New Zealand,India,New Zealand,New Zealand,field,ODI,2020
+1187714,2020-01-25,Eden Park Outer Oval,New Zealand,South Africa,South Africa,South Africa,field,ODI,2020
+1187715,2020-01-27,Eden Park Outer Oval,New Zealand,South Africa,South Africa,New Zealand,bat,ODI,2020
+1187716,2020-01-30,Seddon Park,New Zealand,South Africa,South Africa,South Africa,field,ODI,2020
+1188377,2019-06-19,Sportpark Het Schootsveld,Netherlands,Zimbabwe,Netherlands,Zimbabwe,bat,ODI,2019
+1188378,2019-06-21,Sportpark Het Schootsveld,Netherlands,Zimbabwe,Netherlands,Zimbabwe,bat,ODI,2019
+1188624,2019-08-08,"Providence Stadium, Guyana",West Indies,India,,India,field,ODI,2019
+1188625,2019-08-11,"Queen's Park Oval, Trinidad",West Indies,India,India,India,bat,ODI,2019
+1188626,2019-08-14,"Queen's Park Oval, Trinidad",West Indies,India,India,West Indies,bat,ODI,2019
+1193504,2019-07-26,"R.Premadasa Stadium, Khettarama",Sri Lanka,Bangladesh,Sri Lanka,Sri Lanka,bat,ODI,2019
+1193505,2019-07-28,"R.Premadasa Stadium, Khettarama",Sri Lanka,Bangladesh,Sri Lanka,Bangladesh,bat,ODI,2019
+1193506,2019-07-31,"R.Premadasa Stadium, Khettarama",Sri Lanka,Bangladesh,Sri Lanka,Sri Lanka,bat,ODI,2019
+1196670,2019-08-14,Mannofield Park,Oman,Papua New Guinea,Oman,Oman,field,ODI,2019
+1196671,2019-08-15,Mannofield Park,Scotland,Oman,Oman,Scotland,bat,ODI,2019
+1196672,2019-08-17,Mannofield Park,Scotland,Papua New Guinea,Scotland,Scotland,field,ODI,2019
+1196673,2019-08-18,Mannofield Park,Scotland,Oman,Scotland,Oman,field,ODI,2019
+1196674,2019-08-20,Mannofield Park,Scotland,Papua New Guinea,Scotland,Papua New Guinea,field,ODI,2019
+1196675,2019-08-21,Mannofield Park,Oman,Papua New Guinea,Oman,Oman,field,ODI,2019
+1198238,2020-09-11,Old Trafford,Australia,England,Australia,England,field,ODI,2020
+1198239,2020-09-13,Old Trafford,England,Australia,England,England,bat,ODI,2020
+1198240,2020-09-16,Old Trafford,England,Australia,Australia,England,bat,ODI,2020
+1198247,2020-07-30,The Rose Bowl,Ireland,England,England,England,field,ODI,2020
+1198248,2020-08-01,The Rose Bowl,Ireland,England,England,Ireland,bat,ODI,2020
+1198249,2020-08-04,The Rose Bowl,England,Ireland,Ireland,Ireland,field,ODI,2020
+1198472,2019-09-05,"Coolidge Cricket Ground, Antigua",Australia,West Indies,Australia,West Indies,field,ODI,2019
+1198474,2019-09-11,"Sir Vivian Richards Stadium, Antigua",West Indies,Australia,Australia,West Indies,bat,ODI,2019
+1198487,2019-09-30,National Stadium,Pakistan,Sri Lanka,Pakistan,Pakistan,bat,ODI,2019
+1198488,2019-10-02,National Stadium,Pakistan,Sri Lanka,Pakistan,Sri Lanka,bat,ODI,2019
+1199225,2019-09-13,Central Broward Regional Park Stadium Turf Ground,United States of America,Papua New Guinea,United States of America,United States of America,bat,ODI,2019
+1199226,2019-09-17,Central Broward Regional Park Stadium Turf Ground,United States of America,Namibia,United States of America,Namibia,bat,ODI,2019
+1199227,2019-09-19,Central Broward Regional Park Stadium Turf Ground,United States of America,Papua New Guinea,United States of America,United States of America,bat,ODI,2019
+1199229,2019-09-22,Central Broward Regional Park Stadium Turf Ground,Namibia,Papua New Guinea,Namibia,Papua New Guinea,bat,ODI,2019
+1199230,2019-09-23,Central Broward Regional Park Stadium Turf Ground,Namibia,Papua New Guinea,Namibia,Namibia,bat,ODI,2019
+1200180,2019-10-09,Reliance Stadium,India,South Africa,India,South Africa,bat,ODI,2019
+1200181,2019-10-11,Reliance Stadium,India,South Africa,India,India,field,ODI,2019
+1200182,2019-10-14,Reliance Stadium,India,South Africa,India,India,bat,ODI,2019
+1202249,2019-11-01,"Sir Vivian Richards Stadium, North Sound",West Indies,India,West Indies,West Indies,bat,ODI,2019
+1202250,2019-11-03,"Sir Vivian Richards Stadium, Antigua",West Indies,India,India,India,bat,ODI,2019
+1202251,2019-11-06,"Sir Vivian Richards Stadium, Antigua",West Indies,India,India,West Indies,bat,ODI,2019
+1203673,2020-01-07,"Kensington Oval, Barbados",West Indies,Ireland,West Indies,Ireland,bat,ODI,2020
+1203674,2020-01-09,"Kensington Oval, Barbados",West Indies,Ireland,West Indies,Ireland,bat,ODI,2020
+1203675,2020-01-12,"National Cricket Stadium, Grenada",West Indies,Ireland,West Indies,West Indies,field,ODI,2020
+1206059,2019-12-08,Sharjah Cricket Stadium,United Arab Emirates,United States of America,United States of America,United Arab Emirates,bat,ODI,2019
+1206060,2019-12-09,Sharjah Cricket Stadium,Scotland,United States of America,United States of America,United States of America,bat,ODI,2019
+1206062,2019-12-12,ICC Academy,United Arab Emirates,United States of America,United States of America,United Arab Emirates,field,ODI,2019
+1206063,2019-12-14,ICC Academy,Scotland,United States of America,Scotland,Scotland,field,ODI,2019
+1206064,2019-12-15,ICC Academy,United Arab Emirates,Scotland,United Arab Emirates,United Arab Emirates,field,ODI,2019
+1208344,2019-12-09,Kinrara Academy Oval,England,Pakistan,England,England,bat,ODI,2019
+1208345,2019-12-12,Kinrara Academy Oval,England,Pakistan,England,England,bat,ODI,2019
+1208346,2019-12-14,Kinrara Academy Oval,England,Pakistan,,England,field,ODI,2019
+1211169,2020-01-05,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Oman,United Arab Emirates,Oman,Oman,field,ODI,2020
+1211170,2020-01-06,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Namibia,United Arab Emirates,United Arab Emirates,Namibia,field,ODI,2020
+1211171,2020-01-08,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Oman,Namibia,Namibia,Namibia,bat,ODI,2020
+1211173,2020-01-09,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Namibia,United Arab Emirates,United Arab Emirates,Namibia,bat,ODI,2020
+1213871,2020-02-22,Sinhalese Sports Club Ground,Sri Lanka,West Indies,Sri Lanka,Sri Lanka,field,ODI,2020
+1213872,2020-02-26,"Mahinda Rajapaksa International Cricket Stadium, Sooriyawewa",Sri Lanka,West Indies,Sri Lanka,West Indies,field,ODI,2020
+1213873,2020-03-01,Pallekele International Cricket Stadium,Sri Lanka,West Indies,Sri Lanka,Sri Lanka,bat,ODI,2020
+1214667,2020-03-01,Sylhet International Cricket Stadium,Bangladesh,Zimbabwe,Bangladesh,Bangladesh,bat,ODI,2020
+1214668,2020-03-03,Sylhet International Cricket Stadium,Bangladesh,Zimbabwe,Bangladesh,Bangladesh,bat,ODI,2020
+1214669,2020-03-06,Sylhet International Cricket Stadium,Bangladesh,Zimbabwe,Bangladesh,Zimbabwe,field,ODI,2020
+1215122,2020-02-05,Tribhuvan University International Cricket Ground,Nepal,Oman,Oman,Nepal,field,ODI,2020
+1215123,2020-02-06,Tribhuvan University International Cricket Ground,Oman,United States of America,Oman,Oman,field,ODI,2020
+1215124,2020-02-08,Tribhuvan University International Cricket Ground,Nepal,United States of America,Nepal,United States of America,field,ODI,2020
+1215125,2020-02-09,Tribhuvan University International Cricket Ground,Nepal,Oman,Oman,Oman,field,ODI,2020
+1215126,2020-02-11,Tribhuvan University International Cricket Ground,Oman,United States of America,Oman,United States of America,field,ODI,2020
+1215127,2020-02-12,Tribhuvan University International Cricket Ground,Nepal,United States of America,Nepal,Nepal,field,ODI,2020
+1223944,2020-10-03,Allan Border Field,New Zealand,Australia,Australia,Australia,field,ODI,2020
+1223945,2020-10-05,Allan Border Field,New Zealand,Australia,Australia,Australia,field,ODI,2020
+1223946,2020-10-07,Allan Border Field,Australia,New Zealand,Australia,New Zealand,field,ODI,2020
+1223955,2020-11-27,Sydney Cricket Ground,Australia,India,Australia,Australia,bat,ODI,2020
+1223956,2020-11-29,Sydney Cricket Ground,Australia,India,Australia,Australia,bat,ODI,2020
+1223957,2020-12-02,Manuka Oval,India,Australia,India,India,bat,ODI,2020
+1233461,2020-10-30,Rawalpindi Cricket Stadium,Pakistan,Zimbabwe,Pakistan,Pakistan,bat,ODI,2020
+1233462,2020-11-01,Rawalpindi Cricket Stadium,Zimbabwe,Pakistan,Pakistan,Zimbabwe,bat,ODI,2020
+1233463,2020-11-03,Rawalpindi Cricket Stadium,Zimbabwe,Pakistan,,Zimbabwe,bat,ODI,2020
+1233976,2021-03-20,University Oval,Bangladesh,New Zealand,New Zealand,New Zealand,field,ODI,2021
+1233977,2021-03-23,Hagley Oval,Bangladesh,New Zealand,New Zealand,New Zealand,field,ODI,2021
+1233978,2021-03-26,Basin Reserve,New Zealand,Bangladesh,New Zealand,New Zealand,bat,ODI,2021
+1239534,2021-06-29,"Riverside Ground, Chester-le-Street",Sri Lanka,England,England,England,field,ODI,2021
+1239535,2021-07-01,"Kennington Oval, London",Sri Lanka,England,England,England,field,ODI,2021
+1239536,2021-07-04,"County Ground, Bristol",Sri Lanka,England,,England,field,ODI,2021
+1239537,2021-07-08,"Sophia Gardens, Cardiff",Pakistan,England,England,England,field,ODI,2021
+1239538,2021-07-10,"Lord's, London",England,Pakistan,England,Pakistan,field,ODI,2021
+1239539,2021-07-13,"Edgbaston, Birmingham",Pakistan,England,England,England,field,ODI,2021
+1243393,2021-03-23,Maharashtra Cricket Association Stadium,India,England,India,England,field,ODI,2021
+1243394,2021-03-26,Maharashtra Cricket Association Stadium,India,England,England,England,field,ODI,2021
+1243395,2021-03-28,Maharashtra Cricket Association Stadium,India,England,India,England,field,ODI,2021
+1243908,2022-03-04,"Bay Oval, Mount Maunganui",West Indies,New Zealand,West Indies,New Zealand,field,ODI,2022
+1243909,2022-03-05,"University Oval, Dunedin",South Africa,Bangladesh,South Africa,Bangladesh,field,ODI,2022
+1243910,2022-03-05,"Seddon Park, Hamilton",Australia,England,Australia,England,field,ODI,2022
+1243911,2022-03-06,"Bay Oval, Mount Maunganui",India,Pakistan,India,India,bat,ODI,2022
+1243912,2022-03-07,"University Oval, Dunedin",Bangladesh,New Zealand,New Zealand,New Zealand,field,ODI,2022
+1243913,2022-03-08,"Bay Oval, Mount Maunganui",Pakistan,Australia,Australia,Australia,field,ODI,2022
+1243914,2022-03-09,"University Oval, Dunedin",West Indies,England,West Indies,West Indies,bat,ODI,2022
+1243915,2022-03-10,"Seddon Park, Hamilton",New Zealand,India,New Zealand,India,field,ODI,2022
+1243916,2022-03-11,"Bay Oval, Mount Maunganui",South Africa,Pakistan,South Africa,Pakistan,field,ODI,2022
+1243917,2022-03-12,"Seddon Park, Hamilton",India,West Indies,India,India,bat,ODI,2022
+1243918,2022-03-13,"Basin Reserve, Wellington",Australia,New Zealand,Australia,New Zealand,field,ODI,2022
+1243919,2022-03-14,"Bay Oval, Mount Maunganui",England,South Africa,South Africa,South Africa,field,ODI,2022
+1243920,2022-03-14,"Seddon Park, Hamilton",Bangladesh,Pakistan,Bangladesh,Pakistan,field,ODI,2022
+1243921,2022-03-15,"Basin Reserve, Wellington",West Indies,Australia,Australia,West Indies,bat,ODI,2022
+1243922,2022-03-16,"Bay Oval, Mount Maunganui",India,England,England,England,field,ODI,2022
+1243923,2022-03-17,"Seddon Park, Hamilton",New Zealand,South Africa,South Africa,New Zealand,bat,ODI,2022
+1243924,2022-03-18,"Bay Oval, Mount Maunganui",West Indies,Bangladesh,West Indies,Bangladesh,field,ODI,2022
+1243925,2022-03-19,"Eden Park, Auckland",India,Australia,Australia,Australia,field,ODI,2022
+1243926,2022-03-20,"Eden Park, Auckland",New Zealand,England,England,England,field,ODI,2022
+1243927,2022-03-21,"Seddon Park, Hamilton",West Indies,Pakistan,Pakistan,Pakistan,field,ODI,2022
+1243928,2022-03-22,"Basin Reserve, Wellington",South Africa,Australia,Australia,Australia,field,ODI,2022
+1243929,2022-03-22,"Seddon Park, Hamilton",India,Bangladesh,India,India,bat,ODI,2022
+1243930,2022-03-24,"Basin Reserve, Wellington",South Africa,West Indies,,West Indies,field,ODI,2022
+1243931,2022-03-24,"Hagley Oval, Christchurch",Pakistan,England,England,England,field,ODI,2022
+1243932,2022-03-25,"Basin Reserve, Wellington",Bangladesh,Australia,Australia,Australia,field,ODI,2022
+1243933,2022-03-26,"Hagley Oval, Christchurch",New Zealand,Pakistan,New Zealand,Pakistan,field,ODI,2022
+1243934,2022-03-27,"Basin Reserve, Wellington",England,Bangladesh,England,England,bat,ODI,2022
+1243935,2022-03-27,"Hagley Oval, Christchurch",India,South Africa,South Africa,India,bat,ODI,2022
+1243936,2022-03-30,"Basin Reserve, Wellington",Australia,West Indies,Australia,West Indies,field,ODI,2022
+1243937,2022-03-31,"Hagley Oval, Christchurch",England,South Africa,England,South Africa,field,ODI,2022
+1243938,2022-04-03,"Hagley Oval, Christchurch",Australia,England,Australia,England,field,ODI,2022
+1244022,2021-01-20,Shere Bangla National Stadium,West Indies,Bangladesh,Bangladesh,Bangladesh,field,ODI,2021
+1244023,2021-01-22,Shere Bangla National Stadium,West Indies,Bangladesh,Bangladesh,West Indies,bat,ODI,2021
+1244024,2021-01-25,Zahur Ahmed Chowdhury Stadium,Bangladesh,West Indies,Bangladesh,West Indies,field,ODI,2021
+1244524,2021-01-08,Sheikh Zayed Stadium,Ireland,United Arab Emirates,United Arab Emirates,Ireland,bat,ODI,2021
+1244525,2021-01-18,Sheikh Zayed Stadium,Ireland,United Arab Emirates,Ireland,United Arab Emirates,field,ODI,2021
+1244843,2021-01-20,Kingsmead,South Africa,Pakistan,South Africa,Pakistan,field,ODI,2021
+1244844,2021-01-23,Kingsmead,South Africa,Pakistan,South Africa,Pakistan,field,ODI,2021
+1244845,2021-01-26,Kingsmead,South Africa,Pakistan,South Africa,Pakistan,field,ODI,2021
+1249232,2021-02-23,Hagley Oval,New Zealand,England,England,New Zealand,bat,ODI,2021
+1249233,2021-02-26,University Oval,New Zealand,England,England,New Zealand,bat,ODI,2021
+1249234,2021-02-28,University Oval,England,New Zealand,New Zealand,England,bat,ODI,2021
+1249241,2021-04-04,Bay Oval,New Zealand,Australia,Australia,Australia,field,ODI,2021
+1249242,2021-04-07,"Bay Oval, Mount Maunganui",Australia,New Zealand,Australia,New Zealand,field,ODI,2021
+1249243,2021-04-10,"Bay Oval, Mount Maunganui",Australia,New Zealand,Australia,New Zealand,field,ODI,2021
+1251572,2021-04-02,"SuperSport Park, Centurion",South Africa,Pakistan,Pakistan,Pakistan,field,ODI,2021
+1251573,2021-04-04,The Wanderers Stadium,South Africa,Pakistan,South Africa,Pakistan,field,ODI,2021
+1251574,2021-04-07,"SuperSport Park, Centurion",Pakistan,South Africa,Pakistan,South Africa,field,ODI,2021
+1251950,2021-07-11,"The Village, Malahide, Dublin",Ireland,South Africa,,South Africa,field,ODI,2021
+1251951,2021-07-13,"The Village, Malahide, Dublin",Ireland,South Africa,Ireland,South Africa,field,ODI,2021
+1251952,2021-07-16,"The Village, Malahide, Dublin",South Africa,Ireland,South Africa,South Africa,bat,ODI,2021
+1251962,2021-06-02,"Sportpark Maarschalkerweerd, Utrecht",Netherlands,Ireland,Netherlands,Netherlands,bat,ODI,2021
+1251963,2021-06-04,"Sportpark Maarschalkerweerd, Utrecht",Netherlands,Ireland,Ireland,Netherlands,bat,ODI,2021
+1251964,2021-06-07,"Sportpark Maarschalkerweerd, Utrecht",Ireland,Netherlands,Netherlands,Ireland,bat,ODI,2021
+1252069,2021-03-10,Sir Vivian Richards Stadium,West Indies,Sri Lanka,West Indies,Sri Lanka,bat,ODI,2021
+1252070,2021-03-12,Sir Vivian Richards Stadium,West Indies,Sri Lanka,West Indies,West Indies,field,ODI,2021
+1252071,2021-03-14,Sir Vivian Richards Stadium,West Indies,Sri Lanka,West Indies,West Indies,field,ODI,2021
+1253267,2021-03-07,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,India,South Africa,South Africa,South Africa,field,ODI,2021
+1253268,2021-03-09,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,South Africa,India,India,India,field,ODI,2021
+1253269,2021-03-12,Bharat Ratna Shri Atal Bihari Vajpai Ekana Cricket Stadium,India,South Africa,South Africa,South Africa,field,ODI,2021
+1253270,2021-03-14,Bharat Ratna Shri Atal Bihari Vajpai Ekana Cricket Stadium,India,South Africa,South Africa,South Africa,field,ODI,2021
+1253271,2021-03-17,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,India,South Africa,South Africa,South Africa,field,ODI,2021
+1260084,2021-05-19,"Hazelaarweg, Rotterdam",Netherlands,Scotland,Netherlands,Netherlands,bat,ODI,2021
+1260085,2021-05-20,"Hazelaarweg, Rotterdam",Netherlands,Scotland,Scotland,Netherlands,bat,ODI,2021
+1260094,2021-06-27,"County Ground, Bristol",India,England,England,England,field,ODI,2021
+1260095,2021-06-30,"The Cooper Associates County Ground, Taunton",India,England,England,England,field,ODI,2021
+1260096,2021-07-03,"County Ground, New Road, Worcester",England,India,India,India,field,ODI,2021
+1260103,2021-09-16,"County Ground, Bristol",England,New Zealand,England,New Zealand,field,ODI,2021
+1260104,2021-09-19,"County Ground, New Road, Worcester",England,New Zealand,England,New Zealand,field,ODI,2021
+1260105,2021-09-21,"Grace Road, Leicester",England,New Zealand,New Zealand,New Zealand,field,ODI,2021
+1260106,2021-09-23,"County Ground, Derby",New Zealand,England,England,England,field,ODI,2021
+1260107,2021-09-26,"St Lawrence Ground, Canterbury",England,New Zealand,England,New Zealand,field,ODI,2021
+1262344,2021-05-23,"Shere Bangla National Stadium, Mirpur",Bangladesh,Sri Lanka,Bangladesh,Bangladesh,bat,ODI,2021
+1262346,2021-05-25,Sher-e-Bangla National Cricket Stadium,Bangladesh,Sri Lanka,Bangladesh,Bangladesh,bat,ODI,2021
+1262347,2021-05-28,"Shere Bangla National Stadium, Mirpur",Sri Lanka,Bangladesh,Sri Lanka,Sri Lanka,bat,ODI,2021
+1262755,2021-07-18,"R Premadasa Stadium, Colombo",Sri Lanka,India,India,Sri Lanka,bat,ODI,2021
+1262756,2021-07-20,"R Premadasa Stadium, Colombo",Sri Lanka,India,India,Sri Lanka,bat,ODI,2021
+1262757,2021-07-23,"R Premadasa Stadium, Colombo",India,Sri Lanka,Sri Lanka,India,bat,ODI,2021
+1263161,2021-07-20,"Kensington Oval, Bridgetown, Barbados",Australia,West Indies,Australia,Australia,bat,ODI,2021
+1263162,2021-07-22,"Kensington Oval, Bridgetown, Barbados",Australia,West Indies,West Indies,Australia,bat,ODI,2021
+1263163,2021-07-26,"Kensington Oval, Bridgetown, Barbados",West Indies,Australia,Australia,West Indies,bat,ODI,2021
+1263575,2022-02-03,"Manuka Oval, Canberra",Australia,England,Australia,England,field,ODI,2022
+1263576,2022-02-06,"Junction Oval, Melbourne",England,Australia,Australia,Australia,field,ODI,2022
+1263577,2022-02-08,"Junction Oval, Melbourne",England,Australia,Australia,England,bat,ODI,2022
+1263617,2021-09-21,"Ray Mitchell Oval, Harrup Park, Mackay",India,Australia,Australia,Australia,field,ODI,2021
+1263618,2021-09-24,"Ray Mitchell Oval, Harrup Park, Mackay",India,Australia,Australia,Australia,field,ODI,2021
+1263619,2021-09-26,"Ray Mitchell Oval, Harrup Park, Mackay",Australia,India,India,Australia,bat,ODI,2021
+1267325,2021-07-07,"Coolidge Cricket Ground, Antigua",Pakistan,West Indies,West Indies,West Indies,field,ODI,2021
+1267326,2021-07-09,"Coolidge Cricket Ground, Antigua",Pakistan,West Indies,West Indies,Pakistan,bat,ODI,2021
+1267327,2021-07-12,"Sir Vivian Richards Stadium, North Sound, Antigua",Pakistan,West Indies,West Indies,West Indies,field,ODI,2021
+1267328,2021-07-15,"Sir Vivian Richards Stadium, North Sound, Antigua",West Indies,Pakistan,Pakistan,Pakistan,field,ODI,2021
+1267329,2021-07-18,"Coolidge Cricket Ground, Antigua",Pakistan,West Indies,Pakistan,West Indies,field,ODI,2021
+1267677,2021-07-16,Harare Sports Club,Bangladesh,Zimbabwe,Bangladesh,Zimbabwe,field,ODI,2021
+1267678,2021-07-18,Harare Sports Club,Zimbabwe,Bangladesh,Bangladesh,Zimbabwe,bat,ODI,2021
+1267679,2021-07-20,Harare Sports Club,Zimbabwe,Bangladesh,Bangladesh,Bangladesh,field,ODI,2021
+1271627,2021-09-02,"R Premadasa Stadium, Colombo",Sri Lanka,South Africa,Sri Lanka,Sri Lanka,bat,ODI,2021
+1271628,2021-09-04,"R Premadasa Stadium, Colombo",South Africa,Sri Lanka,South Africa,South Africa,bat,ODI,2021
+1271629,2021-09-07,"R Premadasa Stadium, Colombo",Sri Lanka,South Africa,Sri Lanka,Sri Lanka,bat,ODI,2021
+1272379,2021-09-08,"Civil Service Cricket Club, Stormont, Belfast",Zimbabwe,Ireland,Zimbabwe,Ireland,field,ODI,2021
+1272380,2021-09-10,"Civil Service Cricket Club, Stormont, Belfast",Ireland,Zimbabwe,,Zimbabwe,field,ODI,2021
+1272381,2021-09-13,"Civil Service Cricket Club, Stormont, Belfast",Zimbabwe,Ireland,Ireland,Ireland,field,ODI,2021
+1273418,2021-09-07,"Coolidge Cricket Ground, Antigua",West Indies,South Africa,South Africa,West Indies,bat,ODI,2021
+1273419,2021-09-10,"Coolidge Cricket Ground, Antigua",West Indies,South Africa,South Africa,West Indies,bat,ODI,2021
+1273420,2021-09-13,"Coolidge Cricket Ground, Antigua",West Indies,South Africa,South Africa,South Africa,field,ODI,2021
+1273421,2021-09-16,"Sir Vivian Richards Stadium, North Sound, Antigua",South Africa,West Indies,South Africa,West Indies,field,ODI,2021
+1273422,2021-09-19,"Sir Vivian Richards Stadium, North Sound, Antigua",West Indies,South Africa,,West Indies,bat,ODI,2021
+1275249,2021-09-13,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),United States of America,Nepal,Nepal,United States of America,bat,ODI,2021
+1275250,2021-09-14,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Nepal,Oman,Oman,Nepal,bat,ODI,2021
+1275251,2021-09-16,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),United States of America,Oman,Oman,Oman,field,ODI,2021
+1275253,2021-09-19,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Oman,Nepal,Nepal,Nepal,field,ODI,2021
+1275255,2021-09-25,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 2),Papua New Guinea,Scotland,Scotland,Scotland,field,ODI,2021
+1275256,2021-09-26,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 2),Oman,Papua New Guinea,Oman,Papua New Guinea,field,ODI,2021
+1275257,2021-09-28,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 2),Scotland,Oman,Scotland,Scotland,bat,ODI,2021
+1275258,2021-09-29,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Papua New Guinea,Scotland,Scotland,Papua New Guinea,bat,ODI,2021
+1275259,2021-10-01,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Papua New Guinea,Oman,Oman,Papua New Guinea,bat,ODI,2021
+1275260,2021-10-02,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Scotland,Oman,,Scotland,bat,ODI,2021
+1276293,2021-09-06,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 2),Papua New Guinea,United States of America,United States of America,Papua New Guinea,bat,ODI,2021
+1276294,2021-09-09,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 2),United States of America,Papua New Guinea,United States of America,Papua New Guinea,field,ODI,2021
+1276295,2021-09-07,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Papua New Guinea,Nepal,Nepal,Papua New Guinea,bat,ODI,2021
+1276296,2021-09-10,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Nepal,Papua New Guinea,Nepal,Nepal,bat,ODI,2021
+1276907,2022-07-12,"Kennington Oval, London",England,India,India,India,field,ODI,2022
+1276908,2022-07-14,"Lord's, London",England,India,England,India,field,ODI,2022
+1276909,2022-07-17,"Old Trafford, Manchester",England,India,India,India,field,ODI,2022
+1276910,2022-07-19,"Riverside Ground, Chester-le-Street",South Africa,England,South Africa,South Africa,bat,ODI,2022
+1276911,2022-07-22,"Old Trafford, Manchester",England,South Africa,England,South Africa,field,ODI,2022
+1276912,2022-07-24,"Headingley, Leeds",South Africa,England,,South Africa,bat,ODI,2022
+1277073,2021-11-26,"SuperSport Park, Centurion",South Africa,Netherlands,,Netherlands,field,ODI,2021
+1277082,2022-01-19,"Boland Park, Paarl",South Africa,India,South Africa,South Africa,bat,ODI,2022
+1277083,2022-01-21,"Boland Park, Paarl",India,South Africa,South Africa,India,bat,ODI,2022
+1277084,2022-01-23,"Newlands, Cape Town",South Africa,India,South Africa,India,field,ODI,2022
+1277085,2022-01-08,"Sabina Park, Kingston, Jamaica",West Indies,Ireland,West Indies,Ireland,field,ODI,2022
+1277086,2022-01-13,"Sabina Park, Kingston, Jamaica",West Indies,Ireland,Ireland,Ireland,field,ODI,2022
+1277087,2022-01-16,"Sabina Park, Kingston, Jamaica",West Indies,Ireland,Ireland,Ireland,field,ODI,2022
+1277092,2022-01-28,"The Wanderers Stadium, Johannesburg",West Indies,South Africa,,South Africa,field,ODI,2022
+1277093,2022-01-31,"The Wanderers Stadium, Johannesburg",South Africa,West Indies,,West Indies,field,ODI,2022
+1277094,2022-02-03,"The Wanderers Stadium, Johannesburg",South Africa,West Indies,South Africa,South Africa,bat,ODI,2022
+1277095,2022-02-06,"The Wanderers Stadium, Johannesburg",West Indies,South Africa,South Africa,West Indies,bat,ODI,2022
+1277097,2022-03-18,"SuperSport Park, Centurion",Bangladesh,South Africa,Bangladesh,South Africa,field,ODI,2022
+1277098,2022-03-20,"The Wanderers Stadium, Johannesburg",Bangladesh,South Africa,South Africa,Bangladesh,bat,ODI,2022
+1277099,2022-03-23,"SuperSport Park, Centurion",South Africa,Bangladesh,Bangladesh,South Africa,bat,ODI,2022
+1278676,2022-02-06,"Narendra Modi Stadium, Ahmedabad",West Indies,India,India,India,field,ODI,2022
+1278677,2022-02-09,"Narendra Modi Stadium, Ahmedabad",India,West Indies,India,West Indies,field,ODI,2022
+1278678,2022-02-11,"Narendra Modi Stadium, Ahmedabad",India,West Indies,India,India,bat,ODI,2022
+1281417,2021-10-05,Harare Sports Club,Ireland,Zimbabwe,Zimbabwe,Zimbabwe,field,ODI,2021
+1281418,2021-10-07,Harare Sports Club,Ireland,Zimbabwe,Ireland,Zimbabwe,field,ODI,2021
+1281419,2021-10-09,Harare Sports Club,Zimbabwe,Ireland,Ireland,Zimbabwe,bat,ODI,2021
+1281420,2021-10-11,Harare Sports Club,Ireland,Zimbabwe,Ireland,Zimbabwe,field,ODI,2021
+1281444,2022-06-17,"VRA Ground, Amstelveen",England,Netherlands,England,Netherlands,field,ODI,2022
+1281445,2022-06-19,"VRA Ground, Amstelveen",Netherlands,England,England,Netherlands,bat,ODI,2022
+1281446,2022-06-22,"VRA Ground, Amstelveen",Netherlands,England,England,England,field,ODI,2022
+1286901,2021-11-21,"Old Hararians, Harare",Pakistan,Bangladesh,Bangladesh,Bangladesh,field,ODI,2021
+1286915,2021-11-27,"Sunrise Sports Club, Harare",Pakistan,Zimbabwe,Pakistan,Zimbabwe,field,ODI,2021
+1288209,2021-11-08,"National Stadium, Karachi",West Indies,Pakistan,West Indies,Pakistan,field,ODI,2021
+1288210,2021-11-11,"National Stadium, Karachi",West Indies,Pakistan,West Indies,Pakistan,field,ODI,2021
+1288211,2021-11-14,"National Stadium, Karachi",Pakistan,West Indies,West Indies,West Indies,field,ODI,2021
+1288313,2022-03-29,"Gaddafi Stadium, Lahore",Australia,Pakistan,Australia,Pakistan,field,ODI,2022
+1288314,2022-03-31,"Gaddafi Stadium, Lahore",Australia,Pakistan,Pakistan,Pakistan,field,ODI,2022
+1288315,2022-04-02,"Gaddafi Stadium, Lahore",Australia,Pakistan,Pakistan,Pakistan,field,ODI,2022
+1288322,2021-11-15,"Queens Sports Club, Bulawayo",Zimbabwe,Bangladesh,Bangladesh,Zimbabwe,bat,ODI,2021
+1288987,2022-03-29,"Bay Oval, Mount Maunganui",Netherlands,New Zealand,New Zealand,Netherlands,bat,ODI,2022
+1288988,2022-04-02,"Seddon Park, Hamilton",New Zealand,Netherlands,New Zealand,Netherlands,field,ODI,2022
+1288989,2022-04-04,"Seddon Park, Hamilton",New Zealand,Netherlands,New Zealand,New Zealand,bat,ODI,2022
+1289032,2022-02-12,"John Davies Oval, Queenstown",New Zealand,India,New Zealand,India,field,ODI,2022
+1289033,2022-02-15,"John Davies Oval, Queenstown",India,New Zealand,New Zealand,India,bat,ODI,2022
+1289034,2022-02-18,"John Davies Oval, Queenstown",India,New Zealand,New Zealand,New Zealand,field,ODI,2022
+1289035,2022-02-22,"John Davies Oval, Queenstown",New Zealand,India,New Zealand,India,field,ODI,2022
+1289036,2022-02-24,"John Davies Oval, Queenstown",New Zealand,India,India,New Zealand,bat,ODI,2022
+1290881,2021-11-26,"Wanderers Cricket Ground, Windhoek",Namibia,Oman,Namibia,Oman,field,ODI,2021
+1294969,2022-01-16,Pallekele International Cricket Stadium,Zimbabwe,Sri Lanka,Sri Lanka,Zimbabwe,bat,ODI,2022
+1294970,2022-01-18,Pallekele International Cricket Stadium,Zimbabwe,Sri Lanka,Zimbabwe,Zimbabwe,bat,ODI,2022
+1294971,2022-01-21,Pallekele International Cricket Stadium,Sri Lanka,Zimbabwe,Sri Lanka,Sri Lanka,bat,ODI,2022
+1299586,2022-02-05,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Oman,United Arab Emirates,United Arab Emirates,United Arab Emirates,field,ODI,2022
+1299587,2022-02-06,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Oman,United Arab Emirates,United Arab Emirates,United Arab Emirates,field,ODI,2022
+1299588,2022-02-08,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Oman,United Arab Emirates,,United Arab Emirates,field,ODI,2022
+1301328,2022-07-11,"County Ground, Northampton",South Africa,England,England,South Africa,bat,ODI,2022
+1301329,2022-07-15,"County Ground, Bristol",England,South Africa,England,England,bat,ODI,2022
+1301330,2022-07-18,"Grace Road, Leicester",England,South Africa,England,South Africa,field,ODI,2022
+1301337,2022-09-18,"County Ground, Hove",England,India,India,India,field,ODI,2022
+1301338,2022-09-21,"St Lawrence Ground, Canterbury",India,England,India,England,field,ODI,2022
+1301339,2022-09-24,"Lord's, London",India,England,India,England,field,ODI,2022
+1302349,2022-05-31,"VRA Ground, Amstelveen",Netherlands,West Indies,West Indies,West Indies,field,ODI,2022
+1302350,2022-06-02,"VRA Ground, Amstelveen",Netherlands,West Indies,West Indies,Netherlands,bat,ODI,2022
+1302351,2022-06-04,"VRA Ground, Amstelveen",West Indies,Netherlands,West Indies,West Indies,bat,ODI,2022
+1302616,2022-03-05,"ICC Academy, Dubai",Oman,United Arab Emirates,Oman,United Arab Emirates,field,ODI,2022
+1302617,2022-03-06,"ICC Academy, Dubai",Namibia,Oman,Namibia,Namibia,bat,ODI,2022
+1302618,2022-03-08,"ICC Academy, Dubai",Namibia,United Arab Emirates,United Arab Emirates,United Arab Emirates,field,ODI,2022
+1302619,2022-03-09,"ICC Academy, Dubai",Oman,United Arab Emirates,Oman,Oman,bat,ODI,2022
+1302620,2022-03-11,Sharjah Cricket Stadium,Namibia,Oman,Oman,Namibia,bat,ODI,2022
+1302621,2022-03-12,Sharjah Cricket Stadium,United Arab Emirates,Namibia,United Arab Emirates,Namibia,field,ODI,2022
+1302622,2022-03-14,Dubai International Cricket Stadium,Oman,Namibia,Namibia,Oman,bat,ODI,2022
+1302623,2022-03-15,Sharjah Cricket Stadium,Papua New Guinea,United Arab Emirates,United Arab Emirates,Papua New Guinea,bat,ODI,2022
+1302624,2022-03-16,Sharjah Cricket Stadium,Papua New Guinea,Nepal,Nepal,Papua New Guinea,bat,ODI,2022
+1302625,2022-03-18,Dubai International Cricket Stadium,United Arab Emirates,Nepal,United Arab Emirates,United Arab Emirates,bat,ODI,2022
+1302626,2022-03-19,Dubai International Cricket Stadium,United Arab Emirates,Papua New Guinea,Papua New Guinea,United Arab Emirates,bat,ODI,2022
+1302627,2022-03-21,Dubai International Cricket Stadium,United Arab Emirates,Nepal,United Arab Emirates,Nepal,field,ODI,2022
+1302628,2022-03-22,Dubai International Cricket Stadium,Papua New Guinea,Nepal,Nepal,Nepal,field,ODI,2022
+1303309,2022-07-10,"The Village, Malahide, Dublin",Ireland,New Zealand,New Zealand,New Zealand,field,ODI,2022
+1303310,2022-07-12,"The Village, Malahide, Dublin",Ireland,New Zealand,New Zealand,New Zealand,field,ODI,2022
+1303311,2022-07-15,"The Village, Malahide, Dublin",New Zealand,Ireland,New Zealand,New Zealand,bat,ODI,2022
+1305496,2022-03-25,"Tribhuvan University International Cricket Ground, Kirtipur",Papua New Guinea,Nepal,Papua New Guinea,Nepal,field,ODI,2022
+1305497,2022-03-26,"Tribhuvan University International Cricket Ground, Kirtipur",Nepal,Papua New Guinea,Papua New Guinea,Nepal,bat,ODI,2022
+1307296,2022-06-14,Pallekele International Cricket Stadium,Sri Lanka,Australia,Australia,Sri Lanka,bat,ODI,2022
+1307297,2022-06-16,Pallekele International Cricket Stadium,Sri Lanka,Australia,Sri Lanka,Australia,field,ODI,2022
+1307298,2022-06-19,"R Premadasa Stadium, Colombo",Australia,Sri Lanka,Sri Lanka,Australia,bat,ODI,2022
+1307299,2022-06-21,"R Premadasa Stadium, Colombo",Sri Lanka,Australia,Sri Lanka,Australia,field,ODI,2022
+1307300,2022-06-24,"R Premadasa Stadium, Colombo",Sri Lanka,Australia,Australia,Sri Lanka,bat,ODI,2022
+1307479,2022-07-31,"Grange Cricket Club Ground, Raeburn Place, Edinburgh",Scotland,New Zealand,New Zealand,Scotland,bat,ODI,2022
+1308233,2022-11-04,"Gaddafi Stadium, Lahore",Pakistan,Ireland,Pakistan,Pakistan,bat,ODI,2022
+1308234,2022-11-06,"Gaddafi Stadium, Lahore",Ireland,Pakistan,Pakistan,Ireland,bat,ODI,2022
+1308235,2022-11-09,"Gaddafi Stadium, Lahore",Ireland,Pakistan,Pakistan,Ireland,bat,ODI,2022
+1308244,2022-04-09,Dubai International Cricket Stadium,Scotland,Papua New Guinea,Scotland,Papua New Guinea,field,ODI,2022
+1308245,2022-04-10,Dubai International Cricket Stadium,Scotland,Oman,Scotland,Scotland,bat,ODI,2022
+1308246,2022-04-12,Dubai International Cricket Stadium,Papua New Guinea,Oman,Oman,Papua New Guinea,bat,ODI,2022
+1308247,2022-04-13,Dubai International Cricket Stadium,Scotland,Papua New Guinea,Scotland,Scotland,bat,ODI,2022
+1308248,2022-04-15,Dubai International Cricket Stadium,Oman,Scotland,Scotland,Oman,bat,ODI,2022
+1308249,2022-04-16,Dubai International Cricket Stadium,Oman,Papua New Guinea,Oman,Oman,bat,ODI,2022
+1310984,2022-06-01,"Southend Club Cricket Stadium, Karachi",Sri Lanka,Pakistan,Pakistan,Sri Lanka,bat,ODI,2022
+1310985,2022-06-03,"Southend Club Cricket Stadium, Karachi",Pakistan,Sri Lanka,Pakistan,Pakistan,bat,ODI,2022
+1310986,2022-06-05,"Southend Club Cricket Stadium, Karachi",Sri Lanka,Pakistan,Sri Lanka,Sri Lanka,bat,ODI,2022
+1311737,2022-08-16,"Hazelaarweg, Rotterdam",Pakistan,Netherlands,Pakistan,Pakistan,bat,ODI,2022
+1311738,2022-08-18,"Hazelaarweg, Rotterdam",Netherlands,Pakistan,Pakistan,Netherlands,bat,ODI,2022
+1311739,2022-08-21,"Hazelaarweg, Rotterdam",Pakistan,Netherlands,Pakistan,Pakistan,bat,ODI,2022
+1312798,2022-05-28,"Choice Moosa Stadium, Pearland",United States of America,Scotland,United States of America,United States of America,bat,ODI,2022
+1312799,2022-05-29,"Choice Moosa Stadium, Pearland",Scotland,United States of America,Scotland,Scotland,bat,ODI,2022
+1312800,2022-05-31,"Moosa Cricket Stadium, Pearland",United Arab Emirates,Scotland,Scotland,United Arab Emirates,bat,ODI,2022
+1312801,2022-06-01,"Moosa Cricket Stadium, Pearland",United Arab Emirates,United States of America,United States of America,United Arab Emirates,bat,ODI,2022
+1312802,2022-06-03,"Moosa Cricket Stadium, Pearland",Scotland,United Arab Emirates,United Arab Emirates,Scotland,bat,ODI,2022
+1312803,2022-06-04,"Moosa Cricket Stadium, Pearland",United States of America,United Arab Emirates,United Arab Emirates,United Arab Emirates,field,ODI,2022
+1312804,2022-06-08,"Moosa Cricket Stadium, Pearland",United States of America,Oman,United States of America,Oman,field,ODI,2022
+1312805,2022-06-09,"Moosa Cricket Stadium, Pearland",Oman,Nepal,Oman,Oman,bat,ODI,2022
+1312806,2022-06-11,"Moosa Cricket Stadium, Pearland",Nepal,United States of America,,Nepal,bat,ODI,2022
+1312807,2022-06-12,"Moosa Cricket Stadium, Pearland",Oman,United States of America,Oman,Oman,bat,ODI,2022
+1312808,2022-06-14,"Moosa Cricket Stadium, Pearland",Oman,Nepal,Nepal,Oman,bat,ODI,2022
+1312809,2022-06-15,"Moosa Cricket Stadium, Pearland",United States of America,Nepal,United States of America,Nepal,field,ODI,2022
+1315038,2022-06-08,Multan Cricket Stadium,West Indies,Pakistan,Pakistan,West Indies,bat,ODI,2022
+1315039,2022-06-10,Multan Cricket Stadium,Pakistan,West Indies,Pakistan,Pakistan,bat,ODI,2022
+1315040,2022-06-12,Multan Cricket Stadium,Pakistan,West Indies,Pakistan,Pakistan,bat,ODI,2022
+1316645,2022-06-11,"Castle Avenue, Dublin",Ireland,South Africa,South Africa,Ireland,bat,ODI,2022
+1316646,2022-06-14,"Castle Avenue, Dublin",Ireland,South Africa,South Africa,South Africa,field,ODI,2022
+1316647,2022-06-17,"Castle Avenue, Dublin",South Africa,Ireland,South Africa,South Africa,bat,ODI,2022
+1317152,2022-07-10,"Providence Stadium, Guyana",West Indies,Bangladesh,Bangladesh,Bangladesh,field,ODI,2022
+1317153,2022-07-13,"Providence Stadium, Guyana",West Indies,Bangladesh,Bangladesh,Bangladesh,field,ODI,2022
+1317154,2022-07-16,"Providence Stadium, Guyana",West Indies,Bangladesh,Bangladesh,Bangladesh,field,ODI,2022
+1317476,2022-08-28,"Tony Ireland Stadium, Townsville",Zimbabwe,Australia,Australia,Australia,field,ODI,2022
+1317477,2022-08-31,"Tony Ireland Stadium, Townsville",Zimbabwe,Australia,Australia,Australia,field,ODI,2022
+1317478,2022-09-03,"Riverway Stadium, Townsville",Australia,Zimbabwe,Zimbabwe,Zimbabwe,field,ODI,2022
+1317479,2022-09-06,"Cazaly's Stadium, Cairns",New Zealand,Australia,Australia,Australia,field,ODI,2022
+1317480,2022-09-08,"Cazaly's Stadium, Cairns",Australia,New Zealand,Australia,New Zealand,field,ODI,2022
+1317481,2022-09-11,"Cazaly's Stadium, Cairns",Australia,New Zealand,Australia,New Zealand,field,ODI,2022
+1317489,2022-11-17,Adelaide Oval,England,Australia,Australia,Australia,field,ODI,2022
+1317490,2022-11-19,Sydney Cricket Ground,Australia,England,Australia,Australia,bat,ODI,2022
+1317491,2022-11-22,Melbourne Cricket Ground,Australia,England,Australia,England,field,ODI,2022
+1317900,2022-07-22,"Queen's Park Oval, Port of Spain, Trinidad",India,West Indies,India,West Indies,field,ODI,2022
+1317901,2022-07-24,"Queen's Park Oval, Port of Spain, Trinidad",West Indies,India,India,West Indies,bat,ODI,2022
+1317902,2022-07-27,"Queen's Park Oval, Port of Spain, Trinidad",India,West Indies,India,India,bat,ODI,2022
+1317911,2022-08-17,"Kensington Oval, Bridgetown, Barbados",New Zealand,West Indies,West Indies,West Indies,field,ODI,2022
+1317912,2022-08-19,"Kensington Oval, Bridgetown, Barbados",New Zealand,West Indies,New Zealand,West Indies,field,ODI,2022
+1317913,2022-08-21,"Kensington Oval, Bridgetown, Barbados",West Indies,New Zealand,New Zealand,New Zealand,field,ODI,2022
+1319712,2022-07-01,Pallekele International Cricket Stadium,Sri Lanka,India,India,Sri Lanka,bat,ODI,2022
+1319713,2022-07-04,Pallekele International Cricket Stadium,Sri Lanka,India,India,India,field,ODI,2022
+1319714,2022-07-07,Pallekele International Cricket Stadium,India,Sri Lanka,India,Sri Lanka,field,ODI,2022
+1322031,2022-07-11,"Cambusdoon New Ground, Ayr",Namibia,Nepal,Namibia,Namibia,bat,ODI,2022
+1322032,2022-07-13,"Titwood, Glasgow",Scotland,Nepal,Nepal,Nepal,field,ODI,2022
+1322033,2022-07-14,"Titwood, Glasgow",Namibia,Scotland,Scotland,Scotland,field,ODI,2022
+1322034,2022-07-16,"Cambusdoon New Ground, Ayr",Namibia,Nepal,Namibia,Namibia,bat,ODI,2022
+1322035,2022-07-17,"Titwood, Glasgow",Nepal,Scotland,Scotland,Scotland,field,ODI,2022
+1322036,2022-08-10,"Mannofield Park, Aberdeen",Scotland,United Arab Emirates,Scotland,Scotland,bat,ODI,2022
+1322037,2022-08-11,"Mannofield Park, Aberdeen",United Arab Emirates,United States of America,United States of America,United Arab Emirates,bat,ODI,2022
+1322038,2022-08-13,"Mannofield Park, Aberdeen",United States of America,Scotland,Scotland,Scotland,field,ODI,2022
+1322039,2022-08-14,"Mannofield Park, Aberdeen",Scotland,United Arab Emirates,Scotland,United Arab Emirates,field,ODI,2022
+1322041,2022-08-17,"Mannofield Park, Aberdeen",Scotland,United States of America,United States of America,United States of America,field,ODI,2022
+1322278,2022-11-25,"Eden Park, Auckland",India,New Zealand,New Zealand,New Zealand,field,ODI,2022
+1322279,2022-11-27,"Seddon Park, Hamilton",India,New Zealand,,New Zealand,field,ODI,2022
+1322280,2022-11-30,"Hagley Oval, Christchurch",India,New Zealand,,New Zealand,field,ODI,2022
+1322341,2022-12-11,"Basin Reserve, Wellington",Bangladesh,New Zealand,New Zealand,Bangladesh,bat,ODI,2022
+1322342,2022-12-14,"McLean Park, Napier",Bangladesh,New Zealand,,Bangladesh,bat,ODI,2022
+1322343,2022-12-17,"Seddon Park, Hamilton",New Zealand,Bangladesh,,Bangladesh,field,ODI,2022
+1322359,2023-03-25,"Eden Park, Auckland",New Zealand,Sri Lanka,New Zealand,Sri Lanka,field,ODI,2023
+1322361,2023-03-31,"Seddon Park, Hamilton",Sri Lanka,New Zealand,New Zealand,Sri Lanka,bat,ODI,2023
+1323292,2022-08-05,Harare Sports Club,Bangladesh,Zimbabwe,Zimbabwe,Zimbabwe,field,ODI,2022
+1323293,2022-08-07,Harare Sports Club,Bangladesh,Zimbabwe,Zimbabwe,Zimbabwe,field,ODI,2022
+1323294,2022-08-10,Harare Sports Club,Bangladesh,Zimbabwe,Bangladesh,Zimbabwe,field,ODI,2022
+1325549,2022-08-18,Harare Sports Club,Zimbabwe,India,India,India,field,ODI,2022
+1325550,2022-08-20,Harare Sports Club,Zimbabwe,India,India,India,field,ODI,2022
+1325551,2022-08-22,Harare Sports Club,India,Zimbabwe,India,India,bat,ODI,2022
+1327509,2022-10-06,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",South Africa,India,South Africa,India,field,ODI,2022
+1327510,2022-10-09,"JSCA International Stadium Complex, Ranchi",South Africa,India,India,South Africa,bat,ODI,2022
+1327511,2022-10-11,"Arun Jaitley Stadium, Delhi",South Africa,India,India,India,field,ODI,2022
+1328485,2022-08-22,"VRA Ground, Amstelveen",Netherlands,Ireland,Ireland,Ireland,field,ODI,2022
+1328486,2022-08-24,"VRA Ground, Amstelveen",Ireland,Netherlands,Ireland,Netherlands,field,ODI,2022
+1328487,2022-08-26,"Sportpark Westvliet, The Hague",Netherlands,Ireland,Ireland,Netherlands,bat,ODI,2022
+1331365,2022-09-11,"Amini Park, Port Moresby",United States of America,Papua New Guinea,,Papua New Guinea,field,ODI,2022
+1331366,2022-09-13,"Amini Park, Port Moresby",Papua New Guinea,United States of America,Papua New Guinea,United States of America,field,ODI,2022
+1331367,2022-09-15,"Amini Park, Port Moresby",Namibia,United States of America,Namibia,Namibia,bat,ODI,2022
+1331368,2022-09-17,"Amini Park, Port Moresby",Namibia,United States of America,Namibia,United States of America,field,ODI,2022
+1331369,2022-09-20,"Amini Park, Port Moresby",Namibia,Papua New Guinea,Namibia,Namibia,bat,ODI,2022
+1331370,2022-09-21,"Amini Park, Port Moresby",Namibia,Papua New Guinea,Namibia,Namibia,bat,ODI,2022
+1334412,2022-09-19,"Sir Vivian Richards Stadium, North Sound, Antigua",West Indies,New Zealand,New Zealand,New Zealand,field,ODI,2022
+1334413,2022-09-22,"Sir Vivian Richards Stadium, North Sound, Antigua",West Indies,New Zealand,New Zealand,West Indies,bat,ODI,2022
+1334414,2022-09-25,"Sir Vivian Richards Stadium, North Sound, Antigua",New Zealand,West Indies,West Indies,New Zealand,bat,ODI,2022
+1336052,2023-09-08,"Sophia Gardens, Cardiff",England,New Zealand,New Zealand,New Zealand,field,ODI,2023
+1336053,2023-09-10,"The Rose Bowl, Southampton",England,New Zealand,England,New Zealand,field,ODI,2023
+1336054,2023-09-13,"Kennington Oval, London",England,New Zealand,England,New Zealand,field,ODI,2023
+1336055,2023-09-15,"Lord's, London",England,New Zealand,England,England,bat,ODI,2023
+1336077,2023-07-12,"County Ground, Bristol",Australia,England,England,Australia,bat,ODI,2023
+1336078,2023-07-16,"The Rose Bowl, Southampton",Australia,England,Australia,England,field,ODI,2023
+1336079,2023-07-18,"The Cooper Associates County Ground, Taunton",England,Australia,England,Australia,field,ODI,2023
+1336083,2023-09-09,"Riverside Ground, Chester-le-Street",Sri Lanka,England,England,England,field,ODI,2023
+1336084,2023-09-12,"County Ground, Northampton",Sri Lanka,England,,England,field,ODI,2023
+1336085,2023-09-14,"Grace Road, Leicester",England,Sri Lanka,England,Sri Lanka,field,ODI,2023
+1336129,2023-09-23,"Trent Bridge, Nottingham",England,Ireland,England,Ireland,field,ODI,2023
+1336130,2023-09-26,"County Ground, Bristol",England,Ireland,,Ireland,field,ODI,2023
+1339595,2023-01-27,"Mangaung Oval, Bloemfontein",South Africa,England,South Africa,South Africa,bat,ODI,2023
+1339596,2023-01-29,"Mangaung Oval, Bloemfontein",England,South Africa,South Africa,South Africa,field,ODI,2023
+1339597,2023-02-01,"Diamond Oval, Kimberley",England,South Africa,England,South Africa,field,ODI,2023
+1339602,2023-03-18,"Buffalo Park, East London",West Indies,South Africa,West Indies,West Indies,bat,ODI,2023
+1339603,2023-03-21,"Senwes Park, Potchefstroom",West Indies,South Africa,South Africa,South Africa,field,ODI,2023
+1339607,2023-03-31,"Willowmoore Park, Benoni",Netherlands,South Africa,South Africa,South Africa,field,ODI,2023
+1339608,2023-04-02,"The Wanderers Stadium, Johannesburg",South Africa,Netherlands,South Africa,Netherlands,field,ODI,2023
+1339611,2023-01-09,"National Stadium, Karachi",New Zealand,Pakistan,Pakistan,Pakistan,field,ODI,2023
+1339612,2023-01-11,"National Stadium, Karachi",New Zealand,Pakistan,New Zealand,New Zealand,bat,ODI,2023
+1339613,2023-01-13,"National Stadium, Karachi",Pakistan,New Zealand,New Zealand,Pakistan,bat,ODI,2023
+1339619,2023-04-27,Rawalpindi Cricket Stadium,New Zealand,Pakistan,Pakistan,Pakistan,field,ODI,2023
+1339620,2023-04-29,Rawalpindi Cricket Stadium,New Zealand,Pakistan,Pakistan,Pakistan,field,ODI,2023
+1339621,2023-05-03,"National Stadium, Karachi",Pakistan,New Zealand,Pakistan,New Zealand,field,ODI,2023
+1339622,2023-05-05,"National Stadium, Karachi",Pakistan,New Zealand,Pakistan,New Zealand,field,ODI,2023
+1339623,2023-05-07,"National Stadium, Karachi",New Zealand,Pakistan,New Zealand,New Zealand,bat,ODI,2023
+1340845,2022-12-04,"Shere Bangla National Stadium, Mirpur",India,Bangladesh,Bangladesh,Bangladesh,field,ODI,2022
