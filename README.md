@@ -10,7 +10,7 @@ Select a sport in the sidebar. Choose a season, competition and metric, search f
 ## Data coverage
 - Soccer — 108,962 club-perspective match rows (OpenFootball, CC0). Match points recalculated as 3 for wins, 1 for draws, 0 for losses.
 - NBA — 2,673 player-season totals (BoxScore Lab, CC BY 4.0); incomplete years.
-- Cricket — 208 **selected leading player-season records** across 19 IPL seasons (2007/08–2026), derived from Cricsheet using [IPL Analytics ETL](https://github.com/VeeraMounika/IPL-analytics-ETL). Curated sample, **not a complete player archive**.
+- Cricket — 208 **selected leading IPL player-season records** across 19 IPL seasons, plus 16 men’s international ODI matches (32 team-perspective observations) (2007/08–2026), derived from Cricsheet using [IPL Analytics ETL](https://github.com/VeeraMounika/IPL-analytics-ETL). Curated sample, **not a complete player archive**.
 - F1 — 27,687 driver race-result rows (F1DB, CC BY 4.0).
 
 The included data is limited by its sources; rankings of curated or incomplete data must not be misrepresented as official full-league rankings. The four formulas are educational and not predictions.
@@ -31,3 +31,6 @@ GitHub Pages hosts the JSON data automatically. If opening the **repository's ra
 
 ## Academic integrity
 Substantial AI collaboration assisted this web edition; see [PROJECT_EVIDENCE.md](PROJECT_EVIDENCE.md). The uploaded assessment sheet sets the Major Project to **Level 3 AI Collaboration** and the separate supervised validation to **Level 1 No AI**. Student review and independent validation remain required.
+
+## International ODI view (final project extension)
+Choose Cricket, then **International ODIs · Team results** to compare countries using actual observed outcomes, total wins and win percentages. This small 16-match selection (2009–2014) is sourced from original Cricsheet ODI JSON under ODC-BY 1.0; it is not complete international coverage and does not contain Tests or T20Is. IPL player metrics are kept separate from international team outcomes. See PROJECT_EVIDENCE.md.\n
