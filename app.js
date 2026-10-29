@@ -417,12 +417,27 @@ function renderAnalyticalCharts(records,leaders,metric){
   }
   const values=[...byYear].sort((a,b)=>a[0].localeCompare(b[0],undefined,{numeric:true}))
     .map(([year,x])=>({year,value:averaged(metric)?x.sum/x.n:x.sum,n:x.n}));
+  const isFootballSnapshot=sport==='Soccer'&&footballMode==='players';
   const isCareerSnapshot=sport==='Cricket'&&records.length&&records.every(r=>r.record_kind==='international_player_career');
-  $('timeChartTitle').textContent=isCareerSnapshot?'The same player, three formats':'When did performance change?';
-  $('timeChartNote').textContent=isCareerSnapshot?'Historical career snapshot across formats; no season-by-season player totals are available.':values.length
+  $('timeChartTitle').textContent=isFootballSnapshot?'2024/25 scoring profile':isCareerSnapshot?'The same player, three formats':'When did performance change?';
+  $('timeChartNote').textContent=isFootballSnapshot?'Goals and assists for the selected player in 2024/25. No match-by-match player data in this source.':isCareerSnapshot?'Historical career snapshot across formats; no season-by-season player totals are available.':values.length
     ? 'Yearly '+(averaged(metric)?'average':'total')+' of '+label.toLowerCase()+' · '+values.length+' observed years'
     : 'No available numeric values for this metric. Change sport, season or metric.';
-  if(isCareerSnapshot){
+  if(isFootballSnapshot){
+    const focus=leaders[0],raw=focus?records.find(r=>r.competitor_id===focus.id):null;
+    if(!raw){$('timeChart').innerHTML='<p class="chart-empty">Choose a player with statistics to display a scoring profile.</p>';}
+    else{
+      const scores=[{name:'GOALS',v:raw.goals||0},{name:'ASSISTS',v:raw.assists||0}];
+      const high=Math.max(1,...scores.map(x=>x.v));
+      $('timeChart').innerHTML=fnSvg(scores.map((d,i)=>{
+        const y=55+i*78,w=430*d.v/high;
+        return '<text x="65" y="'+(y+20)+'" class="fn-axis" text-anchor="end">'+d.name+'</text>'+
+          '<rect x="81" y="'+y+'" width="430" height="29" fill="var(--chart-track)"/>'+
+          '<rect class="fn-duel-a" x="81" y="'+y+'" width="'+w+'" height="29"/>'+
+          '<text x="'+(w+92)+'" y="'+(y+21)+'" class="fn-axis">'+number(d.v)+'</text>';
+      }).join(''),640,245,'2024/25 goals and assists for '+focus.name);
+    }
+  }else if(isCareerSnapshot){
     const focus=leaders[0];
     const career=focus?all.filter(r=>r.sport==='Cricket'&&r.record_kind==='international_player_career'&&r.competitor_id===focus.id):[];
     const chosen=career.map(r=>({name:r.competition.replace('International ','').replace(' Players',''),v:metricValue(r,metric)}))
@@ -932,6 +947,9 @@ function openSport(which){
   if(sport==='Cricket')selectCricketView('International ODI');
   window.scrollTo?.({top:0,behavior:'smooth'});
 }
+document.querySelectorAll('.sidebar a[href^="#"]').forEach(link=>{
+  link.addEventListener('click',()=>{if(homeActive)openSport('Soccer');});
+});
 document.querySelector('[data-home]').addEventListener('click',openHome);
 $('homeExplore').addEventListener('click',()=>openSport('Soccer'));
 document.querySelectorAll('[data-open-sport]').forEach(btn=>btn.addEventListener('click',()=>openSport(btn.dataset.openSport)));
