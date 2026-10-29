@@ -743,7 +743,16 @@ function updateLeaderPhoto(g){
 let selectedSubjectId='';
 function renderSelectedSubject(){
   const picked=ranking.find(g=>g.id===selectedSubjectId)||ranking[0];
-  if(!picked)return;
+  if(!picked){
+    selectedSubjectId='';
+    $('subjectName').textContent='NO MATCHING SUBJECT';
+    $('subjectAffiliation').textContent='Change the search or filters.';
+    $('subjectContext').textContent='No data available for this selection.';
+    $('subjectMetric').textContent='—';
+    $('subjectMetricLabel').textContent='No metric';
+    displayPhoto(null,'subjectPortrait','subjectMonogram','subjectPhotoCredit',++subjectVersion,()=>subjectVersion);
+    return;
+  }
   selectedSubjectId=picked.id;
   $('subjectName').textContent=picked.name;
   $('subjectAffiliation').textContent=teamInfo(picked);
