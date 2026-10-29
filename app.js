@@ -9,9 +9,9 @@ let ranking = [];
 
 const defs = {
   Soccer: {
-    title: 'Soccer intelligence',
-    sub: 'Historical club results, season filters and rankings from bundled match records.',
-    coverage: 'Club-match history loaded from bundled files',
+    title: 'The Football Ledger',
+    sub: 'A record of club results, goal difference and league points. Every figure links back to an observed match.',
+    coverage: 'Club fixtures / archived seasons',
     source: 'OpenFootball',
     sourceSub: 'Bundled team results · no player-level football stats',
     accent: '#5ae0b0',
@@ -26,9 +26,9 @@ const defs = {
     }
   },
   NBA: {
-    title: 'NBA performance lab',
-    sub: 'Real player-season totals with rankings, comparisons and historical trend views.',
-    coverage: 'Bundled player-season totals',
+    title: 'The Basketball Ledger',
+    sub: 'Player-season scorebooks, rebounding, assists and comparisons across recorded seasons.',
+    coverage: 'NBA / player-season archive',
     source: 'BoxScore Lab',
     sourceSub: 'Bundled seasons from the GameSense archive',
     accent: '#ffb347',
@@ -43,9 +43,9 @@ const defs = {
     }
   },
   Cricket: {
-    title: 'Cricket performance lab',
-    sub: 'IPL player-season stats and international ODI, T20I and Test results, with separate team and player analysis.',
-    coverage: 'IPL player-seasons + historical ODI, T20I and Test results',
+    title: 'The Cricket Ledger',
+    sub: 'IPL records and international scorebooks. Choose team results or individual batting histories.',
+    coverage: 'IPL / ODI / T20I / TEST',
     source: 'Cricsheet / IPL ETL',
     sourceSub: 'Curated leading performers; incomplete league coverage',
     accent: '#a6ec6a', accent2: '#ffd966',
@@ -55,9 +55,9 @@ const defs = {
     }
   },
   F1: {
-    title: 'Formula 1 race analysis',
-    sub: 'Driver race-result history from 1950 onward with rankings and season trend analysis.',
-    coverage: 'Bundled driver race records',
+    title: 'The Grand Prix Ledger',
+    sub: 'The story in finish positions, grid starts, points and the drivers behind them.',
+    coverage: 'Grand Prix / race-result archive',
     source: 'F1DB',
     sourceSub: 'Bundled driver-result history',
     accent: '#ff6d8c',
