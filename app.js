@@ -167,14 +167,22 @@ async function load() {
     { name: 'nba.json', sport: 'NBA' }
   ];
   all = [];
-  for (const file of bundles) {
-    try {
-      const records = await fetchDataset(file.name, 'json');
-      if (Array.isArray(records)) all.push(...records.map(r => norm(r, file.sport)));
-      else failures.push(`${file.name}: expected an array`);
-    } catch (err) {
-      failures.push(`${file.name}: ${err.message}`);
+  // Load bundles concurrently so large archive chunks don't block first render sequentially.
+  let completed=0;
+  const results=await Promise.all(bundles.map(async file=>{
+    try{
+      const records=await fetchDataset(file.name,'json');
+      if(!Array.isArray(records))throw Error('expected an array');
+      return {file,records};
+    }catch(err){return {file,error:err.message};}
+    finally{
+      completed++;
+      $('loadState').textContent='Loading historical archive '+completed+'/'+bundles.length+'…';
     }
+  }));
+  for(const result of results){
+    if(result.error)failures.push(result.file.name+': '+result.error);
+    else all.push(...result.records.map(r=>norm(r,result.file.sport)));
   }
 
   // Cricket is an openly attributable, curated source-derived selection, not synthetic data.
