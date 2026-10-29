@@ -1,0 +1,223 @@
+match_id,date,venue,team1,team2,winner,toss_winner,toss_decision,format,year
+682981,2014-03-26,Sylhet Stadium,England,India,England,India,bat,T20,2014
+682985,2014-03-27,Sylhet Stadium,New Zealand,Pakistan,New Zealand,New Zealand,bat,T20,2014
+682989,2014-03-28,Sylhet Stadium,Sri Lanka,West Indies,West Indies,Sri Lanka,bat,T20,2014
+682991,2014-03-29,Sylhet Stadium,Ireland,South Africa,South Africa,South Africa,bat,T20,2014
+682993,2014-03-29,Sylhet Stadium,Australia,Pakistan,Australia,Australia,bat,T20,2014
+682995,2014-03-30,Sylhet Stadium,Bangladesh,India,India,India,bat,T20,2014
+682997,2014-03-30,Sylhet Stadium,England,Sri Lanka,England,Sri Lanka,bat,T20,2014
+682999,2014-03-31,Sylhet Stadium,Ireland,Pakistan,Pakistan,Pakistan,bat,T20,2014
+683001,2014-03-31,Sylhet Stadium,New Zealand,South Africa,South Africa,New Zealand,bat,T20,2014
+683003,2014-04-01,Sylhet Stadium,Bangladesh,Sri Lanka,Bangladesh,Bangladesh,bat,T20,2014
+683005,2014-04-01,Sylhet Stadium,India,West Indies,India,West Indies,bat,T20,2014
+683007,2014-04-02,Sylhet Stadium,New Zealand,Sri Lanka,New Zealand,Sri Lanka,bat,T20,2014
+683009,2014-04-02,Sylhet Stadium,India,Pakistan,India,India,bat,T20,2014
+683011,2014-04-03,Shere Bangla National Stadium,Australia,West Indies,Australia,Australia,bat,T20,2014
+683013,2014-04-04,Shere Bangla National Stadium,England,South Africa,England,England,field,T20,2014
+683015,2014-04-06,Shere Bangla National Stadium,Australia,England,Australia,Australia,field,T20,2014
+685727,2013-11-20,New Wanderers Stadium,South Africa,Pakistan,South Africa,Pakistan,field,T20,2013
+685729,2013-11-22,Newlands,South Africa,Pakistan,Pakistan,Pakistan,bat,T20,2013
+690351,2014-02-12,Zahur Ahmed Chowdhury Stadium,Bangladesh,Sri Lanka,Sri Lanka,Bangladesh,field,T20,2014
+690353,2014-02-14,Zahur Ahmed Chowdhury Stadium,Bangladesh,Sri Lanka,Sri Lanka,Bangladesh,bat,T20,2014
+693433,2014-09-01,County Ground,England,South Africa,England,England,field,T20,2014
+693435,2014-09-03,County Ground,England,South Africa,England,England,bat,T20,2014
+693437,2014-09-07,Edgbaston,England,South Africa,England,South Africa,field,T20,2014
+698983,2014-01-19,West End Park International Cricket Stadium,Pakistan,South Africa,Pakistan,Pakistan,field,T20,2014
+698985,2014-01-19,West End Park International Cricket Stadium,Ireland,Pakistan,Ireland,Ireland,field,T20,2014
+698987,2014-01-20,West End Park International Cricket Stadium,Ireland,South Africa,South Africa,Ireland,field,T20,2014
+698995,2014-01-24,West End Park International Cricket Stadium,Pakistan,South Africa,Pakistan,Pakistan,field,T20,2014
+702141,2014-02-19,"Sabina Park, Kingston",West Indies,Ireland,Ireland,West Indies,bat,T20,2014
+702143,2014-02-21,"Sabina Park, Kingston",West Indies,Ireland,West Indies,Ireland,field,T20,2014
+718465,2014-04-03,Sylhet Stadium,Pakistan,Sri Lanka,Pakistan,Pakistan,bat,T20,2014
+718467,2014-04-03,Sylhet Stadium,Bangladesh,Ireland,Bangladesh,Bangladesh,bat,T20,2014
+722335,2015-01-09,Newlands,South Africa,West Indies,West Indies,South Africa,bat,T20,2015
+722337,2015-01-11,New Wanderers Stadium,South Africa,West Indies,West Indies,West Indies,field,T20,2015
+727917,2014-10-05,Dubai International Cricket Stadium,Australia,Pakistan,Australia,Pakistan,bat,T20,2014
+730283,2014-07-05,"Windsor Park, Roseau",West Indies,New Zealand,New Zealand,New Zealand,field,T20,2014
+730285,2014-07-06,"Windsor Park, Roseau",West Indies,New Zealand,West Indies,New Zealand,field,T20,2014
+730293,2014-08-27,"Warner Park, Basseterre",West Indies,Bangladesh,,Bangladesh,bat,T20,2014
+736063,2015-01-14,Kingsmead,South Africa,West Indies,South Africa,West Indies,field,T20,2015
+742617,2014-12-04,Dubai International Cricket Stadium,New Zealand,Pakistan,Pakistan,Pakistan,field,T20,2014
+743953,2015-06-23,Old Trafford,England,New Zealand,England,England,bat,T20,2015
+743975,2015-08-31,Sophia Gardens,England,Australia,England,Australia,field,T20,2015
+754039,2014-12-05,Dubai International Cricket Stadium,New Zealand,Pakistan,New Zealand,Pakistan,field,T20,2014
+754717,2014-11-05,Adelaide Oval,Australia,South Africa,South Africa,Australia,bat,T20,2014
+754719,2014-11-07,Melbourne Cricket Ground,Australia,South Africa,Australia,South Africa,bat,T20,2014
+754721,2014-11-09,Stadium Australia,Australia,South Africa,Australia,Australia,field,T20,2014
+754793,2014-08-30,Kerrydale Oval,Australia,Pakistan,Australia,Pakistan,bat,T20,2014
+754795,2014-08-31,Kerrydale Oval,Australia,Pakistan,Australia,Australia,bat,T20,2014
+754797,2014-09-03,Kerrydale Oval,Australia,Pakistan,Australia,Pakistan,bat,T20,2014
+754799,2014-09-05,Kerrydale Oval,Australia,Pakistan,Australia,Australia,bat,T20,2014
+754801,2014-11-02,North Sydney Oval,Australia,West Indies,Australia,Australia,field,T20,2014
+754805,2014-11-07,Melbourne Cricket Ground,Australia,West Indies,Australia,West Indies,bat,T20,2014
+757511,2014-10-23,Colts Cricket Club Ground,Sri Lanka,South Africa,Sri Lanka,Sri Lanka,bat,T20,2014
+757513,2014-10-25,Colts Cricket Club Ground,Sri Lanka,South Africa,South Africa,Sri Lanka,bat,T20,2014
+757515,2014-10-26,Mercantile Cricket Association Ground,Sri Lanka,South Africa,South Africa,Sri Lanka,bat,T20,2014
+798377,2015-08-26,County Ground,England,Australia,England,England,field,T20,2015
+798379,2015-08-28,County Ground,England,Australia,Australia,England,field,T20,2015
+798381,2015-08-31,Sophia Gardens,England,Australia,England,England,field,T20,2015
+798615,2015-08-19,YMCA Cricket Club,Ireland,Australia,Australia,Ireland,field,T20,2015
+798619,2015-08-21,YMCA Cricket Club,Ireland,Australia,Australia,Australia,bat,T20,2015
+798621,2015-08-22,YMCA Cricket Club,Ireland,Australia,Australia,Australia,bat,T20,2015
+800479,2016-02-19,Newlands,South Africa,England,South Africa,South Africa,field,T20,2016
+800481,2016-02-21,New Wanderers Stadium,South Africa,England,South Africa,South Africa,field,T20,2016
+802327,2014-11-24,P Sara Oval,Hong Kong,Nepal,Hong Kong,Hong Kong,field,T20,2014
+808869,2015-01-16,Sharjah Cricket Stadium,Pakistan,Sri Lanka,Pakistan,Pakistan,bat,T20,2015
+808871,2015-01-17,Sharjah Cricket Stadium,Pakistan,Sri Lanka,Sri Lanka,Pakistan,bat,T20,2015
+817203,2015-07-05,Shere Bangla National Stadium,Bangladesh,South Africa,South Africa,South Africa,bat,T20,2015
+817205,2015-07-07,Shere Bangla National Stadium,Bangladesh,South Africa,South Africa,South Africa,bat,T20,2015
+828247,2015-03-19,Sharjah Cricket Stadium,Pakistan,South Africa,Pakistan,Pakistan,field,T20,2015
+828249,2015-03-20,Sharjah Cricket Stadium,Pakistan,South Africa,Pakistan,South Africa,bat,T20,2015
+828251,2015-03-22,Sharjah Cricket Stadium,Pakistan,South Africa,South Africa,South Africa,field,T20,2015
+848839,2015-08-14,Kingsmead,South Africa,New Zealand,South Africa,South Africa,field,T20,2015
+848841,2015-08-16,SuperSport Park,South Africa,New Zealand,New Zealand,New Zealand,bat,T20,2015
+856117,2015-05-23,R Premadasa Stadium,Sri Lanka,West Indies,Sri Lanka,Sri Lanka,field,T20,2015
+856119,2015-05-25,R Premadasa Stadium,Sri Lanka,West Indies,West Indies,Sri Lanka,bat,T20,2015
+856121,2015-05-26,R Premadasa Stadium,Sri Lanka,West Indies,West Indies,West Indies,field,T20,2015
+858491,2015-04-24,Shere Bangla National Stadium,Bangladesh,Pakistan,Bangladesh,Pakistan,bat,T20,2015
+860279,2015-07-30,R Premadasa Stadium,Sri Lanka,Pakistan,Pakistan,Pakistan,bat,T20,2015
+860281,2015-08-01,R Premadasa Stadium,Sri Lanka,Pakistan,Pakistan,Sri Lanka,bat,T20,2015
+868723,2015-05-22,Gaddafi Stadium,Pakistan,Zimbabwe,Pakistan,Zimbabwe,bat,T20,2015
+868725,2015-05-24,Gaddafi Stadium,Pakistan,Zimbabwe,Pakistan,Zimbabwe,bat,T20,2015
+875457,2015-07-09,"Grange Cricket Club Ground, Raeburn Place",Scotland,United Arab Emirates,Scotland,Scotland,field,T20,2015
+875471,2015-07-11,"Grange Cricket Club Ground, Raeburn Place",Scotland,Netherlands,Netherlands,Netherlands,bat,T20,2015
+875481,2015-07-12,"Grange Cricket Club Ground, Raeburn Place",Netherlands,United Arab Emirates,Netherlands,Netherlands,field,T20,2015
+875491,2015-07-13,"Civil Service Cricket Club, Stormont",Nepal,Ireland,Ireland,Ireland,field,T20,2015
+875501,2015-07-15,"Civil Service Cricket Club, Stormont",Ireland,Papua New Guinea,Papua New Guinea,Ireland,bat,T20,2015
+875507,2015-07-15,"Civil Service Cricket Club, Stormont",Hong Kong,Nepal,Hong Kong,Hong Kong,field,T20,2015
+875513,2015-07-17,"The Village, Malahide",Nepal,Papua New Guinea,Papua New Guinea,Papua New Guinea,field,T20,2015
+875521,2015-07-17,"The Village, Malahide",Ireland,Hong Kong,Hong Kong,Ireland,field,T20,2015
+875549,2015-07-25,"The Village, Malahide",Hong Kong,Scotland,Scotland,Scotland,field,T20,2015
+875553,2015-07-25,"The Village, Malahide",Ireland,Netherlands,Netherlands,Netherlands,field,T20,2015
+881755,2015-12-05,Terdthai Cricket Ground,Bangladesh,Ireland,Ireland,Bangladesh,bat,T20,2015
+883343,2015-07-01,VRA Ground,Netherlands,Nepal,Netherlands,Nepal,field,T20,2015
+883345,2015-07-02,Hazelaarweg,Netherlands,Nepal,Netherlands,Netherlands,bat,T20,2015
+884347,2016-03-04,Kingsmead,South Africa,Australia,South Africa,Australia,bat,T20,2016
+884349,2016-03-06,New Wanderers Stadium,South Africa,Australia,Australia,Australia,field,T20,2016
+884351,2016-03-09,Newlands,South Africa,Australia,Australia,South Africa,bat,T20,2016
+885969,2015-07-17,Harare Sports Club,Zimbabwe,India,India,India,bat,T20,2015
+885971,2015-07-19,Harare Sports Club,Zimbabwe,India,Zimbabwe,Zimbabwe,bat,T20,2015
+889463,2015-06-20,"Bready Cricket Club, Magheramason",Ireland,Scotland,Scotland,Scotland,field,T20,2015
+892043,2015-10-29,"National Cricket Stadium, St George's",West Indies,Pakistan,West Indies,West Indies,field,T20,2015
+894293,2015-08-09,Harare Sports Club,Zimbabwe,New Zealand,New Zealand,Zimbabwe,field,T20,2015
+895789,2016-01-29,Melbourne Cricket Ground,Australia,India,India,India,field,T20,2016
+895791,2016-01-31,Sydney Cricket Ground,Australia,India,Australia,India,field,T20,2016
+895817,2016-01-26,Adelaide Oval,Australia,India,India,Australia,field,T20,2016
+895819,2016-01-29,Melbourne Cricket Ground,Australia,India,India,Australia,field,T20,2016
+895821,2016-01-31,Sydney Cricket Ground,Australia,India,India,Australia,bat,T20,2016
+902649,2015-11-26,Dubai International Cricket Stadium,England,Pakistan,England,England,bat,T20,2015
+902651,2015-11-27,Dubai International Cricket Stadium,England,Pakistan,England,England,bat,T20,2015
+902653,2015-11-30,Sharjah Cricket Stadium,England,Pakistan,,England,bat,T20,2015
+903587,2015-10-02,Himachal Pradesh Cricket Association Stadium,India,South Africa,South Africa,South Africa,field,T20,2015
+903589,2015-10-05,Barabati Stadium,India,South Africa,South Africa,South Africa,field,T20,2015
+907381,2016-02-18,Boland Park,South Africa,England,England,South Africa,field,T20,2016
+907385,2016-02-21,New Wanderers Stadium,South Africa,England,England,England,field,T20,2016
+907395,2016-03-04,Kingsmead,South Africa,West Indies,South Africa,South Africa,bat,T20,2016
+907399,2016-03-09,Newlands,South Africa,West Indies,South Africa,South Africa,bat,T20,2016
+913633,2016-07-05,The Rose Bowl,England,Sri Lanka,England,Sri Lanka,bat,T20,2016
+913663,2016-09-07,Old Trafford,England,Pakistan,Pakistan,England,bat,T20,2016
+914217,2016-01-07,Bay Oval,New Zealand,Sri Lanka,New Zealand,Sri Lanka,field,T20,2016
+914219,2016-01-10,Eden Park,New Zealand,Sri Lanka,New Zealand,New Zealand,field,T20,2016
+914221,2016-01-15,Eden Park,New Zealand,Pakistan,Pakistan,New Zealand,field,T20,2016
+914223,2016-01-17,Seddon Park,New Zealand,Pakistan,New Zealand,Pakistan,bat,T20,2016
+914225,2016-01-22,Westpac Stadium,New Zealand,Pakistan,New Zealand,Pakistan,field,T20,2016
+915783,2015-11-09,Pallekele International Cricket Stadium,Sri Lanka,West Indies,Sri Lanka,West Indies,field,T20,2015
+915785,2015-11-11,R Premadasa Stadium,Sri Lanka,West Indies,West Indies,West Indies,bat,T20,2015
+919603,2015-09-27,Harare Sports Club,Zimbabwe,Pakistan,Pakistan,Pakistan,bat,T20,2015
+919605,2015-09-29,Harare Sports Club,Zimbabwe,Pakistan,Pakistan,Pakistan,bat,T20,2015
+923321,2015-09-30,Southend Club Cricket Stadium,Pakistan,Bangladesh,Pakistan,Pakistan,bat,T20,2015
+923323,2015-10-01,Southend Club Cricket Stadium,Pakistan,Bangladesh,Pakistan,Pakistan,bat,T20,2015
+930573,2015-11-22,Sheikh Zayed Stadium,United Arab Emirates,Oman,United Arab Emirates,United Arab Emirates,field,T20,2015
+930575,2015-11-21,Sheikh Zayed Stadium,Hong Kong,Oman,Oman,Oman,field,T20,2015
+930577,2015-11-25,Sheikh Zayed Stadium,Hong Kong,Oman,Oman,Hong Kong,field,T20,2015
+930579,2015-11-26,Sheikh Zayed Stadium,Hong Kong,Oman,Hong Kong,Hong Kong,field,T20,2015
+931396,2015-11-13,Shere Bangla National Stadium,Bangladesh,Zimbabwe,Bangladesh,Bangladesh,field,T20,2015
+931398,2015-11-15,Shere Bangla National Stadium,Bangladesh,Zimbabwe,Zimbabwe,Bangladesh,bat,T20,2015
+936153,2017-01-20,SuperSport Park,South Africa,Sri Lanka,South Africa,Sri Lanka,field,T20,2017
+936155,2017-01-22,New Wanderers Stadium,South Africa,Sri Lanka,Sri Lanka,South Africa,bat,T20,2017
+936157,2017-01-25,Newlands,South Africa,Sri Lanka,Sri Lanka,South Africa,bat,T20,2017
+946551,2016-07-03,County Ground,England,Pakistan,England,England,bat,T20,2016
+946553,2016-07-05,The Rose Bowl,England,Pakistan,England,England,bat,T20,2016
+946555,2016-07-07,County Ground,England,Pakistan,England,England,bat,T20,2016
+951305,2016-03-08,"Vidarbha Cricket Association Stadium, Jamtha",Hong Kong,Zimbabwe,Zimbabwe,Hong Kong,field,T20,2016
+951309,2016-03-09,Himachal Pradesh Cricket Association Stadium,Bangladesh,Netherlands,Bangladesh,Netherlands,field,T20,2016
+951311,2016-03-09,Himachal Pradesh Cricket Association Stadium,Ireland,Oman,Oman,Ireland,bat,T20,2016
+951313,2016-03-10,"Vidarbha Cricket Association Stadium, Jamtha",Scotland,Zimbabwe,Zimbabwe,Zimbabwe,bat,T20,2016
+951319,2016-03-11,Himachal Pradesh Cricket Association Stadium,Bangladesh,Ireland,,Ireland,field,T20,2016
+951323,2016-03-12,"Vidarbha Cricket Association Stadium, Jamtha",Hong Kong,Scotland,Scotland,Hong Kong,bat,T20,2016
+951325,2016-03-13,Himachal Pradesh Cricket Association Stadium,Ireland,Netherlands,Netherlands,Ireland,field,T20,2016
+951327,2016-03-13,Himachal Pradesh Cricket Association Stadium,Bangladesh,Oman,Bangladesh,Oman,field,T20,2016
+951329,2016-03-15,"Vidarbha Cricket Association Stadium, Jamtha",India,New Zealand,New Zealand,New Zealand,bat,T20,2016
+951331,2016-03-16,Wankhede Stadium,England,West Indies,West Indies,West Indies,field,T20,2016
+951333,2016-03-16,Eden Gardens,Bangladesh,Pakistan,Pakistan,Pakistan,bat,T20,2016
+951337,2016-03-18,Himachal Pradesh Cricket Association Stadium,Australia,New Zealand,New Zealand,New Zealand,bat,T20,2016
+951339,2016-03-18,Wankhede Stadium,England,South Africa,England,England,field,T20,2016
+951341,2016-03-19,Eden Gardens,India,Pakistan,India,India,field,T20,2016
+951345,2016-03-20,M Chinnaswamy Stadium,Sri Lanka,West Indies,West Indies,West Indies,field,T20,2016
+951347,2016-03-21,M Chinnaswamy Stadium,Australia,Bangladesh,Australia,Australia,field,T20,2016
+951349,2016-03-22,"Punjab Cricket Association IS Bindra Stadium, Mohali",New Zealand,Pakistan,New Zealand,New Zealand,bat,T20,2016
+951353,2016-03-23,M Chinnaswamy Stadium,India,Bangladesh,India,Bangladesh,field,T20,2016
+951355,2016-03-25,"Punjab Cricket Association IS Bindra Stadium, Mohali",Australia,Pakistan,Australia,Australia,bat,T20,2016
+951357,2016-03-25,"Vidarbha Cricket Association Stadium, Jamtha",South Africa,West Indies,West Indies,West Indies,field,T20,2016
+951359,2016-03-26,Eden Gardens,Bangladesh,New Zealand,New Zealand,New Zealand,bat,T20,2016
+951361,2016-03-26,Feroz Shah Kotla,England,Sri Lanka,England,Sri Lanka,field,T20,2016
+951363,2016-03-27,"Punjab Cricket Association IS Bindra Stadium, Mohali",India,Australia,India,Australia,bat,T20,2016
+951367,2016-03-28,Feroz Shah Kotla,South Africa,Sri Lanka,South Africa,South Africa,field,T20,2016
+951369,2016-03-30,Feroz Shah Kotla,England,New Zealand,England,England,field,T20,2016
+951371,2016-03-31,Wankhede Stadium,India,West Indies,West Indies,West Indies,field,T20,2016
+951373,2016-04-03,Eden Gardens,England,West Indies,West Indies,West Indies,field,T20,2016
+951375,2016-03-15,M Chinnaswamy Stadium,India,Bangladesh,India,Bangladesh,field,T20,2016
+951377,2016-03-15,Feroz Shah Kotla,New Zealand,Sri Lanka,New Zealand,Sri Lanka,bat,T20,2016
+951379,2016-03-16,"MA Chidambaram Stadium, Chepauk",Pakistan,West Indies,West Indies,Pakistan,field,T20,2016
+951381,2016-03-17,M Chinnaswamy Stadium,Bangladesh,England,England,England,bat,T20,2016
+951383,2016-03-18,"Punjab Cricket Association IS Bindra Stadium, Mohali",Ireland,New Zealand,New Zealand,New Zealand,bat,T20,2016
+951385,2016-03-18,"Vidarbha Cricket Association Stadium, Jamtha",Australia,South Africa,Australia,South Africa,bat,T20,2016
+951387,2016-03-19,Feroz Shah Kotla,India,Pakistan,Pakistan,Pakistan,field,T20,2016
+951389,2016-03-20,"MA Chidambaram Stadium, Chepauk",Bangladesh,West Indies,West Indies,West Indies,bat,T20,2016
+951391,2016-03-20,"Punjab Cricket Association IS Bindra Stadium, Mohali",Sri Lanka,Ireland,Sri Lanka,Sri Lanka,bat,T20,2016
+951393,2016-03-21,"Vidarbha Cricket Association Stadium, Jamtha",Australia,New Zealand,New Zealand,Australia,bat,T20,2016
+951395,2016-03-22,Himachal Pradesh Cricket Association Stadium,India,England,England,England,field,T20,2016
+951397,2016-03-23,"MA Chidambaram Stadium, Chepauk",Ireland,South Africa,South Africa,South Africa,bat,T20,2016
+951399,2016-03-24,Himachal Pradesh Cricket Association Stadium,England,West Indies,England,West Indies,bat,T20,2016
+951401,2016-03-24,Feroz Shah Kotla,Australia,Sri Lanka,Australia,Sri Lanka,bat,T20,2016
+951403,2016-03-24,Feroz Shah Kotla,Bangladesh,Pakistan,Pakistan,Bangladesh,bat,T20,2016
+951405,2016-03-26,Feroz Shah Kotla,Australia,Ireland,Australia,Australia,field,T20,2016
+951407,2016-03-26,M Chinnaswamy Stadium,New Zealand,South Africa,New Zealand,New Zealand,field,T20,2016
+951409,2016-03-27,"Punjab Cricket Association IS Bindra Stadium, Mohali",India,West Indies,West Indies,India,field,T20,2016
+951411,2016-03-27,"MA Chidambaram Stadium, Chepauk",England,Pakistan,England,England,bat,T20,2016
+951413,2016-03-28,M Chinnaswamy Stadium,South Africa,Sri Lanka,Sri Lanka,Sri Lanka,bat,T20,2016
+951415,2016-03-30,Feroz Shah Kotla,Australia,England,Australia,England,field,T20,2016
+951417,2016-03-31,Wankhede Stadium,New Zealand,West Indies,West Indies,New Zealand,field,T20,2016
+951419,2016-04-03,Eden Gardens,Australia,West Indies,West Indies,Australia,bat,T20,2016
+953103,2016-01-30,"Mission Road Ground, Mong Kok",Hong Kong,Scotland,Hong Kong,Hong Kong,field,T20,2016
+953105,2016-01-31,"Mission Road Ground, Mong Kok",Hong Kong,Scotland,Scotland,Hong Kong,field,T20,2016
+954735,2016-02-07,Tony Ireland Stadium,Ireland,Papua New Guinea,Ireland,Papua New Guinea,field,T20,2016
+954737,2016-02-09,Tony Ireland Stadium,Ireland,Papua New Guinea,Papua New Guinea,Papua New Guinea,bat,T20,2016
+954741,2016-02-14,Sheikh Zayed Stadium,United Arab Emirates,Ireland,Ireland,United Arab Emirates,field,T20,2016
+954743,2016-02-16,Sheikh Zayed Stadium,United Arab Emirates,Ireland,United Arab Emirates,United Arab Emirates,bat,T20,2016
+958415,2016-01-15,Sheikh Abu Naser Stadium,Bangladesh,Zimbabwe,Bangladesh,Zimbabwe,bat,T20,2016
+958417,2016-01-17,Sheikh Abu Naser Stadium,Bangladesh,Zimbabwe,Bangladesh,Bangladesh,bat,T20,2016
+958419,2016-01-20,Sheikh Abu Naser Stadium,Bangladesh,Zimbabwe,Zimbabwe,Zimbabwe,bat,T20,2016
+958421,2016-01-22,Sheikh Abu Naser Stadium,Bangladesh,Zimbabwe,Zimbabwe,Zimbabwe,bat,T20,2016
+962023,2016-09-05,"Bready Cricket Club, Magheramason",Ireland,Bangladesh,Ireland,Bangladesh,field,T20,2016
+963697,2016-02-09,Maharashtra Cricket Association Stadium,India,Sri Lanka,Sri Lanka,Sri Lanka,field,T20,2016
+963699,2016-02-12,JSCA International Stadium Complex,India,Sri Lanka,India,Sri Lanka,field,T20,2016
+963701,2016-02-14,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,India,Sri Lanka,India,India,field,T20,2016
+966373,2016-02-04,ICC Academy,United Arab Emirates,Scotland,United Arab Emirates,United Arab Emirates,bat,T20,2016
+966735,2016-02-19,Khan Shaheb Osman Ali Stadium,Hong Kong,Oman,Oman,Oman,bat,T20,2016
+966739,2016-02-21,Khan Shaheb Osman Ali Stadium,Hong Kong,United Arab Emirates,United Arab Emirates,Hong Kong,bat,T20,2016
+966743,2016-02-22,Shere Bangla National Stadium,Oman,United Arab Emirates,United Arab Emirates,Oman,field,T20,2016
+966745,2016-02-24,Shere Bangla National Stadium,India,Bangladesh,India,Bangladesh,field,T20,2016
+966747,2016-02-25,Shere Bangla National Stadium,Sri Lanka,United Arab Emirates,Sri Lanka,United Arab Emirates,field,T20,2016
+966749,2016-02-26,Shere Bangla National Stadium,Bangladesh,United Arab Emirates,Bangladesh,United Arab Emirates,field,T20,2016
+966751,2016-02-27,Shere Bangla National Stadium,India,Pakistan,India,India,field,T20,2016
+966753,2016-02-28,Shere Bangla National Stadium,Bangladesh,Sri Lanka,Bangladesh,Bangladesh,bat,T20,2016
+966755,2016-02-29,Shere Bangla National Stadium,Pakistan,United Arab Emirates,Pakistan,United Arab Emirates,bat,T20,2016
+966757,2016-03-01,Shere Bangla National Stadium,India,Sri Lanka,India,India,field,T20,2016
+966759,2016-03-02,Shere Bangla National Stadium,Bangladesh,Pakistan,Bangladesh,Pakistan,bat,T20,2016
+966761,2016-03-03,Shere Bangla National Stadium,India,United Arab Emirates,India,United Arab Emirates,bat,T20,2016
+966763,2016-03-04,Shere Bangla National Stadium,Pakistan,Sri Lanka,Pakistan,Pakistan,field,T20,2016
+966765,2016-03-06,Shere Bangla National Stadium,Bangladesh,India,India,India,field,T20,2016
+967081,2016-02-03,ICC Academy,United Arab Emirates,Netherlands,Netherlands,United Arab Emirates,field,T20,2016
+995467,2016-09-06,Pallekele International Cricket Stadium,Sri Lanka,Australia,Australia,Sri Lanka,field,T20,2016
+995469,2016-09-09,R Premadasa Stadium,Sri Lanka,Australia,Australia,Sri Lanka,bat,T20,2016
