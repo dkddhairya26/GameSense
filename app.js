@@ -44,8 +44,8 @@ const defs = {
   },
   Cricket: {
     title: 'Cricket performance lab',
-    sub: 'Historical IPL player-season statistics plus international ODI team results.',
-    coverage: '208 selected IPL player-seasons + 16 international ODI matches',
+    sub: 'IPL player-season stats and international ODI, T20I and Test results, with separate team and player analysis.',
+    coverage: 'IPL player-seasons + historical ODI, T20I and Test results',
     source: 'Cricsheet / IPL ETL',
     sourceSub: 'Curated leading performers; incomplete league coverage',
     accent: '#a6ec6a', accent2: '#ffd966',
@@ -192,8 +192,45 @@ async function load() {
     all.push(...records.map(r => norm(r, 'Cricket')));
   } catch (e) { failures.push('cricket.json: '+e.message); }
 
-  // Original Cricsheet ODC-BY 1.0 international ODI sample: one row per team and match.
-  try {const x=await fetchDataset('cricket-international.json','json');if(!Array.isArray(x))throw Error('Expected array');all.push(...x.map(r=>norm(r,'Cricket')))}catch(e){failures.push('cricket-international.json: '+e.message)}
+  // Licensed Cricsheet-derived CSV match observations, split into browser-friendly files.
+  const internationalParts=[
+    ...Array.from({length:4},(_,i)=>({file:'cricket-odi-'+String(i+1).padStart(2,'0')+'.csv',competition:'International ODI'})),
+    ...Array.from({length:6},(_,i)=>({file:'cricket-t20-'+String(i+1).padStart(2,'0')+'.csv',competition:'International T20I'})),
+    {file:'cricket-test-01.csv',competition:'International Test'}
+  ];
+  let internationalCompleted=0;
+  const internationalResults=await Promise.all(internationalParts.map(async part=>{
+    try{
+      const source=await fetchDataset(part.file,'csv');
+      if(!Array.isArray(source))throw Error('Invalid CSV');
+      return {part,source};
+    }catch(e){return {part,error:e.message};}
+    finally{
+      internationalCompleted++;
+      $('loadState').textContent='Loading cricket history '+internationalCompleted+'/'+internationalParts.length+'…';
+    }
+  }));
+  let loadedMatchRows=0;
+  for(const result of internationalResults){
+    if(result.error){failures.push(result.part.file+': '+result.error);continue;}
+    for(const match of result.source){
+      const id=String(match.match_id||'').trim(),a=String(match.team1||'').trim(),b=String(match.team2||'').trim(),date=String(match.date||'').trim();
+      if(!id||!a||!b||a===b||!/^\\d{4}-\\d{2}-\\d{2}$/.test(date))continue;
+      const winner=String(match.winner||'').trim();
+      // Unknown winners are undetermined, not losses; never invent outcomes.
+      const outcomeA=winner===a?'W':winner===b?'L':'U';
+      const outcomeB=winner===b?'W':winner===a?'L':'U';
+      for(const [team,opponent,outcome] of [[a,b,outcomeA],[b,a,outcomeB]]){
+        all.push(norm({sport:'Cricket',season:date.slice(0,4),competitor:team,competitor_id:'country:'+team,
+          competition:result.part.competition,date,opponent,outcome,
+          wins:outcome==='W'?1:0,losses:outcome==='L'?1:0,draws:0,games:1,
+          venue:match.venue||'',record_id:'cricsheet:'+id+':'+team,
+          record_kind:'international_team_match'},'Cricket'));
+      }
+      loadedMatchRows++;
+    }
+  }
+  $('heroCoverage').title=loadedMatchRows.toLocaleString()+' international match results loaded.';
   try {
     const saved = localStorage.getItem('gamesense-imports');
     if (saved) imports = JSON.parse(saved).map(r => norm(r));
@@ -244,7 +281,7 @@ function ratingValue(r){
     return clamp(2*r.points/g+1.3*(r.rebounds||0)/g+1.5*(r.assists||0)/g);
   }
   if(sport==='Cricket'){
-    if(r.record_kind==='international_team_match')return r.wins?100:r.draws?50:0;
+    if(r.record_kind==='international_team_match')return r.outcome==='U'?null:r.wins?100:r.draws?50:0;
     if(!r.games)return null;
     return clamp(1.25*(r.runs||0)/r.games+17*(r.wickets||0)/r.games);
   }
@@ -256,7 +293,7 @@ function ratingValue(r){
 }
 function metricValue(r,m){
   if(m==='performance_score')return ratingValue(r);
-  if(m==='win_rate'&&sport==='Cricket')return r.record_kind==='international_team_match'?(r.wins?100:0):null;
+  if(m==='win_rate'&&sport==='Cricket')return r.record_kind==='international_team_match'?(r.outcome==='U'?null:r.wins?100:0):null;
   if(m==='wins'&&sport==='F1')return r.finish_position===1?1:0;
   if(m==='podiums'&&sport==='F1')return r.finish_position>0&&r.finish_position<=3?1:0;
   return typeof r[m]==='number'&&Number.isFinite(r[m])?r[m]:null;
@@ -313,8 +350,10 @@ function render() {
     (!competition || competition === 'All competitions' || r.competition === competition)
   );
 
+  // Cricket all-competition mixing is prevented: IPL players and national teams are incompatible units.
   ranking = aggregate(filtered, metric).filter(g => !query || g.name.toLowerCase().includes(query));
 
+  renderAnalyticalCharts(filtered,ranking,metric);
   $('count').textContent = number(filtered.length);
   $('competitors').textContent = number(new Set(filtered.map(r => r.competitor_id)).size);
   $('seasons').textContent = number(new Set(filtered.map(r => r.season)).size);
@@ -326,7 +365,7 @@ function render() {
   $('ratingFormula').textContent={
     Soccer:'30 + 30×win + 10×draw + 12×goal difference per match (0–100)',
     NBA:'2×points per game + 1.3×rebounds per game + 1.5×assists per game (0–100)',
-    Cricket:competition==='International ODI'?'ODI index: win 100, draw/tie 50, loss 0. Win rate = wins / observed matches.':'IPL index: 1.25×runs per match + 17×wickets per match (0–100)',
+    Cricket:competition.startsWith('International ')?'International match index: win 100, loss 0; unreported outcomes excluded. Win rate = wins ÷ decided matches.':'IPL index: 1.25×runs per match + 17×wickets per match (0–100)',
     F1:'100 − 7×(classified finishing position − 1) per race (0–100)'
   }[sport]+' · Experimental GameSense indicator, not official or predictive.';
   const top = ranking.slice(0, 10);
@@ -378,7 +417,7 @@ function renderRecentForm(leader){
     let a=sample.map(r=>r.finish_position).filter(v=>v>0);
     $('formSummary').textContent=leader.name+': '+(a.length?'average classified finish P'+number(a.reduce((p,c)=>p+c,0)/a.length):'no classified results')+' across latest '+sample.length+' races.';
   } else if(sport==='Cricket'&&sample[0].record_kind==='international_team_match'){
-    $('formSummary').textContent=leader.name+': '+rr.slice(0,5).map(r=>r.outcome||'D').reverse().join(' · ')+' · recent observed international ODI matches, oldest to newest.';
+    $('formSummary').textContent=leader.name+': '+rr.slice(0,5).map(r=>r.outcome||'D').reverse().join(' · ')+' · recent observed international matches, oldest to newest (U = outcome unreported).';
   } else {
     let games=sample.reduce((a,r)=>a+(r.games||numeric(r.games_played)||0),0),v=sample.reduce((a,r)=>a+(sport==='NBA'?(r.points||0):(r.runs||0)),0);
     $('formSummary').textContent=leader.name+': '+(games?number(v/games)+(sport==='NBA'?' points/game':' runs/match'):'no game denominator')+' across '+sample.length+' latest selected player-seasons.';
@@ -412,7 +451,7 @@ async function resolvePortrait(name) {
 function teamInfo(g){
   if(!g)return 'Select a competitor';
   if(sport==='Soccer')return 'Football club · '+g.name;
-  if(sport==='Cricket'&&$('competition').value==='International ODI')return 'National team · '+g.name;
+  if(sport==='Cricket'&&$('competition').value.startsWith('International '))return 'National team · '+g.name;
   const list=filtered.filter(r=>r.competitor_id===g.id&&r.team).sort((a,b)=>String(b.date||b.season).localeCompare(String(a.date||a.season),undefined,{numeric:true}));
   const t=list[0]?.team;
   if(t)return (sport==='F1'?'Constructor · ':'Team · ')+(teamNames[t]||t);
@@ -511,20 +550,20 @@ document.querySelectorAll('.nav').forEach(btn => btn.onclick = () => {
   sport = btn.dataset.sport;
   $('search').value = '';
   updateControls();
-  if(sport==='Cricket')selectCricketView('Indian Premier League · selected leading performers');
+  if(sport==='Cricket')selectCricketView('International ODI');
 });
 
 function selectCricketView(c){
   if(sport!=='Cricket')return;
   $('season').value='All seasons';$('competition').value=c;
-  $('metric').value=c==='International ODI'?'wins':'runs';
+  $('metric').value=c.startsWith('International ')?'wins':'runs';
   document.querySelectorAll('[data-cricket-view]').forEach(b=>b.classList.toggle('selected',b.dataset.cricketView===c));
   render();
 }
 document.querySelectorAll('[data-cricket-view]').forEach(b=>b.addEventListener('click',()=>selectCricketView(b.dataset.cricketView)));
 $('competition').addEventListener('change',()=>{
   if(sport!=='Cricket')return;
-  let international=$('competition').value==='International ODI';
+  let international=$('competition').value.startsWith('International ');
   if(international&&['runs','wickets','strike_rate'].includes($('metric').value))$('metric').value='wins';
   if(!international&&['wins','losses','win_rate'].includes($('metric').value))$('metric').value='runs';
 });
