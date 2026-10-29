@@ -54,3 +54,20 @@ Cricket now has three additional **international player batting views**: ODI Pla
 Fields include matches, innings, runs, balls faced, batting average, strike rate, highest score, fifties, hundreds, fours and sixes. International player scoreboards are filtered by format. Profiles show the source's country affiliation. **Do not mistake these for current official totals**: they are static historical career totals, not results per year. The year-by-year trend chart explicitly explains that this source does not include yearly observations rather than manufacturing them. Bowling figures are not bundled in these player snapshots; country-match results and IPL wickets remain separate.
 
 Data note: player stats are factual records sourced from a third-party public repository; that repository does not provide an explicit dataset licence in the inspected metadata. Review the source rights before redistribution outside this educational project.
+
+## Field Notes redesign and analytical chart expansion (30 October 2026)
+
+GameSense now follows the dedicated [DESIGN.md](DESIGN.md) identity: *sports matchday publication meets analyst's notebook*. The HTML and CSS use a bespoke editorial rhythm, Barlow Condensed / Source Sans 3 / IBM Plex Mono, signal-yellow and charcoal, paper-like primary charts, squared rules instead of soft-glass cards, numbered sport navigation, and reduced-motion-aware chart animation. Generic decorative emoji/gradient templates were deliberately removed. This is an original GameSense interpretation of a professional sports data product; it does not reproduce STATSCORE assets or proprietary layout.
+
+The selected source metric drives five complementary chart views:
+1. **Yearly trend**, when source years exist. Historical international player snapshots instead compare the chosen athlete's ODI/T20I/Test career figures across formats; no missing seasonal values are fabricated.
+2. **Top competitors** by selected metric.
+3. **Distribution histogram** showing how concentrated or spread out competitor totals/averages are.
+4. **Volume vs performance scatter** showing sample matches/observations against the chosen metric.
+5. **Head-to-head four-metric comparison**, scaled independently for each metric so unlike units aren't misleadingly compared.
+
+Rankings and source rows remain traceable, filters still change all graphs, and missing data produce explicit explanations rather than fake figures. Competitor profile panels use strict Wikipedia title matching and an initials fallback; known IPL abbreviations such as V Kohli and RG Sharma are expanded only for image lookup. Teams/countries use historical records when available and do not imply a current signing.
+
+**Tests**: JavaScript syntax passed; the new DOM IDs all exist; a simulated browser execution with genuine IPL, international player snapshot, ODI, T20I and Test file samples plus independent Soccer, NBA, and F1 fixtures rendered charts and comparisons across all ten tested sport/format states without a runtime error. This does not substitute for a real cross-browser visual inspection.
+
+AI collaboration was used extensively to design and implement the project; see the original AI assistance disclosure and assessment requirements. The redesigned visual identity is not presented as evidence that no AI was used.
