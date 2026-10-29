@@ -346,6 +346,7 @@ function updateControls() {
   $('season').innerHTML = options(['All seasons', ...seasons], oldSeason);
   $('competition').innerHTML = options(['All competitions', ...competitions], oldCompetition);
   $('metric').innerHTML = Object.entries(d.metrics).map(([k, v]) => `<option value="${k}">${escapeHtml(v)}</option>`).join('');
+  syncCricketMetricOptions();
   render();
 }
 
@@ -353,6 +354,23 @@ function updateControls() {
 /** Chart renderer: SVG is self-contained, responsive, tooltip accessible and has no external CDNs.
  * Line chart aggregates the current metric per observed year. Bar chart uses current ranking.
  * Missing values are ignored. Position metrics sort ascending; win rate uses only decided games. */
+
+/* Formats have distinct schemas. The metric menu must never offer player runs
+   against team wins or season-independent career averages in the same view. */
+function syncCricketMetricOptions(){
+  if(sport!=='Cricket')return;
+  const comp=$('competition').value;
+  const player=comp.endsWith(' Players');
+  const intl=comp.startsWith('International ')&&!player;
+  const allowed=intl?['wins','losses','win_rate','games','performance_score']:
+    player?['runs','games','innings','strike_rate','batting_average','highest_score','hundreds','fifties','fours','sixes','performance_score']:
+    ['runs','wickets','games','strike_rate','performance_score'];
+  const current=$('metric').value;
+  $('metric').innerHTML=allowed.filter(k=>defs.Cricket.metrics[k])
+    .map(k=>'<option value="'+k+'">'+escapeHtml(defs.Cricket.metrics[k])+'</option>').join('');
+  $('metric').value=allowed.includes(current)?current:(intl?'wins':'runs');
+}
+
 function renderAnalyticalCharts(records,leaders,metric){
   const label=defs[sport].metrics[metric]||metric;
   $('timeChartMetric').textContent=label;
@@ -368,10 +386,28 @@ function renderAnalyticalCharts(records,leaders,metric){
   const values=[...byYear].sort((a,b)=>a[0].localeCompare(b[0],undefined,{numeric:true}))
     .map(([year,x])=>({year,value:averaged(metric)?x.sum/x.n:x.sum,n:x.n}));
   const isCareerSnapshot=sport==='Cricket'&&records.length&&records.every(r=>r.record_kind==='international_player_career');
-  $('timeChartNote').textContent=isCareerSnapshot?'Career totals only — yearly trends are unavailable in this source snapshot.':values.length
+  $('timeChartTitle').textContent=isCareerSnapshot?'The same player, three formats':'When did performance change?';
+  $('timeChartNote').textContent=isCareerSnapshot?'Historical career snapshot across formats; no season-by-season player totals are available.':values.length
     ? 'Yearly '+(averaged(metric)?'average':'total')+' of '+label.toLowerCase()+' · '+values.length+' observed years'
     : 'No available numeric values for this metric. Change sport, season or metric.';
-  if(!values.length||isCareerSnapshot){
+  if(isCareerSnapshot){
+    const focus=leaders[0];
+    const career=focus?all.filter(r=>r.sport==='Cricket'&&r.record_kind==='international_player_career'&&r.competitor_id===focus.id):[];
+    const chosen=career.map(r=>({name:r.competition.replace('International ','').replace(' Players',''),v:metricValue(r,metric)}))
+      .filter(v=>v.v!==null&&Number.isFinite(v.v));
+    if(!chosen.length){$('timeChart').innerHTML='<p class="chart-empty">No other format observations for the selected player.</p>';}
+    else{
+      const max=Math.max(1,...chosen.map(x=>x.v)),w=640,h=245,left=78,barMax=460;
+      const lines=chosen.map((d,i)=>{
+        const y=30+i*66,vw=Math.max(0,d.v/max)*barMax;
+        return '<text x="'+(left-12)+'" y="'+(y+17)+'" class="fn-axis" text-anchor="end">'+escapeHtml(d.name)+'</text>'+
+          '<rect x="'+left+'" y="'+y+'" width="'+barMax+'" height="24" fill="var(--chart-track)"/>'+
+          '<rect class="fn-duel-a" x="'+left+'" y="'+y+'" width="'+vw+'" height="24"><title>'+escapeHtml(d.name+': '+number(d.v))+'</title></rect>'+
+          '<text x="'+(left+vw+10)+'" y="'+(y+17)+'" class="fn-axis">'+number(d.v)+'</text>';
+      }).join('');
+      $('timeChart').innerHTML=fnSvg(lines,w,h,focus.name+' '+(defs.Cricket.metrics[metric]||metric)+' by format');
+    }
+  }else if(!values.length){
     $('timeChart').innerHTML='<p class="chart-empty">No matching historical trend data.</p>';
   }else{
     const w=680,h=240,p={l:46,r:18,t:18,b:34},iw=w-p.l-p.r,ih=h-p.t-p.b;
@@ -739,6 +775,7 @@ function selectCricketView(c){
   }
   $('competition').value=c;
   $('metric').value=c.startsWith('International ')&&!c.endsWith(' Players')?'wins':'runs';
+  syncCricketMetricOptions();
   document.querySelectorAll('[data-cricket-view]').forEach(b=>b.classList.toggle('selected',b.dataset.cricketView===c));
   const cricketPanel=$('cricketFormats'); if(cricketPanel)cricketPanel.hidden=false;
   render();
@@ -746,7 +783,10 @@ function selectCricketView(c){
 document.querySelectorAll('[data-cricket-view]').forEach(b=>b.addEventListener('click',()=>selectCricketView(b.dataset.cricketView)));
 $('competition').addEventListener('change',()=>{
   if(sport!=='Cricket')return;
-  let international=$('competition').value.startsWith('International ')&&!$('competition').value.endsWith(' Players');
+  const c=$('competition').value;
+  if(c==='All competitions'){selectCricketView('International ODI');return;}
+  let international=c.startsWith('International ')&&!c.endsWith(' Players');
+  syncCricketMetricOptions();
   if(international&&['runs','wickets','strike_rate'].includes($('metric').value))$('metric').value='wins';
   if(!international&&['wins','losses','win_rate'].includes($('metric').value))$('metric').value='runs';
 });
