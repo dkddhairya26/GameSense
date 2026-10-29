@@ -96,9 +96,11 @@
         <span class="eyebrow">CRICKET DATASETS</span>
         <div class="cricket-view-buttons">
           <button data-cricket-view="Indian Premier League · selected leading performers" class="selected">IPL · Player stats</button>
-          <button data-cricket-view="International ODI">International ODIs · Team results</button>
+          <button data-cricket-view="International ODI">ODI · Teams</button>
+          <button data-cricket-view="International T20I">T20I · Teams</button>
+          <button data-cricket-view="International Test">Tests · Teams</button>
         </div>
-        <p class="analytics-disclaimer">IPL player-seasons and international national-team matches use different metrics. The ODI view is a 16-match Cricsheet selection, not complete international coverage.</p>
+        <p class="analytics-disclaimer">IPL player-seasons and international national-team matches use different metrics. International ODI, T20I and Test match-result archives are historical and may include matches with unknown outcomes; only decided results contribute to win percentages.</p>
       </section>
       <section class="kpis">
         <div class="kpi panel"><span>OBSERVATIONS</span><strong id="count">—</strong><small>Rows in current filtered view</small></div>
@@ -107,6 +109,18 @@
         <div class="kpi panel"><span>DATA SOURCE</span><strong id="source">—</strong><small id="sourceSub">Source attribution and limits shown below</small></div>
       </section>
 
+      <section class="insight-graphs" id="chartsPanel" aria-label="Interactive sports performance charts">
+        <section class="panel chart-panel">
+          <div class="panel-head"><div><span class="eyebrow">YEAR-BY-YEAR ANALYSIS</span><h2>Historical performance</h2></div><span class="chip" id="timeChartMetric">Selected metric</span></div>
+          <p class="chart-note" id="timeChartNote">Calculated from your current season and competition filters</p>
+          <div id="timeChart" class="chart-viewport" role="img" aria-label="Historical metric trend chart"></div>
+        </section>
+        <section class="panel chart-panel">
+          <div class="panel-head"><div><span class="eyebrow">COMPARATIVE INTELLIGENCE</span><h2>Top competitors</h2></div><span class="chip">Interactive chart</span></div>
+          <p class="chart-note" id="rankChartNote">Top competitors for the selected metric</p>
+          <div id="rankChart" class="chart-viewport" role="img" aria-label="Top competitor comparison bar chart"></div>
+        </section>
+      </section>
       <div class="content-grid">
         <section class="panel" id="rankingPanel">
           <div class="panel-head">
@@ -222,7 +236,7 @@
           </div>
           <div>
             <b>Cricket — IPL & International ODIs</b>
-            <p>208 curated IPL player-season records across 19 observed seasons, 2007/08–2026, plus 16 source-verified international ODI matches (32 team perspectives), 2009–2014. Selection: the seven highest-run and four highest-wicket players per season with duplicates removed. This is a curated sample, not complete IPL coverage.</p>
+            <p>208 curated IPL player-season records across 19 observed seasons, 2007/08–2026, plus international ODI, T20I and Test match results, 2001–2025, sourced from Cricsheet-derived CSV archives. Selection: the seven highest-run and four highest-wicket players per season with duplicates removed. This is a curated sample, not complete IPL coverage.</p>
             <p>Sources: <a href="https://cricsheet.org/" target="_blank" rel="noopener">Cricsheet</a> · <a href="https://github.com/VeeraMounika/IPL-analytics-ETL" target="_blank" rel="noopener">IPL ETL derived data</a> · <a href="https://cricsheet.org/licensing/" target="_blank" rel="noopener">ODC-BY 1.0 license</a>.</p>
           </div>
           <div>
@@ -241,6 +255,6 @@
     </main>
   </div>
 
-  <script defer src="app.js?v=20261030-profile-v3"></script>
+  <script defer src="app.js?v=20261030-international-charts-v4"></script>
 </body>
 </html>
