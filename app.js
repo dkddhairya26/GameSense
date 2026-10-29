@@ -215,7 +215,7 @@ async function load() {
     if(result.error){failures.push(result.part.file+': '+result.error);continue;}
     for(const match of result.source){
       const id=String(match.match_id||'').trim(),a=String(match.team1||'').trim(),b=String(match.team2||'').trim(),date=String(match.date||'').trim();
-      if(!id||!a||!b||a===b||!/^\\d{4}-\\d{2}-\\d{2}$/.test(date))continue;
+      if(!id||!a||!b||a===b||!/^\d{4}-\d{2}-\d{2}$/.test(date))continue;
       const winner=String(match.winner||'').trim();
       // Unknown winners are undetermined, not losses; never invent outcomes.
       const outcomeA=winner===a?'W':winner===b?'L':'U';
@@ -352,7 +352,7 @@ function renderAnalyticalCharts(records,leaders,metric){
   for(const r of records){
     const v=metricValue(r,metric);
     if(v===null||!Number.isFinite(v))continue;
-    const y=String(r.season||'').match(/(?:19|20)\\d{2}/)?.[0]||String(r.season||'Unknown');
+    const y=String(r.season||'').match(/(?:19|20)\d{2}/)?.[0]||String(r.season||'Unknown');
     const cur=byYear.get(y)||{sum:0,n:0};
     cur.sum+=v;cur.n++;
     byYear.set(y,cur);
@@ -621,7 +621,13 @@ document.querySelectorAll('.nav').forEach(btn => btn.onclick = () => {
 
 function selectCricketView(c){
   if(sport!=='Cricket')return;
-  $('season').value='All seasons';$('competition').value=c;
+  $('season').value='All seasons';
+  const match=[...$('competition').options].some(o=>o.value===c);
+  if(!match){
+    $('importStatus').textContent='The '+c+' archive could not be found. Check the data status below.';
+    return;
+  }
+  $('competition').value=c;
   $('metric').value=c.startsWith('International ')?'wins':'runs';
   document.querySelectorAll('[data-cricket-view]').forEach(b=>b.classList.toggle('selected',b.dataset.cricketView===c));
   const cricketPanel=$('cricketFormats'); if(cricketPanel)cricketPanel.hidden=false;
