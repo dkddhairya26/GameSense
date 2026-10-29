@@ -14,8 +14,8 @@ const defs = {
     coverage: 'Club fixtures / archived seasons',
     source: 'OpenFootball',
     sourceSub: 'Bundled team results · no player-level football stats',
-    accent: '#5ae0b0',
-    accent2: '#4bb4ff',
+    accent: '#a9bbac',
+    accent2: '#778e80',
     metrics: {
       points: 'Match points',
       goals: 'Goals scored',
@@ -31,8 +31,8 @@ const defs = {
     coverage: 'NBA / player-season archive',
     source: 'BoxScore Lab',
     sourceSub: 'Bundled seasons from the GameSense archive',
-    accent: '#ffb347',
-    accent2: '#ff6f61',
+    accent: '#c6a68d',
+    accent2: '#957c69',
     metrics: {
       points: 'Points',
       rebounds: 'Rebounds',
@@ -48,7 +48,7 @@ const defs = {
     coverage: 'IPL / ODI / T20I / TEST',
     source: 'Cricsheet / IPL ETL',
     sourceSub: 'Curated leading performers; incomplete league coverage',
-    accent: '#a6ec6a', accent2: '#ffd966',
+    accent: '#b7ac8c', accent2: '#888674',
     metrics: {
       runs: 'Batting runs', wickets: 'Bowling wickets', games: 'Matches played',
       strike_rate: 'Batting strike rate', batting_average:'Batting average', highest_score:'Highest score', hundreds:'Centuries', fifties:'Half-centuries', fours:'Fours', sixes:'Sixes', innings:'Innings', wins:'Match wins (international)', losses:'Match losses (international)', win_rate:'Win rate % (international)', performance_score: 'GameSense rating (0–100)'
@@ -60,8 +60,8 @@ const defs = {
     coverage: 'Grand Prix / race-result archive',
     source: 'F1DB',
     sourceSub: 'Bundled driver-result history',
-    accent: '#ff6d8c',
-    accent2: '#cb6dff',
+    accent: '#b69a97',
+    accent2: '#8b7473',
     metrics: {
       points: 'Race points',
       wins: 'Wins',
@@ -579,14 +579,14 @@ function render() {
   const top = ranking.slice(0, 10);
   const max = Math.max(...top.map(x => x.metric), 0.001);
   $('bars').innerHTML = top.length ? top.map(g => `
-    <div class="barrow">
+    <div class="barrow subject-pick" role="button" tabindex="0" data-select-subject="${escapeHtml(g.id)}" title="View ${escapeHtml(g.name)} profile">
       <span class="barname" title="${escapeHtml(g.name)}">${escapeHtml(g.name)}</span>
       <div class="track"><div class="fill" style="width:${Math.min(100, Math.max(1, g.metric / max * 100))}%"></div></div>
       <span class="value">${number(g.metric)}</span>
     </div>`).join('') : '<p class="empty">No rows found for this selection. Change the filters or load more data.</p>';
 
   $('rankRows').innerHTML = ranking.slice(0, 120).map((g, i) => `
-    <tr><td>${i + 1}</td><td>${escapeHtml(g.name)}</td><td>${number(g.rows)}</td><td>${number(g.metric)}</td></tr>`).join('');
+    <tr class="subject-pick" data-select-subject="${escapeHtml(g.id)}" tabindex="0" title="View ${escapeHtml(g.name)} profile"><td>${i + 1}</td><td>${escapeHtml(g.name)}</td><td>${number(g.rows)}</td><td>${number(g.metric)}</td></tr>`).join('');
 
   const previousA = $('compareA').value, previousB = $('compareB').value;
   const compareOptions = ranking.slice(0, 180).map(g => `<option value="${escapeHtml(g.id)}">${escapeHtml(g.name)}</option>`).join('');
@@ -609,6 +609,7 @@ function render() {
   }
 
   updateLeaderPhoto(ranking[0]);
+  renderSelectedSubject();
   $('bars').classList.remove('motion-in');void $('bars').offsetWidth;$('bars').classList.add('motion-in');
   renderRecentForm(ranking[0]);
   renderCompare();
@@ -637,73 +638,126 @@ function renderRecentForm(leader){
 
 /* Optional Wikipedia portraits: only exact name/title matches are shown.
    If confidence is insufficient or the network is unavailable, show initials instead. */
-const photoCache=new Map(); let portraitSequence=0;
+/* Wikimedia image lookup for documented identities; no guessed portrait URLs.
+ * Country teams use flags; sourced photos link to their Commons file description.
+ * Wikipedia API is not guaranteed to respond, so initials are always available. */
+const photoCache=new Map();
 const teamNames={ATL:'Atlanta Hawks',BOS:'Boston Celtics',BKN:'Brooklyn Nets',CHI:'Chicago Bulls',CLE:'Cleveland Cavaliers',DAL:'Dallas Mavericks',DEN:'Denver Nuggets',DET:'Detroit Pistons',GSW:'Golden State Warriors',HOU:'Houston Rockets',LAL:'Los Angeles Lakers',MEM:'Memphis Grizzlies',MIA:'Miami Heat',MIL:'Milwaukee Bucks',NYK:'New York Knicks',PHI:'Philadelphia 76ers',PHX:'Phoenix Suns',TOR:'Toronto Raptors'};
-function initials(n){return String(n||'GS').split(/\s+/).filter(Boolean).slice(0,2).map(x=>x[0]).join('').toUpperCase()||'GS'}
-function titleKey(s){return String(s||'').normalize('NFKD').replace(/\([^)]*\)/g,'').replace(/[^a-z0-9]/gi,'').toLowerCase()}
-/* Historical IPL archives commonly abbreviate first names. Expand only well-known,
-   unambiguous aliases; unknown initials deliberately keep a neutral fallback. */
-const portraitAliases={
-  'V Kohli':'Virat Kohli','RG Sharma':'Rohit Sharma',
-  'MS Dhoni':'MS Dhoni','SR Tendulkar':'Sachin Tendulkar',
-  'CH Gayle':'Chris Gayle','DA Warner':'David Warner',
-  'SK Raina':'Suresh Raina','G Gambhir':'Gautam Gambhir',
-  'SE Marsh':'Shaun Marsh','KL Rahul':'KL Rahul',
-  'JC Buttler':'Jos Buttler','RR Pant':'Rishabh Pant',
-  'JC Archer':'Jofra Archer','YS Chahal':'Yuzvendra Chahal',
-  'AB de Villiers':'AB de Villiers'
-};
-async function resolvePortrait(name) {
-  if(!name||name.length<3)return null;
-  const lookup=portraitAliases[name]||name;
-  if(photoCache.has(name))return photoCache.get(name);
-  const promise=(async()=>{
-    try{
-      const query='intitle:"'+lookup.replace(/"/g,'')+'"';
-      const url='https://en.wikipedia.org/w/api.php?action=query&origin=*&generator=search&gsrsearch='+encodeURIComponent(query)+'&gsrlimit=5&prop=pageimages&piprop=thumbnail&pithumbsize=420&format=json&formatversion=2';
-      const res=await fetch(url,{mode:'cors'});if(!res.ok)return null;
-      const data=await res.json();
-      const candidate=(data.query?.pages||[]).find(p=>{
-        const a=titleKey(p.title),b=titleKey(lookup);
-        return b.length>=5&&(a===b||a.startsWith(b)&&a.length-b.length<=14)&&p.thumbnail?.source?.startsWith('https://');
-      });
-      return candidate?{image:candidate.thumbnail.source,article:'https://en.wikipedia.org/?curid='+candidate.pageid}:null;
-    }catch(e){return null;}
-  })();
-  photoCache.set(name,promise);return promise;
+const portraitAliases={'V Kohli':'Virat Kohli','RG Sharma':'Rohit Sharma','MS Dhoni':'MS Dhoni','SR Tendulkar':'Sachin Tendulkar','CH Gayle':'Chris Gayle','DA Warner':'David Warner','SK Raina':'Suresh Raina','G Gambhir':'Gautam Gambhir','SE Marsh':'Shaun Marsh','KL Rahul':'KL Rahul','JC Buttler':'Jos Buttler','RR Pant':'Rishabh Pant','JC Archer':'Jofra Archer','YS Chahal':'Yuzvendra Chahal','AB de Villiers':'AB de Villiers','KA Pollard':'Kieron Pollard','SPD Smith':'Steve Smith','V Sehwag':'Virender Sehwag','F du Plessis':'Faf du Plessis','HH Pandya':'Hardik Pandya','RA Jadeja':'Ravindra Jadeja','S Dhawan':'Shikhar Dhawan'};
+const countryFlags={'India':'🇮🇳','Australia':'🇦🇺','England':'🏴','Pakistan':'🇵🇰','New Zealand':'🇳🇿','South Africa':'🇿🇦','Bangladesh':'🇧🇩','Sri Lanka':'🇱🇰','Afghanistan':'🇦🇫','West Indies':'🏝️','Zimbabwe':'🇿🇼','Ireland':'🇮🇪','Scotland':'🏴','Netherlands':'🇳🇱','Nepal':'🇳🇵','Canada':'🇨🇦','United States of America':'🇺🇸','United States':'🇺🇸','Oman':'🇴🇲','United Arab Emirates':'🇦🇪','Papua New Guinea':'🇵🇬'};
+function initials(n){return String(n||'GS').trim().split(/\s+/).slice(0,2).map(w=>w[0]).join('').toUpperCase()||'GS'}
+function titleKey(s){return String(s||'').normalize('NFKD').replace(/\s*\([^)]*\)\s*/g,' ').replace(/[^a-z0-9]/gi,'').toLowerCase()}
+function photoSubject(g) {
+  if(!g)return null;
+  const subset=filtered.filter(r=>r.competitor_id===g.id);
+  const r=subset[0];
+  const national=sport==='Cricket'&&r?.record_kind==='international_team_match';
+  return {name:portraitAliases[g.name]||g.name,kind:national?'country':sport==='Soccer'?'club':'athlete',country:national?g.name:(r?.team||'')};
+}
+function countryFallback(g){
+  const p=photoSubject(g);
+  if(!p)return null;
+  if(p.kind==='country')return countryFlags[p.name]||'🌐';
+  return null;
 }
 function teamInfo(g){
   if(!g)return 'Select a competitor';
-  if(sport==='Soccer')return 'Football club · '+g.name;
-  if(sport==='Cricket'&&$('competition').value.startsWith('International ')&&!$('competition').value.endsWith(' Players'))return 'National team · '+g.name;
-  const list=filtered.filter(r=>r.competitor_id===g.id&&r.team).sort((a,b)=>String(b.date||b.season).localeCompare(String(a.date||a.season),undefined,{numeric:true}));
-  const t=list[0]?.team;
-  if(t)return (sport==='F1'?'Constructor · ':sport==='Cricket'&&$('competition').value.endsWith(' Players')?'Country · ':'Team · ')+(teamNames[t]||t);
-  return sport==='Cricket'?'IPL athlete · historical team not in source':'Team not recorded in the selected data';
+  if(sport==='Soccer')return 'Club · '+g.name;
+  const international=sport==='Cricket'&&$('competition').value.startsWith('International ');
+  if(international&&!$('competition').value.endsWith(' Players'))return 'National side · '+g.name;
+  const list=filtered.filter(r=>r.competitor_id===g.id&&r.team)
+    .sort((a,b)=>String(b.date||b.season).localeCompare(String(a.date||a.season),undefined,{numeric:true}));
+  const raw=list[0]?.team||'';
+  if(raw)return (sport==='F1'?'Constructor · ':international?'Country · ':'Team · ')+(teamNames[raw]||raw);
+  return sport==='Cricket'?'IPL record · club not supplied by this data source':'Team not recorded in this archive';
 }
-let profileVersion=0, leaderVersion=0;
-async function displayPhoto(name,imageId,initialsId,creditId,version,readVersion){
-  const image=$(imageId),fallback=$(initialsId),credit=creditId?$(creditId):null;
-  if(!image||!fallback)return;
-  fallback.textContent=initials(name);
-  fallback.hidden=false;image.hidden=true;image.removeAttribute('src');
-  if(credit)credit.hidden=true;
-  const info=await resolvePortrait(name);
-  if(readVersion()!==version||!info)return;
-  image.onload=()=>{if(readVersion()===version){image.hidden=false;fallback.hidden=true;}};
-  image.onerror=()=>{image.hidden=true;fallback.hidden=false;};
-  image.src=info.image;
-  if(credit){credit.href=info.article;credit.hidden=false;}
+const wikiArticle=name=>'https://en.wikipedia.org/wiki/'+encodeURIComponent(name.replace(/ /g,'_'));
+async function resolvePortrait(g){
+  const p=photoSubject(g);
+  if(!p||p.kind==='country')return null;
+  const key=p.kind+':'+p.name;
+  if(photoCache.has(key))return photoCache.get(key);
+  const promise=(async()=>{
+    const title=p.name;
+    const url='https://en.wikipedia.org/w/api.php?action=query&origin=*&redirects=1&titles='+
+      encodeURIComponent(title)+'&prop=pageimages%7Cdescription&piprop=thumbnail%7Cname&pithumbsize=460&format=json&formatversion=2';
+    try{
+      const response=await fetch(url,{mode:'cors'});
+      if(!response.ok)throw Error('image lookup HTTP '+response.status);
+      const data=await response.json();
+      const page=(data.query?.pages||[]).find(x=>!x.missing&&x.thumbnail?.source?.startsWith('https://'));
+      if(!page||titleKey(page.title)!==titleKey(title))return null;
+      const description=String(page.description||'').toLowerCase();
+      if(p.kind==='athlete'&&description&&(/politician|actor|actress|singer|musician|film director|writer|political party/.test(description)))return null;
+      if(p.kind==='club'&&description&&/person|footballer|basketball player|politician|actor/.test(description))return null;
+      const src=page.thumbnail.source;
+      const pageURL='https://en.wikipedia.org/?curid='+encodeURIComponent(page.pageid);
+      const file=page.pageimage?('https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(page.pageimage.replace(/ /g,'_'))):pageURL;
+      return {src,credit:file,page:pageURL};
+    }catch(e){
+      // A second independent API format improves reliability across browsers/networks.
+      try{
+        const r=await fetch('https://en.wikipedia.org/api/rest_v1/page/summary/'+encodeURIComponent(title.replace(/ /g,'_')),{mode:'cors'});
+        if(!r.ok)return null;
+        const d=await r.json();
+        if(titleKey(d.title)!==titleKey(title)||!d.thumbnail?.source?.startsWith('https://'))return null;
+        return {src:d.thumbnail.source,credit:d.content_urls?.desktop?.page||wikiArticle(title),page:d.content_urls?.desktop?.page||wikiArticle(title)};
+      }catch(err){return null;}
+    }
+  })();
+  photoCache.set(key,promise);
+  return promise;
+}
+let profileVersion=0,leaderVersion=0,subjectVersion=0;
+function displayPhoto(g,imageId,initialsId,creditId,version,readVersion){
+  const img=$(imageId),fallback=$(initialsId),credit=creditId?$(creditId):null;
+  if(!img||!fallback)return;
+  const flag=countryFallback(g);
+  fallback.textContent=flag||initials(g?.name||'GS');
+  fallback.classList.toggle('flag-glyph',Boolean(flag));
+  fallback.hidden=false;img.hidden=true;
+  img.removeAttribute('src');
+  if(credit){credit.hidden=true;credit.removeAttribute('href')}
+  if(!g||flag)return;
+  resolvePortrait(g).then(info=>{
+    if(readVersion()!==version||!info)return;
+    img.onload=()=>{if(readVersion()===version){img.hidden=false;fallback.hidden=true;}};
+    img.onerror=()=>{if(readVersion()===version){img.hidden=true;fallback.hidden=false;if(credit)credit.hidden=true;}};
+    img.src=info.src;
+    if(credit){credit.href=info.credit;credit.hidden=false;credit.title='Wikimedia image file and licensing information'}
+  }).catch(()=>{});
 }
 function updateProfiles(a,b){
   const version=++profileVersion;
   for(const [suffix,g] of [['A',a],['B',b]]){
     $('avatarName'+suffix).textContent=g?.name||'Select a competitor';
     $('avatarTeam'+suffix).textContent=teamInfo(g);
-    displayPhoto(g?.name,'avatarPhoto'+suffix,'avatarFallback'+suffix,'avatarCredit'+suffix,version,()=>profileVersion);
+    displayPhoto(g,'avatarPhoto'+suffix,'avatarFallback'+suffix,'avatarCredit'+suffix,version,()=>profileVersion);
   }
 }
-function updateLeaderPhoto(g){const v=++leaderVersion;displayPhoto(g?.name,'leaderPortrait','leaderMonogram',null,v,()=>leaderVersion)}
+function updateLeaderPhoto(g){
+  const version=++leaderVersion;
+  $('leaderTeam').textContent=teamInfo(g);
+  displayPhoto(g,'leaderPortrait','leaderMonogram','leaderPhotoCredit',version,()=>leaderVersion);
+}
+let selectedSubjectId='';
+function renderSelectedSubject(){
+  const picked=ranking.find(g=>g.id===selectedSubjectId)||ranking[0];
+  if(!picked)return;
+  selectedSubjectId=picked.id;
+  $('subjectName').textContent=picked.name;
+  $('subjectAffiliation').textContent=teamInfo(picked);
+  const rowsForSubject=filtered.filter(r=>r.competitor_id===picked.id);
+  const years=[...new Set(rowsForSubject.map(r=>r.season))];
+  $('subjectContext').textContent=rowsForSubject[0]?.record_kind==='international_player_career'?
+    'Historical career snapshot · '+$('competition').value:
+    years.length+' recorded season'+(years.length===1?'':'s')+' · '+rowsForSubject.length.toLocaleString()+' observations';
+  $('subjectMetric').textContent=number(picked.metric);
+  $('subjectMetricLabel').textContent=defs[sport].metrics[$('metric').value]||$('metric').value;
+  const v=++subjectVersion;
+  displayPhoto(picked,'subjectPortrait','subjectMonogram','subjectPhotoCredit',v,()=>subjectVersion);
+  document.querySelectorAll('[data-select-subject]').forEach(el=>el.classList.toggle('is-subject-selected',el.dataset.selectSubject===picked.id));
+}
 function renderCompare() {
   const metric = $('metric').value;
   const a = ranking.find(g => g.id === $('compareA').value);
@@ -807,6 +861,18 @@ $('competition').addEventListener('change',()=>{
   $(id).addEventListener(id === 'search' ? 'input' : 'change', render);
 });
 ['compareA', 'compareB'].forEach(id => $(id).addEventListener('change', renderCompare));
+for(const id of ['bars','rankRows']){
+  $(id).addEventListener('click',event=>{
+    const item=event.target.closest('[data-select-subject]');
+    if(item){selectedSubjectId=item.dataset.selectSubject;renderSelectedSubject();}
+  });
+  $(id).addEventListener('keydown',event=>{
+    const item=event.target.closest('[data-select-subject]');
+    if(item&&(event.key==='Enter'||event.key===' ')){
+      event.preventDefault();selectedSubjectId=item.dataset.selectSubject;renderSelectedSubject();
+    }
+  });
+}
 
 function reportFailure(err){
   console.error('GameSense:',err);
