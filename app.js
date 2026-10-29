@@ -641,17 +641,30 @@ const photoCache=new Map(); let portraitSequence=0;
 const teamNames={ATL:'Atlanta Hawks',BOS:'Boston Celtics',BKN:'Brooklyn Nets',CHI:'Chicago Bulls',CLE:'Cleveland Cavaliers',DAL:'Dallas Mavericks',DEN:'Denver Nuggets',DET:'Detroit Pistons',GSW:'Golden State Warriors',HOU:'Houston Rockets',LAL:'Los Angeles Lakers',MEM:'Memphis Grizzlies',MIA:'Miami Heat',MIL:'Milwaukee Bucks',NYK:'New York Knicks',PHI:'Philadelphia 76ers',PHX:'Phoenix Suns',TOR:'Toronto Raptors'};
 function initials(n){return String(n||'GS').split(/\s+/).filter(Boolean).slice(0,2).map(x=>x[0]).join('').toUpperCase()||'GS'}
 function titleKey(s){return String(s||'').normalize('NFKD').replace(/\([^)]*\)/g,'').replace(/[^a-z0-9]/gi,'').toLowerCase()}
+/* Historical IPL archives commonly abbreviate first names. Expand only well-known,
+   unambiguous aliases; unknown initials deliberately keep a neutral fallback. */
+const portraitAliases={
+  'V Kohli':'Virat Kohli','RG Sharma':'Rohit Sharma',
+  'MS Dhoni':'MS Dhoni','SR Tendulkar':'Sachin Tendulkar',
+  'CH Gayle':'Chris Gayle','DA Warner':'David Warner',
+  'SK Raina':'Suresh Raina','G Gambhir':'Gautam Gambhir',
+  'SE Marsh':'Shaun Marsh','KL Rahul':'KL Rahul',
+  'JC Buttler':'Jos Buttler','RR Pant':'Rishabh Pant',
+  'JC Archer':'Jofra Archer','YS Chahal':'Yuzvendra Chahal',
+  'AB de Villiers':'AB de Villiers'
+};
 async function resolvePortrait(name) {
-  if(!name||name.length<5)return null;
+  if(!name||name.length<3)return null;
+  const lookup=portraitAliases[name]||name;
   if(photoCache.has(name))return photoCache.get(name);
   const promise=(async()=>{
     try{
-      const query='intitle:"'+name.replace(/"/g,'')+'"';
+      const query='intitle:"'+lookup.replace(/"/g,'')+'"';
       const url='https://en.wikipedia.org/w/api.php?action=query&origin=*&generator=search&gsrsearch='+encodeURIComponent(query)+'&gsrlimit=5&prop=pageimages&piprop=thumbnail&pithumbsize=420&format=json&formatversion=2';
       const res=await fetch(url,{mode:'cors'});if(!res.ok)return null;
       const data=await res.json();
       const candidate=(data.query?.pages||[]).find(p=>{
-        const a=titleKey(p.title),b=titleKey(name);
+        const a=titleKey(p.title),b=titleKey(lookup);
         return b.length>=5&&(a===b||a.startsWith(b)&&a.length-b.length<=14)&&p.thumbnail?.source?.startsWith('https://');
       });
       return candidate?{image:candidate.thumbnail.source,article:'https://en.wikipedia.org/?curid='+candidate.pageid}:null;
