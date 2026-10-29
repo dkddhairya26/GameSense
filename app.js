@@ -326,7 +326,7 @@ function render() {
   $('ratingFormula').textContent={
     Soccer:'30 + 30×win + 10×draw + 12×goal difference per match (0–100)',
     NBA:'2×points per game + 1.3×rebounds per game + 1.5×assists per game (0–100)',
-    Cricket:c==='International ODI'?'ODI index: win 100, draw/tie 50, loss 0. Win rate = wins / observed matches.':'IPL index: 1.25×runs per match + 17×wickets per match (0–100)',
+    Cricket:competition==='International ODI'?'ODI index: win 100, draw/tie 50, loss 0. Win rate = wins / observed matches.':'IPL index: 1.25×runs per match + 17×wickets per match (0–100)',
     F1:'100 − 7×(classified finishing position − 1) per race (0–100)'
   }[sport]+' · Experimental GameSense indicator, not official or predictive.';
   const top = ranking.slice(0, 10);
@@ -361,6 +361,8 @@ function render() {
     $('insightText').textContent = 'Try a different sport, season or metric.';
   }
 
+  updateLeaderPhoto(ranking[0]);
+  $('bars').classList.remove('motion-in');void $('bars').offsetWidth;$('bars').classList.add('motion-in');
   renderRecentForm(ranking[0]);
   renderCompare();
 }
@@ -382,10 +384,68 @@ function renderRecentForm(leader){
     $('formSummary').textContent=leader.name+': '+(games?number(v/games)+(sport==='NBA'?' points/game':' runs/match'):'no game denominator')+' across '+sample.length+' latest selected player-seasons.';
   }
 }
+
+/* Optional Wikipedia portraits: only exact name/title matches are shown.
+   If confidence is insufficient or the network is unavailable, show initials instead. */
+const photoCache=new Map(); let portraitSequence=0;
+const teamNames={ATL:'Atlanta Hawks',BOS:'Boston Celtics',BKN:'Brooklyn Nets',CHI:'Chicago Bulls',CLE:'Cleveland Cavaliers',DAL:'Dallas Mavericks',DEN:'Denver Nuggets',DET:'Detroit Pistons',GSW:'Golden State Warriors',HOU:'Houston Rockets',LAL:'Los Angeles Lakers',MEM:'Memphis Grizzlies',MIA:'Miami Heat',MIL:'Milwaukee Bucks',NYK:'New York Knicks',PHI:'Philadelphia 76ers',PHX:'Phoenix Suns',TOR:'Toronto Raptors'};
+function initials(n){return String(n||'GS').split(/\s+/).filter(Boolean).slice(0,2).map(x=>x[0]).join('').toUpperCase()||'GS'}
+function titleKey(s){return String(s||'').normalize('NFKD').replace(/\([^)]*\)/g,'').replace(/[^a-z0-9]/gi,'').toLowerCase()}
+async function resolvePortrait(name) {
+  if(!name||name.length<5)return null;
+  if(photoCache.has(name))return photoCache.get(name);
+  const promise=(async()=>{
+    try{
+      const query='intitle:"'+name.replace(/"/g,'')+'"';
+      const url='https://en.wikipedia.org/w/api.php?action=query&origin=*&generator=search&gsrsearch='+encodeURIComponent(query)+'&gsrlimit=5&prop=pageimages&piprop=thumbnail&pithumbsize=420&format=json&formatversion=2';
+      const res=await fetch(url,{mode:'cors'});if(!res.ok)return null;
+      const data=await res.json();
+      const candidate=(data.query?.pages||[]).find(p=>{
+        const a=titleKey(p.title),b=titleKey(name);
+        return b.length>=5&&(a===b||a.startsWith(b)&&a.length-b.length<=14)&&p.thumbnail?.source?.startsWith('https://');
+      });
+      return candidate?{image:candidate.thumbnail.source,article:'https://en.wikipedia.org/?curid='+candidate.pageid}:null;
+    }catch(e){return null;}
+  })();
+  photoCache.set(name,promise);return promise;
+}
+function teamInfo(g){
+  if(!g)return 'Select a competitor';
+  if(sport==='Soccer')return 'Football club · '+g.name;
+  if(sport==='Cricket'&&$('competition').value==='International ODI')return 'National team · '+g.name;
+  const list=filtered.filter(r=>r.competitor_id===g.id&&r.team).sort((a,b)=>String(b.date||b.season).localeCompare(String(a.date||a.season),undefined,{numeric:true}));
+  const t=list[0]?.team;
+  if(t)return (sport==='F1'?'Constructor · ':'Team · ')+(teamNames[t]||t);
+  return sport==='Cricket'?'IPL athlete · historical team not in source':'Team not recorded in the selected data';
+}
+let profileVersion=0, leaderVersion=0;
+async function displayPhoto(name,imageId,initialsId,creditId,version,readVersion){
+  const image=$(imageId),fallback=$(initialsId),credit=creditId?$(creditId):null;
+  if(!image||!fallback)return;
+  fallback.textContent=initials(name);
+  fallback.hidden=false;image.hidden=true;image.removeAttribute('src');
+  if(credit)credit.hidden=true;
+  const info=await resolvePortrait(name);
+  if(readVersion()!==version||!info)return;
+  image.onload=()=>{if(readVersion()===version){image.hidden=false;fallback.hidden=true;}};
+  image.onerror=()=>{image.hidden=true;fallback.hidden=false;};
+  image.src=info.image;
+  if(credit){credit.href=info.article;credit.hidden=false;}
+}
+function updateProfiles(a,b){
+  const version=++profileVersion;
+  for(const [suffix,g] of [['A',a],['B',b]]){
+    $('avatarName'+suffix).textContent=g?.name||'Select a competitor';
+    $('avatarTeam'+suffix).textContent=teamInfo(g);
+    displayPhoto(g?.name,'avatarPhoto'+suffix,'avatarFallback'+suffix,'avatarCredit'+suffix,version,()=>profileVersion);
+  }
+}
+function updateLeaderPhoto(g){const v=++leaderVersion;displayPhoto(g?.name,'leaderPortrait','leaderMonogram',null,v,()=>leaderVersion)}
 function renderCompare() {
   const metric = $('metric').value;
   const a = ranking.find(g => g.id === $('compareA').value);
   const b = ranking.find(g => g.id === $('compareB').value);
+  updateProfiles(a,b);
 
   $('comparison').innerHTML = [a, b].filter(Boolean).map(g => `
     <div class="compare-card">
@@ -473,4 +533,12 @@ $('competition').addEventListener('change',()=>{
 });
 ['compareA', 'compareB'].forEach(id => $(id).addEventListener('change', renderCompare));
 
-load();
+function reportFailure(err){
+  console.error('GameSense:',err);
+  const panel=$('runtimeError');
+  if(panel){panel.hidden=false;panel.textContent='Could not finish loading GameSense: '+String(err?.message||err)+'. Please reload the hosted page.';}
+  if($('loadState'))$('loadState').textContent='An error occurred — see message below';
+}
+window.addEventListener('error',e=>reportFailure(e.error||e.message));
+window.addEventListener('unhandledrejection',e=>reportFailure(e.reason));
+load().catch(reportFailure);
