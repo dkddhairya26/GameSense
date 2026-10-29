@@ -413,6 +413,101 @@ function renderAnalyticalCharts(records,leaders,metric){
   $('rankChart').innerHTML='<svg class="analytics-svg" viewBox="0 0 '+w+' '+h+'" role="img" aria-label="Competitor ranking by '+escapeHtml(label)+'">'+rows+'</svg>';
 }
 
+
+/* Field Notes chart set:
+ * Histogram answers "how unequal is the distribution?".
+ * Volume scatter answers "how much evidence is behind a metric?".
+ * Duel compares several comparable fields for the two chosen subjects.
+ * These are SVG charts; all plotted values come from the selected archive.
+ */
+function fnSvg(content,w=640,h=250,label='Chart'){
+  return '<svg class="field-svg" viewBox="0 0 '+w+' '+h+'" role="img" aria-label="'+escapeHtml(label)+'">'+content+'</svg>';
+}
+function fnEmpty(id,message){$(id).innerHTML='<p class="field-empty">'+escapeHtml(message)+'</p>';}
+function renderDistributionChart(groups,metric){
+  const finite=groups.map(g=>g.metric).filter(Number.isFinite).sort((a,b)=>a-b);
+  const n=finite.length;
+  if(n<2){$('distributionNote').textContent='Requires two or more measured competitors.';fnEmpty('distributionChart','Select another metric or season for a wider sample.');return;}
+  const label=defs[sport].metrics[metric]||metric;
+  const min=finite[0],max=finite[n-1],bins=Math.min(10,Math.max(4,Math.ceil(Math.sqrt(n))));
+  const counts=Array(bins).fill(0);
+  for(const v of finite){const bin=max===min?0:Math.min(bins-1,Math.floor((v-min)/(max-min)*bins));counts[bin]++;}
+  const median=finite[Math.floor((n-1)/2)];
+  $('distributionNote').textContent=n.toLocaleString()+' competitors · median '+number(median)+' '+label.toLowerCase()+' · '+bins+' equal-width intervals';
+  const w=640,h=245,l=54,r=18,t=22,b=42,uw=w-l-r,uh=h-t-b;
+  const high=Math.max(...counts,1);
+  const chart=counts.map((c,i)=>{
+    const x=l+i*uw/bins+2,width=Math.max(1,uw/bins-4),height=uh*c/high,y=t+uh-height;
+    const lo=min+(max-min)*i/bins,hi=min+(max-min)*(i+1)/bins;
+    return '<rect class="fn-column" tabindex="0" x="'+x+'" y="'+y+'" width="'+width+'" height="'+height+'" fill="var(--accent)">'+
+      '<title>'+escapeHtml(number(lo)+'–'+number(hi)+': '+c+' competitors')+'</title></rect>';
+  }).join('');
+  const grid=[0,.5,1].map(fr=>'<text x="'+(l-9)+'" y="'+(t+uh*(1-fr)+4)+'" text-anchor="end" class="fn-axis">'+number(Math.round(high*fr))+'</text>').join('');
+  const ends='<text x="'+l+'" y="'+(h-13)+'" class="fn-axis">'+number(min)+'</text>'+
+    '<text x="'+(w-r)+'" y="'+(h-13)+'" text-anchor="end" class="fn-axis">'+number(max)+'</text>';
+  $('distributionChart').innerHTML=fnSvg('<line x1="'+l+'" y1="'+(t+uh)+'" x2="'+(w-r)+'" y2="'+(t+uh)+'" class="fn-axis-line"/>'+grid+chart+ends,w,h,'Distribution of '+label);
+}
+function renderScatterChart(groups,metric){
+  const allRows=rows();
+  const selectedSeason=$('season').value,selectedCompetition=$('competition').value;
+  const rowsHere=allRows.filter(r=>(selectedSeason==='All seasons'||!selectedSeason||r.season===selectedSeason)&&
+    (selectedCompetition==='All competitions'||!selectedCompetition||r.competition===selectedCompetition));
+  const gameCounts=new Map();
+  for(const r of rowsHere){const id=r.competitor_id||r.competitor;const o=gameCounts.get(id)||{games:0,rows:0};o.rows++;o.games+=numeric(r.games)||0;gameCounts.set(id,o);}
+  const values=groups.map(g=>({name:g.name,x:gameCounts.get(g.id)?.games||gameCounts.get(g.id)?.rows||g.rows,y:g.metric}))
+    .filter(p=>Number.isFinite(p.x)&&Number.isFinite(p.y)&&p.x>0).slice(0,110);
+  const label=defs[sport].metrics[metric]||metric;
+  if(values.length<2){$('scatterNote').textContent='Not enough measured subjects to plot this relationship.';fnEmpty('scatterChart','Try all seasons or a different statistic.');return;}
+  const isGames=values.some(v=>v.x!==1)&&rowsHere.some(r=>numeric(r.games)>0);
+  $('scatterNote').textContent='Horizontal: '+(isGames?'recorded matches':'observations')+' · vertical: '+label.toLowerCase()+' · '+values.length+' subjects';
+  const w=640,h=245,l=56,r=20,t=20,b=40,uw=w-l-r,uh=h-t-b;
+  const xmin=0,xmax=Math.max(...values.map(p=>p.x),1),ymin=Math.min(0,...values.map(p=>p.y)),ymax=Math.max(...values.map(p=>p.y),1);
+  const scaleX=x=>l+uw*x/xmax,scaleY=y=>t+uh*(1-(y-ymin)/Math.max(1,ymax-ymin));
+  const grid=[0,.25,.5,.75,1].map(fr=>{
+    const yy=t+uh*(1-fr);
+    return '<line x1="'+l+'" y1="'+yy+'" x2="'+(w-r)+'" y2="'+yy+'" class="fn-grid-line"/>'+
+       '<text x="'+(l-8)+'" y="'+(yy+4)+'" text-anchor="end" class="fn-axis">'+number(ymin+(ymax-ymin)*fr)+'</text>';
+  }).join('');
+  const dots=values.map((p,i)=>'<circle tabindex="0" class="fn-dot" cx="'+scaleX(p.x).toFixed(2)+'" cy="'+scaleY(p.y).toFixed(2)+'" r="'+(i<8?5:3.3)+'" fill="'+(i<8?'var(--accent)':'var(--secondary-data)')+'">'+
+      '<title>'+escapeHtml(p.name+': '+number(p.x)+' '+(isGames?'matches':'records')+', '+number(p.y)+' '+label)+'</title></circle>').join('');
+  const labels=[0,.5,1].map(fr=>'<text x="'+scaleX(fr*xmax)+'" y="'+(h-12)+'" text-anchor="middle" class="fn-axis">'+number(xmax*fr)+'</text>').join('');
+  $('scatterChart').innerHTML=fnSvg(grid+dots+labels,w,h,label+' versus '+(isGames?'matches':'observations'));
+}
+function renderDuelChart(a,b){
+  if(!a||!b||a.id===b.id){$('duelNote').textContent='Choose two different competitors from the comparison selectors.';fnEmpty('duelChart','Two competitors required.');return;}
+  const competition=$('competition').value;
+  const shortlist=sport==='Soccer'?['points','goals','wins','goals_against']:
+    sport==='NBA'?['points','rebounds','assists','games']:
+    sport==='F1'?['points','wins','podiums','finish_position']:
+    competition.endsWith(' Players')?['runs','games','strike_rate','batting_average']:
+    competition.startsWith('International ')?['wins','losses','win_rate','games']:
+    ['runs','wickets','games','strike_rate'];
+  const inView=filtered.filter(r=>r.competitor_id===a.id||r.competitor_id===b.id);
+  const stats=[a,b].map(g=>{
+    const rr=inView.filter(r=>r.competitor_id===g.id);
+    return Object.fromEntries(shortlist.map(m=>{
+      const v=rr.map(r=>metricValue(r,m)).filter(x=>x!==null&&Number.isFinite(x));
+      return [m,v.length?(averaged(m)?v.reduce((p,c)=>p+c,0)/v.length:v.reduce((p,c)=>p+c,0)):null];
+    }));
+  });
+  $('duelNote').textContent=a.name+' versus '+b.name+' · scaled individually per metric, not between metrics';
+  const w=700,h=270,l=158,right=88,barW=w-l-right;
+  const bars=shortlist.map((m,i)=>{
+    const y=18+i*63,vA=stats[0][m],vB=stats[1][m];
+    const high=Math.max(vA??0,vB??0,1),aWidth=vA==null?0:Math.max(0,vA)/high*barW,bWidth=vB==null?0:Math.max(0,vB)/high*barW;
+    const title=defs[sport].metrics[m]||m;
+    const label='<text x="'+(l-10)+'" y="'+(y+23)+'" text-anchor="end" class="fn-label">'+escapeHtml(title)+'</text>';
+    const row=(v,width,offset,klass)=>{
+      return '<rect x="'+l+'" y="'+(y+offset)+'" width="'+barW+'" height="12" fill="var(--chart-track)"/>'+
+        '<rect class="'+klass+'" x="'+l+'" y="'+(y+offset)+'" width="'+width+'" height="12"/>'+
+        '<text x="'+(l+width+7)+'" y="'+(y+offset+10)+'" class="fn-axis">'+(v===null?'n/a':number(v))+'</text>';
+    };
+    return label+row(vA,aWidth,0,'fn-duel-a')+row(vB,bWidth,17,'fn-duel-b');
+  }).join('');
+  $('duelChart').innerHTML='<div class="duel-legend"><span class="duel-one">'+escapeHtml(a.name)+'</span><span class="duel-two">'+escapeHtml(b.name)+'</span></div>'+
+    fnSvg(bars,w,h,'Four-metric comparison of '+a.name+' and '+b.name);
+}
+
 function render() {
   const season = $('season').value;
   const competition = $('competition').value;
@@ -429,6 +524,8 @@ function render() {
   ranking = aggregate(filtered, metric).filter(g => !query || g.name.toLowerCase().includes(query));
 
   renderAnalyticalCharts(filtered,ranking,metric);
+  renderDistributionChart(ranking,metric);
+  renderScatterChart(ranking,metric);
   $('count').textContent = number(filtered.length);
   $('competitors').textContent = number(new Set(filtered.map(r => r.competitor_id)).size);
   $('seasons').textContent = number(new Set(filtered.map(r => r.season)).size);
@@ -563,6 +660,7 @@ function renderCompare() {
   const a = ranking.find(g => g.id === $('compareA').value);
   const b = ranking.find(g => g.id === $('compareB').value);
   updateProfiles(a,b);
+  renderDuelChart(a,b);
 
   $('comparison').innerHTML = [a, b].filter(Boolean).map(g => `
     <div class="compare-card">
