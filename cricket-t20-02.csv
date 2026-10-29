@@ -1,0 +1,829 @@
+match_id,date,venue,team1,team2,winner,toss_winner,toss_decision,format,year
+1273145,2021-08-21,Gahanga International Cricket Stadium. Rwanda,Rwanda,Ghana,Ghana,Rwanda,bat,T20,2021
+1273146,2021-08-21,Kerava National Cricket Ground,Sweden,Finland,Finland,Sweden,bat,T20,2021
+1273147,2021-08-21,Kerava National Cricket Ground,Sweden,Finland,Finland,Sweden,bat,T20,2021
+1273148,2021-08-22,Kerava National Cricket Ground,Finland,Sweden,Sweden,Sweden,field,T20,2021
+1273149,2021-08-22,Kerava National Cricket Ground,Finland,Sweden,Sweden,Sweden,field,T20,2021
+1273271,2021-09-15,"Grange Cricket Club Ground, Raeburn Place, Edinburgh",Scotland,Zimbabwe,Scotland,Scotland,bat,T20,2021
+1273272,2021-09-17,"Grange Cricket Club Ground, Raeburn Place, Edinburgh",Zimbabwe,Scotland,Zimbabwe,Zimbabwe,bat,T20,2021
+1273273,2021-09-19,"Grange Cricket Club Ground, Raeburn Place, Edinburgh",Scotland,Zimbabwe,Zimbabwe,Scotland,bat,T20,2021
+1273415,2021-08-31,"Sir Vivian Richards Stadium, North Sound, Antigua",South Africa,West Indies,,South Africa,bat,T20,2021
+1273416,2021-09-02,"Sir Vivian Richards Stadium, North Sound, Antigua",South Africa,West Indies,South Africa,West Indies,field,T20,2021
+1273417,2021-09-04,"Sir Vivian Richards Stadium, North Sound, Antigua",South Africa,West Indies,West Indies,South Africa,bat,T20,2021
+1273712,2021-10-17,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Papua New Guinea,Oman,Oman,Oman,field,T20,2021
+1273713,2021-10-17,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Scotland,Bangladesh,Scotland,Bangladesh,field,T20,2021
+1273714,2021-10-18,"Zayed Cricket Stadium, Abu Dhabi",Netherlands,Ireland,Ireland,Netherlands,bat,T20,2021
+1273715,2021-10-18,"Zayed Cricket Stadium, Abu Dhabi",Namibia,Sri Lanka,Sri Lanka,Sri Lanka,field,T20,2021
+1273716,2021-10-19,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Scotland,Papua New Guinea,Scotland,Scotland,bat,T20,2021
+1273717,2021-10-19,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Bangladesh,Oman,Bangladesh,Bangladesh,bat,T20,2021
+1273718,2021-10-20,"Zayed Cricket Stadium, Abu Dhabi",Netherlands,Namibia,Namibia,Namibia,field,T20,2021
+1273719,2021-10-20,"Zayed Cricket Stadium, Abu Dhabi",Sri Lanka,Ireland,Sri Lanka,Ireland,field,T20,2021
+1273720,2021-10-21,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Bangladesh,Papua New Guinea,Bangladesh,Bangladesh,bat,T20,2021
+1273721,2021-10-21,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Oman,Scotland,Scotland,Oman,bat,T20,2021
+1273722,2021-10-22,Sharjah Cricket Stadium,Ireland,Namibia,Namibia,Ireland,bat,T20,2021
+1273723,2021-10-22,Sharjah Cricket Stadium,Netherlands,Sri Lanka,Sri Lanka,Sri Lanka,field,T20,2021
+1273724,2021-10-23,"Zayed Cricket Stadium, Abu Dhabi",South Africa,Australia,Australia,Australia,field,T20,2021
+1273725,2021-10-23,Dubai International Cricket Stadium,West Indies,England,England,England,field,T20,2021
+1273726,2021-10-24,Sharjah Cricket Stadium,Bangladesh,Sri Lanka,Sri Lanka,Sri Lanka,field,T20,2021
+1273727,2021-10-24,Dubai International Cricket Stadium,India,Pakistan,Pakistan,Pakistan,field,T20,2021
+1273729,2021-10-26,Dubai International Cricket Stadium,West Indies,South Africa,South Africa,South Africa,field,T20,2021
+1273730,2021-10-26,Sharjah Cricket Stadium,New Zealand,Pakistan,Pakistan,Pakistan,field,T20,2021
+1273731,2021-10-27,"Zayed Cricket Stadium, Abu Dhabi",Bangladesh,England,England,Bangladesh,bat,T20,2021
+1273732,2021-10-27,"Zayed Cricket Stadium, Abu Dhabi",Scotland,Namibia,Namibia,Namibia,field,T20,2021
+1273733,2021-10-28,Dubai International Cricket Stadium,Sri Lanka,Australia,Australia,Australia,field,T20,2021
+1273734,2021-10-29,Sharjah Cricket Stadium,West Indies,Bangladesh,West Indies,Bangladesh,field,T20,2021
+1273736,2021-10-30,Sharjah Cricket Stadium,Sri Lanka,South Africa,South Africa,South Africa,field,T20,2021
+1273737,2021-10-30,Dubai International Cricket Stadium,Australia,England,England,England,field,T20,2021
+1273739,2021-10-31,Dubai International Cricket Stadium,India,New Zealand,New Zealand,New Zealand,field,T20,2021
+1273740,2021-11-01,Sharjah Cricket Stadium,England,Sri Lanka,England,Sri Lanka,field,T20,2021
+1273741,2021-11-02,"Zayed Cricket Stadium, Abu Dhabi",Bangladesh,South Africa,South Africa,South Africa,field,T20,2021
+1273742,2021-11-02,"Zayed Cricket Stadium, Abu Dhabi",Pakistan,Namibia,Pakistan,Pakistan,bat,T20,2021
+1273743,2021-11-03,Dubai International Cricket Stadium,New Zealand,Scotland,New Zealand,Scotland,field,T20,2021
+1273745,2021-11-04,Dubai International Cricket Stadium,Bangladesh,Australia,Australia,Australia,field,T20,2021
+1273746,2021-11-04,"Zayed Cricket Stadium, Abu Dhabi",Sri Lanka,West Indies,Sri Lanka,West Indies,field,T20,2021
+1273747,2021-11-05,Sharjah Cricket Stadium,New Zealand,Namibia,New Zealand,Namibia,field,T20,2021
+1273748,2021-11-05,Dubai International Cricket Stadium,Scotland,India,India,India,field,T20,2021
+1273749,2021-11-06,"Zayed Cricket Stadium, Abu Dhabi",West Indies,Australia,Australia,Australia,field,T20,2021
+1273750,2021-11-06,Sharjah Cricket Stadium,South Africa,England,South Africa,England,field,T20,2021
+1273752,2021-11-07,Sharjah Cricket Stadium,Pakistan,Scotland,Pakistan,Pakistan,bat,T20,2021
+1273753,2021-11-08,Dubai International Cricket Stadium,Namibia,India,India,India,field,T20,2021
+1273754,2021-11-10,"Zayed Cricket Stadium, Abu Dhabi",England,New Zealand,New Zealand,New Zealand,field,T20,2021
+1273755,2021-11-11,Dubai International Cricket Stadium,Pakistan,Australia,Australia,Australia,field,T20,2021
+1273756,2021-11-14,Dubai International Cricket Stadium,New Zealand,Australia,Australia,Australia,field,T20,2021
+1274595,2021-08-26,La Manga Club Top Ground,Netherlands,Scotland,Scotland,Scotland,field,T20,2021
+1274596,2021-08-26,La Manga Club Bottom Ground,Ireland,Germany,Ireland,Germany,field,T20,2021
+1274597,2021-08-26,La Manga Club Top Ground,France,Netherlands,Netherlands,France,bat,T20,2021
+1274600,2021-08-27,La Manga Club Bottom Ground,France,Germany,Germany,France,bat,T20,2021
+1274601,2021-08-27,La Manga Club Top Ground,Ireland,Scotland,Scotland,Ireland,bat,T20,2021
+1274602,2021-08-27,La Manga Club Bottom Ground,Germany,Netherlands,Netherlands,Netherlands,field,T20,2021
+1274604,2021-08-29,La Manga Club Bottom Ground,France,Ireland,Ireland,Ireland,field,T20,2021
+1274606,2021-08-30,La Manga Club Bottom Ground,France,Scotland,Scotland,Scotland,field,T20,2021
+1274608,2021-08-29,La Manga Club Top Ground,Germany,Scotland,Scotland,Scotland,field,T20,2021
+1274609,2021-08-30,La Manga Club Top Ground,Ireland,Netherlands,Ireland,Netherlands,field,T20,2021
+1275039,2021-09-11,Entebbe Cricket Oval,Nigeria,Kenya,Kenya,Nigeria,bat,T20,2021
+1275040,2021-09-11,Entebbe Cricket Oval,Uganda,Nigeria,Uganda,Uganda,bat,T20,2021
+1275042,2021-09-13,Entebbe Cricket Oval,Kenya,Nigeria,Kenya,Kenya,bat,T20,2021
+1275043,2021-09-13,Entebbe Cricket Oval,Nigeria,Uganda,Uganda,Nigeria,bat,T20,2021
+1275044,2021-09-10,Entebbe Cricket Oval,Kenya,Uganda,Kenya,Kenya,bat,T20,2021
+1275045,2021-09-16,Entebbe Cricket Oval,Nigeria,Kenya,Nigeria,Nigeria,bat,T20,2021
+1275047,2021-09-15,Entebbe Cricket Oval,Uganda,Nigeria,Uganda,Uganda,bat,T20,2021
+1275051,2021-09-17,Entebbe Cricket Oval,Uganda,Kenya,Uganda,Uganda,bat,T20,2021
+1275052,2021-09-10,"Desert Springs Cricket Ground, Almeria",Spain,Germany,Germany,Germany,field,T20,2021
+1275053,2021-09-11,"Desert Springs Cricket Ground, Almeria",Germany,Spain,Spain,Germany,bat,T20,2021
+1275054,2021-09-11,"Desert Springs Cricket Ground, Almeria",Germany,Spain,Spain,Spain,field,T20,2021
+1275074,2021-08-29,Guttsta Wicked Cricket Club,Norway,Sweden,Sweden,Sweden,field,T20,2021
+1275104,2021-09-09,"Botswana Cricket Association Oval 1, Gaborone",Mozambique,Rwanda,Rwanda,Rwanda,field,T20,2021
+1275106,2021-09-09,"Botswana Cricket Association Oval 1, Gaborone",Botswana,Eswatini,Botswana,Botswana,bat,T20,2021
+1275107,2021-09-09,"Botswana Cricket Association Oval 2, Gaborone",Sierra Leone,Nigeria,Nigeria,Sierra Leone,bat,T20,2021
+1275108,2021-09-10,"Botswana Cricket Association Oval 1, Gaborone",Tanzania,Zimbabwe,Zimbabwe,Tanzania,bat,T20,2021
+1275110,2021-09-10,"Botswana Cricket Association Oval 1, Gaborone",Botswana,Mozambique,Botswana,Mozambique,field,T20,2021
+1275111,2021-09-10,"Botswana Cricket Association Oval 2, Gaborone",Namibia,Nigeria,Namibia,Namibia,bat,T20,2021
+1275112,2021-09-11,"Botswana Cricket Association Oval 1, Gaborone",Eswatini,Zimbabwe,Zimbabwe,Eswatini,bat,T20,2021
+1275113,2021-09-15,"Botswana Cricket Association Oval 2, Gaborone",Cameroon,Sierra Leone,Sierra Leone,Cameroon,bat,T20,2021
+1275114,2021-09-11,"Botswana Cricket Association Oval 1, Gaborone",Tanzania,Mozambique,Tanzania,Mozambique,field,T20,2021
+1275115,2021-09-11,"Botswana Cricket Association Oval 2, Gaborone",Uganda,Nigeria,Uganda,Uganda,bat,T20,2021
+1275116,2021-09-12,"Botswana Cricket Association Oval 1, Gaborone",Rwanda,Eswatini,Rwanda,Rwanda,bat,T20,2021
+1275118,2021-09-13,"Botswana Cricket Association Oval 1, Gaborone",Tanzania,Rwanda,Tanzania,Tanzania,bat,T20,2021
+1275122,2021-09-14,"Botswana Cricket Association Oval 1, Gaborone",Tanzania,Eswatini,Tanzania,Tanzania,bat,T20,2021
+1275125,2021-09-14,"Botswana Cricket Association Oval 2, Gaborone",Sierra Leone,Uganda,Uganda,Sierra Leone,bat,T20,2021
+1275126,2021-09-16,"Botswana Cricket Association Oval 1, Gaborone",Mozambique,Eswatini,Mozambique,Mozambique,bat,T20,2021
+1275127,2021-09-16,"Botswana Cricket Association Oval 2, Gaborone",Zimbabwe,Rwanda,Zimbabwe,Rwanda,field,T20,2021
+1275128,2021-09-16,"Botswana Cricket Association Oval 1, Gaborone",Botswana,Tanzania,Tanzania,Botswana,bat,T20,2021
+1275129,2021-09-17,"Botswana Cricket Association Oval 1, Gaborone",Zimbabwe,Uganda,Zimbabwe,Zimbabwe,bat,T20,2021
+1275131,2021-09-19,"Botswana Cricket Association Oval 1, Gaborone",Uganda,Tanzania,Tanzania,Uganda,bat,T20,2021
+1275132,2021-09-19,"Botswana Cricket Association Oval 1, Gaborone",Zimbabwe,Namibia,Zimbabwe,Zimbabwe,bat,T20,2021
+1275268,2021-09-03,"Moara Vlasiei Cricket Ground, Ilfov County",Romania,Czech Republic,Romania,Romania,bat,T20,2021
+1275269,2021-09-02,"Moara Vlasiei Cricket Ground, Ilfov County",Luxembourg,Bulgaria,Luxembourg,Bulgaria,field,T20,2021
+1275270,2021-09-02,"Moara Vlasiei Cricket Ground, Ilfov County",Hungary,Czech Republic,Hungary,Czech Republic,field,T20,2021
+1275271,2021-09-03,"Moara Vlasiei Cricket Ground, Ilfov County",Bulgaria,Malta,Malta,Bulgaria,bat,T20,2021
+1275272,2021-09-03,"Moara Vlasiei Cricket Ground, Ilfov County",Romania,Hungary,Romania,Romania,bat,T20,2021
+1275274,2021-09-04,"Moara Vlasiei Cricket Ground, Ilfov County",Luxembourg,Hungary,Luxembourg,Hungary,field,T20,2021
+1275275,2021-09-04,"Moara Vlasiei Cricket Ground, Ilfov County",Romania,Malta,Romania,Malta,field,T20,2021
+1275276,2021-09-05,"Moara Vlasiei Cricket Ground, Ilfov County",Malta,Hungary,Hungary,Hungary,field,T20,2021
+1275277,2021-09-05,"Moara Vlasiei Cricket Ground, Ilfov County",Romania,Luxembourg,Romania,Romania,bat,T20,2021
+1276904,2022-07-07,"The Rose Bowl, Southampton",India,England,India,India,bat,T20,2022
+1276905,2022-07-09,"Edgbaston, Birmingham",India,England,India,England,field,T20,2022
+1276906,2022-07-10,"Trent Bridge, Nottingham",England,India,England,England,bat,T20,2022
+1276913,2022-07-27,"County Ground, Bristol",England,South Africa,England,South Africa,field,T20,2022
+1276914,2022-07-28,"Sophia Gardens, Cardiff",South Africa,England,South Africa,England,field,T20,2022
+1276915,2022-07-31,"The Rose Bowl, Southampton",South Africa,England,South Africa,England,field,T20,2022
+1277974,2021-11-19,"Shere Bangla National Stadium, Mirpur",Bangladesh,Pakistan,Pakistan,Bangladesh,bat,T20,2021
+1277975,2021-11-20,"Shere Bangla National Stadium, Mirpur",Bangladesh,Pakistan,Pakistan,Bangladesh,bat,T20,2021
+1277976,2021-11-22,"Shere Bangla National Stadium, Mirpur",Bangladesh,Pakistan,Pakistan,Bangladesh,bat,T20,2021
+1278671,2021-11-17,"Sawai Mansingh Stadium, Jaipur",New Zealand,India,India,India,field,T20,2021
+1278672,2021-11-19,"JSCA International Stadium Complex, Ranchi",New Zealand,India,India,India,field,T20,2021
+1278673,2021-11-21,"Eden Gardens, Kolkata",India,New Zealand,India,India,bat,T20,2021
+1278679,2022-02-16,"Eden Gardens, Kolkata",West Indies,India,India,India,field,T20,2022
+1278680,2022-02-18,"Eden Gardens, Kolkata",India,West Indies,India,West Indies,field,T20,2022
+1278681,2022-02-20,"Eden Gardens, Kolkata",India,West Indies,India,West Indies,field,T20,2022
+1278684,2022-02-24,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",India,Sri Lanka,India,Sri Lanka,field,T20,2022
+1278685,2022-02-26,"Himachal Pradesh Cricket Association Stadium, Dharamsala",Sri Lanka,India,India,India,field,T20,2022
+1278686,2022-02-27,"Himachal Pradesh Cricket Association Stadium, Dharamsala",Sri Lanka,India,India,Sri Lanka,bat,T20,2022
+1278687,2022-06-09,"Arun Jaitley Stadium, Delhi",India,South Africa,South Africa,South Africa,field,T20,2022
+1278688,2022-06-12,"Barabati Stadium, Cuttack",India,South Africa,South Africa,South Africa,field,T20,2022
+1278689,2022-06-14,"Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium, Visakhapatnam",India,South Africa,India,South Africa,field,T20,2022
+1278690,2022-06-17,"Saurashtra Cricket Association Stadium, Rajkot",India,South Africa,India,South Africa,field,T20,2022
+1278691,2022-06-19,"M Chinnaswamy Stadium, Bangalore",India,South Africa,,South Africa,field,T20,2022
+1279379,2021-10-05,Happy Valley Ground,Estonia,Cyprus,Cyprus,Cyprus,field,T20,2021
+1279380,2021-10-05,Happy Valley Ground,Estonia,Cyprus,Cyprus,Estonia,bat,T20,2021
+1279381,2021-10-06,Happy Valley Ground,Cyprus,Isle of Man,Isle of Man,Cyprus,bat,T20,2021
+1279382,2021-10-06,Happy Valley Ground,Estonia,Isle of Man,Isle of Man,Estonia,bat,T20,2021
+1279383,2021-10-07,Happy Valley Ground,Cyprus,Isle of Man,Isle of Man,Isle of Man,field,T20,2021
+1279385,2021-10-08,Happy Valley Ground,Cyprus,Estonia,Cyprus,Cyprus,bat,T20,2021
+1279386,2021-10-08,Happy Valley Ground,Estonia,Isle of Man,Isle of Man,Isle of Man,field,T20,2021
+1280058,2021-10-09,"ICC Academy, Dubai",Scotland,Namibia,Namibia,Namibia,field,T20,2021
+1280059,2021-10-10,"ICC Academy, Dubai",Namibia,Papua New Guinea,Namibia,Papua New Guinea,field,T20,2021
+1280060,2021-10-07,"ICC Academy, Dubai",United Arab Emirates,Ireland,Ireland,United Arab Emirates,bat,T20,2021
+1280061,2021-10-08,"ICC Academy, Dubai",United Arab Emirates,Ireland,United Arab Emirates,Ireland,field,T20,2021
+1280062,2021-10-10,"ICC Academy, Dubai",Ireland,United Arab Emirates,United Arab Emirates,United Arab Emirates,field,T20,2021
+1280063,2021-10-08,"ICC Academy, Dubai",Papua New Guinea,Scotland,Scotland,Papua New Guinea,bat,T20,2021
+1282272,2021-10-21,Marsa Sports Club,Malta,Gibraltar,Malta,Malta,bat,T20,2021
+1282273,2021-10-22,Marsa Sports Club,Gibraltar,Switzerland,Switzerland,Gibraltar,bat,T20,2021
+1282275,2021-10-22,Marsa Sports Club,Bulgaria,Switzerland,Switzerland,Bulgaria,bat,T20,2021
+1282276,2021-10-23,Marsa Sports Club,Switzerland,Malta,Switzerland,Switzerland,bat,T20,2021
+1282278,2021-10-24,Marsa Sports Club,Gibraltar,Bulgaria,Bulgaria,Gibraltar,bat,T20,2021
+1282279,2021-10-24,Marsa Sports Club,Malta,Switzerland,Malta,Malta,bat,T20,2021
+1282738,2021-10-15,"Desert Springs Cricket Ground, Almeria",Jersey,Germany,Jersey,Germany,field,T20,2021
+1282739,2021-10-15,"Desert Springs Cricket Ground, Almeria",Denmark,Italy,Italy,Denmark,bat,T20,2021
+1282740,2021-10-16,"Desert Springs Cricket Ground, Almeria",Denmark,Germany,Germany,Denmark,bat,T20,2021
+1282741,2021-10-16,"Desert Springs Cricket Ground, Almeria",Jersey,Italy,Jersey,Jersey,bat,T20,2021
+1282742,2021-10-17,"Desert Springs Cricket Ground, Almeria",Jersey,Denmark,Jersey,Denmark,field,T20,2021
+1282743,2021-10-17,"Desert Springs Cricket Ground, Almeria",Italy,Germany,Germany,Italy,bat,T20,2021
+1282744,2021-10-19,"Desert Springs Cricket Ground, Almeria",Italy,Denmark,Italy,Denmark,field,T20,2021
+1282745,2021-10-19,"Desert Springs Cricket Ground, Almeria",Germany,Jersey,Jersey,Germany,bat,T20,2021
+1282746,2021-10-20,"Desert Springs Cricket Ground, Almeria",Italy,Jersey,Jersey,Jersey,field,T20,2021
+1282747,2021-10-20,"Desert Springs Cricket Ground, Almeria",Germany,Denmark,Germany,Denmark,field,T20,2021
+1282748,2021-10-21,"Desert Springs Cricket Ground, Almeria",Italy,Germany,Italy,Germany,field,T20,2021
+1282749,2021-10-21,"Desert Springs Cricket Ground, Almeria",Denmark,Jersey,Jersey,Denmark,bat,T20,2021
+1282929,2021-10-19,"Reforma Athletic Club, Naucalpan",Argentina,Brazil,Brazil,Brazil,field,T20,2021
+1282930,2021-10-19,"Reforma Athletic Club, Naucalpan",Canada,United States of America,United States of America,Canada,bat,T20,2021
+1282935,2021-10-24,"Reforma Athletic Club, Naucalpan",Canada,United States of America,Canada,United States of America,field,T20,2021
+1283021,2021-10-16,Gahanga International Cricket Stadium. Rwanda,Rwanda,Ghana,Ghana,Ghana,field,T20,2021
+1283023,2021-10-16,Gahanga International Cricket Stadium. Rwanda,Seychelles,Ghana,Ghana,Seychelles,bat,T20,2021
+1283024,2021-10-16,Integrated Polytechnic Regional Centre,Malawi,Uganda,Uganda,Malawi,bat,T20,2021
+1283025,2021-10-17,Gahanga International Cricket Stadium. Rwanda,Lesotho,Seychelles,Seychelles,Seychelles,field,T20,2021
+1283026,2021-10-17,Integrated Polytechnic Regional Centre,Swaziland,Malawi,Malawi,Malawi,field,T20,2021
+1283028,2021-10-17,Integrated Polytechnic Regional Centre,Uganda,Rwanda,Uganda,Uganda,bat,T20,2021
+1283029,2021-10-19,Gahanga International Cricket Stadium. Rwanda,Malawi,Ghana,Ghana,Ghana,field,T20,2021
+1283030,2021-10-19,Integrated Polytechnic Regional Centre,Lesotho,Uganda,Uganda,Lesotho,bat,T20,2021
+1283032,2021-10-19,Integrated Polytechnic Regional Centre,Swaziland,Uganda,Uganda,Swaziland,bat,T20,2021
+1283033,2021-10-20,Gahanga International Cricket Stadium. Rwanda,Malawi,Seychelles,Malawi,Malawi,bat,T20,2021
+1283034,2021-10-20,Integrated Polytechnic Regional Centre,Swaziland,Ghana,Ghana,Ghana,field,T20,2021
+1283035,2021-10-20,Gahanga International Cricket Stadium. Rwanda,Swaziland,Seychelles,Seychelles,Swaziland,bat,T20,2021
+1283036,2021-10-20,Integrated Polytechnic Regional Centre,Rwanda,Lesotho,Rwanda,Rwanda,bat,T20,2021
+1283037,2021-10-21,Gahanga International Cricket Stadium. Rwanda,Uganda,Ghana,Uganda,Ghana,field,T20,2021
+1283038,2021-10-22,Gahanga International Cricket Stadium. Rwanda,Swaziland,Rwanda,Rwanda,Swaziland,bat,T20,2021
+1283040,2021-10-22,Gahanga International Cricket Stadium. Rwanda,Malawi,Rwanda,Malawi,Malawi,bat,T20,2021
+1283041,2021-10-22,Integrated Polytechnic Regional Centre,Uganda,Seychelles,Uganda,Uganda,bat,T20,2021
+1283042,2021-11-02,Gahanga International Cricket Stadium. Rwanda,Botswana,Sierra Leone,Botswana,Botswana,bat,T20,2021
+1283043,2021-11-02,Gahanga International Cricket Stadium. Rwanda,Tanzania,Mozambique,Tanzania,Tanzania,bat,T20,2021
+1283044,2021-11-03,Gahanga International Cricket Stadium. Rwanda,Mozambique,Cameroon,Mozambique,Cameroon,field,T20,2021
+1283045,2021-11-03,Gahanga International Cricket Stadium. Rwanda,Sierra Leone,Tanzania,Tanzania,Sierra Leone,bat,T20,2021
+1283046,2021-11-05,Gahanga International Cricket Stadium. Rwanda,Cameroon,Botswana,Botswana,Cameroon,bat,T20,2021
+1283047,2021-11-05,Gahanga International Cricket Stadium. Rwanda,Mozambique,Sierra Leone,Sierra Leone,Mozambique,bat,T20,2021
+1283048,2021-11-06,Gahanga International Cricket Stadium. Rwanda,Botswana,Mozambique,Botswana,Botswana,bat,T20,2021
+1283049,2021-11-06,Gahanga International Cricket Stadium. Rwanda,Tanzania,Cameroon,Tanzania,Tanzania,bat,T20,2021
+1283050,2021-11-07,Gahanga International Cricket Stadium. Rwanda,Cameroon,Sierra Leone,Sierra Leone,Cameroon,bat,T20,2021
+1283051,2021-11-07,Gahanga International Cricket Stadium. Rwanda,Tanzania,Botswana,Tanzania,Tanzania,bat,T20,2021
+1283089,2021-10-19,University of Lagos Cricket Oval,Nigeria,Sierra Leone,Sierra Leone,Sierra Leone,field,T20,2021
+1283091,2021-10-21,University of Lagos Cricket Oval,Nigeria,Sierra Leone,Nigeria,Sierra Leone,field,T20,2021
+1283092,2021-10-23,University of Lagos Cricket Oval,Sierra Leone,Nigeria,Nigeria,Sierra Leone,bat,T20,2021
+1283093,2021-10-24,University of Lagos Cricket Oval,Nigeria,Sierra Leone,Nigeria,Nigeria,bat,T20,2021
+1283094,2021-10-26,University of Lagos Cricket Oval,Nigeria,Sierra Leone,Nigeria,Nigeria,bat,T20,2021
+1284489,2021-10-23,"West End Park International Cricket Stadium, Doha",Maldives,Saudi Arabia,Saudi Arabia,Maldives,bat,T20,2021
+1284490,2021-10-24,"West End Park International Cricket Stadium, Doha",Bahrain,Kuwait,Kuwait,Kuwait,field,T20,2021
+1284491,2021-10-24,"West End Park International Cricket Stadium, Doha",Qatar,Maldives,Qatar,Maldives,field,T20,2021
+1284493,2021-10-27,"West End Park International Cricket Stadium, Doha",Maldives,Bahrain,Bahrain,Bahrain,field,T20,2021
+1284495,2021-10-28,"West End Park International Cricket Stadium, Doha",Maldives,Kuwait,Kuwait,Kuwait,field,T20,2021
+1284496,2021-10-28,"West End Park International Cricket Stadium, Doha",Bahrain,Saudi Arabia,Bahrain,Saudi Arabia,field,T20,2021
+1284497,2021-10-29,"West End Park International Cricket Stadium, Doha",Kuwait,Qatar,Qatar,Kuwait,bat,T20,2021
+1286667,2021-11-07,"Coolidge Cricket Ground, Antigua",Belize,United States of America,United States of America,United States of America,field,T20,2021
+1286670,2021-11-08,"Coolidge Cricket Ground, Antigua",Canada,Belize,Canada,Canada,bat,T20,2021
+1286671,2021-11-08,"Sir Vivian Richards Stadium, North Sound, Antigua",Bahamas,Argentina,Bahamas,Bahamas,bat,T20,2021
+1286672,2021-11-08,"Coolidge Cricket Ground, Antigua",Belize,Panama,Belize,Belize,bat,T20,2021
+1286673,2021-11-08,"Sir Vivian Richards Stadium, North Sound, Antigua",United States of America,Bermuda,United States of America,United States of America,bat,T20,2021
+1286674,2021-11-10,"Coolidge Cricket Ground, Antigua",Canada,United States of America,,Canada,bat,T20,2021
+1286675,2021-11-10,"Sir Vivian Richards Stadium, North Sound, Antigua",Argentina,Belize,Argentina,Argentina,bat,T20,2021
+1286677,2021-11-10,"Coolidge Cricket Ground, Antigua",Bermuda,Bahamas,Bermuda,Bahamas,field,T20,2021
+1286681,2021-11-11,"Sir Vivian Richards Stadium, North Sound, Antigua",Argentina,United States of America,United States of America,Argentina,bat,T20,2021
+1286682,2021-11-13,"Coolidge Cricket Ground, Antigua",Bahamas,United States of America,United States of America,Bahamas,bat,T20,2021
+1286683,2021-11-13,"Sir Vivian Richards Stadium, North Sound, Antigua",Belize,Bermuda,Bermuda,Belize,bat,T20,2021
+1286684,2021-11-13,"Coolidge Cricket Ground, Antigua",Panama,Bahamas,Panama,Bahamas,field,T20,2021
+1286685,2021-11-13,"Sir Vivian Richards Stadium, North Sound, Antigua",Argentina,Canada,Canada,Argentina,bat,T20,2021
+1286686,2021-11-14,"Coolidge Cricket Ground, Antigua",Canada,Panama,Canada,Canada,bat,T20,2021
+1286968,2021-11-22,"ICC Academy, Dubai",United Arab Emirates,Malaysia,United Arab Emirates,Malaysia,field,T20,2021
+1286970,2021-11-22,"ICC Academy, Dubai",Bhutan,Kuwait,Bhutan,Kuwait,field,T20,2021
+1286971,2021-11-23,"ICC Academy, Dubai",United Arab Emirates,Hong Kong,United Arab Emirates,Hong Kong,field,T20,2021
+1286972,2021-11-23,"ICC Academy, Dubai",Malaysia,Kuwait,Malaysia,Malaysia,bat,T20,2021
+1286973,2021-11-23,"ICC Academy Ground No 2, Dubai",Bhutan,Nepal,Nepal,Bhutan,bat,T20,2021
+1286974,2021-11-25,"ICC Academy Ground No 2, Dubai",Malaysia,Hong Kong,Hong Kong,Hong Kong,field,T20,2021
+1286975,2021-11-25,"ICC Academy, Dubai",Kuwait,Nepal,Nepal,Kuwait,bat,T20,2021
+1286976,2021-11-25,"ICC Academy Ground No 2, Dubai",United Arab Emirates,Bhutan,United Arab Emirates,Bhutan,field,T20,2021
+1286978,2021-11-26,"ICC Academy, Dubai",Hong Kong,Bhutan,Hong Kong,Bhutan,field,T20,2021
+1286979,2021-11-26,"ICC Academy Ground No 2, Dubai",Kuwait,United Arab Emirates,United Arab Emirates,United Arab Emirates,field,T20,2021
+1286980,2021-11-28,"ICC Academy Ground No 2, Dubai",United Arab Emirates,Nepal,United Arab Emirates,Nepal,field,T20,2021
+1286981,2021-11-28,"ICC Academy, Dubai",Malaysia,Bhutan,Malaysia,Malaysia,bat,T20,2021
+1286982,2021-11-28,"ICC Academy, Dubai",Hong Kong,Kuwait,Hong Kong,Hong Kong,bat,T20,2021
+1287773,2021-12-13,"National Stadium, Karachi",Pakistan,West Indies,Pakistan,West Indies,field,T20,2021
+1287774,2021-12-14,"National Stadium, Karachi",Pakistan,West Indies,Pakistan,Pakistan,bat,T20,2021
+1287775,2021-12-16,"National Stadium, Karachi",West Indies,Pakistan,Pakistan,West Indies,bat,T20,2021
+1288316,2022-04-05,"Gaddafi Stadium, Lahore",Pakistan,Australia,Australia,Australia,field,T20,2022
+1289031,2022-02-09,"John Davies Oval, Queenstown",New Zealand,India,New Zealand,India,field,T20,2022
+1289042,2021-11-17,Gahanga International Cricket Stadium. Rwanda,Nigeria,Tanzania,Tanzania,Nigeria,bat,T20,2021
+1289043,2021-11-17,Integrated Polytechnic Regional Centre,Kenya,Uganda,Kenya,Kenya,bat,T20,2021
+1289044,2021-11-17,Gahanga International Cricket Stadium. Rwanda,Uganda,Nigeria,Uganda,Uganda,bat,T20,2021
+1289045,2021-11-17,Integrated Polytechnic Regional Centre,Tanzania,Kenya,Tanzania,Tanzania,bat,T20,2021
+1289046,2021-11-18,Gahanga International Cricket Stadium. Rwanda,Tanzania,Uganda,Uganda,Tanzania,bat,T20,2021
+1289047,2021-11-18,Integrated Polytechnic Regional Centre,Nigeria,Kenya,Kenya,Nigeria,bat,T20,2021
+1289048,2021-11-18,Gahanga International Cricket Stadium. Rwanda,Tanzania,Kenya,Kenya,Tanzania,bat,T20,2021
+1289049,2021-11-18,Integrated Polytechnic Regional Centre,Nigeria,Uganda,Uganda,Uganda,field,T20,2021
+1289050,2021-11-20,Gahanga International Cricket Stadium. Rwanda,Tanzania,Uganda,Uganda,Uganda,field,T20,2021
+1289051,2021-11-20,Integrated Polytechnic Regional Centre,Kenya,Nigeria,Kenya,Nigeria,field,T20,2021
+1289052,2021-11-20,Gahanga International Cricket Stadium. Rwanda,Kenya,Uganda,Uganda,Kenya,bat,T20,2021
+1289053,2021-11-20,Integrated Polytechnic Regional Centre,Tanzania,Nigeria,Tanzania,Tanzania,bat,T20,2021
+1289259,2022-07-29,"Edgbaston, Birmingham",India,Australia,Australia,India,bat,T20,2022
+1289260,2022-07-29,"Edgbaston, Birmingham",Barbados,Pakistan,Barbados,Pakistan,field,T20,2022
+1289261,2022-07-30,"Edgbaston, Birmingham",New Zealand,South Africa,New Zealand,South Africa,field,T20,2022
+1289262,2022-07-30,"Edgbaston, Birmingham",Sri Lanka,England,England,Sri Lanka,bat,T20,2022
+1289263,2022-07-31,"Edgbaston, Birmingham",Pakistan,India,India,Pakistan,bat,T20,2022
+1289264,2022-07-31,"Edgbaston, Birmingham",Barbados,Australia,Australia,Australia,field,T20,2022
+1289265,2022-08-02,"Edgbaston, Birmingham",England,South Africa,England,South Africa,field,T20,2022
+1289266,2022-08-02,"Edgbaston, Birmingham",New Zealand,Sri Lanka,New Zealand,New Zealand,bat,T20,2022
+1289267,2022-08-03,"Edgbaston, Birmingham",Australia,Pakistan,Australia,Australia,bat,T20,2022
+1289268,2022-08-03,"Edgbaston, Birmingham",India,Barbados,India,Barbados,field,T20,2022
+1289269,2022-08-04,"Edgbaston, Birmingham",Sri Lanka,South Africa,South Africa,South Africa,field,T20,2022
+1289270,2022-08-04,"Edgbaston, Birmingham",New Zealand,England,England,New Zealand,bat,T20,2022
+1289271,2022-08-06,"Edgbaston, Birmingham",India,England,India,India,bat,T20,2022
+1289272,2022-08-06,"Edgbaston, Birmingham",New Zealand,Australia,Australia,Australia,field,T20,2022
+1289273,2022-08-07,"Edgbaston, Birmingham",England,New Zealand,New Zealand,England,bat,T20,2022
+1289274,2022-08-07,"Edgbaston, Birmingham",Australia,India,Australia,Australia,bat,T20,2022
+1289284,2021-11-16,"West End Park International Cricket Stadium, Doha",Nepal,Qatar,Nepal,Qatar,field,T20,2021
+1289285,2021-11-17,"West End Park International Cricket Stadium, Doha",Nepal,Qatar,Nepal,Nepal,bat,T20,2021
+1289286,2021-11-18,"West End Park International Cricket Stadium, Doha",Nepal,Qatar,Nepal,Nepal,bat,T20,2021
+1291187,2021-12-22,"Central Broward Regional Park Stadium Turf Ground, Lauderhill",United States of America,Ireland,United States of America,United States of America,bat,T20,2021
+1291188,2021-12-23,"Central Broward Regional Park Stadium Turf Ground, Lauderhill",Ireland,United States of America,Ireland,United States of America,field,T20,2021
+1296027,2022-01-18,"Kinrara Academy Oval, Kuala Lumpur",Malaysia,Bangladesh,Bangladesh,Bangladesh,field,T20,2022
+1296028,2022-01-18,"Kinrara Academy Oval, Kuala Lumpur",Sri Lanka,Scotland,Sri Lanka,Sri Lanka,bat,T20,2022
+1296029,2022-01-19,"Kinrara Academy Oval, Kuala Lumpur",Bangladesh,Kenya,Bangladesh,Kenya,field,T20,2022
+1296030,2022-01-19,"Kinrara Academy Oval, Kuala Lumpur",Scotland,Malaysia,Scotland,Scotland,bat,T20,2022
+1296031,2022-01-20,"Kinrara Academy Oval, Kuala Lumpur",Kenya,Sri Lanka,Sri Lanka,Sri Lanka,field,T20,2022
+1296032,2022-01-22,"Kinrara Academy Oval, Kuala Lumpur",Scotland,Kenya,Scotland,Kenya,field,T20,2022
+1296033,2022-01-22,"Kinrara Academy Oval, Kuala Lumpur",Sri Lanka,Malaysia,Sri Lanka,Malaysia,field,T20,2022
+1296034,2022-01-23,"Kinrara Academy Oval, Kuala Lumpur",Scotland,Bangladesh,Bangladesh,Scotland,bat,T20,2022
+1296035,2022-01-23,"Kinrara Academy Oval, Kuala Lumpur",Kenya,Malaysia,Malaysia,Kenya,bat,T20,2022
+1296036,2022-01-24,"Kinrara Academy Oval, Kuala Lumpur",Sri Lanka,Bangladesh,Sri Lanka,Sri Lanka,bat,T20,2022
+1298135,2022-10-16,"GMHBA Stadium, South Geelong, Victoria",Namibia,Sri Lanka,Namibia,Sri Lanka,field,T20,2022
+1298136,2022-10-16,"GMHBA Stadium, South Geelong, Victoria",United Arab Emirates,Netherlands,Netherlands,United Arab Emirates,bat,T20,2022
+1298137,2022-10-17,"Bellerive Oval, Hobart",Scotland,West Indies,Scotland,West Indies,field,T20,2022
+1298138,2022-10-17,"Bellerive Oval, Hobart",Zimbabwe,Ireland,Zimbabwe,Ireland,field,T20,2022
+1298139,2022-10-18,"GMHBA Stadium, South Geelong, Victoria",Namibia,Netherlands,Netherlands,Namibia,bat,T20,2022
+1298140,2022-10-18,"GMHBA Stadium, South Geelong, Victoria",Sri Lanka,United Arab Emirates,Sri Lanka,United Arab Emirates,field,T20,2022
+1298141,2022-10-19,"Bellerive Oval, Hobart",Scotland,Ireland,Ireland,Scotland,bat,T20,2022
+1298142,2022-10-19,"Bellerive Oval, Hobart",West Indies,Zimbabwe,West Indies,West Indies,bat,T20,2022
+1298143,2022-10-20,"GMHBA Stadium, South Geelong, Victoria",Sri Lanka,Netherlands,Sri Lanka,Sri Lanka,bat,T20,2022
+1298144,2022-10-20,"GMHBA Stadium, South Geelong, Victoria",United Arab Emirates,Namibia,United Arab Emirates,United Arab Emirates,bat,T20,2022
+1298145,2022-10-21,"Bellerive Oval, Hobart",West Indies,Ireland,Ireland,West Indies,bat,T20,2022
+1298146,2022-10-21,"Bellerive Oval, Hobart",Scotland,Zimbabwe,Zimbabwe,Scotland,bat,T20,2022
+1298147,2022-10-22,Sydney Cricket Ground,New Zealand,Australia,New Zealand,Australia,field,T20,2022
+1298149,2022-10-23,"Bellerive Oval, Hobart",Ireland,Sri Lanka,Sri Lanka,Ireland,bat,T20,2022
+1298150,2022-10-23,Melbourne Cricket Ground,Pakistan,India,India,India,field,T20,2022
+1298151,2022-10-24,"Bellerive Oval, Hobart",Bangladesh,Netherlands,Bangladesh,Netherlands,field,T20,2022
+1298152,2022-10-24,"Bellerive Oval, Hobart",Zimbabwe,South Africa,,Zimbabwe,bat,T20,2022
+1298153,2022-10-25,Perth Stadium,Sri Lanka,Australia,Australia,Australia,field,T20,2022
+1298154,2022-10-26,Melbourne Cricket Ground,Ireland,England,Ireland,England,field,T20,2022
+1298156,2022-10-27,Sydney Cricket Ground,South Africa,Bangladesh,South Africa,South Africa,bat,T20,2022
+1298157,2022-10-27,Sydney Cricket Ground,India,Netherlands,India,India,bat,T20,2022
+1298158,2022-10-27,Perth Stadium,Zimbabwe,Pakistan,Zimbabwe,Zimbabwe,bat,T20,2022
+1298161,2022-10-29,Sydney Cricket Ground,New Zealand,Sri Lanka,New Zealand,New Zealand,bat,T20,2022
+1298162,2022-10-30,"Brisbane Cricket Ground, Woolloongabba, Brisbane",Bangladesh,Zimbabwe,Bangladesh,Bangladesh,bat,T20,2022
+1298163,2022-10-30,Perth Stadium,Netherlands,Pakistan,Pakistan,Netherlands,bat,T20,2022
+1298164,2022-10-30,Perth Stadium,India,South Africa,South Africa,India,bat,T20,2022
+1298165,2022-10-31,"Brisbane Cricket Ground, Woolloongabba, Brisbane",Australia,Ireland,Australia,Ireland,field,T20,2022
+1298167,2022-11-01,"Brisbane Cricket Ground, Woolloongabba, Brisbane",England,New Zealand,England,England,bat,T20,2022
+1298168,2022-11-02,Adelaide Oval,Zimbabwe,Netherlands,Netherlands,Zimbabwe,bat,T20,2022
+1298169,2022-11-02,Adelaide Oval,India,Bangladesh,India,Bangladesh,field,T20,2022
+1298170,2022-11-03,Sydney Cricket Ground,Pakistan,South Africa,Pakistan,Pakistan,bat,T20,2022
+1298171,2022-11-04,Adelaide Oval,New Zealand,Ireland,New Zealand,Ireland,field,T20,2022
+1298173,2022-11-05,Sydney Cricket Ground,Sri Lanka,England,England,Sri Lanka,bat,T20,2022
+1298174,2022-11-06,Adelaide Oval,Netherlands,South Africa,Netherlands,South Africa,field,T20,2022
+1298175,2022-11-06,Adelaide Oval,Bangladesh,Pakistan,Pakistan,Bangladesh,bat,T20,2022
+1298176,2022-11-06,Melbourne Cricket Ground,India,Zimbabwe,India,India,bat,T20,2022
+1298177,2022-11-09,Sydney Cricket Ground,New Zealand,Pakistan,Pakistan,New Zealand,bat,T20,2022
+1298178,2022-11-10,Adelaide Oval,India,England,England,England,field,T20,2022
+1298179,2022-11-13,Melbourne Cricket Ground,Pakistan,England,England,England,field,T20,2022
+1299566,2022-02-18,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Nepal,Oman,Nepal,Oman,field,T20,2022
+1299567,2022-02-18,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 2),Canada,Philippines,Canada,Philippines,field,T20,2022
+1299568,2022-02-18,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),United Arab Emirates,Ireland,United Arab Emirates,United Arab Emirates,bat,T20,2022
+1299569,2022-02-18,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 2),Germany,Bahrain,Bahrain,Bahrain,field,T20,2022
+1299570,2022-02-19,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Canada,Oman,Oman,Oman,field,T20,2022
+1299571,2022-02-19,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 2),Nepal,Philippines,Nepal,Philippines,field,T20,2022
+1299572,2022-02-19,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),United Arab Emirates,Germany,United Arab Emirates,United Arab Emirates,bat,T20,2022
+1299573,2022-02-19,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 2),Ireland,Bahrain,Ireland,Ireland,bat,T20,2022
+1299574,2022-02-21,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Germany,Ireland,Ireland,Ireland,field,T20,2022
+1299575,2022-02-21,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 2),Bahrain,United Arab Emirates,Bahrain,Bahrain,bat,T20,2022
+1299576,2022-02-21,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Canada,Nepal,Nepal,Canada,bat,T20,2022
+1299577,2022-02-21,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 2),Philippines,Oman,Oman,Philippines,bat,T20,2022
+1299578,2022-02-22,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Germany,Canada,Canada,Canada,field,T20,2022
+1299579,2022-02-22,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 2),Bahrain,Philippines,Bahrain,Bahrain,bat,T20,2022
+1299580,2022-02-22,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),United Arab Emirates,Nepal,United Arab Emirates,United Arab Emirates,bat,T20,2022
+1299581,2022-02-22,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 2),Ireland,Oman,Ireland,Oman,field,T20,2022
+1299582,2022-02-24,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Bahrain,Canada,Canada,Bahrain,bat,T20,2022
+1299583,2022-02-24,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 2),Philippines,Germany,Germany,Germany,field,T20,2022
+1299584,2022-02-24,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 2),Oman,Nepal,Nepal,Oman,bat,T20,2022
+1299585,2022-02-24,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Ireland,United Arab Emirates,United Arab Emirates,Ireland,bat,T20,2022
+1299592,2022-02-13,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),United Arab Emirates,Ireland,United Arab Emirates,Ireland,field,T20,2022
+1299593,2022-02-11,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Oman,Nepal,Nepal,Nepal,field,T20,2022
+1299594,2022-02-12,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Oman,Ireland,Ireland,Ireland,field,T20,2022
+1299595,2022-02-14,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),United Arab Emirates,Oman,Oman,Oman,field,T20,2022
+1299596,2022-02-14,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Ireland,Nepal,Ireland,Nepal,field,T20,2022
+1299638,2022-02-12,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),United Arab Emirates,Nepal,United Arab Emirates,Nepal,field,T20,2022
+1301331,2022-07-21,"County Ground, Chelmsford",South Africa,England,England,England,field,T20,2022
+1301332,2022-07-23,"County Ground, New Road, Worcester",South Africa,England,England,England,field,T20,2022
+1301333,2022-07-25,"County Ground, Derby",England,South Africa,England,England,bat,T20,2022
+1301334,2022-09-10,"Riverside Ground, Chester-le-Street",India,England,England,England,field,T20,2022
+1301335,2022-09-13,"County Ground, Derby",England,India,India,England,bat,T20,2022
+1301336,2022-09-15,"County Ground, Bristol",India,England,England,England,field,T20,2022
+1303307,2022-06-26,"The Village, Malahide, Dublin",Ireland,India,India,India,field,T20,2022
+1303308,2022-06-28,"The Village, Malahide, Dublin",India,Ireland,India,India,bat,T20,2022
+1303312,2022-07-18,"Civil Service Cricket Club, Stormont, Belfast",New Zealand,Ireland,New Zealand,Ireland,field,T20,2022
+1303313,2022-07-20,"Civil Service Cricket Club, Stormont, Belfast",New Zealand,Ireland,New Zealand,Ireland,field,T20,2022
+1303314,2022-07-22,"Civil Service Cricket Club, Stormont, Belfast",Ireland,New Zealand,New Zealand,Ireland,bat,T20,2022
+1303315,2022-08-03,"County Ground, Bristol",South Africa,Ireland,South Africa,South Africa,bat,T20,2022
+1303316,2022-08-05,"County Ground, Bristol",South Africa,Ireland,South Africa,Ireland,field,T20,2022
+1305498,2022-03-28,"Tribhuvan University International Cricket Ground, Kirtipur",Nepal,Papua New Guinea,Nepal,Papua New Guinea,field,T20,2022
+1305499,2022-03-29,"Tribhuvan University International Cricket Ground, Kirtipur",Malaysia,Papua New Guinea,Malaysia,Malaysia,bat,T20,2022
+1305500,2022-03-30,"Tribhuvan University International Cricket Ground, Kirtipur",Malaysia,Nepal,Nepal,Malaysia,bat,T20,2022
+1305501,2022-03-31,"Tribhuvan University International Cricket Ground, Kirtipur",Nepal,Papua New Guinea,Nepal,Papua New Guinea,field,T20,2022
+1305502,2022-04-01,"Tribhuvan University International Cricket Ground, Kirtipur",Malaysia,Papua New Guinea,Papua New Guinea,Papua New Guinea,field,T20,2022
+1305503,2022-04-02,"Tribhuvan University International Cricket Ground, Kirtipur",Nepal,Malaysia,Nepal,Malaysia,field,T20,2022
+1305504,2022-04-04,"Tribhuvan University International Cricket Ground, Kirtipur",Nepal,Papua New Guinea,Nepal,Papua New Guinea,field,T20,2022
+1306384,2022-03-20,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 2),Qatar,United Arab Emirates,United Arab Emirates,Qatar,bat,T20,2022
+1306385,2022-03-20,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 2),Saudi Arabia,Kuwait,Kuwait,Kuwait,field,T20,2022
+1306386,2022-03-21,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 2),Qatar,Bahrain,Qatar,Qatar,bat,T20,2022
+1306387,2022-03-21,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 2),Oman,Saudi Arabia,Oman,Saudi Arabia,field,T20,2022
+1306388,2022-03-21,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 2),United Arab Emirates,Kuwait,United Arab Emirates,United Arab Emirates,bat,T20,2022
+1306389,2022-03-22,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 2),Bahrain,Saudi Arabia,Bahrain,Saudi Arabia,field,T20,2022
+1306390,2022-03-22,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 2),Qatar,Kuwait,Kuwait,Qatar,bat,T20,2022
+1306391,2022-03-22,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 2),United Arab Emirates,Oman,United Arab Emirates,United Arab Emirates,bat,T20,2022
+1306392,2022-03-24,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Oman,Kuwait,Oman,Kuwait,field,T20,2022
+1306393,2022-03-24,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 2),Saudi Arabia,United Arab Emirates,United Arab Emirates,United Arab Emirates,field,T20,2022
+1306394,2022-03-25,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Qatar,Saudi Arabia,Qatar,Qatar,bat,T20,2022
+1306395,2022-03-25,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 2),Kuwait,Bahrain,Bahrain,Kuwait,bat,T20,2022
+1306396,2022-03-26,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Oman,Qatar,Oman,Oman,bat,T20,2022
+1306397,2022-03-26,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 2),United Arab Emirates,Bahrain,United Arab Emirates,United Arab Emirates,bat,T20,2022
+1307293,2022-06-07,"R Premadasa Stadium, Colombo",Sri Lanka,Australia,Australia,Australia,field,T20,2022
+1307294,2022-06-08,"R Premadasa Stadium, Colombo",Sri Lanka,Australia,Australia,Australia,field,T20,2022
+1307295,2022-06-11,Pallekele International Cricket Stadium,Australia,Sri Lanka,Sri Lanka,Australia,bat,T20,2022
+1307477,2022-07-27,"Grange Cricket Club Ground, Raeburn Place, Edinburgh",New Zealand,Scotland,New Zealand,Scotland,field,T20,2022
+1307478,2022-07-29,"Grange Cricket Club Ground, Raeburn Place, Edinburgh",New Zealand,Scotland,New Zealand,New Zealand,bat,T20,2022
+1308236,2022-11-12,"Gaddafi Stadium, Lahore",Pakistan,Ireland,Ireland,Pakistan,bat,T20,2022
+1308237,2022-11-14,"Gaddafi Stadium, Lahore",Ireland,Pakistan,Pakistan,Pakistan,field,T20,2022
+1308238,2022-11-16,"Gaddafi Stadium, Lahore",Ireland,Pakistan,Ireland,Ireland,bat,T20,2022
+1309701,2022-04-08,"United Cricket Club Ground, Windhoek",Uganda,Namibia,Namibia,Namibia,field,T20,2022
+1309702,2022-04-09,"United Cricket Club Ground, Windhoek",Namibia,Uganda,Uganda,Uganda,field,T20,2022
+1309703,2022-04-10,"United Cricket Club Ground, Windhoek",Namibia,Uganda,Namibia,Uganda,field,T20,2022
+1310161,2022-04-29,"Desert Springs Cricket Ground, Almeria",Norway,Guernsey,Norway,Norway,bat,T20,2022
+1310162,2022-04-30,"Desert Springs Cricket Ground, Almeria",Spain,Norway,Spain,Spain,bat,T20,2022
+1310163,2022-04-30,"Desert Springs Cricket Ground, Almeria",Norway,Guernsey,Guernsey,Norway,bat,T20,2022
+1310164,2022-04-30,"Desert Springs Cricket Ground, Almeria",Guernsey,Spain,Spain,Guernsey,bat,T20,2022
+1310165,2022-05-01,"Desert Springs Cricket Ground, Almeria",Spain,Guernsey,Guernsey,Spain,bat,T20,2022
+1310166,2022-05-01,"Desert Springs Cricket Ground, Almeria",Spain,Norway,Spain,Spain,bat,T20,2022
+1310167,2022-05-07,"Svanholm Park, Brondby",Denmark,Finland,Finland,Finland,field,T20,2022
+1310168,2022-05-07,"Svanholm Park, Brondby",Denmark,Finland,Denmark,Finland,field,T20,2022
+1310169,2022-05-08,"Svanholm Park, Brondby",Denmark,Finland,Denmark,Denmark,bat,T20,2022
+1310170,2022-05-10,Marsa Sports Club,Gibraltar,Malta,Malta,Malta,field,T20,2022
+1310171,2022-05-10,Marsa Sports Club,Malta,Hungary,Malta,Hungary,field,T20,2022
+1310172,2022-05-10,Marsa Sports Club,Gibraltar,Hungary,Hungary,Hungary,field,T20,2022
+1310173,2022-05-11,Marsa Sports Club,Romania,Malta,Malta,Malta,field,T20,2022
+1310174,2022-05-11,Marsa Sports Club,Czech Republic,Gibraltar,Czech Republic,Czech Republic,bat,T20,2022
+1310175,2022-05-11,Marsa Sports Club,Hungary,Bulgaria,Hungary,Bulgaria,field,T20,2022
+1310176,2022-05-12,Marsa Sports Club,Malta,Czech Republic,Malta,Czech Republic,field,T20,2022
+1310177,2022-05-12,Marsa Sports Club,Czech Republic,Bulgaria,Czech Republic,Czech Republic,bat,T20,2022
+1310178,2022-05-12,Marsa Sports Club,Romania,Hungary,Hungary,Romania,bat,T20,2022
+1310179,2022-05-13,Marsa Sports Club,Gibraltar,Bulgaria,Gibraltar,Gibraltar,bat,T20,2022
+1310180,2022-05-13,Marsa Sports Club,Romania,Czech Republic,Romania,Romania,bat,T20,2022
+1310181,2022-05-13,Marsa Sports Club,Bulgaria,Romania,Romania,Bulgaria,bat,T20,2022
+1310182,2022-05-14,Marsa Sports Club,Hungary,Czech Republic,Czech Republic,Hungary,bat,T20,2022
+1310183,2022-05-14,Marsa Sports Club,Gibraltar,Romania,Romania,Gibraltar,bat,T20,2022
+1310184,2022-05-14,Marsa Sports Club,Bulgaria,Malta,Malta,Bulgaria,bat,T20,2022
+1310185,2022-05-15,Marsa Sports Club,Gibraltar,Bulgaria,Bulgaria,Gibraltar,bat,T20,2022
+1310186,2022-05-15,Marsa Sports Club,Czech Republic,Hungary,Czech Republic,Hungary,field,T20,2022
+1310187,2022-05-15,Marsa Sports Club,Romania,Malta,Romania,Romania,bat,T20,2022
+1310188,2022-05-20,"College Field, St Peter Port",Jersey,Guernsey,Jersey,Guernsey,field,T20,2022
+1310887,2022-04-21,"Centre for Cricket Development Ground, Windhoek",Zimbabwe,Uganda,Zimbabwe,Zimbabwe,bat,T20,2022
+1310888,2022-04-20,"Centre for Cricket Development Ground, Windhoek",Zimbabwe,Namibia,Namibia,Zimbabwe,bat,T20,2022
+1310889,2022-04-21,"Centre for Cricket Development Ground, Windhoek",Namibia,Uganda,Namibia,Uganda,field,T20,2022
+1310890,2022-04-22,"Centre for Cricket Development Ground, Windhoek",Zimbabwe,Uganda,Zimbabwe,Zimbabwe,bat,T20,2022
+1310891,2022-04-23,"Centre for Cricket Development Ground, Windhoek",Namibia,Zimbabwe,Zimbabwe,Zimbabwe,field,T20,2022
+1310892,2022-04-23,"Centre for Cricket Development Ground, Windhoek",Namibia,Uganda,Namibia,Uganda,field,T20,2022
+1310893,2022-04-24,"Centre for Cricket Development Ground, Windhoek",Zimbabwe,Uganda,Zimbabwe,Uganda,field,T20,2022
+1310894,2022-04-24,"Centre for Cricket Development Ground, Windhoek",Zimbabwe,Namibia,Zimbabwe,Namibia,field,T20,2022
+1310895,2022-04-25,"Centre for Cricket Development Ground, Windhoek",Uganda,Namibia,Namibia,Namibia,field,T20,2022
+1310896,2022-04-26,"Centre for Cricket Development Ground, Windhoek",Namibia,Zimbabwe,Zimbabwe,Zimbabwe,field,T20,2022
+1310901,2022-08-04,"Sportpark Westvliet, The Hague",New Zealand,Netherlands,New Zealand,New Zealand,bat,T20,2022
+1310902,2022-08-05,"Sportpark Westvliet, The Hague",Netherlands,New Zealand,New Zealand,Netherlands,bat,T20,2022
+1310938,2022-05-17,"Queens Sports Club, Bulawayo",Zimbabwe,Namibia,Zimbabwe,Zimbabwe,bat,T20,2022
+1310939,2022-05-19,"Queens Sports Club, Bulawayo",Zimbabwe,Namibia,Namibia,Zimbabwe,bat,T20,2022
+1310940,2022-05-21,"Queens Sports Club, Bulawayo",Namibia,Zimbabwe,Zimbabwe,Namibia,bat,T20,2022
+1310941,2022-05-22,"Queens Sports Club, Bulawayo",Zimbabwe,Namibia,Namibia,Namibia,field,T20,2022
+1310942,2022-05-24,"Queens Sports Club, Bulawayo",Namibia,Zimbabwe,Namibia,Zimbabwe,field,T20,2022
+1310981,2022-05-24,"Southend Club Cricket Stadium, Karachi",Sri Lanka,Pakistan,Pakistan,Sri Lanka,bat,T20,2022
+1310982,2022-05-26,"Southend Club Cricket Stadium, Karachi",Sri Lanka,Pakistan,Pakistan,Sri Lanka,bat,T20,2022
+1310983,2022-05-28,"Southend Club Cricket Stadium, Karachi",Sri Lanka,Pakistan,Pakistan,Sri Lanka,bat,T20,2022
+1311744,2022-04-27,"Malek Cricket Ground, Ajman",Hong Kong,United Arab Emirates,United Arab Emirates,Hong Kong,bat,T20,2022
+1311745,2022-04-28,"Malek Cricket Ground, Ajman",United Arab Emirates,Hong Kong,United Arab Emirates,Hong Kong,field,T20,2022
+1311746,2022-04-29,"Malek Cricket Ground, Ajman",United Arab Emirates,Hong Kong,United Arab Emirates,United Arab Emirates,bat,T20,2022
+1311747,2022-04-30,"Malek Cricket Ground, Ajman",Hong Kong,United Arab Emirates,United Arab Emirates,Hong Kong,bat,T20,2022
+1314897,2022-05-16,"Tribhuvan University International Cricket Ground, Kirtipur",Uganda,Nepal,Uganda,Nepal,field,T20,2022
+1314898,2022-05-17,"Tribhuvan University International Cricket Ground, Kirtipur",Nepal,Uganda,Uganda,Uganda,field,T20,2022
+1314899,2022-05-19,"Tribhuvan University International Cricket Ground, Kirtipur",Nepal,Uganda,Uganda,Nepal,bat,T20,2022
+1314900,2022-05-20,"Tribhuvan University International Cricket Ground, Kirtipur",Nepal,Uganda,Nepal,Nepal,bat,T20,2022
+1314901,2022-05-21,"Tribhuvan University International Cricket Ground, Kirtipur",Nepal,Uganda,Nepal,Uganda,field,T20,2022
+1316642,2022-06-03,"Pembroke Cricket Club, Sandymount, Dublin",Ireland,South Africa,Ireland,South Africa,field,T20,2022
+1316643,2022-06-06,"Pembroke Cricket Club, Sandymount, Dublin",Ireland,South Africa,South Africa,Ireland,bat,T20,2022
+1316644,2022-06-08,"Pembroke Cricket Club, Sandymount, Dublin",Ireland,South Africa,South Africa,South Africa,field,T20,2022
+1317136,2022-06-24,"National Sports Academy, Sofia",Serbia,Bulgaria,Bulgaria,Bulgaria,field,T20,2022
+1317137,2022-06-25,"National Sports Academy, Sofia",Serbia,Bulgaria,Bulgaria,Serbia,bat,T20,2022
+1317138,2022-06-25,"National Sports Academy, Sofia",Serbia,Bulgaria,Bulgaria,Serbia,bat,T20,2022
+1317139,2022-06-26,"National Sports Academy, Sofia",Serbia,Bulgaria,Bulgaria,Bulgaria,field,T20,2022
+1317149,2022-07-02,"Windsor Park, Roseau, Dominica",Bangladesh,West Indies,,West Indies,field,T20,2022
+1317150,2022-07-03,"Windsor Park, Roseau, Dominica",West Indies,Bangladesh,West Indies,West Indies,bat,T20,2022
+1317151,2022-07-07,"Providence Stadium, Guyana",Bangladesh,West Indies,West Indies,Bangladesh,bat,T20,2022
+1317482,2022-10-05,Carrara Oval,West Indies,Australia,Australia,Australia,field,T20,2022
+1317483,2022-10-07,"Brisbane Cricket Ground, Woolloongabba, Brisbane",Australia,West Indies,Australia,West Indies,field,T20,2022
+1317486,2022-10-09,Perth Stadium,England,Australia,England,Australia,field,T20,2022
+1317487,2022-10-12,"Manuka Oval, Canberra",England,Australia,England,Australia,field,T20,2022
+1317488,2022-10-14,"Manuka Oval, Canberra",England,Australia,,Australia,field,T20,2022
+1317635,2022-07-16,"Bready Cricket Club, Magheramason, Bready",Pakistan,Australia,,Pakistan,bat,T20,2022
+1317636,2022-07-17,"Bready Cricket Club, Magheramason, Bready",Ireland,Australia,Australia,Australia,field,T20,2022
+1317637,2022-07-19,"Bready Cricket Club, Magheramason, Bready",Pakistan,Ireland,Pakistan,Pakistan,bat,T20,2022
+1317638,2022-07-21,"Bready Cricket Club, Magheramason, Bready",Australia,Ireland,Australia,Ireland,field,T20,2022
+1317639,2022-07-23,"Bready Cricket Club, Magheramason, Bready",Pakistan,Australia,,Pakistan,bat,T20,2022
+1317903,2022-07-29,"Brian Lara Stadium, Tarouba, Trinidad",India,West Indies,India,West Indies,field,T20,2022
+1317904,2022-08-01,"Warner Park, Basseterre, St Kitts",India,West Indies,West Indies,West Indies,field,T20,2022
+1317905,2022-08-02,"Warner Park, Basseterre, St Kitts",West Indies,India,India,India,field,T20,2022
+1317906,2022-08-06,"Central Broward Regional Park Stadium Turf Ground, Lauderhill",India,West Indies,India,West Indies,field,T20,2022
+1317907,2022-08-07,"Central Broward Regional Park Stadium Turf Ground, Lauderhill",India,West Indies,India,India,bat,T20,2022
+1317908,2022-08-10,"Sabina Park, Kingston, Jamaica",New Zealand,West Indies,New Zealand,West Indies,field,T20,2022
+1317909,2022-08-12,"Sabina Park, Kingston, Jamaica",New Zealand,West Indies,New Zealand,New Zealand,bat,T20,2022
+1317910,2022-08-14,"Sabina Park, Kingston, Jamaica",New Zealand,West Indies,West Indies,New Zealand,bat,T20,2022
+1318357,2022-06-09,Bayer Uerdingen Cricket Ground,Germany,Austria,Germany,Austria,field,T20,2022
+1318358,2022-06-09,Bayer Uerdingen Cricket Ground,Sweden,Germany,Germany,Germany,field,T20,2022
+1318359,2022-06-10,Bayer Uerdingen Cricket Ground,Austria,Germany,Austria,Austria,bat,T20,2022
+1318360,2022-06-10,Bayer Uerdingen Cricket Ground,Austria,Sweden,Austria,Sweden,field,T20,2022
+1318361,2022-06-11,Bayer Uerdingen Cricket Ground,Austria,Sweden,Austria,Sweden,field,T20,2022
+1318362,2022-06-11,Bayer Uerdingen Cricket Ground,Germany,Sweden,Germany,Germany,bat,T20,2022
+1318373,2022-06-09,Gahanga International Cricket Stadium. Rwanda,Rwanda,Uganda,Uganda,Rwanda,bat,T20,2022
+1318375,2022-06-09,Gahanga International Cricket Stadium. Rwanda,Brazil,Nigeria,Nigeria,Nigeria,field,T20,2022
+1318376,2022-06-10,Gahanga International Cricket Stadium. Rwanda,Uganda,Kenya,Kenya,Uganda,bat,T20,2022
+1318377,2022-06-10,Integrated Polytechnic Regional Centre,Tanzania,Botswana,Tanzania,Tanzania,bat,T20,2022
+1318378,2022-06-10,Gahanga International Cricket Stadium. Rwanda,Rwanda,Brazil,Rwanda,Brazil,field,T20,2022
+1318379,2022-06-10,Integrated Polytechnic Regional Centre,Germany,Nigeria,Nigeria,Nigeria,field,T20,2022
+1318380,2022-06-11,Gahanga International Cricket Stadium. Rwanda,Brazil,Germany,Brazil,Germany,field,T20,2022
+1318381,2022-06-11,Integrated Polytechnic Regional Centre,Uganda,Tanzania,Tanzania,Uganda,bat,T20,2022
+1318382,2022-06-11,Gahanga International Cricket Stadium. Rwanda,Rwanda,Kenya,Kenya,Rwanda,bat,T20,2022
+1318383,2022-06-11,Integrated Polytechnic Regional Centre,Botswana,Nigeria,Nigeria,Botswana,bat,T20,2022
+1318393,2022-06-15,Gahanga International Cricket Stadium. Rwanda,Botswana,Rwanda,Rwanda,Botswana,bat,T20,2022
+1318394,2022-06-15,Integrated Polytechnic Regional Centre,Uganda,Germany,Uganda,Germany,field,T20,2022
+1318395,2022-06-15,Gahanga International Cricket Stadium. Rwanda,Nigeria,Tanzania,Tanzania,Nigeria,bat,T20,2022
+1318396,2022-06-15,Integrated Polytechnic Regional Centre,Kenya,Brazil,Kenya,Kenya,bat,T20,2022
+1318404,2022-06-18,Gahanga International Cricket Stadium. Rwanda,Tanzania,Kenya,Tanzania,Tanzania,bat,T20,2022
+1319709,2022-06-23,Rangiri Dambulla International Stadium,India,Sri Lanka,India,India,bat,T20,2022
+1319710,2022-06-25,Rangiri Dambulla International Stadium,Sri Lanka,India,India,Sri Lanka,bat,T20,2022
+1319711,2022-06-27,Rangiri Dambulla International Stadium,India,Sri Lanka,Sri Lanka,India,bat,T20,2022
+1320190,2022-06-17,"Kinrara Academy Oval, Kuala Lumpur",Malaysia,Singapore,Malaysia,Malaysia,bat,T20,2022
+1320191,2022-06-17,"UKM-YSD Cricket Oval, Bangi",Nepal,Bhutan,Nepal,Nepal,bat,T20,2022
+1320192,2022-06-17,"UKM-YSD Cricket Oval, Bangi",Oman,United Arab Emirates,,Oman,bat,T20,2022
+1320193,2022-06-17,"Kinrara Academy Oval, Kuala Lumpur",Bahrain,Kuwait,,Kuwait,field,T20,2022
+1320194,2022-06-18,"Kinrara Academy Oval, Kuala Lumpur",Singapore,United Arab Emirates,United Arab Emirates,United Arab Emirates,field,T20,2022
+1320195,2022-06-18,"UKM-YSD Cricket Oval, Bangi",Hong Kong,Bhutan,Hong Kong,Bhutan,field,T20,2022
+1320196,2022-06-18,"UKM-YSD Cricket Oval, Bangi",Qatar,Malaysia,Malaysia,Malaysia,field,T20,2022
+1320197,2022-06-18,"Kinrara Academy Oval, Kuala Lumpur",Nepal,Kuwait,Nepal,Kuwait,field,T20,2022
+1320198,2022-06-19,"Kinrara Academy Oval, Kuala Lumpur",Bahrain,Hong Kong,Hong Kong,Hong Kong,field,T20,2022
+1320199,2022-06-19,"UKM-YSD Cricket Oval, Bangi",Oman,Qatar,Qatar,Qatar,field,T20,2022
+1320200,2022-06-20,"UKM-YSD Cricket Oval, Bangi",United Arab Emirates,Malaysia,United Arab Emirates,Malaysia,field,T20,2022
+1320201,2022-06-20,"Kinrara Academy Oval, Kuala Lumpur",Bahrain,Nepal,Nepal,Nepal,field,T20,2022
+1320202,2022-06-20,"Kinrara Academy Oval, Kuala Lumpur",Oman,Singapore,Singapore,Singapore,field,T20,2022
+1320203,2022-06-21,"UKM-YSD Cricket Oval, Bangi",Singapore,Qatar,Qatar,Qatar,field,T20,2022
+1320204,2022-06-21,"Kinrara Academy Oval, Kuala Lumpur",Bhutan,Kuwait,Kuwait,Kuwait,field,T20,2022
+1320205,2022-06-21,"Kinrara Academy Oval, Kuala Lumpur",Nepal,Hong Kong,Hong Kong,Nepal,bat,T20,2022
+1320206,2022-06-22,"Kinrara Academy Oval, Kuala Lumpur",Malaysia,Oman,Malaysia,Oman,field,T20,2022
+1320207,2022-06-22,"UKM-YSD Cricket Oval, Bangi",Hong Kong,Kuwait,Hong Kong,Kuwait,field,T20,2022
+1320208,2022-06-22,"Kinrara Academy Oval, Kuala Lumpur",United Arab Emirates,Qatar,United Arab Emirates,United Arab Emirates,bat,T20,2022
+1320209,2022-06-22,"UKM-YSD Cricket Oval, Bangi",Bhutan,Bahrain,Bhutan,Bahrain,field,T20,2022
+1320210,2022-06-24,"Kinrara Academy Oval, Kuala Lumpur",United Arab Emirates,Nepal,,Nepal,field,T20,2022
+1320211,2022-06-24,"Kinrara Academy Oval, Kuala Lumpur",Malaysia,Hong Kong,Malaysia,Hong Kong,field,T20,2022
+1320212,2022-06-25,"Kinrara Academy Oval, Kuala Lumpur",Malaysia,United Arab Emirates,United Arab Emirates,Malaysia,bat,T20,2022
+1320969,2022-06-28,"Meersen, Gent",Gibraltar,Belgium,Belgium,Belgium,field,T20,2022
+1320973,2022-06-29,"Meersen, Gent",Portugal,Malta,Portugal,Portugal,bat,T20,2022
+1320974,2022-06-29,"Royal Brussels Cricket Club Ground, Waterloo",Denmark,Gibraltar,Denmark,Denmark,bat,T20,2022
+1320975,2022-06-29,"Meersen, Gent",Israel,Spain,Spain,Israel,bat,T20,2022
+1320976,2022-06-29,"Royal Brussels Cricket Club Ground, Waterloo",Hungary,Belgium,Belgium,Hungary,bat,T20,2022
+1320977,2022-07-01,"Meersen, Gent",Portugal,Spain,Spain,Portugal,bat,T20,2022
+1320978,2022-07-01,"Royal Brussels Cricket Club Ground, Waterloo",Hungary,Gibraltar,Gibraltar,Gibraltar,field,T20,2022
+1320979,2022-07-01,"Meersen, Gent",Malta,Israel,Malta,Israel,field,T20,2022
+1320980,2022-07-01,"Royal Brussels Cricket Club Ground, Waterloo",Belgium,Denmark,Belgium,Denmark,field,T20,2022
+1320982,2022-07-02,"Royal Brussels Cricket Club Ground, Waterloo",Belgium,Portugal,Portugal,Belgium,bat,T20,2022
+1320984,2022-07-02,"Royal Brussels Cricket Club Ground, Waterloo",Denmark,Spain,Denmark,Spain,field,T20,2022
+1320985,2022-07-03,"Royal Brussels Cricket Club Ground, Waterloo",Israel,Hungary,Israel,Hungary,field,T20,2022
+1320986,2022-07-04,"Royal Brussels Cricket Club Ground, Waterloo",Spain,Belgium,Belgium,Spain,bat,T20,2022
+1320987,2022-07-03,"Royal Brussels Cricket Club Ground, Waterloo",Gibraltar,Malta,Malta,Gibraltar,bat,T20,2022
+1320988,2022-07-04,"Royal Brussels Cricket Club Ground, Waterloo",Portugal,Denmark,Denmark,Portugal,bat,T20,2022
+1320997,2022-06-25,"Grainville, St Saviour",Jersey,Guernsey,Jersey,Guernsey,field,T20,2022
+1321258,2022-07-12,Kerava National Cricket Ground,Cyprus,Isle of Man,Isle of Man,Isle of Man,field,T20,2022
+1321259,2022-07-12,Tikkurila Cricket Ground,Finland,Sweden,Finland,Sweden,field,T20,2022
+1321260,2022-07-12,Kerava National Cricket Ground,Romania,Turkey,Romania,Turkey,field,T20,2022
+1321261,2022-07-13,Tikkurila Cricket Ground,Cyprus,Romania,Cyprus,Romania,field,T20,2022
+1321262,2022-07-13,Kerava National Cricket Ground,Croatia,Sweden,Sweden,Sweden,field,T20,2022
+1321263,2022-07-13,Tikkurila Cricket Ground,Isle of Man,Serbia,Isle of Man,Serbia,field,T20,2022
+1321264,2022-07-13,Kerava National Cricket Ground,Finland,Italy,Italy,Italy,field,T20,2022
+1321265,2022-07-15,Tikkurila Cricket Ground,Italy,Sweden,Italy,Sweden,field,T20,2022
+1321266,2022-07-15,Kerava National Cricket Ground,Turkey,Serbia,Serbia,Serbia,field,T20,2022
+1321267,2022-07-15,Tikkurila Cricket Ground,Croatia,Greece,Croatia,Greece,field,T20,2022
+1321268,2022-07-15,Kerava National Cricket Ground,Romania,Isle of Man,Isle of Man,Isle of Man,field,T20,2022
+1321269,2022-07-16,Tikkurila Cricket Ground,Romania,Serbia,Romania,Romania,bat,T20,2022
+1321270,2022-07-16,Kerava National Cricket Ground,Finland,Greece,Finland,Greece,field,T20,2022
+1321271,2022-07-16,Tikkurila Cricket Ground,Cyprus,Turkey,Cyprus,Cyprus,bat,T20,2022
+1321272,2022-07-16,Kerava National Cricket Ground,Italy,Croatia,Italy,Italy,bat,T20,2022
+1321273,2022-07-18,Tikkurila Cricket Ground,Sweden,Greece,Sweden,Greece,field,T20,2022
+1321274,2022-07-18,Kerava National Cricket Ground,Cyprus,Serbia,Serbia,Cyprus,bat,T20,2022
+1321275,2022-07-18,Tikkurila Cricket Ground,Croatia,Finland,Finland,Croatia,bat,T20,2022
+1321276,2022-07-18,Kerava National Cricket Ground,Isle of Man,Turkey,Isle of Man,Isle of Man,bat,T20,2022
+1321277,2022-07-19,Tikkurila Cricket Ground,Serbia,Croatia,Croatia,Serbia,bat,T20,2022
+1321278,2022-07-19,Kerava National Cricket Ground,Finland,Cyprus,Finland,Finland,bat,T20,2022
+1321279,2022-07-19,Tikkurila Cricket Ground,Romania,Sweden,Sweden,Romania,bat,T20,2022
+1321280,2022-07-19,Kerava National Cricket Ground,Isle of Man,Italy,Italy,Italy,field,T20,2022
+1321281,2022-07-24,Tikkurila Cricket Ground,Austria,Luxembourg,Austria,Luxembourg,field,T20,2022
+1321282,2022-07-24,Kerava National Cricket Ground,Estonia,Norway,Norway,Estonia,bat,T20,2022
+1321283,2022-07-24,Tikkurila Cricket Ground,Guernsey,Bulgaria,Guernsey,Bulgaria,field,T20,2022
+1321284,2022-07-24,Kerava National Cricket Ground,France,Czech Republic,France,Czech Republic,field,T20,2022
+1321286,2022-07-25,Kerava National Cricket Ground,Austria,Slovenia,Austria,Slovenia,field,T20,2022
+1321287,2022-07-25,Tikkurila Cricket Ground,France,Switzerland,Switzerland,France,bat,T20,2022
+1321288,2022-07-25,Kerava National Cricket Ground,Guernsey,Luxembourg,Guernsey,Luxembourg,field,T20,2022
+1321289,2022-07-27,Tikkurila Cricket Ground,Guernsey,Austria,Austria,Guernsey,bat,T20,2022
+1321290,2022-07-27,Kerava National Cricket Ground,Switzerland,Estonia,Switzerland,Switzerland,bat,T20,2022
+1321291,2022-07-27,Tikkurila Cricket Ground,Slovenia,Bulgaria,Bulgaria,Bulgaria,field,T20,2022
+1321292,2022-07-27,Kerava National Cricket Ground,France,Norway,France,France,bat,T20,2022
+1321293,2022-07-28,Tikkurila Cricket Ground,Norway,Switzerland,Norway,Norway,bat,T20,2022
+1321294,2022-07-28,Kerava National Cricket Ground,Luxembourg,Bulgaria,Luxembourg,Luxembourg,bat,T20,2022
+1321295,2022-07-28,Tikkurila Cricket Ground,Czech Republic,Estonia,Czech Republic,Czech Republic,bat,T20,2022
+1321296,2022-07-28,Kerava National Cricket Ground,Slovenia,Guernsey,Guernsey,Guernsey,field,T20,2022
+1321298,2022-07-30,Kerava National Cricket Ground,Switzerland,Czech Republic,Czech Republic,Switzerland,bat,T20,2022
+1321299,2022-07-30,Tikkurila Cricket Ground,Luxembourg,Slovenia,Luxembourg,Luxembourg,bat,T20,2022
+1321301,2022-07-31,Tikkurila Cricket Ground,Bulgaria,Czech Republic,Czech Republic,Bulgaria,bat,T20,2022
+1321302,2022-07-31,Kerava National Cricket Ground,Guernsey,France,Guernsey,Guernsey,bat,T20,2022
+1321303,2022-07-31,Tikkurila Cricket Ground,Luxembourg,Switzerland,Luxembourg,Luxembourg,bat,T20,2022
+1321304,2022-07-31,Kerava National Cricket Ground,Norway,Austria,Austria,Norway,bat,T20,2022
+1321305,2022-07-08,"Scott Page Field, Vinor",Luxembourg,Austria,Austria,Austria,field,T20,2022
+1321306,2022-07-08,"Scott Page Field, Vinor",Luxembourg,Czech Republic,Czech Republic,Luxembourg,bat,T20,2022
+1321307,2022-07-09,"Scott Page Field, Vinor",Czech Republic,Austria,Austria,Austria,field,T20,2022
+1321308,2022-07-09,"Scott Page Field, Vinor",Austria,Luxembourg,Austria,Luxembourg,field,T20,2022
+1321309,2022-07-10,"Scott Page Field, Vinor",Czech Republic,Luxembourg,Czech Republic,Czech Republic,bat,T20,2022
+1321310,2022-07-10,"Scott Page Field, Vinor",Austria,Czech Republic,Czech Republic,Czech Republic,field,T20,2022
+1321311,2022-06-28,"Indian Association Ground, Singapore",Malaysia,Singapore,Singapore,Singapore,field,T20,2022
+1321312,2022-06-29,"Indian Association Ground, Singapore",Malaysia,Singapore,Malaysia,Malaysia,bat,T20,2022
+1321313,2022-06-30,"Indian Association Ground, Singapore",Singapore,Malaysia,Malaysia,Singapore,bat,T20,2022
+1321335,2022-06-28,"Sportpark Harga, Schiedam",Netherlands,Namibia,Netherlands,Netherlands,bat,T20,2022
+1321336,2022-06-30,"Sportpark Westvliet, Voorburg",Namibia,Netherlands,Netherlands,Netherlands,field,T20,2022
+1321337,2022-07-01,"Sportpark Westvliet, Voorburg",Netherlands,Namibia,Netherlands,Namibia,field,T20,2022
+1321465,2022-07-11,"Queens Sports Club, Bulawayo",Zimbabwe,Singapore,Zimbabwe,Singapore,field,T20,2022
+1321466,2022-07-11,Bulawayo Athletic Club,Jersey,United States of America,United States of America,United States of America,field,T20,2022
+1321467,2022-07-11,"Queens Sports Club, Bulawayo",Netherlands,Papua New Guinea,Netherlands,Netherlands,bat,T20,2022
+1321468,2022-07-11,Bulawayo Athletic Club,Hong Kong,Uganda,Uganda,Hong Kong,bat,T20,2022
+1321469,2022-07-12,"Queens Sports Club, Bulawayo",Zimbabwe,Jersey,Zimbabwe,Jersey,field,T20,2022
+1321470,2022-07-12,Bulawayo Athletic Club,United States of America,Singapore,United States of America,Singapore,field,T20,2022
+1321471,2022-07-12,"Queens Sports Club, Bulawayo",Hong Kong,Netherlands,Netherlands,Hong Kong,bat,T20,2022
+1321472,2022-07-12,Bulawayo Athletic Club,Uganda,Papua New Guinea,Papua New Guinea,Papua New Guinea,field,T20,2022
+1321473,2022-07-14,"Queens Sports Club, Bulawayo",Netherlands,Uganda,Netherlands,Uganda,field,T20,2022
+1321474,2022-07-14,Bulawayo Athletic Club,Papua New Guinea,Hong Kong,Hong Kong,Hong Kong,field,T20,2022
+1321475,2022-07-14,"Queens Sports Club, Bulawayo",Zimbabwe,United States of America,Zimbabwe,Zimbabwe,bat,T20,2022
+1321477,2022-07-15,"Queens Sports Club, Bulawayo",Uganda,Jersey,Uganda,Uganda,bat,T20,2022
+1321478,2022-07-15,Bulawayo Athletic Club,Singapore,Hong Kong,Hong Kong,Hong Kong,field,T20,2022
+1321479,2022-07-15,"Queens Sports Club, Bulawayo",Zimbabwe,Papua New Guinea,Zimbabwe,Zimbabwe,bat,T20,2022
+1321480,2022-07-15,Bulawayo Athletic Club,United States of America,Netherlands,Netherlands,United States of America,bat,T20,2022
+1321481,2022-07-17,"Queens Sports Club, Bulawayo",Uganda,Hong Kong,Uganda,Hong Kong,field,T20,2022
+1321482,2022-07-17,Bulawayo Athletic Club,Singapore,Jersey,Jersey,Singapore,bat,T20,2022
+1321483,2022-07-17,Bulawayo Athletic Club,Papua New Guinea,United States of America,Papua New Guinea,United States of America,field,T20,2022
+1321484,2022-07-17,"Queens Sports Club, Bulawayo",Zimbabwe,Netherlands,Zimbabwe,Zimbabwe,bat,T20,2022
+1321998,2022-07-02,"UKM-YSD Cricket Oval, Bangi",Malaysia,Bhutan,Malaysia,Bhutan,field,T20,2022
+1322001,2022-07-04,"UKM-YSD Cricket Oval, Bangi",Thailand,Malaysia,Malaysia,Thailand,bat,T20,2022
+1322002,2022-07-04,"UKM-YSD Cricket Oval, Bangi",Bhutan,Maldives,Bhutan,Maldives,field,T20,2022
+1322003,2022-07-06,"UKM-YSD Cricket Oval, Bangi",Thailand,Bhutan,Bhutan,Bhutan,field,T20,2022
+1322004,2022-07-06,"UKM-YSD Cricket Oval, Bangi",Maldives,Malaysia,Malaysia,Malaysia,field,T20,2022
+1322005,2022-07-07,"UKM-YSD Cricket Oval, Bangi",Bhutan,Maldives,Bhutan,Maldives,field,T20,2022
+1322006,2022-07-07,"UKM-YSD Cricket Oval, Bangi",Thailand,Malaysia,Malaysia,Malaysia,field,T20,2022
+1322007,2022-07-08,"UKM-YSD Cricket Oval, Bangi",Maldives,Thailand,Maldives,Thailand,field,T20,2022
+1322009,2022-07-09,"UKM-YSD Cricket Oval, Bangi",Bhutan,Thailand,Bhutan,Bhutan,bat,T20,2022
+1322010,2022-07-11,"UKM-YSD Cricket Oval, Bangi",Bhutan,Malaysia,Malaysia,Malaysia,field,T20,2022
+1322011,2022-07-02,"Indian Association Ground, Singapore",Singapore,Papua New Guinea,Singapore,Singapore,bat,T20,2022
+1322012,2022-07-03,"Indian Association Ground, Singapore",Singapore,Papua New Guinea,Papua New Guinea,Singapore,bat,T20,2022
+1322018,2022-07-08,"Indian Association Ground, Singapore",Singapore,Malaysia,Malaysia,Singapore,bat,T20,2022
+1322019,2022-07-09,"Indian Association Ground, Singapore",Malaysia,Singapore,Malaysia,Singapore,field,T20,2022
+1322020,2022-07-10,"Indian Association Ground, Singapore",Malaysia,Singapore,Malaysia,Malaysia,bat,T20,2022
+1322176,2022-06-30,"Sportpark Westvliet, Voorburg",Netherlands,Namibia,Namibia,Namibia,field,T20,2022
+1322276,2022-11-20,"Bay Oval, Mount Maunganui",India,New Zealand,India,New Zealand,field,T20,2022
+1322277,2022-11-22,"McLean Park, Napier",New Zealand,India,,New Zealand,bat,T20,2022
+1322334,2022-10-07,"Hagley Oval, Christchurch",Pakistan,Bangladesh,Pakistan,Bangladesh,field,T20,2022
+1322335,2022-10-08,"Hagley Oval, Christchurch",New Zealand,Pakistan,Pakistan,New Zealand,bat,T20,2022
+1322336,2022-10-09,"Hagley Oval, Christchurch",Bangladesh,New Zealand,New Zealand,New Zealand,field,T20,2022
+1322337,2022-10-11,"Hagley Oval, Christchurch",Pakistan,New Zealand,New Zealand,Pakistan,bat,T20,2022
+1322338,2022-10-12,"Hagley Oval, Christchurch",New Zealand,Bangladesh,New Zealand,Bangladesh,field,T20,2022
+1322339,2022-10-13,"Hagley Oval, Christchurch",Bangladesh,Pakistan,Pakistan,Bangladesh,bat,T20,2022
+1322340,2022-10-14,"Hagley Oval, Christchurch",New Zealand,Pakistan,Pakistan,Pakistan,field,T20,2022
+1322362,2023-04-02,"Eden Park, Auckland",Sri Lanka,New Zealand,,New Zealand,field,T20,2023
+1322363,2023-04-05,"University Oval, Dunedin",Sri Lanka,New Zealand,New Zealand,New Zealand,field,T20,2023
+1322364,2023-04-08,"John Davies Oval, Queenstown",Sri Lanka,New Zealand,New Zealand,New Zealand,field,T20,2023
+1323295,2022-07-30,Harare Sports Club,Zimbabwe,Bangladesh,Zimbabwe,Zimbabwe,bat,T20,2022
+1323296,2022-07-31,Harare Sports Club,Zimbabwe,Bangladesh,Bangladesh,Zimbabwe,bat,T20,2022
+1323297,2022-08-02,Harare Sports Club,Zimbabwe,Bangladesh,Zimbabwe,Zimbabwe,bat,T20,2022
+1323550,2022-07-08,Lisicji Jarak Cricket Ground,Bulgaria,Serbia,Serbia,Serbia,field,T20,2022
+1323551,2022-07-09,Lisicji Jarak Cricket Ground,Bulgaria,Serbia,Serbia,Serbia,field,T20,2022
+1323552,2022-07-09,Lisicji Jarak Cricket Ground,Bulgaria,Serbia,Bulgaria,Serbia,field,T20,2022
+1327228,2022-09-20,"National Stadium, Karachi",Pakistan,England,England,England,field,T20,2022
+1327229,2022-09-22,"National Stadium, Karachi",England,Pakistan,Pakistan,England,bat,T20,2022
+1327230,2022-09-23,"National Stadium, Karachi",England,Pakistan,England,Pakistan,field,T20,2022
+1327231,2022-09-25,"National Stadium, Karachi",Pakistan,England,Pakistan,England,field,T20,2022
+1327232,2022-09-28,"Gaddafi Stadium, Lahore",Pakistan,England,Pakistan,England,field,T20,2022
+1327233,2022-09-30,"Gaddafi Stadium, Lahore",Pakistan,England,England,England,field,T20,2022
+1327234,2022-10-02,"Gaddafi Stadium, Lahore",England,Pakistan,England,Pakistan,field,T20,2022
+1327270,2022-08-28,Dubai International Cricket Stadium,Pakistan,India,India,India,field,T20,2022
+1327272,2022-08-31,Dubai International Cricket Stadium,India,Hong Kong,India,Hong Kong,field,T20,2022
+1327273,2022-09-01,Dubai International Cricket Stadium,Bangladesh,Sri Lanka,Sri Lanka,Sri Lanka,field,T20,2022
+1327274,2022-09-02,Sharjah Cricket Stadium,Pakistan,Hong Kong,Pakistan,Hong Kong,field,T20,2022
+1327276,2022-09-04,Dubai International Cricket Stadium,India,Pakistan,Pakistan,Pakistan,field,T20,2022
+1327277,2022-09-06,Dubai International Cricket Stadium,India,Sri Lanka,Sri Lanka,Sri Lanka,field,T20,2022
+1327280,2022-09-09,Dubai International Cricket Stadium,Pakistan,Sri Lanka,Sri Lanka,Sri Lanka,field,T20,2022
+1327281,2022-09-11,Dubai International Cricket Stadium,Sri Lanka,Pakistan,Sri Lanka,Pakistan,field,T20,2022
+1327503,2022-09-20,"Punjab Cricket Association IS Bindra Stadium, Mohali, Chandigarh",India,Australia,Australia,Australia,field,T20,2022
+1327504,2022-09-23,"Vidarbha Cricket Association Stadium, Jamtha, Nagpur",Australia,India,India,India,field,T20,2022
+1327505,2022-09-25,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",Australia,India,India,India,field,T20,2022
+1327506,2022-09-28,"Greenfield International Stadium, Thiruvananthapuram",South Africa,India,India,India,field,T20,2022
+1327507,2022-10-02,"Barsapara Cricket Stadium, Guwahati",India,South Africa,India,South Africa,field,T20,2022
+1327508,2022-10-04,"Holkar Cricket Stadium, Indore",South Africa,India,South Africa,India,field,T20,2022
+1328470,2022-08-13,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Kuwait,Bahrain,Kuwait,Bahrain,field,T20,2022
+1328471,2022-08-14,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Bahrain,Kuwait,Kuwait,Kuwait,field,T20,2022
+1328473,2022-08-17,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Kuwait,Bahrain,Kuwait,Bahrain,field,T20,2022
+1328474,2022-08-25,"Gymkhana Club Ground, Nairobi",Kenya,Nepal,Nepal,Nepal,field,T20,2022
+1328476,2022-08-28,"Gymkhana Club Ground, Nairobi",Kenya,Nepal,Nepal,Kenya,bat,T20,2022
+1328477,2022-08-29,"Gymkhana Club Ground, Nairobi",Kenya,Nepal,Kenya,Kenya,bat,T20,2022
+1328478,2022-08-30,"Gymkhana Club Ground, Nairobi",Nepal,Kenya,Nepal,Nepal,bat,T20,2022
+1328849,2022-08-20,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Hong Kong,Singapore,Hong Kong,Singapore,field,T20,2022
+1328850,2022-08-21,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),United Arab Emirates,Kuwait,Kuwait,Kuwait,field,T20,2022
+1328851,2022-08-22,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),United Arab Emirates,Singapore,United Arab Emirates,Singapore,field,T20,2022
+1328852,2022-08-23,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Kuwait,Hong Kong,Hong Kong,Hong Kong,field,T20,2022
+1328853,2022-08-24,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),Singapore,Kuwait,Kuwait,Singapore,bat,T20,2022
+1328854,2022-08-24,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),United Arab Emirates,Hong Kong,Hong Kong,Hong Kong,field,T20,2022
+1329247,2022-09-12,"ICC Academy, Dubai",Zimbabwe,United Arab Emirates,Zimbabwe,Zimbabwe,bat,T20,2022
+1329250,2022-09-13,"ICC Academy, Dubai",United States of America,United Arab Emirates,United States of America,United States of America,bat,T20,2022
+1330807,2022-09-05,"Grange Cricket Club Ground, Raeburn Place, Edinburgh",Scotland,Ireland,Ireland,Ireland,field,T20,2022
+1330808,2022-09-06,"Grange Cricket Club Ground, Raeburn Place, Edinburgh",Scotland,Ireland,Ireland,Ireland,field,T20,2022
+1331384,2022-09-18,"Sheikh Zayed Stadium, Abu Dhabi",United Arab Emirates,Thailand,Thailand,United Arab Emirates,bat,T20,2022
+1331385,2022-09-18,"Sheikh Zayed Stadium, Abu Dhabi",Bangladesh,Ireland,Bangladesh,Bangladesh,bat,T20,2022
+1331386,2022-09-18,"Tolerance Oval, Abu Dhabi",Papua New Guinea,Zimbabwe,Zimbabwe,Papua New Guinea,bat,T20,2022
+1331387,2022-09-18,"Tolerance Oval, Abu Dhabi",Scotland,United States of America,Scotland,Scotland,bat,T20,2022
+1331388,2022-09-19,"Sheikh Zayed Stadium, Abu Dhabi",Thailand,Zimbabwe,Zimbabwe,Thailand,bat,T20,2022
+1331389,2022-09-19,"Sheikh Zayed Stadium, Abu Dhabi",Scotland,Bangladesh,Bangladesh,Scotland,bat,T20,2022
+1331390,2022-09-19,"Tolerance Oval, Abu Dhabi",Papua New Guinea,United Arab Emirates,Papua New Guinea,United Arab Emirates,field,T20,2022
+1331391,2022-09-19,"Tolerance Oval, Abu Dhabi",United States of America,Ireland,Ireland,United States of America,bat,T20,2022
+1331392,2022-09-21,"Sheikh Zayed Stadium, Abu Dhabi",Bangladesh,United States of America,Bangladesh,Bangladesh,bat,T20,2022
+1331394,2022-09-21,"Tolerance Oval, Abu Dhabi",Ireland,Scotland,Ireland,Ireland,bat,T20,2022
+1331395,2022-09-21,"Tolerance Oval, Abu Dhabi",Zimbabwe,United Arab Emirates,United Arab Emirates,Zimbabwe,bat,T20,2022
+1331396,2022-09-23,"Sheikh Zayed Stadium, Abu Dhabi",Ireland,Zimbabwe,Ireland,Zimbabwe,field,T20,2022
+1331397,2022-09-23,"Tolerance Oval, Abu Dhabi",Scotland,United Arab Emirates,Scotland,United Arab Emirates,field,T20,2022
+1331398,2022-09-23,"Sheikh Zayed Stadium, Abu Dhabi",Bangladesh,Thailand,Bangladesh,Thailand,field,T20,2022
+1331399,2022-09-23,"Tolerance Oval, Abu Dhabi",United States of America,Papua New Guinea,Papua New Guinea,Papua New Guinea,field,T20,2022
+1331400,2022-09-25,"Sheikh Zayed Stadium, Abu Dhabi",Zimbabwe,Thailand,Zimbabwe,Thailand,field,T20,2022
+1331401,2022-09-25,"Sheikh Zayed Stadium, Abu Dhabi",Bangladesh,Ireland,Bangladesh,Bangladesh,bat,T20,2022
+1331402,2022-09-25,"Tolerance Oval, Abu Dhabi",United States of America,United Arab Emirates,United Arab Emirates,United States of America,bat,T20,2022
+1331403,2022-09-25,"Tolerance Oval, Abu Dhabi",Scotland,Papua New Guinea,Papua New Guinea,Scotland,bat,T20,2022
+1332496,2022-09-15,"Willowmoore Park, Benoni",Botswana,Uganda,Uganda,Uganda,field,T20,2022
+1332497,2022-09-17,"Willowmoore Park, Benoni",Kenya,Tanzania,Tanzania,Kenya,bat,T20,2022
+1332498,2022-09-16,"Willowmoore Park, Benoni",Ghana,Mozambique,Ghana,Ghana,bat,T20,2022
+1332501,2022-09-20,"Willowmoore Park, Benoni",Ghana,Uganda,Uganda,Ghana,bat,T20,2022
+1332503,2022-09-18,"Willowmoore Park, Benoni",Uganda,Mozambique,Uganda,Uganda,bat,T20,2022
+1332504,2022-09-19,"Willowmoore Park, Benoni",Botswana,Mozambique,Botswana,Mozambique,field,T20,2022
+1332505,2022-09-20,"Willowmoore Park, Benoni",Tanzania,Malawi,Tanzania,Malawi,field,T20,2022
+1332506,2022-09-19,"Willowmoore Park, Benoni",Cameroon,Kenya,Kenya,Kenya,field,T20,2022
+1332507,2022-09-18,"Willowmoore Park, Benoni",Botswana,Ghana,Botswana,Ghana,field,T20,2022
+1332508,2022-09-21,"Willowmoore Park, Benoni",Kenya,Uganda,Uganda,Uganda,field,T20,2022
+1332509,2022-09-21,"Willowmoore Park, Benoni",Botswana,Tanzania,Tanzania,Tanzania,field,T20,2022
+1332510,2022-09-22,"Willowmoore Park, Benoni",Tanzania,Uganda,Uganda,Uganda,field,T20,2022
+1333920,2022-09-10,"Independence Park, Port Vila",Cook Islands,Fiji,Fiji,Cook Islands,bat,T20,2022
+1333921,2022-09-10,"Independence Park, Port Vila",Samoa,Vanuatu,Vanuatu,Samoa,bat,T20,2022
+1333922,2022-09-11,"Independence Park, Port Vila",Vanuatu,Cook Islands,Cook Islands,Vanuatu,bat,T20,2022
+1333923,2022-09-11,"Independence Park, Port Vila",Samoa,Fiji,Fiji,Samoa,bat,T20,2022
+1333924,2022-09-13,"Independence Park, Port Vila",Samoa,Cook Islands,Cook Islands,Cook Islands,field,T20,2022
+1333925,2022-09-13,"Independence Park, Port Vila",Vanuatu,Fiji,Vanuatu,Fiji,field,T20,2022
+1333926,2022-09-14,"Independence Park, Port Vila",Samoa,Vanuatu,Vanuatu,Vanuatu,field,T20,2022
+1333927,2022-09-14,"Independence Park, Port Vila",Fiji,Cook Islands,Cook Islands,Cook Islands,field,T20,2022
+1333928,2022-09-15,"Independence Park, Port Vila",Fiji,Samoa,Fiji,Samoa,field,T20,2022
+1333929,2022-09-15,"Independence Park, Port Vila",Vanuatu,Cook Islands,Vanuatu,Cook Islands,field,T20,2022
+1333931,2022-10-10,Sano International Cricket Ground,Japan,Indonesia,Japan,Japan,bat,T20,2022
+1333932,2022-10-11,Sano International Cricket Ground,Japan,Indonesia,Indonesia,Japan,bat,T20,2022
+1334415,2022-09-28,"Sir Vivian Richards Stadium, North Sound, Antigua",West Indies,New Zealand,West Indies,New Zealand,field,T20,2022
+1334416,2022-10-01,"Sir Vivian Richards Stadium, North Sound, Antigua",West Indies,New Zealand,New Zealand,New Zealand,field,T20,2022
+1334417,2022-10-02,"Sir Vivian Richards Stadium, North Sound, Antigua",West Indies,New Zealand,New Zealand,New Zealand,field,T20,2022
+1334418,2022-10-05,"Sir Vivian Richards Stadium, North Sound, Antigua",New Zealand,West Indies,,West Indies,field,T20,2022
+1334419,2022-10-06,"Sir Vivian Richards Stadium, North Sound, Antigua",West Indies,New Zealand,New Zealand,New Zealand,field,T20,2022
+1335785,2022-10-01,"Sylhet International Cricket Stadium, Academy Ground",Thailand,Bangladesh,Bangladesh,Thailand,bat,T20,2022
+1335786,2022-10-01,"Sylhet International Cricket Stadium, Academy Ground",India,Sri Lanka,India,Sri Lanka,field,T20,2022
+1335787,2022-10-02,"Sylhet International Cricket Stadium, Academy Ground",Malaysia,Pakistan,Pakistan,Pakistan,field,T20,2022
+1335788,2022-10-02,"Sylhet International Cricket Stadium, Academy Ground",Sri Lanka,United Arab Emirates,Sri Lanka,Sri Lanka,bat,T20,2022
+1335789,2022-10-03,"Sylhet International Cricket Stadium, Academy Ground",Bangladesh,Pakistan,Pakistan,Pakistan,field,T20,2022
+1335790,2022-10-03,"Sylhet International Cricket Stadium, Academy Ground",India,Malaysia,India,Malaysia,field,T20,2022
+1335791,2022-10-04,"Sylhet International Cricket Stadium, Academy Ground",Sri Lanka,Thailand,Sri Lanka,Sri Lanka,bat,T20,2022
+1335792,2022-10-04,"Sylhet International Cricket Stadium, Academy Ground",India,United Arab Emirates,India,India,bat,T20,2022
+1335793,2022-10-05,"Sylhet International Cricket Stadium, Academy Ground",Malaysia,United Arab Emirates,United Arab Emirates,Malaysia,bat,T20,2022
+1335794,2022-10-06,Sylhet International Cricket Stadium,Pakistan,Thailand,Thailand,Pakistan,bat,T20,2022
+1335795,2022-10-06,Sylhet International Cricket Stadium,Bangladesh,Malaysia,Bangladesh,Bangladesh,bat,T20,2022
+1335796,2022-10-07,Sylhet International Cricket Stadium,Thailand,United Arab Emirates,Thailand,United Arab Emirates,field,T20,2022
+1335797,2022-10-07,Sylhet International Cricket Stadium,Pakistan,India,Pakistan,Pakistan,bat,T20,2022
+1335798,2022-10-08,Sylhet International Cricket Stadium,Sri Lanka,Malaysia,Sri Lanka,Sri Lanka,bat,T20,2022
+1335799,2022-10-08,Sylhet International Cricket Stadium,India,Bangladesh,India,India,bat,T20,2022
+1335800,2022-10-09,Sylhet International Cricket Stadium,Thailand,Malaysia,Thailand,Malaysia,field,T20,2022
+1335801,2022-10-09,Sylhet International Cricket Stadium,Pakistan,United Arab Emirates,Pakistan,United Arab Emirates,field,T20,2022
+1335802,2022-10-10,Sylhet International Cricket Stadium,Sri Lanka,Bangladesh,Sri Lanka,Bangladesh,field,T20,2022
+1335803,2022-10-10,Sylhet International Cricket Stadium,Thailand,India,India,India,field,T20,2022
+1335805,2022-10-11,Sylhet International Cricket Stadium,Sri Lanka,Pakistan,Pakistan,Sri Lanka,bat,T20,2022
+1335806,2022-10-13,Sylhet International Cricket Stadium,India,Thailand,India,Thailand,field,T20,2022
+1335807,2022-10-13,Sylhet International Cricket Stadium,Sri Lanka,Pakistan,Sri Lanka,Sri Lanka,bat,T20,2022
+1335808,2022-10-15,Sylhet International Cricket Stadium,Sri Lanka,India,India,Sri Lanka,bat,T20,2022
+1336031,2022-09-25,Dubai International Cricket Stadium,Bangladesh,United Arab Emirates,Bangladesh,United Arab Emirates,field,T20,2022
+1336032,2022-09-27,Dubai International Cricket Stadium,Bangladesh,United Arab Emirates,Bangladesh,United Arab Emirates,field,T20,2022
+1336048,2023-08-30,"Riverside Ground, Chester-le-Street",New Zealand,England,England,England,field,T20,2023
+1336049,2023-09-01,"Old Trafford, Manchester",England,New Zealand,England,England,bat,T20,2023
+1336050,2023-09-03,"Edgbaston, Birmingham",New Zealand,England,New Zealand,New Zealand,bat,T20,2023
+1336051,2023-09-05,"Trent Bridge, Nottingham",England,New Zealand,New Zealand,England,bat,T20,2023
+1336074,2023-07-01,"Edgbaston, Birmingham",England,Australia,Australia,Australia,field,T20,2023
+1336075,2023-07-05,"Kennington Oval, London",England,Australia,England,Australia,field,T20,2023
+1336076,2023-07-08,"Lord's, London",Australia,England,England,England,field,T20,2023
+1336080,2023-08-31,"County Ground, Hove",England,Sri Lanka,England,Sri Lanka,field,T20,2023
+1336081,2023-09-02,"County Ground, Chelmsford",England,Sri Lanka,Sri Lanka,Sri Lanka,field,T20,2023
+1336082,2023-09-06,"County Ground, Derby",England,Sri Lanka,Sri Lanka,Sri Lanka,field,T20,2023
+1336951,2022-10-15,Sano International Cricket Ground,Indonesia,South Korea,Indonesia,South Korea,field,T20,2022
+1336952,2022-10-15,Sano International Cricket Ground,Japan,South Korea,Japan,Japan,bat,T20,2022
+1336953,2022-10-16,Sano International Cricket Ground,Indonesia,Japan,Japan,Indonesia,bat,T20,2022
+1336955,2022-10-18,Sano International Cricket Ground,Japan,Indonesia,Indonesia,Japan,bat,T20,2022
+1336956,2022-10-18,Sano International Cricket Ground,South Korea,Indonesia,Indonesia,South Korea,bat,T20,2022
+1336979,2022-10-27,Kaizuka Cricket Ground,Japan,Hong Kong,Hong Kong,Hong Kong,field,T20,2022
+1336980,2022-10-28,Kaizuka Cricket Ground,Japan,Hong Kong,Hong Kong,Japan,bat,T20,2022
+1336981,2022-10-29,Kaizuka Cricket Ground,Hong Kong,Japan,Hong Kong,Hong Kong,bat,T20,2022
+1336982,2022-10-30,Kaizuka Cricket Ground,Hong Kong,Japan,,Japan,field,T20,2022
+1338040,2023-02-10,"Newlands, Cape Town",Sri Lanka,South Africa,Sri Lanka,South Africa,field,T20,2023
+1338041,2023-02-11,"Boland Park, Paarl",West Indies,England,England,West Indies,bat,T20,2023
+1338042,2023-02-11,"Boland Park, Paarl",Australia,New Zealand,Australia,New Zealand,field,T20,2023
+1338043,2023-02-12,"Newlands, Cape Town",Pakistan,India,India,Pakistan,bat,T20,2023
+1338044,2023-02-12,"Newlands, Cape Town",Bangladesh,Sri Lanka,Sri Lanka,Bangladesh,bat,T20,2023
+1338045,2023-02-13,"Boland Park, Paarl",Ireland,England,England,Ireland,bat,T20,2023
+1338046,2023-02-13,"Boland Park, Paarl",South Africa,New Zealand,South Africa,South Africa,bat,T20,2023
+1338047,2023-02-14,"St George's Park, Gqeberha",Bangladesh,Australia,Australia,Bangladesh,bat,T20,2023
+1338048,2023-02-15,"Newlands, Cape Town",West Indies,India,India,West Indies,bat,T20,2023
+1338049,2023-02-15,"Newlands, Cape Town",Pakistan,Ireland,Pakistan,Ireland,field,T20,2023
+1338050,2023-02-16,"St George's Park, Gqeberha",Sri Lanka,Australia,Australia,Australia,field,T20,2023
+1338051,2023-02-17,"Newlands, Cape Town",New Zealand,Bangladesh,New Zealand,New Zealand,bat,T20,2023
+1338052,2023-02-17,"Newlands, Cape Town",Ireland,West Indies,West Indies,Ireland,bat,T20,2023
+1338053,2023-02-18,"St George's Park, Gqeberha",England,India,England,India,field,T20,2023
+1338054,2023-02-18,"St George's Park, Gqeberha",South Africa,Australia,Australia,Australia,field,T20,2023
+1338055,2023-02-19,"Boland Park, Paarl",West Indies,Pakistan,West Indies,West Indies,bat,T20,2023
+1338056,2023-02-19,"Boland Park, Paarl",New Zealand,Sri Lanka,New Zealand,New Zealand,bat,T20,2023
+1338057,2023-02-20,"St George's Park, Gqeberha",India,Ireland,India,India,bat,T20,2023
+1338058,2023-02-21,"Newlands, Cape Town",England,Pakistan,England,England,bat,T20,2023
+1338059,2023-02-21,"Newlands, Cape Town",Bangladesh,South Africa,South Africa,Bangladesh,bat,T20,2023
+1338060,2023-02-23,"Newlands, Cape Town",Australia,India,Australia,Australia,bat,T20,2023
+1338061,2023-02-24,"Newlands, Cape Town",South Africa,England,South Africa,South Africa,bat,T20,2023
+1338062,2023-02-26,"Newlands, Cape Town",Australia,South Africa,Australia,Australia,bat,T20,2023
+1339205,2022-11-04,"Desert Springs Cricket Ground, Almeria",Italy,Germany,Germany,Italy,bat,T20,2022
+1339206,2022-11-04,"Desert Springs Cricket Ground, Almeria",Italy,Germany,Germany,Italy,bat,T20,2022
+1339207,2022-11-05,"Desert Springs Cricket Ground, Almeria",Italy,Spain,Spain,Italy,bat,T20,2022
+1339208,2022-11-05,"Desert Springs Cricket Ground, Almeria",Germany,Spain,Germany,Spain,field,T20,2022
+1339209,2022-11-06,"Desert Springs Cricket Ground, Almeria",Spain,Germany,Spain,Germany,field,T20,2022
+1339210,2022-11-06,"Desert Springs Cricket Ground, Almeria",Italy,Spain,Italy,Italy,bat,T20,2022
+1339555,2022-11-13,"Desert Springs Cricket Ground, Almeria",Spain,Norway,Spain,Norway,field,T20,2022
+1339558,2022-11-14,"Desert Springs Cricket Ground, Almeria",Spain,Sweden,Spain,Sweden,field,T20,2022
+1339604,2023-03-25,"SuperSport Park, Centurion",South Africa,West Indies,West Indies,West Indies,field,T20,2023
+1339605,2023-03-26,"SuperSport Park, Centurion",West Indies,South Africa,South Africa,South Africa,field,T20,2023
+1339606,2023-03-28,"The Wanderers Stadium, Johannesburg",West Indies,South Africa,West Indies,South Africa,field,T20,2023
+1339614,2023-04-14,"Gaddafi Stadium, Lahore",Pakistan,New Zealand,Pakistan,Pakistan,bat,T20,2023
+1339615,2023-04-15,"Gaddafi Stadium, Lahore",Pakistan,New Zealand,Pakistan,Pakistan,bat,T20,2023
+1339616,2023-04-17,"Gaddafi Stadium, Lahore",New Zealand,Pakistan,New Zealand,New Zealand,bat,T20,2023
+1339617,2023-04-20,Rawalpindi Cricket Stadium,New Zealand,Pakistan,,Pakistan,field,T20,2023
+1339618,2023-04-24,Rawalpindi Cricket Stadium,Pakistan,New Zealand,New Zealand,New Zealand,field,T20,2023
+1343740,2022-11-17,Gahanga International Cricket Stadium. Rwanda,Botswana,Rwanda,Rwanda,Rwanda,field,T20,2022
+1343741,2022-11-17,Integrated Polytechnic Regional Centre,Lesotho,Mali,Lesotho,Mali,field,T20,2022
+1343742,2022-11-17,Gahanga International Cricket Stadium. Rwanda,Kenya,St Helena,,St Helena,field,T20,2022
+1343743,2022-11-17,Integrated Polytechnic Regional Centre,Botswana,Seychelles,,Seychelles,field,T20,2022
+1343744,2022-11-18,Gahanga International Cricket Stadium. Rwanda,Rwanda,St Helena,Rwanda,Rwanda,bat,T20,2022
+1343745,2022-11-18,Integrated Polytechnic Regional Centre,Lesotho,Botswana,Botswana,Botswana,field,T20,2022
+1343746,2022-11-18,Gahanga International Cricket Stadium. Rwanda,Kenya,Malawi,,Kenya,bat,T20,2022
+1343747,2022-11-18,Integrated Polytechnic Regional Centre,Seychelles,Mali,,Mali,field,T20,2022
+1343749,2022-11-20,Integrated Polytechnic Regional Centre,Mali,Kenya,Kenya,Mali,bat,T20,2022
+1343750,2022-11-20,Gahanga International Cricket Stadium. Rwanda,Rwanda,Kenya,Kenya,Kenya,field,T20,2022
+1343753,2022-11-21,Integrated Polytechnic Regional Centre,Kenya,Lesotho,Kenya,Kenya,bat,T20,2022
+1343756,2022-11-22,Gahanga International Cricket Stadium. Rwanda,Mali,Botswana,Botswana,Botswana,field,T20,2022
+1343757,2022-11-22,Integrated Polytechnic Regional Centre,St Helena,Lesotho,St Helena,Lesotho,field,T20,2022
+1343758,2022-11-22,Gahanga International Cricket Stadium. Rwanda,Seychelles,Malawi,,Malawi,field,T20,2022
+1343760,2022-11-24,Gahanga International Cricket Stadium. Rwanda,St Helena,Malawi,Malawi,Malawi,field,T20,2022
+1343761,2022-11-24,Integrated Polytechnic Regional Centre,Rwanda,Seychelles,Rwanda,Rwanda,bat,T20,2022
+1343762,2022-11-24,Gahanga International Cricket Stadium. Rwanda,Botswana,Kenya,Kenya,Botswana,bat,T20,2022
+1343763,2022-11-24,Integrated Polytechnic Regional Centre,Mali,Rwanda,Rwanda,Rwanda,field,T20,2022
+1343764,2022-11-25,Gahanga International Cricket Stadium. Rwanda,Seychelles,Kenya,Kenya,Seychelles,bat,T20,2022
