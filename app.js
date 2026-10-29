@@ -716,6 +716,22 @@ async function resolvePortrait(g){
   const key=p.kind+':'+p.name;
   if(photoCache.has(key))return photoCache.get(key);
   const promise=(async()=>{
+    // Proven, person-specific Commons image files with visible attribution links.
+    // Avoid guessed photographs and avoid dependence on cross-origin JSON requests.
+    const knownFiles={
+      'Virat Kohli':'Virat Kohli portrait.jpg',
+      'Rohit Sharma':'Rohit Sharma.jpg',
+      'Lewis Hamilton':'Lewis Hamilton portrait.jpg',
+      'Mohamed Salah':'Mohamed salah.jpg',
+      'Bukayo Saka':'Bukayo Saka.jpg'
+    };
+    const known=knownFiles[p.name];
+    if(known){
+      const encoded=encodeURIComponent(known.replace(/ /g,'_'));
+      return {src:'https://commons.wikimedia.org/wiki/Special:Redirect/file/'+encoded+'?width=500',
+        credit:'https://commons.wikimedia.org/wiki/File:'+encoded,
+        page:'https://commons.wikimedia.org/wiki/File:'+encoded};
+    }
     // NBA archive IDs are NBA official player IDs. Use the league image CDN first:
     // it avoids Wikimedia CORS/rate limits for known basketball headshots.
     if(sport==='NBA'&&/^nba:\\d+$/.test(String(g.id||''))){
