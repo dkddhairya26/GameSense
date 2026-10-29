@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=fieldnotes-portrait-v2">
+  <link rel="stylesheet" href="style.css?v=home-neon-20261030-v9">
 </head>
 <body>
   <header class="topbar">
@@ -26,8 +26,10 @@
 
   <div class="app-shell">
     <aside class="sidebar">
-      <div class="nav-label">SPORTS</div>
-      <button class="nav active" data-sport="Soccer"><b class="sport-number">01</b> <span>Football</span></button>
+      <div class="nav-label">EXPLORE</div>
+      <button class="nav home-nav active" data-home="1"><b class="sport-number">00</b><span>Home</span></button>
+      <div class="nav-label spaced">SPORTS</div>
+      <button class="nav" data-sport="Soccer"><b class="sport-number">01</b> <span>Football</span></button>
       <button class="nav" data-sport="NBA"><b class="sport-number">02</b> <span>NBA</span></button>
       <button class="nav" data-sport="Cricket"><b class="sport-number">03</b> <span>Cricket</span></button>
       <button class="nav" data-sport="F1"><b class="sport-number">04</b> <span>Formula 1</span></button>
@@ -46,6 +48,29 @@
 
     <main class="main">
       <div id="runtimeError" class="runtime-error" hidden role="alert"></div>
+      <section id="homeScreen" class="home-screen" aria-label="GameSense home">
+        <div class="home-topline"><span>THE GAMESENSE ARCHIVE</span><span>FIELD NOTES / SEASON EDITION</span></div>
+        <section class="home-intro">
+          <div class="home-intro-copy"><span class="eyebrow">READ THE GAME BEYOND THE SCORE</span>
+            <h1>THE NUMBERS<br><em>BEHIND</em><br>THE GAME.</h1>
+            <p>One independent research desk. Four sports. Historic records, player profiles and charts that explain what actually happened.</p>
+            <button id="homeExplore" class="home-action" type="button">EXPLORE THE ARCHIVE <span>↗</span></button>
+          </div>
+          <div class="home-field" aria-hidden="true">
+            <div class="field-circle"></div><div class="field-circle field-circle-small"></div>
+            <span>GS<sup>01</sup></span><b>DATA / PERFORMANCE / HISTORY</b>
+          </div>
+        </section>
+        <div class="home-section-caption"><span>CHOOSE YOUR SPORT</span><span>01—04 / HISTORICAL ANALYSIS</span></div>
+        <div class="home-sport-grid">
+          <button data-open-sport="Soccer" class="home-sport sport-soccer"><small>01 / THE FOOTBALL LEDGER</small><strong>FOOTBALL</strong><span>CLUB RESULTS + INDIVIDUAL PLAYERS <b>↗</b></span></button>
+          <button data-open-sport="NBA" class="home-sport sport-nba"><small>02 / THE BASKETBALL LEDGER</small><strong>NBA</strong><span>PLAYERS + SEASON TOTALS <b>↗</b></span></button>
+          <button data-open-sport="Cricket" class="home-sport sport-cricket"><small>03 / THE CRICKET LEDGER</small><strong>CRICKET</strong><span>IPL + INTERNATIONAL TEAMS + PLAYERS <b>↗</b></span></button>
+          <button data-open-sport="F1" class="home-sport sport-f1"><small>04 / THE GRAND PRIX LEDGER</small><strong>FORMULA 1</strong><span>DRIVERS + CONSTRUCTORS <b>↗</b></span></button>
+        </div>
+        <p class="home-footnote">Historical data only. Coverage varies by sport. The archive is a school research project, not a real-time or official statistics provider.</p>
+      </section>
+      <div id="dashboardScreen" hidden>
       <div class="crumb">ARCHIVE / <span id="crumbSport">SOCCER</span> / RESEARCH DESK</div>
 
       <section class="hero panel">
@@ -77,6 +102,14 @@
         </div>
       </section>
 
+      <section id="footballFormats" class="panel cricket-views" hidden aria-label="Football statistics views">
+        <span class="eyebrow">FOOTBALL / CHOOSE YOUR ANALYSIS</span>
+        <div class="cricket-view-buttons">
+          <button data-football-view="clubs" class="selected">CLUB RESULTS</button>
+          <button data-football-view="players">INDIVIDUAL PLAYERS / 2024–25</button>
+        </div>
+        <p class="analytics-disclaimer">Club match history and Premier League player-season totals are separate datasets. Individual goals, assists, appearances, passes and tackles are available in Player view.</p>
+      </section>
       <section id="cricketFormats" class="panel cricket-views" hidden aria-label="Cricket competition views">
         <span class="eyebrow">CRICKET · CHOOSE YOUR ANALYSIS</span>
         <div class="cricket-view-buttons">
@@ -290,9 +323,10 @@
       <footer>
         GAMESENSE / FIELD NOTES 01 · <a href="https://github.com/dkddhairya26/GameSense">DATA, CODE & AI DISCLOSURE</a>
       </footer>
+      </div><!-- dashboardScreen -->
     </main>
   </div>
 
-  <script defer src="app.js?v=fieldnotes-portrait-v8"></script>
+  <script defer src="app.js?v=home-neon-football-f1-v9"></script>
 </body>
 </html>
