@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=season-decade-badges-v10">
+  <link rel="stylesheet" href="style.css?v=season-decade-badges-v11">
 </head>
 <body>
   <header class="topbar">
@@ -99,6 +99,7 @@
             <strong id="leaderName">—</strong>
             <small id="leaderMetric">Waiting for data…</small>
             <small id="leaderTeam" class="leader-affiliation">Club / team / country</small>
+            <img id="leaderClubBadge" class="leader-club-badge" alt="Club crest" hidden loading="lazy">
             <a id="leaderPhotoCredit" class="leader-photo-credit" hidden target="_blank" rel="noopener noreferrer">PHOTO CREDIT</a>
           </div>
           <div class="mini-stat">
@@ -149,6 +150,7 @@
           <span class="eyebrow" id="subjectEyebrow">SUBJECT / ARCHIVE PROFILE</span>
           <h2 id="subjectName">Choose a sport to begin</h2>
           <p id="subjectAffiliation">Verified team or country will appear here when recorded.</p>
+          <div id="subjectBadgeLine" class="subject-badge-line" hidden><img id="subjectClubBadge" alt="Historical club crest" loading="lazy" decoding="async"><span id="subjectClubName"></span></div>
           <p id="subjectContext" class="subject-context">Historical data, not live affiliation.</p>
           <a id="subjectPhotoCredit" class="subject-photo-credit" hidden target="_blank" rel="noopener noreferrer">PHOTO &amp; LICENCE SOURCE</a>
         </div>
@@ -210,6 +212,11 @@
           <div id="duelChart" class="chart-viewport" role="img" aria-label="Side by side competitor metric analysis"></div>
         </div>
       </section>
+      <section class="panel football-badge-shelf" id="footballClubShelf" hidden>
+        <div class="panel-head"><div><span class="eyebrow">FOOTBALL / HISTORICAL CRESTS</span><h2>Clubs in this archive</h2></div></div>
+        <p class="chart-note">Select a club badge to filter historical club results. Badges are stored with GameSense, not downloaded from Wikipedia.</p>
+        <div id="footballClubBadgeGrid" class="club-badge-grid"></div>
+      </section>
       <div class="content-grid">
         <section class="panel" id="rankingPanel">
           <div class="panel-head">
@@ -247,6 +254,7 @@
                   <span class="athlete-kicker">COMPETITOR A</span>
                   <strong id="avatarNameA">Choose a competitor</strong>
                   <small id="avatarTeamA">Historical team / country</small>
+                  <img id="avatarBadgeA" class="athlete-club-badge" alt="Historical team badge" hidden loading="lazy">
                   <a id="avatarCreditA" href="#" target="_blank" rel="noopener noreferrer" hidden>VIEW WIKIPEDIA SOURCE ↗</a>
                 </div>
               </article>
@@ -256,6 +264,7 @@
                   <span class="athlete-kicker">COMPETITOR B</span>
                   <strong id="avatarNameB">Choose a competitor</strong>
                   <small id="avatarTeamB">Historical team / country</small>
+                  <img id="avatarBadgeB" class="athlete-club-badge" alt="Historical team badge" hidden loading="lazy">
                   <a id="avatarCreditB" href="#" target="_blank" rel="noopener noreferrer" hidden>Photo source & licence details ↗</a>
                 </div>
               </article>
@@ -345,6 +354,6 @@
     </main>
   </div>
 
-  <script defer src="app.js?v=season-decade-badges-v10"></script>
+  <script defer src="app.js?v=season-decade-badges-v11"></script>
 </body>
 </html>
