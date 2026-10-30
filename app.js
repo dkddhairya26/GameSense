@@ -720,7 +720,7 @@ function photoSubject(g) {
   const subset=filtered.filter(r=>r.competitor_id===g.id);
   const r=subset[0];
   const national=sport==='Cricket'&&r?.record_kind==='international_team_match';
-  return {name:portraitAliases[g.name]||g.name,kind:national?'country':sport==='Soccer'?'club':'athlete',country:national?g.name:(r?.team||'')};
+  return {name:portraitAliases[g.name]||g.name,kind:national?'country':sport==='Soccer'&&footballMode==='clubs'?'club':'athlete',country:national?g.name:(r?.team||'')};
 }
 function countryFallback(g){
   const p=photoSubject(g);
@@ -746,19 +746,28 @@ const wikiArticle=name=>'https://en.wikipedia.org/wiki/'+encodeURIComponent(name
 async function resolvePortrait(g){
   const p=photoSubject(g);
   if(!p||p.kind==='country')return null;
-  const key=p.kind+':'+p.name;
+  const skipCdn=String(g.id||'').startsWith('wikipedia:');
+  const key=(skipCdn?'wiki:':'')+p.kind+':'+p.name;
   if(photoCache.has(key))return photoCache.get(key);
   const promise=(async()=>{
     // Proven, person-specific Commons image files with visible attribution links.
     // Avoid guessed photographs and avoid dependence on cross-origin JSON requests.
     const knownFiles={
       'Virat Kohli':'Virat Kohli portrait.jpg',
-      'Rohit Sharma':'Rohit Sharma.jpg',
       'Lewis Hamilton':'Lewis Hamilton portrait.jpg',
-      'Mohamed Salah':'Mohamed salah.jpg',
-      'Bukayo Saka':'Bukayo Saka.jpg'
+      'Mohamed Salah':'Mohamed Salah Argentina v Egypt 7 July 2026-277.jpg'
     };
     const known=knownFiles[p.name];
+    if(p.kind==='club'){
+      const badge=clubBadgeUrl(g.name);
+      if(badge)return {src:badge,credit:'https://github.com/imadeddine-belkat/Premier-League-Stats',page:'https://github.com/imadeddine-belkat/Premier-League-Stats'};
+    }
+    if(!skipCdn&&sport==='Soccer'&&footballMode==='players'){
+      const row=filtered.find(r=>r.competitor_id===g.id);
+      if(row?.photo_code&&/^\d+$/.test(String(row.photo_code)))return {
+        src:'https://resources.premierleague.com/premierleague/photos/players/250x250/p'+row.photo_code+'.png',
+        credit:'https://www.premierleague.com/',fallbackToWiki:true};
+    }
     if(known){
       const encoded=encodeURIComponent(known.replace(/ /g,'_'));
       return {src:'https://commons.wikimedia.org/wiki/Special:Redirect/file/'+encoded+'?width=500',
@@ -767,7 +776,7 @@ async function resolvePortrait(g){
     }
     // NBA archive IDs are NBA official player IDs. Use the league image CDN first:
     // it avoids Wikimedia CORS/rate limits for known basketball headshots.
-    if(sport==='NBA'&&/^nba:\\d+$/.test(String(g.id||''))){
+    if(!skipCdn&&sport==='NBA'&&/^nba:\d+$/.test(String(g.id||''))){
       const id=String(g.id).slice(4);
       return {src:'https://cdn.nba.com/headshots/nba/latest/260x190/'+id+'.png',
         credit:'https://www.nba.com/players',page:'https://www.nba.com/players',fallbackToWiki:true};
@@ -823,7 +832,7 @@ function displayPhoto(g,imageId,initialsId,creditId,version,readVersion){
       if(readVersion()!==version)return;
       if(info.fallbackToWiki){
         // Re-try with sourced Wikimedia photo when the NBA CDN has no image.
-        photoCache.delete('athlete:'+((portraitAliases[g.name])||g.name));
+        photoCache.delete('wiki:athlete:'+((portraitAliases[g.name])||g.name));
         resolveWikiPortraitFallback(g).then(alternative=>{
           if(readVersion()!==version)return;
           if(alternative){
