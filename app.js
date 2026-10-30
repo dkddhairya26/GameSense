@@ -377,7 +377,7 @@ function updateControls() {
   document.querySelectorAll('[data-football-view]').forEach(b=>b.classList.toggle('selected',b.dataset.footballView===footballMode));
   const cricketPanel=$('cricketFormats');
   if(cricketPanel) cricketPanel.hidden=(sport!=='Cricket');
-  const rr = rows();
+  const rr = rows().filter(r=>sport!=='Soccer'||(footballMode==='players'?r.record_kind==='player_season':r.record_kind!=='player_season'));
   const seasons = [...new Set(rr.map(x => x.season))].sort((a, b) => b.localeCompare(a, undefined, { numeric: true }));
   const competitions = [...new Set(rr.map(x => x.competition))].sort();
   const oldSeason = $('season').value;
@@ -638,8 +638,8 @@ function render() {
   $('count').textContent = number(filtered.length);
   $('competitors').textContent = number(new Set(filtered.map(r => r.competitor_id)).size);
   $('seasons').textContent = number(new Set(filtered.map(r => r.season)).size);
-  $('source').textContent = d.source;
-  $('sourceSub').textContent = d.sourceSub;
+  $('source').textContent = sport==='Soccer'&&footballMode==='players'?'Fantasy Premier League / Historical':'OpenFootball'===d.source?d.source:d.source;
+  $('sourceSub').textContent = sport==='Soccer'&&footballMode==='players'?'Individual player-season totals from FPL archives 2016/17–2025/26':d.sourceSub;
   $('rankingMetric').textContent = d.metrics[metric];
   $('metricHead').textContent = d.metrics[metric];
 
@@ -1089,12 +1089,13 @@ $('footballClubBadgeGrid').addEventListener('click',event=>{
 document.querySelectorAll('[data-football-view]').forEach(btn=>btn.addEventListener('click',()=>{
   if(sport!=='Soccer')return;
   footballMode=btn.dataset.footballView;
+  selectedSubjectId='';
   $('season').value='All seasons';
-  const competition=footballMode==='players'?'Premier League · Players':'All competitions';
-  $('competition').value=competition;
+  $('search').value='';
+  updateControls();
+  $('competition').value=footballMode==='players'?'Premier League · Players':'All competitions';
   syncFootballMetricOptions();
   document.querySelectorAll('[data-football-view]').forEach(b=>b.classList.toggle('selected',b.dataset.footballView===footballMode));
-  selectedSubjectId='';
   render();
 }));
 document.querySelectorAll('.nav').forEach(btn => btn.onclick = () => openSport(btn.dataset.sport));
