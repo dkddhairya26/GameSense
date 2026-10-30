@@ -624,6 +624,7 @@ function render() {
   // Cricket all-competition mixing is prevented: IPL players and national teams are incompatible units.
   ranking = aggregate(filtered, metric).filter(g => !query || g.name.toLowerCase().includes(query));
 
+  renderClubShelf();
   renderAnalyticalCharts(filtered,ranking,metric);
   renderDistributionChart(ranking,metric);
   renderScatterChart(ranking,metric);
@@ -842,13 +843,68 @@ function updateProfiles(a,b){
     $('avatarName'+suffix).textContent=g?.name||'Select a competitor';
     $('avatarTeam'+suffix).textContent=teamInfo(g);
     displayPhoto(g,'avatarPhoto'+suffix,'avatarFallback'+suffix,'avatarCredit'+suffix,version,()=>profileVersion);
+    updateBadge('avatarBadge'+suffix,g);
   }
 }
 function updateLeaderPhoto(g){
   const version=++leaderVersion;
   $('leaderTeam').textContent=teamInfo(g);
   displayPhoto(g,'leaderPortrait','leaderMonogram','leaderPhotoCredit',version,()=>leaderVersion);
+  updateBadge('leaderClubBadge',g);
 }
+const badgeAliases={'Arsenal FC':'Arsenal','Manchester City':'Man City','Manchester United':'Man Utd','Tottenham':'Spurs','Tottenham Hotspur':'Spurs','Liverpool FC':'Liverpool','Chelsea FC':'Chelsea','Leicester City':'Leicester','Leicester City FC':'Leicester','Newcastle United':'Newcastle','Wolverhampton Wanderers':'Wolves','West Ham United':'West Ham','Nottingham Forest':"Nott'm Forest",'Brighton & Hove Albion':'Brighton','Crystal Palace FC':'Crystal Palace','AFC Bournemouth':'Bournemouth','Sheffield United':'Sheffield Utd','Leeds United':'Leeds','Norwich City':'Norwich','West Bromwich Albion':'West Brom'};
+function clubBadgeUrl(rawName){
+  const original=String(rawName||'').trim(),short=badgeAliases[original]||original;
+  const value=clubBadgeMap[short];
+  return typeof value==='string'&&/^[0-9]+$/.test(value)?'assets/club-badges/'+value+'.svg':null;
+}
+function competitorClub(g){
+  if(!g||sport!=='Soccer')return null;
+  if(footballMode==='clubs')return g.name;
+  const selected=filtered.find(r=>r.competitor_id===g.id);
+  if(selected?.team)return selected.team;
+  return all.find(r=>r.sport==='Soccer'&&r.record_kind==='player_season'&&r.competitor_id===g.id)?.team||null;
+}
+function updateBadge(id,g){
+  const img=$(id);if(!img)return;
+  const club=competitorClub(g),url=clubBadgeUrl(club);
+  img.hidden=!url;img.removeAttribute('src');
+  if(url){img.onerror=()=>{img.hidden=true};img.alt=club+' club crest';img.src=url;}
+}
+function renderClubShelf(){
+  if(sport!=='Soccer'||footballMode!=='clubs')return;
+  const names=[...new Set(filtered.map(x=>x.competitor))].sort((a,b)=>a.localeCompare(b)).slice(0,150);
+  const items=names.map(name=>{
+    const src=clubBadgeUrl(name),initials=name.split(/\s+/).slice(0,2).map(x=>x[0]).join('').toUpperCase();
+    return '<button class="club-badge-choice" data-club-name="'+escapeHtml(name)+'">'+
+      (src?'<img src="'+src+'" alt="'+escapeHtml(name)+' crest" loading="lazy" onerror="this.hidden=true"/>':'<b>'+escapeHtml(initials)+'</b>')+
+      '<span>'+escapeHtml(name)+'</span></button>';
+  });
+  $('footballClubBadgeGrid').innerHTML=items.join('');
+}
+let footballDetailSeason=null;
+function renderFootballProfile(g){
+  if(sport!=='Soccer'||footballMode!=='players')return;
+  const history=all.filter(r=>r.sport==='Soccer'&&r.record_kind==='player_season'&&r.competitor_id===g.id)
+    .sort((a,b)=>a.season.localeCompare(b.season));
+  const name=g.name;
+  $('footballArchiveTitle').textContent=name+' / year-by-year performance';
+  $('footballArchiveNote').textContent='Select a season to inspect all source metrics. '+history.length+' of 10 archived seasons recorded for this player.';
+  if(!history.length){$('footballYearTabs').innerHTML='';$('footballStatBreakdown').innerHTML='';$('footballYearRows').innerHTML='';return;}
+  const years=history.map(r=>r.season);
+  if(!footballDetailSeason||!years.includes(footballDetailSeason))footballDetailSeason=years.at(-1);
+  $('footballYearTabs').innerHTML=playerSeasons.map(year=>'<button type="button" data-football-year="'+year+'" class="'+(year===footballDetailSeason?'selected':'')+'" '+(!years.includes(year)?'disabled title="No player record for this season"':'')+'>'+year.replace('-','/')+'</button>').join('');
+  const fields=[['goals','GOALS'],['assists','FPL ASSISTS'],['minutes','MINUTES'],['total_points','FPL POINTS'],['starts','STARTS'],['clean_sheets','CLEAN SHEETS'],['saves','SAVES'],['yellow_cards','YELLOW CARDS'],['red_cards','RED CARDS'],['bonus','BONUS POINTS'],['expected_goals','EXPECTED GOALS'],['expected_assists','EXPECTED ASSISTS'],['tackles','TACKLES'],['recoveries','RECOVERIES'],['goals_against','GOALS CONCEDED']];
+  const picked=history.find(r=>r.season===footballDetailSeason);
+  $('footballStatBreakdown').innerHTML=fields.map(([key,label])=>{
+    const val=typeof picked[key]==='number'?number(picked[key]):'Not recorded';
+    return '<div class="football-stat-tile"><small>'+label+'</small><strong>'+val+'</strong></div>';
+  }).join('');
+  $('footballYearRows').innerHTML=history.map(r=>
+    '<tr class="'+(r.season===footballDetailSeason?'active-year':'')+'"><td>'+escapeHtml(r.season.replace('-','/'))+'</td><td>'+escapeHtml(r.team||'Not recorded')+'</td>'+
+    ['goals','assists','minutes','total_points','clean_sheets','saves'].map(k=>'<td>'+(typeof r[k]==='number'?number(r[k]):'—')+'</td>').join('')+'</tr>').join('');
+}
+
 let selectedSubjectId='';
 function renderSelectedSubject(){
   const picked=ranking.find(g=>g.id===selectedSubjectId)||ranking[0];
@@ -874,6 +930,11 @@ function renderSelectedSubject(){
   $('subjectMetricLabel').textContent=defs[sport].metrics[$('metric').value]||$('metric').value;
   const v=++subjectVersion;
   displayPhoto(picked,'subjectPortrait','subjectMonogram','subjectPhotoCredit',v,()=>subjectVersion);
+  updateBadge('subjectClubBadge',picked);
+  const badge=clubBadgeUrl(competitorClub(picked));
+  $('subjectBadgeLine').hidden=!badge;
+  $('subjectClubName').textContent=competitorClub(picked)||'';
+  renderFootballProfile(picked);
   document.querySelectorAll('[data-select-subject]').forEach(el=>el.classList.toggle('is-subject-selected',el.dataset.selectSubject===picked.id));
 }
 function renderCompare() {
@@ -974,6 +1035,20 @@ document.querySelectorAll('.sidebar a[href^="#"]').forEach(link=>{
 document.querySelector('[data-home]').addEventListener('click',openHome);
 $('homeExplore').addEventListener('click',()=>openSport('Soccer'));
 document.querySelectorAll('[data-open-sport]').forEach(btn=>btn.addEventListener('click',()=>openSport(btn.dataset.openSport)));
+$('footballYearTabs').addEventListener('click',event=>{
+  const b=event.target.closest('[data-football-year]');
+  if(!b||b.disabled)return;
+  footballDetailSeason=b.dataset.footballYear;
+  const g=ranking.find(x=>x.id===selectedSubjectId)||ranking[0];
+  if(g)renderFootballProfile(g);
+});
+$('footballClubBadgeGrid').addEventListener('click',event=>{
+  const b=event.target.closest('[data-club-name]');
+  if(!b)return;
+  $('search').value=b.dataset.clubName;
+  render();
+  $('subjectPanel').scrollIntoView?.({behavior:'smooth',block:'center'});
+});
 document.querySelectorAll('[data-football-view]').forEach(btn=>btn.addEventListener('click',()=>{
   if(sport!=='Soccer')return;
   footballMode=btn.dataset.footballView;
