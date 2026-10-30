@@ -8,6 +8,8 @@ let filtered = [];
 let ranking = [];
 let footballMode='clubs',homeActive=true;
 let clubBadgeMap={};
+let portraitManifest={Cricket:{},F1:{}};
+let visibleRankingCount=120;
 const playerSeasons=Array.from({length:10},(_,i)=>`${2016+i}-${String(17+i)}`);
 
 const defs = {
@@ -78,9 +80,11 @@ const defs = {
 
 function setTheme() {
   const d = defs[sport];
+  const sportIcons={Soccer:'football',NBA:'basketball',Cricket:'cricket',F1:'f1'};
   document.documentElement.style.setProperty('--accent', d.accent);
   document.documentElement.style.setProperty('--accent-2', d.accent2);
   document.documentElement.style.setProperty('--glow', hexToRgba(d.accent, 0.18));
+  document.documentElement.style.setProperty('--sport-icon', 'url("assets/sport-icons/'+sportIcons[sport]+'.svg")');
   $('crumbSport').textContent = sport.toUpperCase();
   $('sportTitle').textContent = d.title;
   $('subtitle').textContent = d.sub;
@@ -213,6 +217,10 @@ async function load() {
   }
   try{clubBadgeMap=await fetchDataset('assets/club-badges-map.json','json');}
   catch(e){failures.push('Club crest index: '+e.message);}
+  try{
+    const response=await fetch('assets/portrait-manifest.json',{cache:'no-cache'});
+    if(response.ok)portraitManifest=await response.json();
+  }catch(e){console.info('GameSense: offline portrait index unavailable',e);}
   // Cricket is an openly attributable, curated source-derived selection, not synthetic data.
   try {
     const records = (window.GameSenseArchive && window.GameSenseArchive['cricket.json']) || await fetchDataset('cricket.json', 'json');
@@ -653,15 +661,18 @@ function render() {
   const max = Math.max(...top.map(x => x.metric), 0.001);
   $('bars').innerHTML = top.length ? top.map(g => `
     <div class="barrow subject-pick" role="button" tabindex="0" data-select-subject="${escapeHtml(g.id)}" title="View ${escapeHtml(g.name)} profile">
-      <span class="barname" title="${escapeHtml(g.name)}">${escapeHtml(g.name)}</span>
+      <span class="barname" title="${escapeHtml(g.name)}">${rankAvatar(g)}<span class="bar-label">${escapeHtml(g.name)}</span></span>
       <div class="track"><div class="fill" style="width:${Math.min(100, Math.max(1, g.metric / max * 100))}%"></div></div>
       <span class="value">${number(g.metric)}</span>
     </div>`).join('') : '<p class="empty">No rows found for this selection. Change the filters or load more data.</p>';
 
-  $('rankRows').innerHTML = ranking.slice(0, 120).map((g, i) => `
+  $('rankRows').innerHTML = ranking.slice(0, visibleRankingCount).map((g, i) => `
     <tr class="subject-pick" data-select-subject="${escapeHtml(g.id)}" tabindex="0" title="View ${escapeHtml(g.name)} profile"><td>${i + 1}</td>
-      <td><span class="rank-identity"><span class="rank-thumb" data-rank-id="${escapeHtml(g.id)}"><span>${escapeHtml(countryFallback(g)||initials(g.name))}</span><img alt="" hidden loading="lazy" decoding="async" referrerpolicy="no-referrer"></span><span>${escapeHtml(g.name)}</span></span></td>
+      <td><span class="rank-identity">${rankAvatar(g)}<span>${escapeHtml(g.name)}</span></span></td>
       <td>${number(g.rows)}</td><td>${number(g.metric)}</td></tr>`).join('');
+  const remaining=Math.max(0,ranking.length-visibleRankingCount);
+  $('showMoreRanks').hidden=!remaining;
+  $('showMoreRanks').textContent=remaining?'SHOW NEXT '+Math.min(120,remaining)+' PEOPLE · '+remaining.toLocaleString()+' REMAINING':'';
 
   const previousA = $('compareA').value, previousB = $('compareB').value;
   const compareOptions = ranking.slice(0, 180).map(g => `<option value="${escapeHtml(g.id)}">${escapeHtml(g.name)}</option>`).join('');
@@ -721,7 +732,40 @@ function renderRecentForm(leader){
  * Wikipedia API is not guaranteed to respond, so initials are always available. */
 const photoCache=new Map();
 const teamNames={ATL:'Atlanta Hawks',BOS:'Boston Celtics',BKN:'Brooklyn Nets',CHI:'Chicago Bulls',CLE:'Cleveland Cavaliers',DAL:'Dallas Mavericks',DEN:'Denver Nuggets',DET:'Detroit Pistons',GSW:'Golden State Warriors',HOU:'Houston Rockets',LAL:'Los Angeles Lakers',MEM:'Memphis Grizzlies',MIA:'Miami Heat',MIL:'Milwaukee Bucks',NYK:'New York Knicks',PHI:'Philadelphia 76ers',PHX:'Phoenix Suns',TOR:'Toronto Raptors'};
-const portraitAliases={'V Kohli':'Virat Kohli','RG Sharma':'Rohit Sharma','MS Dhoni':'MS Dhoni','SR Tendulkar':'Sachin Tendulkar','CH Gayle':'Chris Gayle','DA Warner':'David Warner','SK Raina':'Suresh Raina','G Gambhir':'Gautam Gambhir','SE Marsh':'Shaun Marsh','KL Rahul':'KL Rahul','JC Buttler':'Jos Buttler','RR Pant':'Rishabh Pant','JC Archer':'Jofra Archer','YS Chahal':'Yuzvendra Chahal','AB de Villiers':'AB de Villiers','KA Pollard':'Kieron Pollard','SPD Smith':'Steve Smith','V Sehwag':'Virender Sehwag','F du Plessis':'Faf du Plessis','HH Pandya':'Hardik Pandya','RA Jadeja':'Ravindra Jadeja','S Dhawan':'Shikhar Dhawan'};
+// IPL season archives abbreviate player names. Identity-checked full names make
+// photo lookup more reliable; abbreviated labels still remain in the tables.
+const portraitAliases={
+  'V Kohli':'Virat Kohli','RG Sharma':'Rohit Sharma','MS Dhoni':'MS Dhoni',
+  'SR Tendulkar':'Sachin Tendulkar','CH Gayle':'Chris Gayle','DA Warner':'David Warner',
+  'SK Raina':'Suresh Raina','G Gambhir':'Gautam Gambhir','SE Marsh':'Shaun Marsh',
+  'KL Rahul':'KL Rahul','JC Buttler':'Jos Buttler','RR Pant':'Rishabh Pant',
+  'JC Archer':'Jofra Archer','YS Chahal':'Yuzvendra Chahal','AB de Villiers':'AB de Villiers',
+  'KA Pollard':'Kieron Pollard','SPD Smith':'Steve Smith','V Sehwag':'Virender Sehwag',
+  'F du Plessis':'Faf du Plessis','HH Pandya':'Hardik Pandya','RA Jadeja':'Ravindra Jadeja',
+  'S Dhawan':'Shikhar Dhawan','SR Watson':'Shane Watson','YK Pathan':'Yusuf Pathan',
+  'SK Warne':'Shane Warne','JP Duminy':'JP Duminy','RP Singh':'RP Singh',
+  'A Kumble':'Anil Kumble','A Nehra':'Ashish Nehra','PP Ojha':'Pragyan Ojha',
+  'A Mishra':'Amit Mishra','PC Valthaty':'Paul Valthaty','SL Malinga':'Lasith Malinga',
+  'S Aravind':'Sreenath Aravind','AM Rahane':'Ajinkya Rahane','CL White':'Cameron White',
+  'M Morkel':'Morne Morkel','SP Narine':'Sunil Narine','R Vinay Kumar':'Vinay Kumar',
+  'KD Karthik':'Dinesh Karthik','JP Faulkner':'James Faulkner','RV Uthappa':'Robin Uthappa',
+  'DR Smith':'Dwayne Smith','GJ Maxwell':'Glenn Maxwell','DA Miller':'David Miller',
+  'MM Sharma':'Mohit Sharma','LMP Simmons':'Lendl Simmons','DS Kulkarni':'Dhawal Kulkarni',
+  'HM Amla':'Hashim Amla','MK Pandey':'Manish Pandey','JD Unadkat':'Jaydev Unadkat',
+  'JJ Bumrah':'Jasprit Bumrah','MJ McClenaghan':'Mitchell McClenaghan',
+  'KS Williamson':'Kane Williamson','AT Rayudu':'Ambati Rayudu','S Kaul':'Siddarth Kaul',
+  'UT Yadav':'Umesh Yadav','Q de Kock':'Quinton de Kock','AD Russell':'Andre Russell',
+  'K Rabada':'Kagiso Rabada','DL Chahar':'Deepak Chahar','S Gopal':'Shreyas Gopal',
+  'SS Iyer':'Shreyas Iyer','SA Yadav':'Suryakumar Yadav','TA Boult':'Trent Boult',
+  'A Nortje':'Anrich Nortje','RD Gaikwad':'Ruturaj Gaikwad','SV Samson':'Sanju Samson',
+  'HV Patel':'Harshal Patel','SN Thakur':'Shardul Thakur','DP Conway':'Devon Conway',
+  'YBK Jaiswal':'Yashasvi Jaiswal','PP Chawla':'Piyush Chawla','R Parag':'Riyan Parag',
+  'TM Head':'Travis Head','B Sai Sudharsan':'Sai Sudharsan','CV Varun':'Varun Chakravarthy',
+  'MR Marsh':'Mitchell Marsh','P Simran Singh':'Prabhsimran Singh',
+  'M Prasidh Krishna':'Prasidh Krishna','JR Hazlewood':'Josh Hazlewood',
+  'V Suryavanshi':'Vaibhav Suryavanshi','H Klaasen':'Heinrich Klaasen',
+  'A Kamboj':'Anshul Kamboj'
+};
 const countryFlags={'India':'🇮🇳','Australia':'🇦🇺','England':'🏴','Pakistan':'🇵🇰','New Zealand':'🇳🇿','South Africa':'🇿🇦','Bangladesh':'🇧🇩','Sri Lanka':'🇱🇰','Afghanistan':'🇦🇫','West Indies':'🏝️','Zimbabwe':'🇿🇼','Ireland':'🇮🇪','Scotland':'🏴','Netherlands':'🇳🇱','Nepal':'🇳🇵','Canada':'🇨🇦','United States of America':'🇺🇸','United States':'🇺🇸','Oman':'🇴🇲','United Arab Emirates':'🇦🇪','Papua New Guinea':'🇵🇬'};
 function initials(n){return String(n||'GS').trim().split(/\s+/).slice(0,2).map(w=>w[0]).join('').toUpperCase()||'GS'}
 function titleKey(s){return String(s||'').normalize('NFKD').replace(/\s*\([^)]*\)\s*/g,' ').replace(/[^a-z0-9]/gi,'').toLowerCase()}
@@ -742,6 +786,14 @@ function countryFallback(g){
   }
   if(sport==='F1'&&g.name==='Lewis Hamilton')return '🇬🇧';
   return null;
+}
+function rankAvatar(g){
+  const sportIcon={Soccer:'football',NBA:'basketball',Cricket:'cricket',F1:'f1'}[sport];
+  return '<span class="rank-thumb" data-rank-id="'+escapeHtml(g.id)+'">'+
+    '<span>'+escapeHtml(countryFallback(g)||initials(g.name))+'</span>'+
+    '<img class="rank-photo" alt="" hidden loading="lazy" decoding="async" referrerpolicy="no-referrer">'+
+    '<img class="rank-sport-icon" src="assets/sport-icons/'+sportIcon+'.svg" alt="" aria-hidden="true">'+
+    '</span>';
 }
 function teamInfo(g){
   if(!g)return 'Select a competitor';
@@ -783,7 +835,9 @@ async function resolvePortrait(g){
         src:'https://resources.premierleague.com/premierleague/photos/players/250x250/p'+row.photo_code+'.png',
         credit:'https://www.premierleague.com/',fallbackToWiki:true};
     }
-    if(known){
+    const indexed=portraitManifest[sport]?.[p.name];
+    if(!skipCdn&&indexed?.src&&p.kind==='athlete')return {...indexed,fallbackToWiki:true};
+    if(!skipCdn&&known){
       const encoded=encodeURIComponent(known.replace(/ /g,'_'));
       return {src:'https://commons.wikimedia.org/wiki/Special:Redirect/file/'+encoded+'?width=500',
         credit:'https://commons.wikimedia.org/wiki/File:'+encoded,
@@ -867,11 +921,11 @@ function displayPhoto(g,imageId,initialsId,creditId,version,readVersion){
 let rankPhotoObserver=null;
 function hydrateRankingPhotos(){
   rankPhotoObserver?.disconnect();
-  const subjects=new Map(ranking.slice(0,120).map(g=>[g.id,g]));
-  const targets=[...document.querySelectorAll('#rankRows .rank-thumb')];
+  const subjects=new Map(ranking.slice(0,visibleRankingCount).map(g=>[g.id,g]));
+  const targets=[...document.querySelectorAll('#rankRows .rank-thumb, #bars .rank-thumb')];
   const display=(node,g,info)=>{
     if(!info||!node.isConnected)return;
-    const img=node.querySelector('img'),fallback=node.querySelector('span');
+    const img=node.querySelector('img.rank-photo'),fallback=node.querySelector('span');
     img.onload=()=>{if(node.isConnected){img.hidden=false;fallback.hidden=true;}};
     img.onerror=()=>{
       img.hidden=true;fallback.hidden=false;
@@ -1112,6 +1166,7 @@ function openSport(which){
   homeActive=false;
   $('homeScreen').hidden=true;$('dashboardScreen').hidden=false;
   sport=which;
+  visibleRankingCount=120;
   $('search').value='';
   if(sport==='Soccer')footballMode='clubs';
   updateControls();
@@ -1207,7 +1262,11 @@ $('competition').addEventListener('change',()=>{
   document.querySelectorAll('[data-football-view]').forEach(b=>b.classList.toggle('selected',b.dataset.footballView===footballMode));
 });
 ['season', 'competition', 'metric', 'search'].forEach(id => {
-  $(id).addEventListener(id === 'search' ? 'input' : 'change', render);
+  $(id).addEventListener(id === 'search' ? 'input' : 'change', ()=>{visibleRankingCount=120;render();});
+});
+$('showMoreRanks').addEventListener('click',()=>{
+  visibleRankingCount+=120;
+  render();
 });
 ['compareA', 'compareB'].forEach(id => $(id).addEventListener('change', renderCompare));
 for(const id of ['bars','rankRows']){

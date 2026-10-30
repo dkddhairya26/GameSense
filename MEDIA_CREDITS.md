@@ -4,6 +4,27 @@ GameSense displays historic football club crests **locally** from `assets/club-b
 
 The website displays a linked source next to remotely retrieved player portraits. These are **not guaranteed to display** when Wikimedia or a sports provider is blocked by school/browser security. Fallback flags/initials do not represent photos. The locally hosted club crests have no such external network requirement.
 
+## Four illustrated sport cards
+
+The four home navigation cards now have **locally hosted, real sports photographs**, not generated people or generic placeholders. The originals came from Wikimedia Commons; the site crops them with CSS but does not alter the photo files:
+
+| Sport | Original Wikimedia file | Photographer | Licence |
+| --- | --- | --- | --- |
+| Football | [Manchester City – Burnley, 31 Jan 2024](https://commons.wikimedia.org/wiki/File:Manchester_City_-_Burnley_31_Jan_2024.jpg) | Fra Casa | CC0 |
+| Basketball | [Orlando Magic vs. Milwaukee Bucks, Dec 2024](https://commons.wikimedia.org/wiki/File:Orlando_Magic_vs._Milwaukee_Bucks_December_2024_17_(in-game_action).jpg) | Michael Barera | CC BY-SA 4.0 |
+| Cricket | [Indian Premier League](https://commons.wikimedia.org/wiki/File:Indian_Premier_League.jpg) | Ashwin John | CC BY-SA 2.0 |
+| Formula 1 | [2024 Spanish Grand Prix](https://commons.wikimedia.org/wiki/File:2024_Spanish_Grand_Prix_(53811183018).jpg) | jtstewart | CC BY-SA 2.0 |
+
+Each card also carries a newly drawn white vector icon: a football, basketball, cricket bat with ball, or racing flag. These icons are original site artwork in `assets/sport-icons/`.
+
+## Portrait index and display rules
+
+`assets/portrait-manifest.json` holds image URLs and corresponding Wikimedia file-credit links for identity-checked Cricket and F1 articles. `tools/build_portrait_manifest.py` regenerates this index from the bundled historical competitor lists; a name or Wikipedia redirect must match, and the article must have a relevant sporting description and actual image. The index intentionally does not fill gaps with unrelated photographs.
+
+Football individual-player photographs are requested from the Premier League image CDN using their recorded player photo IDs; NBA player photographs are requested from the league's official CDN using recorded NBA player IDs. If a provider photo is missing, the page attempts a Wikimedia article image. The ranking table loads portrait thumbnails lazily as they approach the screen; **SHOW NEXT PEOPLE** lets visitors reach competitors beyond the initial 120. The featured, ranking, leader and selected-profile photos all carry a small sport icon. Selecting a ranking entry reveals its image-credit link in the profile view.
+
+Some historical racers and cricketers have no verified Wikimedia article photograph. In those cases GameSense shows their initials (or a national flag), with a sport icon. Images hosted by leagues or Wikimedia remain subject to those providers' availability and rights.
+
 ## Confirmed Wikimedia files in the code
 - Virat Kohli — *Virat Kohli portrait.jpg*, photograph by Anand Anil; CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Virat_Kohli_portrait.jpg
 - Lewis Hamilton — *Lewis Hamilton portrait.jpg*, photograph by Ben Novakovic; CC BY-SA 2.0. https://commons.wikimedia.org/wiki/File:Lewis_Hamilton_portrait.jpg

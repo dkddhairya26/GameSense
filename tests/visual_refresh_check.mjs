@@ -7,6 +7,7 @@ const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 const css = fs.readFileSync(path.join(root, 'style.css'), 'utf8');
 const code = fs.readFileSync(path.join(root, 'app.js'), 'utf8');
 const mark = fs.readFileSync(path.join(root, 'assets/gamesense-mark.svg'), 'utf8');
+const portraitIndex = JSON.parse(fs.readFileSync(path.join(root, 'assets/portrait-manifest.json'), 'utf8'));
 
 assert.match(mark, /^<svg /);
 assert.match(mark, /viewBox="0 0 96 96"/);
@@ -18,6 +19,24 @@ assert.equal(featured.length, 4);
 assert.equal((html.match(/class="featured-image"/g) || []).length, 4);
 assert.equal((html.match(/class="featured-credit"/g) || []).length, 4);
 assert.match(css, /\.featured-image img\.is-loaded/);
+
+for(const name of ['football','basketball','cricket','f1']){
+  const image = path.join(root,'assets/sport-photos',name+'.jpg');
+  const icon = path.join(root,'assets/sport-icons',name+'.svg');
+  assert.ok(fs.statSync(image).size>10000, `Missing home ${name} photo`);
+  assert.match(fs.readFileSync(icon,'utf8'),/^<svg /,`Missing ${name} equipment icon`);
+  assert.ok(html.includes(`assets/sport-photos/${name}.jpg`));
+  assert.ok(html.includes(`assets/sport-icons/${name}.svg`));
+}
+assert.equal((html.match(/class="home-sport-photo"/g)||[]).length,4);
+assert.equal((html.match(/class="home-sport-icon"/g)||[]).length,4);
+assert.match(css,/\.home-sport-photo/);
+assert.match(css,/\.rank-sport-icon/);
+assert.match(html,/id="showMoreRanks"/);
+assert.match(code,/visibleRankingCount\+=120/);
+assert.match(code,/portraitManifest\[sport\]/);
+assert.ok(Object.keys(portraitIndex.Cricket).length>150);
+assert.ok(Object.keys(portraitIndex.F1).length>450);
 
 assert.match(code, /hydrateRankingPhotos\(\)/);
 assert.match(code, /IntersectionObserver/);
@@ -35,4 +54,4 @@ for (const source of [
 assert.doesNotMatch(html, /DATA, CODE & AI DISCLOSURE/);
 assert.match(html, /SOURCE CODE &amp; PROJECT NOTES/);
 assert.ok(fs.readFileSync(path.join(root, 'PROJECT_EVIDENCE.md'), 'utf8').includes('AI and academic integrity'));
-console.log('PASS: logo, featured images, ranking-photo support, source links and project disclosure record.');
+console.log('PASS: logo, sport cards/photos/icons, indexed portraits, expandable rankings, source links, project documentation.');

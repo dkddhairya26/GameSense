@@ -447,3 +447,46 @@ body{background:radial-gradient(ellipse 70% 30% at 81% -7%,rgba(39,94,134,.28),t
 @media(max-width:1150px){.home-intro{grid-template-columns:1fr}.home-archive-board{border-left:0;border-top:1px solid #365465;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.board-topline,.board-bottomline{grid-column:1/-1}.board-item{padding:12px 0}.board-item b{font-size:39px}.board-item i{display:none}.featured-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:700px){.home-intro{min-height:0}.home-intro-copy{padding:34px 20px}.home-intro h1{font-size:clamp(54px,12vw,76px)}.home-intro p{font-size:15px}.home-archive-board{padding:18px;grid-template-columns:1fr}.board-item{padding:8px 0}.board-item b{font-size:35px}.home-sport-grid{grid-template-columns:1fr}.featured-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.featured-image{height:150px}.featured-info{padding:11px 10px}.featured-info strong{font-size:21px}.featured-info>span{font-size:9px}.featured-credit{padding:0 10px 9px;font-size:8px}.rank-thumb{width:27px;height:27px}.rank-identity{gap:5px}}
 @media(max-width:420px){.featured-grid{grid-template-columns:1fr 1fr}.featured-image{height:115px}.featured-info strong{font-size:18px}.home-intro h1{font-size:50px}}
+
+/* Sport desk photos and meaningful equipment icons. Locally hosted photographs
+   keep the four cards visible even when school networks block other hosts. */
+.home-sport{isolation:isolate;min-height:258px;padding:27px 29px;border-top-width:3px;gap:14px;background:#102331}
+.home-sport::before,.home-sport::after{content:none}
+.home-sport-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  object-position:center 48%;z-index:0;transition:transform .45s ease,filter .45s ease;filter:saturate(.88)}
+.sport-cricket .home-sport-photo{object-position:center 65%}
+.sport-f1 .home-sport-photo{object-position:center 57%}
+.home-sport-shade{position:absolute;z-index:1;inset:0;pointer-events:none;
+  background:linear-gradient(90deg,rgba(5,23,34,.93) 0%,rgba(5,23,34,.76) 45%,rgba(5,23,34,.16) 100%),
+    linear-gradient(0deg,rgba(4,18,29,.65),transparent 58%)}
+.home-sport-icon{position:absolute;z-index:3;top:22px;right:23px;width:58px;height:58px;
+  object-fit:contain;padding:11px;border:1px solid rgba(219,241,242,.58);border-radius:9px;
+  background:rgba(7,25,35,.68);box-shadow:0 9px 29px rgba(0,0,0,.24)}
+.home-sport>small,.home-sport>strong,.home-sport>span{position:relative;z-index:2;text-shadow:0 2px 16px rgba(0,0,0,.65)}
+.home-sport>small{color:#e4f8ff;max-width:calc(100% - 82px)}
+.home-sport>strong{max-width:calc(100% - 75px);color:#fff;font-size:clamp(43px,4.7vw,68px)}
+.home-sport>span{font-size:11px;color:#e8f5fb}
+.home-sport:hover .home-sport-photo{transform:scale(1.06);filter:saturate(1.06)}
+.home-sport:hover{background:#102331;border-color:#8fe3d5}
+.home-media-credits{margin:9px 0 0;color:#86a7b5;font:500 9px/1.7 var(--mono);letter-spacing:.03em}
+.home-media-credits a{color:#a6c3cc}
+.home-media-credits a:hover{color:#d6fff4}
+/* Equipment badges live on real profile and ranking portraits as well. */
+.hero-profile-photo,.athlete-image,.subject-photo{isolation:isolate}
+.hero-profile-photo::after,.athlete-image::after,.subject-photo::after{
+  content:"";position:absolute;z-index:4;right:7px;bottom:7px;width:29px;height:29px;
+  background:rgba(6,22,32,.85) var(--sport-icon) center/19px no-repeat;
+  border:1px solid rgba(244,251,255,.55);border-radius:6px;pointer-events:none
+}
+.rank-thumb img.rank-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 18%}
+.rank-thumb .rank-sport-icon{position:absolute;right:-1px;bottom:-1px;width:15px;height:15px;
+  padding:2px;background:#152935;border:1px solid #587989;border-radius:4px;z-index:3}
+.barrow .barname{display:flex;align-items:center;min-width:0;gap:7px;overflow:hidden}
+.barrow .barname .rank-thumb{width:29px;height:29px}
+.barrow .barname .bar-label{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.show-more-ranks{width:100%;margin-top:13px;padding:13px 15px;border:1px solid #5e8a90;
+  color:#d9fff5;background:#203d47;font:600 11px var(--mono);letter-spacing:.09em;cursor:pointer}
+.show-more-ranks:hover{border-color:#8bdbc8;background:#2b5057}
+.show-more-ranks[hidden]{display:none}
+@media(max-width:760px){.home-sport{min-height:230px}.home-sport-icon{width:49px;height:49px;top:17px;right:17px}.home-sport>strong{font-size:49px}.home-media-credits{font-size:8px}.barrow{grid-template-columns:minmax(130px,42%) minmax(0,1fr) 56px}}
+@media(prefers-reduced-motion:reduce){.home-sport-photo{transition:none}}
