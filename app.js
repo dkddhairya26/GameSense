@@ -436,23 +436,30 @@ function renderAnalyticalCharts(records,leaders,metric){
     .map(([year,x])=>({year,value:averaged(metric)?x.sum/x.n:x.sum,n:x.n}));
   const isFootballSnapshot=sport==='Soccer'&&footballMode==='players';
   const isCareerSnapshot=sport==='Cricket'&&records.length&&records.every(r=>r.record_kind==='international_player_career');
-  $('timeChartTitle').textContent=isFootballSnapshot?'Footballer seasons / scoring profile':isCareerSnapshot?'The same player, three formats':'When did performance change?';
+  $('timeChartTitle').textContent=isFootballSnapshot?'Footballer season-by-season history':isCareerSnapshot?'The same player, three formats':'When did performance change?';
   $('timeChartNote').textContent=isFootballSnapshot?'Year-by-year record for the chosen footballer; not an invented match-by-match history.':isCareerSnapshot?'Historical career snapshot across formats; no season-by-season player totals are available.':values.length
     ? 'Yearly '+(averaged(metric)?'average':'total')+' of '+label.toLowerCase()+' · '+values.length+' observed years'
     : 'No available numeric values for this metric. Change sport, season or metric.';
   if(isFootballSnapshot){
-    const focus=leaders[0],raw=focus?records.find(r=>r.competitor_id===focus.id):null;
-    if(!raw){$('timeChart').innerHTML='<p class="chart-empty">Choose a player with statistics to display a scoring profile.</p>';}
+    const focus=leaders.find(g=>g.id===selectedSubjectId)||leaders[0];
+    const yearly=focus?all.filter(r=>r.sport==='Soccer'&&r.record_kind==='player_season'&&r.competitor_id===focus.id)
+      .sort((a,b)=>a.season.localeCompare(b.season)).map(r=>({year:r.season,value:metricValue(r,metric)}))
+      .filter(r=>r.value!==null&&Number.isFinite(r.value)):[];
+    $('timeChartNote').textContent=focus?focus.name+' · '+label+' across '+yearly.length+' observed historical seasons':'Select a footballer to view a season trend.';
+    if(!yearly.length){$('timeChart').innerHTML='<p class="chart-empty">No historical figures for this player and metric.</p>';}
     else{
-      const scores=[{name:'GOALS',v:raw.goals||0},{name:'ASSISTS',v:raw.assists||0}];
-      const high=Math.max(1,...scores.map(x=>x.v));
-      $('timeChart').innerHTML=fnSvg(scores.map((d,i)=>{
-        const y=55+i*78,w=430*d.v/high;
-        return '<text x="65" y="'+(y+20)+'" class="fn-axis" text-anchor="end">'+d.name+'</text>'+
-          '<rect x="81" y="'+y+'" width="430" height="29" fill="var(--chart-track)"/>'+
-          '<rect class="fn-duel-a" x="81" y="'+y+'" width="'+w+'" height="29"/>'+
-          '<text x="'+(w+92)+'" y="'+(y+21)+'" class="fn-axis">'+number(d.v)+'</text>';
-      }).join(''),640,245,'2024/25 goals and assists for '+focus.name);
+      const w=680,h=245,l=54,right=18,top=24,bottom=42,uw=w-l-right,uh=h-top-bottom;
+      const max=Math.max(...yearly.map(x=>x.value),1);
+      const points=yearly.map((x,i)=>({year:x.year,value:x.value,
+        x:l+(yearly.length===1?.5:i/(yearly.length-1))*uw,
+        y:top+uh*(1-x.value/max)}));
+      const path=points.map((p,i)=>(i?'L':'M')+p.x.toFixed(1)+','+p.y.toFixed(1)).join(' ');
+      const dots=points.map(p=>'<circle tabindex="0" cx="'+p.x+'" cy="'+p.y+'" r="5" fill="var(--accent)"><title>'+
+        escapeHtml(p.year+': '+number(p.value)+' '+label)+'</title></circle>'+
+        '<text x="'+p.x+'" y="'+(h-11)+'" text-anchor="middle" fill="#90a8b8" font-size="10">'+escapeHtml(p.year.slice(2).replace('-','/'))+'</text>').join('');
+      const ylabels=[0,.5,1].map(a=>'<text x="'+(l-8)+'" y="'+(top+uh*(1-a)+4)+'" text-anchor="end" class="fn-axis">'+number(max*a)+'</text>').join('');
+      $('timeChart').innerHTML=fnSvg('<line x1="'+l+'" y1="'+(top+uh)+'" x2="'+(w-right)+'" y2="'+(top+uh)+'" stroke="#56727b"/>'+ylabels+
+        '<path class="line-draw" d="'+path+'" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linejoin="round"/>'+dots,w,h,focus.name+' '+label+' by season');
     }
   }else if(isCareerSnapshot){
     const focus=leaders[0];
@@ -1044,6 +1051,27 @@ document.querySelectorAll('.sidebar a[href^="#"]').forEach(link=>{
 document.querySelector('[data-home]').addEventListener('click',openHome);
 $('homeExplore').addEventListener('click',()=>openSport('Soccer'));
 document.querySelectorAll('[data-open-sport]').forEach(btn=>btn.addEventListener('click',()=>openSport(btn.dataset.openSport)));
+document.querySelectorAll('[data-featured-sport]').forEach(btn=>btn.addEventListener('click',()=>{
+  const sportName=btn.dataset.featuredSport;
+  openSport(sportName);
+  if(sportName==='Soccer'){
+    footballMode='players';
+    updateControls();
+    $('competition').value='Premier League · Players';
+    syncFootballMetricOptions();
+    $('metric').value='goals';
+    $('footballPlayerArchive').hidden=false;
+    $('footballClubShelf').hidden=true;
+    document.querySelectorAll('[data-football-view]').forEach(b=>b.classList.toggle('selected',b.dataset.footballView==='players'));
+  }
+  if(sportName==='Cricket'){
+    selectCricketView('International ODI Players');
+  }
+  $('season').value='All seasons';
+  $('search').value=btn.dataset.featuredName;
+  selectedSubjectId='';
+  render();
+}));
 $('footballYearTabs').addEventListener('click',event=>{
   const b=event.target.closest('[data-football-year]');
   if(!b||b.disabled)return;
