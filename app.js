@@ -7,6 +7,8 @@ let imports = [];
 let filtered = [];
 let ranking = [];
 let footballMode='clubs',homeActive=true;
+let clubBadgeMap={};
+const playerSeasons=Array.from({length:10},(_,i)=>`${2016+i}-${String(17+i)}`);
 
 const defs = {
   Soccer: {
@@ -14,7 +16,7 @@ const defs = {
     sub: 'A record of club results, goal difference and league points. Every figure links back to an observed match.',
     coverage: 'Club fixtures / archived seasons',
     source: 'OpenFootball',
-    sourceSub: 'Bundled team results · no player-level football stats',
+    sourceSub: 'OpenFootball club results + Fantasy Premier League individual seasons 2016/17–2025/26',
     accent: '#60efd1',
     accent2: '#34bafb',
     metrics: {
@@ -22,7 +24,7 @@ const defs = {
       goals: 'Goals scored',
       goals_against: 'Goals conceded',
       wins: 'Wins',
-      draws: 'Draws', assists:'Assists', games:'Appearances', minutes:'Minutes played', shots:'Shots', tackles:'Tackles', passes:'Successful passes', interceptions:'Interceptions', clean_sheets:'Clean sheets',
+      draws: 'Draws', assists:'Assists', games:'Appearances', minutes:'Minutes played', shots:'Shots', tackles:'Tackles', passes:'Successful passes', interceptions:'Interceptions', clean_sheets:'Clean sheets',saves:'Saves',yellow_cards:'Yellow cards',red_cards:'Red cards',total_points:'Fantasy points',bonus:'Bonus points',starts:'Starts',expected_goals:'Expected goals (xG)',expected_assists:'Expected assists (xA)',
       performance_score: 'GameSense rating (0–100)'
     }
   },
@@ -113,7 +115,7 @@ function norm(raw, forcedSport = null) {
   if (o.sport === 'Soccer' && o.wins !== undefined && o.draws !== undefined)
     o.points = 3 * Number(o.wins || 0) + Number(o.draws || 0);
   [
-    'points','goals','goals_against','wins','draws','losses','rebounds','assists','games','minutes','shots','tackles','passes','interceptions','clean_sheets',
+    'points','goals','goals_against','wins','draws','losses','rebounds','assists','games','minutes','shots','tackles','passes','interceptions','clean_sheets','saves','yellow_cards','red_cards','total_points','bonus','starts','expected_goals','expected_assists','recoveries',
     'disposals','kicks','handballs','marks','tackles','finish_position','grid_position','podiums','runs','wickets','strike_rate','economy'
   ].forEach(k => { if (o[k] !== undefined) o[k] = numeric(o[k]); });
   return o;
@@ -198,11 +200,19 @@ async function load() {
     if(rejected)failures.push(result.file.name+': '+rejected+' incompatible rows excluded (sport/schema check)');
   }
 
-  // Standalone Premier League individual player-seasons, never mixed with club matches.
-  try{const football=await fetchDataset('soccer-players.json','json');
-    if(!Array.isArray(football))throw Error('Expected player records array');
-    all.push(...football.filter(r=>r.sport==='Soccer'&&r.record_kind==='player_season').map(r=>norm(r,'Soccer')));
-  }catch(e){failures.push('soccer-players.json: '+e.message);}
+  // Fully independent historical player seasons: one archived record per athlete and year.
+  const footballChunks=await Promise.all(playerSeasons.map(async season=>{
+    try{const r=await fetchDataset('football-seasons/'+season+'.json','json');return {season,records:r}}
+    catch(e){return {season,error:e.message}}
+  }));
+  for(const chunk of footballChunks){
+    if(chunk.error){failures.push('Football '+chunk.season+': '+chunk.error);continue;}
+    if(!Array.isArray(chunk.records)){failures.push('Football '+chunk.season+': invalid array');continue;}
+    all.push(...chunk.records.filter(r=>r.sport==='Soccer'&&r.record_kind==='player_season'&&r.season===chunk.season)
+      .map(r=>norm(r,'Soccer')));
+  }
+  try{clubBadgeMap=await fetchDataset('assets/club-badges-map.json','json');}
+  catch(e){failures.push('Club crest index: '+e.message);}
   // Cricket is an openly attributable, curated source-derived selection, not synthetic data.
   try {
     const records = (window.GameSenseArchive && window.GameSenseArchive['cricket.json']) || await fetchDataset('cricket.json', 'json');
@@ -303,7 +313,7 @@ function number(v) {
 function ratingValue(r){
   const clamp=n=>Math.max(0,Math.min(100,n));
   if(sport==='Soccer'){
-    if(r.record_kind==='player_season')return r.games>0?clamp(2*(r.goals||0)+1.5*(r.assists||0)+.15*(r.tackles||0)):null;
+    if(r.record_kind==='player_season')return r.minutes>0?clamp(2*(r.goals||0)+1.5*(r.assists||0)+.05*(r.total_points||0)):null;
     if(r.wins==null || r.draws==null || r.goals==null || r.goals_against==null)return null;
     return clamp(30+30*r.wins+10*r.draws+12*(r.goals-r.goals_against));
   }
@@ -362,6 +372,8 @@ function updateControls() {
   document.querySelectorAll('.nav').forEach(n => n.classList.toggle('active', n.dataset.sport === sport));
   // Explicit visibility, compatible with browsers that do not support CSS :has().
   $('footballFormats').hidden=(sport!=='Soccer');
+  $('footballPlayerArchive').hidden=!(sport==='Soccer'&&footballMode==='players');
+  $('footballClubShelf').hidden=!(sport==='Soccer'&&footballMode==='clubs');
   document.querySelectorAll('[data-football-view]').forEach(b=>b.classList.toggle('selected',b.dataset.footballView===footballMode));
   const cricketPanel=$('cricketFormats');
   if(cricketPanel) cricketPanel.hidden=(sport!=='Cricket');
@@ -388,7 +400,7 @@ function updateControls() {
 function syncFootballMetricOptions(){
   if(sport!=='Soccer')return;
   const allowed=footballMode==='players'?
-    ['goals','assists','games','minutes','shots','tackles','passes','interceptions','clean_sheets','performance_score']:
+    ['goals','assists','minutes','total_points','clean_sheets','saves','yellow_cards','red_cards','bonus','starts','expected_goals','expected_assists','tackles','recoveries','performance_score']:
     ['points','goals','goals_against','wins','draws','performance_score'];
   const previous=$('metric').value;
   $('metric').innerHTML=allowed.map(k=>'<option value="'+k+'">'+escapeHtml(defs.Soccer.metrics[k])+'</option>').join('');
@@ -424,8 +436,8 @@ function renderAnalyticalCharts(records,leaders,metric){
     .map(([year,x])=>({year,value:averaged(metric)?x.sum/x.n:x.sum,n:x.n}));
   const isFootballSnapshot=sport==='Soccer'&&footballMode==='players';
   const isCareerSnapshot=sport==='Cricket'&&records.length&&records.every(r=>r.record_kind==='international_player_career');
-  $('timeChartTitle').textContent=isFootballSnapshot?'2024/25 scoring profile':isCareerSnapshot?'The same player, three formats':'When did performance change?';
-  $('timeChartNote').textContent=isFootballSnapshot?'Goals and assists for the selected player in 2024/25. No match-by-match player data in this source.':isCareerSnapshot?'Historical career snapshot across formats; no season-by-season player totals are available.':values.length
+  $('timeChartTitle').textContent=isFootballSnapshot?'Footballer seasons / scoring profile':isCareerSnapshot?'The same player, three formats':'When did performance change?';
+  $('timeChartNote').textContent=isFootballSnapshot?'Year-by-year record for the chosen footballer; not an invented match-by-match history.':isCareerSnapshot?'Historical career snapshot across formats; no season-by-season player totals are available.':values.length
     ? 'Yearly '+(averaged(metric)?'average':'total')+' of '+label.toLowerCase()+' · '+values.length+' observed years'
     : 'No available numeric values for this metric. Change sport, season or metric.';
   if(isFootballSnapshot){
@@ -624,7 +636,7 @@ function render() {
   $('metricHead').textContent = d.metrics[metric];
 
   $('ratingFormula').textContent={
-    Soccer:footballMode==='players'?'Player index: 2×goals + 1.5×assists + 0.15×tackles (0–100). This is an educational snapshot, not a prediction.':'Club index: 30 + 30×win + 10×draw + 12×goal difference per match (0–100)',
+    Soccer:footballMode==='players'?'Player index: 2×goals + 1.5×assists + 0.05×Fantasy points (0–100). It is educational, not official.':'Club index: 30 + 30×win + 10×draw + 12×goal difference per match (0–100)',
     NBA:'2×points per game + 1.3×rebounds per game + 1.5×assists per game (0–100)',
     Cricket:competition.endsWith(' Players')?'Historical international career snapshot: runs, batting average and strike rate per format; GameSense rating = 1.4 × runs/matches capped at 100. Not official or time-series data.':competition.startsWith('International ')?'International team match index: win 100, loss 0; unknown results excluded. Win rate excludes unknown matches.':'IPL index: 1.25×runs per match + 17×wickets per match (0–100)',
     F1:'100 − 7×(classified finishing position − 1) per race (0–100)'
@@ -674,7 +686,7 @@ function renderRecentForm(leader){
   const rr=filtered.filter(r=>r.competitor_id===leader.id).sort((a,b)=>String(b.date||b.season).localeCompare(String(a.date||a.season),undefined,{numeric:true}));
   const sample=rr.slice(0,sport==='Soccer'||sport==='F1'?5:3);
   if(sport==='Soccer'&&footballMode==='players'){
-    const p=sample[0];$('formSummary').textContent=leader.name+' · '+(p.team||'Unknown club')+' · 2024/25: '+number(p.goals||0)+' goals, '+number(p.assists||0)+' assists across '+number(p.games||0)+' appearances. Single-season snapshot, not match-by-match form.';
+    const p=sample[0];$('formSummary').textContent=leader.name+' · '+(p.team||'Unknown club')+' · '+p.season+': '+number(p.goals||0)+' goals, '+number(p.assists||0)+' Fantasy assists, '+number(p.minutes||0)+' minutes. Historical season snapshot, not match-by-match form.';
   } else if(sport==='Soccer'){
     $('formSummary').textContent=leader.name+': '+sample.map(r=>r.wins?'W':r.draws?'D':'L').reverse().join(' · ')+' · recent observed matches (oldest → newest).';
   } else if(sport==='F1'){
@@ -718,7 +730,7 @@ function countryFallback(g){
 function teamInfo(g){
   if(!g)return 'Select a competitor';
   if(sport==='Soccer'){
-    if(footballMode==='players'){const r=filtered.find(x=>x.competitor_id===g.id);return r?'Club · '+(r.team||'Not recorded')+(r.country?' / '+r.country:''):'Club not recorded';}
+    if(footballMode==='players'){const r=filtered.find(x=>x.competitor_id===g.id);return r?'Club · '+(r.team||'Not recorded')+' · '+r.season:'Club not recorded';}
     return 'Club · '+g.name;
   }
   const international=sport==='Cricket'&&$('competition').value.startsWith('International ');
@@ -966,7 +978,7 @@ document.querySelectorAll('[data-football-view]').forEach(btn=>btn.addEventListe
   if(sport!=='Soccer')return;
   footballMode=btn.dataset.footballView;
   $('season').value='All seasons';
-  const competition=footballMode==='players'?'Premier League · Player 2024/25':'All competitions';
+  const competition=footballMode==='players'?'Premier League · Players':'All competitions';
   $('competition').value=competition;
   syncFootballMetricOptions();
   document.querySelectorAll('[data-football-view]').forEach(b=>b.classList.toggle('selected',b.dataset.footballView===footballMode));
@@ -1003,7 +1015,7 @@ $('competition').addEventListener('change',()=>{
 $('competition').addEventListener('change',()=>{
   if(sport!=='Soccer')return;
   const value=$('competition').value;
-  if(value==='Premier League · Player 2024/25')footballMode='players';
+  if(value==='Premier League · Players')footballMode='players';
   else if(value!=='All competitions')footballMode='clubs';
   syncFootballMetricOptions();
   document.querySelectorAll('[data-football-view]').forEach(b=>b.classList.toggle('selected',b.dataset.footballView===footballMode));
