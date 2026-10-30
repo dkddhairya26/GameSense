@@ -659,7 +659,9 @@ function render() {
     </div>`).join('') : '<p class="empty">No rows found for this selection. Change the filters or load more data.</p>';
 
   $('rankRows').innerHTML = ranking.slice(0, 120).map((g, i) => `
-    <tr class="subject-pick" data-select-subject="${escapeHtml(g.id)}" tabindex="0" title="View ${escapeHtml(g.name)} profile"><td>${i + 1}</td><td>${escapeHtml(g.name)}</td><td>${number(g.rows)}</td><td>${number(g.metric)}</td></tr>`).join('');
+    <tr class="subject-pick" data-select-subject="${escapeHtml(g.id)}" tabindex="0" title="View ${escapeHtml(g.name)} profile"><td>${i + 1}</td>
+      <td><span class="rank-identity"><span class="rank-thumb" data-rank-id="${escapeHtml(g.id)}"><span>${escapeHtml(countryFallback(g)||initials(g.name))}</span><img alt="" hidden loading="lazy" decoding="async" referrerpolicy="no-referrer"></span><span>${escapeHtml(g.name)}</span></span></td>
+      <td>${number(g.rows)}</td><td>${number(g.metric)}</td></tr>`).join('');
 
   const previousA = $('compareA').value, previousB = $('compareB').value;
   const compareOptions = ranking.slice(0, 180).map(g => `<option value="${escapeHtml(g.id)}">${escapeHtml(g.name)}</option>`).join('');
@@ -682,6 +684,7 @@ function render() {
   }
 
   updateLeaderPhoto(ranking[0]);
+  hydrateRankingPhotos();
   renderSelectedSubject();
   $('bars').classList.remove('motion-in');void $('bars').offsetWidth;$('bars').classList.add('motion-in');
   renderRecentForm(ranking[0]);
@@ -858,6 +861,71 @@ function displayPhoto(g,imageId,initialsId,creditId,version,readVersion){
     if(credit){credit.href=info.credit;credit.hidden=false;credit.title='Wikimedia image file and licensing information'}
   }).catch(()=>{});
 }
+// Ranking entries show real photo thumbnails, not external photo links.
+// Only near-viewport rows request remote images; every subject still has the
+// larger photo and a clickable credit in its selected profile panel.
+let rankPhotoObserver=null;
+function hydrateRankingPhotos(){
+  rankPhotoObserver?.disconnect();
+  const subjects=new Map(ranking.slice(0,120).map(g=>[g.id,g]));
+  const targets=[...document.querySelectorAll('#rankRows .rank-thumb')];
+  const display=(node,g,info)=>{
+    if(!info||!node.isConnected)return;
+    const img=node.querySelector('img'),fallback=node.querySelector('span');
+    img.onload=()=>{if(node.isConnected){img.hidden=false;fallback.hidden=true;}};
+    img.onerror=()=>{
+      img.hidden=true;fallback.hidden=false;
+      if(info.fallbackToWiki){
+        resolveWikiPortraitFallback(g).then(alt=>{
+          if(alt&&node.isConnected)display(node,g,{...alt,fallbackToWiki:false});
+        }).catch(()=>{});
+      }
+    };
+    img.src=info.src;
+  };
+  const loadNode=node=>{
+    const g=subjects.get(node.dataset.rankId);
+    if(!g||photoSubject(g)?.kind==='country')return;
+    const badge=sport==='Soccer'&&footballMode==='clubs'?clubBadgeUrl(g.name):null;
+    if(badge){display(node,g,{src:badge});return;}
+    resolvePortrait(g).then(info=>display(node,g,info)).catch(()=>{});
+  };
+  if(typeof IntersectionObserver==='function'){
+    const observer=new IntersectionObserver(entries=>{
+      for(const entry of entries)if(entry.isIntersecting){observer.unobserve(entry.target);loadNode(entry.target);}
+    },{rootMargin:'280px'});
+    rankPhotoObserver=observer;
+    targets.forEach(node=>observer.observe(node));
+  }else targets.slice(0,30).forEach(loadNode);
+}
+
+function setupFeaturedImages(){
+  document.querySelectorAll('.featured-frame').forEach(frame=>{
+    const img=frame.querySelector('.featured-image img');
+    const btn=frame.querySelector('[data-featured-name]');
+    const credit=frame.querySelector('.featured-credit');
+    if(!img||!btn)return;
+    img.onload=()=>img.classList.add('is-loaded');
+    img.onerror=async()=>{
+      if(img.dataset.retried){img.hidden=true;return;}
+      img.dataset.retried='1';
+      const name=btn.dataset.featuredName;
+      try{
+        const url='https://en.wikipedia.org/w/api.php?action=query&origin=*&redirects=1&titles='+
+          encodeURIComponent(name)+'&prop=pageimages&piprop=thumbnail&pithumbsize=620&format=json&formatversion=2';
+        const response=await fetch(url,{mode:'cors'});
+        if(!response.ok)throw Error('Photo lookup failed');
+        const data=await response.json();
+        const page=(data.query?.pages||[]).find(p=>!p.missing&&p.thumbnail?.source&&titleKey(p.title)===titleKey(name));
+        if(!page)throw Error('No matching portrait');
+        img.src=page.thumbnail.source;
+        if(credit){credit.href=wikiArticle(name);credit.textContent='PHOTO: WIKIPEDIA';}
+      }catch(_){img.hidden=true;}
+    };
+    if(img.complete&&img.naturalWidth)img.classList.add('is-loaded');
+  });
+}
+setupFeaturedImages();
 function updateProfiles(a,b){
   const version=++profileVersion;
   for(const [suffix,g] of [['A',a],['B',b]]){

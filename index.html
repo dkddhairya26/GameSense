@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>GameSense | Historical Sports Analytics</title>
+  <link rel="icon" type="image/svg+xml" href="assets/gamesense-mark.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -12,7 +13,7 @@
 <body>
   <header class="topbar">
     <div class="brand">
-      <div class="mark">GS<span class="mark-flare" aria-hidden="true"></span></div>
+      <img class="brand-mark" src="assets/gamesense-mark.svg" width="46" height="46" alt="GameSense logo">
       <div>
         <strong>GameSense</strong>
         <small>AN INDEPENDENT SPORTS DATA JOURNAL</small>
@@ -49,31 +50,38 @@
     <main class="main">
       <div id="runtimeError" class="runtime-error" hidden role="alert"></div>
       <section id="homeScreen" class="home-screen" aria-label="GameSense home">
-        <div class="home-topline"><span>THE GAMESENSE ARCHIVE</span><span>FIELD NOTES / SEASON EDITION</span></div>
+        <div class="home-topline"><span>GAMESENSE / AN INDEPENDENT SPORTS DATA JOURNAL</span><span>THE ARCHIVE · 2026</span></div>
         <section class="home-intro">
-          <div class="home-intro-copy"><span class="eyebrow">READ THE GAME BEYOND THE SCORE</span>
-            <h1>THE NUMBERS<br><em>BEHIND</em><br>THE GAME.</h1>
-            <p>One independent research desk. Four sports. Historic records, player profiles and charts that explain what actually happened.</p>
-            <button id="homeExplore" class="home-action" type="button">EXPLORE THE ARCHIVE <span>↗</span></button>
+          <div class="home-intro-copy">
+            <span class="home-edition">ISSUE 01 <span></span> HISTORY, WITH CONTEXT</span>
+            <h1>Know the game.<br><em>Read the numbers.</em></h1>
+            <p>Choose a player, club or driver. Trace their seasons, compare performances and see where the numbers came from.</p>
+            <div class="home-action-row">
+              <button id="homeExplore" class="home-action" type="button">OPEN THE ARCHIVE <span aria-hidden="true">↗</span></button>
+              <span>FOUR SPORTS <i></i> REAL HISTORICAL RECORDS</span>
+            </div>
           </div>
-          <div class="home-field" aria-hidden="true">
-            <div class="field-circle"></div><div class="field-circle field-circle-small"></div>
-            <span>GS<sup>01</sup></span><b>DATA / PERFORMANCE / HISTORY</b>
-          </div>
+          <aside class="home-archive-board" aria-label="Available historical data">
+            <div class="board-topline"><span>INSIDE THE ARCHIVE</span><img src="assets/gamesense-mark.svg" alt="" width="42" height="42"></div>
+            <div class="board-item"><b>108,962</b><span>FOOTBALL CLUB-MATCH RECORDS</span><i>01</i></div>
+            <div class="board-item"><b>2,673</b><span>NBA PLAYER-SEASON RECORDS</span><i>02</i></div>
+            <div class="board-item"><b>27,687</b><span>F1 DRIVER RACE RESULTS</span><i>03</i></div>
+            <div class="board-bottomline">CRICKET: IPL AND INTERNATIONAL ARCHIVES <span>↗</span></div>
+          </aside>
         </section>
-        <div class="home-section-caption"><span>CHOOSE YOUR SPORT</span><span>01—04 / HISTORICAL ANALYSIS</span></div>
+        <div class="home-section-caption"><span>THE FOUR DESKS</span><span>SELECT A SPORT TO OPEN ITS RECORDS</span></div>
         <div class="home-sport-grid">
           <button data-open-sport="Soccer" class="home-sport sport-soccer"><small>01 / THE FOOTBALL LEDGER</small><strong>FOOTBALL</strong><span>CLUB RESULTS + INDIVIDUAL PLAYERS <b>↗</b></span></button>
           <button data-open-sport="NBA" class="home-sport sport-nba"><small>02 / THE BASKETBALL LEDGER</small><strong>NBA</strong><span>PLAYERS + SEASON TOTALS <b>↗</b></span></button>
           <button data-open-sport="Cricket" class="home-sport sport-cricket"><small>03 / THE CRICKET LEDGER</small><strong>CRICKET</strong><span>IPL + INTERNATIONAL TEAMS + PLAYERS <b>↗</b></span></button>
           <button data-open-sport="F1" class="home-sport sport-f1"><small>04 / THE GRAND PRIX LEDGER</small><strong>FORMULA 1</strong><span>DRIVERS + CONSTRUCTORS <b>↗</b></span></button>
         </div>
-        <div class="home-section-caption featured-caption"><span>FEATURED ATHLETES</span><span>START WITH SOMEONE FAMILIAR</span></div>
+        <div class="home-section-caption featured-caption"><span>START WITH A NAME</span><span>SELECT A PLAYER TO SEE THEIR STATS AND PHOTO</span></div>
         <div class="featured-grid">
-          <button data-featured-sport="Soccer" data-featured-name="Mohamed Salah" class="featured-athlete"><strong>MOHAMED SALAH</strong><span>FOOTBALL / LIVERPOOL</span></button>
-          <button data-featured-sport="NBA" data-featured-name="LeBron James" class="featured-athlete"><strong>LEBRON JAMES</strong><span>BASKETBALL / NBA</span></button>
-          <button data-featured-sport="Cricket" data-featured-name="Virat Kohli" class="featured-athlete"><strong>VIRAT KOHLI</strong><span>CRICKET / INDIA</span></button>
-          <button data-featured-sport="F1" data-featured-name="Lewis Hamilton" class="featured-athlete"><strong>LEWIS HAMILTON</strong><span>FORMULA 1 / DRIVER</span></button>
+          <article class="featured-frame"><button data-featured-sport="Soccer" data-featured-name="Mohamed Salah" class="featured-athlete"><span class="featured-image"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mohamed_Salah_Argentina_v_Egypt_7_July_2026-277.jpg?width=500" alt="Mohamed Salah" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span>MS</span></span><span class="featured-info"><small>01 / FOOTBALL</small><strong>MOHAMED SALAH</strong><span>VIEW PLAYER RECORD ↗</span></span></button><a class="featured-credit" href="https://commons.wikimedia.org/wiki/File:Mohamed_Salah_Argentina_v_Egypt_7_July_2026-277.jpg" target="_blank" rel="noopener noreferrer">PHOTO: WIKIMEDIA COMMONS</a></article>
+          <article class="featured-frame"><button data-featured-sport="NBA" data-featured-name="LeBron James" class="featured-athlete"><span class="featured-image"><img src="https://cdn.nba.com/headshots/nba/latest/260x190/2544.png" alt="LeBron James" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span>LJ</span></span><span class="featured-info"><small>02 / BASKETBALL</small><strong>LEBRON JAMES</strong><span>VIEW PLAYER RECORD ↗</span></span></button><a class="featured-credit" href="https://www.nba.com/players" target="_blank" rel="noopener noreferrer">PHOTO: NBA</a></article>
+          <article class="featured-frame"><button data-featured-sport="Cricket" data-featured-name="Virat Kohli" class="featured-athlete"><span class="featured-image"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Virat_Kohli_portrait.jpg?width=500" alt="Virat Kohli" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span>VK</span></span><span class="featured-info"><small>03 / CRICKET</small><strong>VIRAT KOHLI</strong><span>VIEW PLAYER RECORD ↗</span></span></button><a class="featured-credit" href="https://commons.wikimedia.org/wiki/File:Virat_Kohli_portrait.jpg" target="_blank" rel="noopener noreferrer">PHOTO: WIKIMEDIA COMMONS</a></article>
+          <article class="featured-frame"><button data-featured-sport="F1" data-featured-name="Lewis Hamilton" class="featured-athlete"><span class="featured-image"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Lewis_Hamilton_portrait.jpg?width=500" alt="Lewis Hamilton" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span>LH</span></span><span class="featured-info"><small>04 / FORMULA 1</small><strong>LEWIS HAMILTON</strong><span>VIEW DRIVER RECORD ↗</span></span></button><a class="featured-credit" href="https://commons.wikimedia.org/wiki/File:Lewis_Hamilton_portrait.jpg" target="_blank" rel="noopener noreferrer">PHOTO: WIKIMEDIA COMMONS</a></article>
         </div>
         <p class="home-footnote">Historical data only. Coverage varies by sport. The archive is a school research project, not a real-time or official statistics provider.</p>
       </section>
@@ -325,21 +333,24 @@
         </div>
         <div class="source-grid">
           <div>
-            <b>Soccer</b>
-            <p>Bundled club-match results from OpenFootball. Team-level historical records only; no player-level football statistics bundled.</p>
+            <b>Soccer / football</b>
+            <p>Club-match results from OpenFootball and player-season totals from Fantasy Premier League archives (2016/17–2025/26). FPL points and assists use the source's own definitions.</p>
+            <p class="source-links">Sources: <a href="https://github.com/openfootball/football.json" target="_blank" rel="noopener noreferrer">OpenFootball (CC0)</a> · <a href="https://github.com/vaastav/Fantasy-Premier-League" target="_blank" rel="noopener noreferrer">FPL historical archive</a> · <a href="https://github.com/imadeddine-belkat/Premier-League-Stats/tree/main/pl_stats/_badges" target="_blank" rel="noopener noreferrer">Club crest reference</a>.</p>
           </div>
           <div>
             <b>NBA</b>
-            <p>Bundled player-season totals from the supplied GameSense archive. Coverage starts from the observed seasons bundled in that archive.</p>
+            <p>Historical NBA player-season totals. Not every year or metric is present, and these figures are not a live league feed.</p>
+            <p class="source-links">Source: <a href="https://boxscorelab.com/downloads/" target="_blank" rel="noopener noreferrer">BoxScore Lab downloads (CC BY 4.0)</a>. Optional portraits: <a href="https://www.nba.com/players" target="_blank" rel="noopener noreferrer">NBA player headshots</a>.</p>
           </div>
           <div>
-            <b>Cricket — IPL & International ODIs</b>
-            <p>208 curated IPL player-season records across 19 observed seasons, 2007/08–2026, plus international ODI, T20I and Test match results, 2001–2025, sourced from Cricsheet-derived CSV archives. Selection: the seven highest-run and four highest-wicket players per season with duplicates removed. This is a curated sample, not complete IPL coverage.</p>
-            <p>Sources: <a href="https://cricsheet.org/" target="_blank" rel="noopener">Cricsheet</a> · <a href="https://github.com/VeeraMounika/IPL-analytics-ETL" target="_blank" rel="noopener">IPL ETL derived data</a> · <a href="https://cricsheet.org/licensing/" target="_blank" rel="noopener">ODC-BY 1.0 license</a>.</p>
+            <b>Cricket / IPL & international</b>
+            <p>208 selected IPL player seasons, historical ODI/T20I/Test match summaries and a third-party international batting career snapshot. Coverage is incomplete and not an official player archive.</p>
+            <p class="source-links">Sources: <a href="https://cricsheet.org/" target="_blank" rel="noopener noreferrer">Cricsheet (ODC-BY 1.0)</a> · <a href="https://github.com/VeeraMounika/IPL-analytics-ETL" target="_blank" rel="noopener noreferrer">IPL Analytics ETL</a> · <a href="https://github.com/eddy-dev07/circ_sheet-analysis-project" target="_blank" rel="noopener noreferrer">International match tables</a> · <a href="https://github.com/Prabhath66/Cricket_stats_analysis" target="_blank" rel="noopener noreferrer">International player snapshot</a>.</p>
           </div>
           <div>
             <b>Formula 1</b>
-            <p>Bundled F1 driver race results from the supplied GameSense archive. Historical telemetry is not bundled.</p>
+            <p>Historical driver-race results and season summaries. Telemetry and complete historical qualifying details are not bundled.</p>
+            <p class="source-links">Source: <a href="https://github.com/f1db/f1db" target="_blank" rel="noopener noreferrer">F1DB (CC BY 4.0)</a>. Optional driver photographs: <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>.</p>
           </div>
         </div>
         <p class="footnote">
@@ -348,7 +359,7 @@
       </section>
 
       <footer>
-        GAMESENSE / FIELD NOTES 01 · <a href="https://github.com/dkddhairya26/GameSense">DATA, CODE & AI DISCLOSURE</a>
+        GAMESENSE / 2026 · <a href="https://github.com/dkddhairya26/GameSense">SOURCE CODE &amp; PROJECT NOTES</a>
       </footer>
       </div><!-- dashboardScreen -->
     </main>

@@ -13,5 +13,12 @@ Photos are linked from Wikimedia rather than bundled in the site. Appropriate at
 
 Other athlete portraits use the English Wikipedia query and summary APIs; NBA headshots may be requested from the league's public image CDN. Premier League player headshots may be requested from the Premier League image CDN; those images are externally hosted and are not assumed to be freely licensed. Source links are surfaced wherever available.
 
+## Visual refresh: embedded photos and original mark
+The home page now contains actual `<img>` elements for Mohamed Salah, LeBron James, Virat Kohli and Lewis Hamilton. The three confirmed Wikimedia Commons file credits are listed above; LeBron James uses an externally hosted NBA headshot from `cdn.nba.com`, with an NBA source link. HTTP image availability was checked during development, but networks and providers can change.
+
+The rankings table loads a competitor photo or club crest when its row approaches the viewport. It uses the same conservative source matching as the full profile panel. A player without a verifiable available image displays initials or a country flag; no unrelated photograph is substituted. Selecting the row opens the profile with the photo's attribution link. This cannot guarantee a real photograph for every historical competitor.
+
+`assets/gamesense-mark.svg` is an original vector mark created for this GameSense redesign. It is stored locally, and does not depend on an external image service.
+
 ## Historical footballer records
 Season-by-season player statistics use Vaastav Anand's Fantasy Premier League data: https://github.com/vaastav/Fantasy-Premier-League (repository includes a MIT license for its software). FPL stats use that provider's definitions and coverage. Ten archived seasons cover 2016/17 through 2025/26. Any source metric missing in a particular year is presented as **not recorded**, not zero or an invented figure.

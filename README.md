@@ -7,6 +7,10 @@ GameSense is a responsive, static website for **Soccer, NBA, Cricket (IPL) and F
 ## Using it
 Select a sport in the sidebar. Choose a season, competition and metric, search for a team/competitor, compare two entries, and explore the recent-form panel. Select **GameSense rating (0–100)** to see an explained experimental index. Open **Methodology** for calculation rules and data-quality notes.
 
+The revised cover includes a local GameSense vector logo, real featured-athlete photo elements and an archive-record overview. Ranking entries can display portraits or club crests directly. Photos are loaded from credited external services when a match is available and degrade to initials or flags on school networks that block them. The bottom-of-page **Source ledger** links to each sport's data providers; detailed AI-use and assessment records remain in PROJECT_EVIDENCE.md.
+
+To check the new interface assets and references locally, run `node --check app.js` followed by `node tests/visual_refresh_check.mjs`.
+
 ## Data coverage
 - Soccer — 108,962 club-perspective match rows (OpenFootball, CC0). Match points recalculated as 3 for wins, 1 for draws, 0 for losses.
 - NBA — 2,673 player-season totals (BoxScore Lab, CC BY 4.0); incomplete years.
