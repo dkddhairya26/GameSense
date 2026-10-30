@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=home-neon-20261030-v9">
+  <link rel="stylesheet" href="style.css?v=season-decade-badges-v10">
 </head>
 <body>
   <header class="topbar">
@@ -68,6 +68,13 @@
           <button data-open-sport="Cricket" class="home-sport sport-cricket"><small>03 / THE CRICKET LEDGER</small><strong>CRICKET</strong><span>IPL + INTERNATIONAL TEAMS + PLAYERS <b>↗</b></span></button>
           <button data-open-sport="F1" class="home-sport sport-f1"><small>04 / THE GRAND PRIX LEDGER</small><strong>FORMULA 1</strong><span>DRIVERS + CONSTRUCTORS <b>↗</b></span></button>
         </div>
+        <div class="home-section-caption featured-caption"><span>FEATURED ATHLETES</span><span>START WITH SOMEONE FAMILIAR</span></div>
+        <div class="featured-grid">
+          <button data-featured-sport="Soccer" data-featured-name="Mohamed Salah" class="featured-athlete"><strong>MOHAMED SALAH</strong><span>FOOTBALL / LIVERPOOL</span></button>
+          <button data-featured-sport="NBA" data-featured-name="LeBron James" class="featured-athlete"><strong>LEBRON JAMES</strong><span>BASKETBALL / NBA</span></button>
+          <button data-featured-sport="Cricket" data-featured-name="Virat Kohli" class="featured-athlete"><strong>VIRAT KOHLI</strong><span>CRICKET / INDIA</span></button>
+          <button data-featured-sport="F1" data-featured-name="Lewis Hamilton" class="featured-athlete"><strong>LEWIS HAMILTON</strong><span>FORMULA 1 / DRIVER</span></button>
+        </div>
         <p class="home-footnote">Historical data only. Coverage varies by sport. The archive is a school research project, not a real-time or official statistics provider.</p>
       </section>
       <div id="dashboardScreen" hidden>
@@ -106,9 +113,9 @@
         <span class="eyebrow">FOOTBALL / CHOOSE YOUR ANALYSIS</span>
         <div class="cricket-view-buttons">
           <button data-football-view="clubs" class="selected">CLUB RESULTS</button>
-          <button data-football-view="players">INDIVIDUAL PLAYERS / 2024–25</button>
+          <button data-football-view="players">INDIVIDUAL PLAYERS / 10 SEASONS</button>
         </div>
-        <p class="analytics-disclaimer">Club match history and Premier League player-season totals are separate datasets. Individual goals, assists, appearances, passes and tackles are available in Player view.</p>
+        <p class="analytics-disclaimer">Club match history and Premier League player-season totals are separate datasets. Individual goals, assists, minutes, clean sheets, saves, cards and other recorded statistics are available for each season from 2016/17 to 2025/26. Some metrics were not collected in every year.</p>
       </section>
       <section id="cricketFormats" class="panel cricket-views" hidden aria-label="Cricket competition views">
         <span class="eyebrow">CRICKET · CHOOSE YOUR ANALYSIS</span>
@@ -150,6 +157,17 @@
           <strong id="subjectMetric">—</strong>
           <small id="subjectMetricLabel">Choose a metric</small>
         </div>
+      </section>
+      <section id="footballPlayerArchive" class="panel player-year-archive" hidden>
+        <div class="panel-head"><div><span class="eyebrow">FOOTBALL / TEN SEASON PLAYER ARCHIVE</span><h2 id="footballArchiveTitle">Individual performance by season</h2></div></div>
+        <p class="chart-note" id="footballArchiveNote">Choose an individual player to see their yearly figures. Missing fields are shown as not recorded.</p>
+        <div class="football-year-tabs" id="footballYearTabs" aria-label="Choose football season"></div>
+        <div class="football-stat-breakdown" id="footballStatBreakdown"></div>
+        <div class="table-wrap football-history-scroll">
+          <table><thead><tr><th>SEASON</th><th>CLUB</th><th>GOALS</th><th>ASSISTS</th><th>MINUTES</th><th>FPL POINTS</th><th>CLEAN SHEETS</th><th>SAVES</th></tr></thead>
+          <tbody id="footballYearRows"></tbody></table>
+        </div>
+        <p class="analytics-disclaimer">One row per player per season from the historical FPL archive. Each year's recorded values are independent. Do not interpret FPL assists as identical to every other provider's assists.</p>
       </section>
       <section class="panel" id="analysisPanel" style="margin:18px 0;padding:20px">
         <div class="panel-head"><div><span class="eyebrow">FORM CHECK / RECENT OBSERVATIONS</span><h2>What happened recently?</h2></div><span class="chip">Observed records only</span></div>
@@ -327,6 +345,6 @@
     </main>
   </div>
 
-  <script defer src="app.js?v=home-neon-football-f1-v9"></script>
+  <script defer src="app.js?v=season-decade-badges-v10"></script>
 </body>
 </html>
