@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=visual-refresh-v12">
+  <link rel="stylesheet" href="style.css?v=sport-photos-v13">
 </head>
 <body>
   <header class="topbar">
@@ -71,11 +71,12 @@
         </section>
         <div class="home-section-caption"><span>THE FOUR DESKS</span><span>SELECT A SPORT TO OPEN ITS RECORDS</span></div>
         <div class="home-sport-grid">
-          <button data-open-sport="Soccer" class="home-sport sport-soccer"><small>01 / THE FOOTBALL LEDGER</small><strong>FOOTBALL</strong><span>CLUB RESULTS + INDIVIDUAL PLAYERS <b>↗</b></span></button>
-          <button data-open-sport="NBA" class="home-sport sport-nba"><small>02 / THE BASKETBALL LEDGER</small><strong>NBA</strong><span>PLAYERS + SEASON TOTALS <b>↗</b></span></button>
-          <button data-open-sport="Cricket" class="home-sport sport-cricket"><small>03 / THE CRICKET LEDGER</small><strong>CRICKET</strong><span>IPL + INTERNATIONAL TEAMS + PLAYERS <b>↗</b></span></button>
-          <button data-open-sport="F1" class="home-sport sport-f1"><small>04 / THE GRAND PRIX LEDGER</small><strong>FORMULA 1</strong><span>DRIVERS + CONSTRUCTORS <b>↗</b></span></button>
+          <button data-open-sport="Soccer" class="home-sport sport-soccer"><img class="home-sport-photo" src="assets/sport-photos/football.jpg" alt="" loading="lazy" decoding="async"><i class="home-sport-shade" aria-hidden="true"></i><img class="home-sport-icon" src="assets/sport-icons/football.svg" alt="" aria-hidden="true"><small>01 / THE FOOTBALL LEDGER</small><strong>FOOTBALL</strong><span>CLUB RESULTS + INDIVIDUAL PLAYERS <b>↗</b></span></button>
+          <button data-open-sport="NBA" class="home-sport sport-nba"><img class="home-sport-photo" src="assets/sport-photos/basketball.jpg" alt="" loading="lazy" decoding="async"><i class="home-sport-shade" aria-hidden="true"></i><img class="home-sport-icon" src="assets/sport-icons/basketball.svg" alt="" aria-hidden="true"><small>02 / THE BASKETBALL LEDGER</small><strong>NBA</strong><span>PLAYERS + SEASON TOTALS <b>↗</b></span></button>
+          <button data-open-sport="Cricket" class="home-sport sport-cricket"><img class="home-sport-photo" src="assets/sport-photos/cricket.jpg" alt="" loading="lazy" decoding="async"><i class="home-sport-shade" aria-hidden="true"></i><img class="home-sport-icon" src="assets/sport-icons/cricket.svg" alt="" aria-hidden="true"><small>03 / THE CRICKET LEDGER</small><strong>CRICKET</strong><span>IPL + INTERNATIONAL TEAMS + PLAYERS <b>↗</b></span></button>
+          <button data-open-sport="F1" class="home-sport sport-f1"><img class="home-sport-photo" src="assets/sport-photos/f1.jpg" alt="" loading="lazy" decoding="async"><i class="home-sport-shade" aria-hidden="true"></i><img class="home-sport-icon" src="assets/sport-icons/f1.svg" alt="" aria-hidden="true"><small>04 / THE GRAND PRIX LEDGER</small><strong>FORMULA 1</strong><span>DRIVERS + CONSTRUCTORS <b>↗</b></span></button>
         </div>
+        <p class="home-media-credits">SPORT PHOTOS: <a href="https://commons.wikimedia.org/wiki/File:Manchester_City_-_Burnley_31_Jan_2024.jpg" target="_blank" rel="noopener noreferrer">FOOTBALL</a> · <a href="https://commons.wikimedia.org/wiki/File:Orlando_Magic_vs._Milwaukee_Bucks_December_2024_17_(in-game_action).jpg" target="_blank" rel="noopener noreferrer">BASKETBALL</a> · <a href="https://commons.wikimedia.org/wiki/File:Indian_Premier_League.jpg" target="_blank" rel="noopener noreferrer">CRICKET</a> · <a href="https://commons.wikimedia.org/wiki/File:2024_Spanish_Grand_Prix_(53811183018).jpg" target="_blank" rel="noopener noreferrer">FORMULA 1</a></p>
         <div class="home-section-caption featured-caption"><span>START WITH A NAME</span><span>SELECT A PLAYER TO SEE THEIR STATS AND PHOTO</span></div>
         <div class="featured-grid">
           <article class="featured-frame"><button data-featured-sport="Soccer" data-featured-name="Mohamed Salah" class="featured-athlete"><span class="featured-image"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mohamed_Salah_Argentina_v_Egypt_7_July_2026-277.jpg?width=500" alt="Mohamed Salah" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span>MS</span></span><span class="featured-info"><small>01 / FOOTBALL</small><strong>MOHAMED SALAH</strong><span>VIEW PLAYER RECORD ↗</span></span></button><a class="featured-credit" href="https://commons.wikimedia.org/wiki/File:Mohamed_Salah_Argentina_v_Egypt_7_July_2026-277.jpg" target="_blank" rel="noopener noreferrer">PHOTO: WIKIMEDIA COMMONS</a></article>
@@ -243,6 +244,7 @@
               <tbody id="rankRows"></tbody>
             </table>
           </div>
+          <button id="showMoreRanks" class="show-more-ranks" type="button" hidden>SHOW MORE PEOPLE</button>
         </section>
 
         <section class="stack" id="comparePanel">
@@ -365,6 +367,6 @@
     </main>
   </div>
 
-  <script defer src="app.js?v=visual-refresh-v12"></script>
+  <script defer src="app.js?v=sport-photos-v13"></script>
 </body>
 </html>
