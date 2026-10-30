@@ -638,7 +638,7 @@ function render() {
   $('count').textContent = number(filtered.length);
   $('competitors').textContent = number(new Set(filtered.map(r => r.competitor_id)).size);
   $('seasons').textContent = number(new Set(filtered.map(r => r.season)).size);
-  $('source').textContent = sport==='Soccer'&&footballMode==='players'?'Fantasy Premier League / Historical':'OpenFootball'===d.source?d.source:d.source;
+  $('source').textContent = sport==='Soccer'&&footballMode==='players'?'Fantasy Premier League / Historical':d.source;
   $('sourceSub').textContent = sport==='Soccer'&&footballMode==='players'?'Individual player-season totals from FPL archives 2016/17–2025/26':d.sourceSub;
   $('rankingMetric').textContent = d.metrics[metric];
   $('metricHead').textContent = d.metrics[metric];
@@ -733,12 +733,17 @@ function countryFallback(g){
   const p=photoSubject(g);
   if(!p)return null;
   if(p.kind==='country')return countryFlags[p.name]||'🌐';
+  if(sport==='Cricket'){
+    const r=filtered.find(x=>x.competitor_id===g.id&&x.record_kind==='international_player_career');
+    if(r?.team&&countryFlags[r.team])return countryFlags[r.team];
+  }
+  if(sport==='F1'&&g.name==='Lewis Hamilton')return '🇬🇧';
   return null;
 }
 function teamInfo(g){
   if(!g)return 'Select a competitor';
   if(sport==='Soccer'){
-    if(footballMode==='players'){const r=filtered.find(x=>x.competitor_id===g.id);return r?'Club · '+(r.team||'Not recorded')+' · '+r.season:'Club not recorded';}
+    if(footballMode==='players'){const r=filtered.filter(x=>x.competitor_id===g.id).sort((a,b)=>b.season.localeCompare(a.season))[0];return r?'Club · '+(r.team||'Not recorded')+' · '+r.season:'Club not recorded';}
     return 'Club · '+g.name;
   }
   const international=sport==='Cricket'&&$('competition').value.startsWith('International ');
@@ -831,7 +836,7 @@ function displayPhoto(g,imageId,initialsId,creditId,version,readVersion){
   fallback.hidden=false;img.hidden=true;
   img.removeAttribute('src');
   if(credit){credit.hidden=true;credit.removeAttribute('href')}
-  if(!g||flag)return;
+  if(!g||photoSubject(g)?.kind==='country')return;
   resolvePortrait(g).then(info=>{
     if(readVersion()!==version||!info)return;
     img.onload=()=>{if(readVersion()===version){img.hidden=false;fallback.hidden=true;}};
@@ -877,7 +882,7 @@ function clubBadgeUrl(rawName){
 function competitorClub(g){
   if(!g||sport!=='Soccer')return null;
   if(footballMode==='clubs')return g.name;
-  const selected=filtered.find(r=>r.competitor_id===g.id);
+  const selected=filtered.filter(r=>r.competitor_id===g.id&&r.team).sort((a,b)=>b.season.localeCompare(a.season))[0];
   if(selected?.team)return selected.team;
   return all.find(r=>r.sport==='Soccer'&&r.record_kind==='player_season'&&r.competitor_id===g.id)?.team||null;
 }
