@@ -102,13 +102,13 @@
         <div class="hero-side">
           <div class="mini-stat leader-stat">
             <div class="hero-profile-photo" id="leaderPortraitWrap">
-              <span id="leaderMonogram">GS</span><img id="leaderPortrait" alt="Photograph or badge of the leading subject" hidden loading="lazy" decoding="async" referrerpolicy="no-referrer">
+              <span id="leaderMonogram">GS</span><img id="leaderPortrait" alt="Photograph or badge of the leading subject" hidden loading="eager" decoding="async" referrerpolicy="no-referrer">
             </div>
             <span>LEADING SUBJECT / SELECTED METRIC</span>
             <strong id="leaderName">—</strong>
             <small id="leaderMetric">Waiting for data…</small>
             <small id="leaderTeam" class="leader-affiliation">Club / team / country</small>
-            <img id="leaderClubBadge" class="leader-club-badge" alt="Club crest" hidden loading="lazy">
+            <img id="leaderClubBadge" class="leader-club-badge" alt="Club crest" hidden loading="eager">
             <a id="leaderPhotoCredit" class="leader-photo-credit" hidden target="_blank" rel="noopener noreferrer">PHOTO CREDIT</a>
           </div>
           <div class="mini-stat">
@@ -153,7 +153,7 @@
       <section class="selected-subject panel" id="subjectPanel" aria-label="Selected athlete or team profile">
         <div class="subject-photo">
           <span id="subjectMonogram" aria-hidden="true">GS</span>
-          <img id="subjectPortrait" alt="Selected competitor photograph or team badge" hidden loading="lazy" decoding="async" referrerpolicy="no-referrer">
+          <img id="subjectPortrait" alt="Selected competitor photograph or team badge" hidden loading="eager" decoding="async" referrerpolicy="no-referrer">
         </div>
         <div class="subject-identity">
           <span class="eyebrow" id="subjectEyebrow">SUBJECT / ARCHIVE PROFILE</span>
@@ -259,22 +259,22 @@
             <label>Competitor B<select id="compareB"></select></label>
             <div class="profile-duo" id="profileDuo">
               <article class="athlete-card" id="profileCardA" aria-label="Competitor A profile">
-                <div class="athlete-image"><span id="avatarFallbackA">GS</span><img id="avatarPhotoA" alt="Selected competitor photograph or badge" hidden loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>
+                <div class="athlete-image"><span id="avatarFallbackA">GS</span><img id="avatarPhotoA" alt="Selected competitor photograph or badge" hidden loading="eager" decoding="async" referrerpolicy="no-referrer"></div>
                 <div class="athlete-details">
                   <span class="athlete-kicker">COMPETITOR A</span>
                   <strong id="avatarNameA">Choose a competitor</strong>
                   <small id="avatarTeamA">Historical team / country</small>
-                  <img id="avatarBadgeA" class="athlete-club-badge" alt="Historical team badge" hidden loading="lazy">
+                  <img id="avatarBadgeA" class="athlete-club-badge" alt="Historical team badge" hidden loading="eager">
                   <a id="avatarCreditA" href="#" target="_blank" rel="noopener noreferrer" hidden>VIEW WIKIPEDIA SOURCE ↗</a>
                 </div>
               </article>
               <article class="athlete-card" id="profileCardB" aria-label="Competitor B profile">
-                <div class="athlete-image"><span id="avatarFallbackB">GS</span><img id="avatarPhotoB" alt="Selected competitor photograph or badge" hidden loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>
+                <div class="athlete-image"><span id="avatarFallbackB">GS</span><img id="avatarPhotoB" alt="Selected competitor photograph or badge" hidden loading="eager" decoding="async" referrerpolicy="no-referrer"></div>
                 <div class="athlete-details">
                   <span class="athlete-kicker">COMPETITOR B</span>
                   <strong id="avatarNameB">Choose a competitor</strong>
                   <small id="avatarTeamB">Historical team / country</small>
-                  <img id="avatarBadgeB" class="athlete-club-badge" alt="Historical team badge" hidden loading="lazy">
+                  <img id="avatarBadgeB" class="athlete-club-badge" alt="Historical team badge" hidden loading="eager">
                   <a id="avatarCreditB" href="#" target="_blank" rel="noopener noreferrer" hidden>Photo source & licence details ↗</a>
                 </div>
               </article>
@@ -367,6 +367,6 @@
     </main>
   </div>
 
-  <script defer src="app.js?v=sport-photos-v13"></script>
+  <script defer src="app.js?v=sport-photos-v14"></script>
 </body>
 </html>
