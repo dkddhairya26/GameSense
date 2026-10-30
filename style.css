@@ -332,3 +332,45 @@ body{background:radial-gradient(ellipse 70% 30% at 81% -7%,rgba(39,94,134,.28),t
 @media(max-width:950px){.home-intro{grid-template-columns:1fr}.home-field{display:none}.home-intro{min-height:380px}}
 @media(max-width:700px){.home-sport-grid{grid-template-columns:1fr}.home-sport{min-height:165px}.home-intro h1{font-size:75px}.home-intro-copy{padding:30px 18px}.home-topline span:last-child{display:none}.home-section-caption span:last-child{display:none}}
 @media(prefers-reduced-motion:reduce){.field-circle,.hero::after,.live-pulse{animation:none!important}}
+
+/* Individual footballers: year tabs and source-accurate season stat cards. */
+.player-year-archive{margin:18px 0;border-top:3px solid var(--accent)}
+.football-year-tabs{display:flex;gap:6px;flex-wrap:wrap;margin:16px 0 19px}
+.football-year-tabs button{border:1px solid #3a6076;background:#102a3d;color:#d5e5ed;cursor:pointer;
+  font:500 11px var(--mono);padding:10px 12px;transition:background .22s,transform .22s}
+.football-year-tabs button:hover:not(:disabled){transform:translateY(-2px);border-color:var(--accent)}
+.football-year-tabs button.selected{background:var(--accent);border-color:var(--accent);color:#061822;font-weight:700}
+.football-year-tabs button:disabled{opacity:.3;cursor:not-allowed}
+.football-stat-breakdown{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;margin-bottom:20px}
+.football-stat-tile{background:#1a3043;border:1px solid #334e62;min-height:91px;padding:15px 12px}
+.football-stat-tile small{display:block;color:#a6bccd;font:500 10px var(--mono)}
+.football-stat-tile strong{display:block;color:#f0fcff;font:700 clamp(15px,1.8vw,26px)/1 var(--headline);margin-top:10px}
+.football-history-scroll{max-height:330px}
+.football-history-scroll th,.football-history-scroll td{white-space:nowrap}
+.football-history-scroll .active-year{background:rgba(92,225,207,.13)}
+.subject-badge-line{display:flex;align-items:center;gap:9px;margin-top:11px;color:#b4d4d8;font:11px var(--mono)}
+.subject-badge-line img{width:34px;height:40px;object-fit:contain;filter:drop-shadow(0 3px 5px rgba(0,0,0,.28))}
+.leader-club-badge{position:absolute;right:11px;bottom:9px;max-width:29px;max-height:33px;object-fit:contain}
+.athlete-club-badge{max-width:34px;max-height:35px;object-fit:contain;margin-top:3px}
+.football-badge-shelf{margin:16px 0;border-top:2px solid var(--accent)}
+.club-badge-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(128px,1fr));gap:7px}
+.club-badge-choice{min-height:116px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;
+  gap:8px;background:#14293b;border:1px solid #29465c;color:#e1f2fa;padding:13px 7px;cursor:pointer;transition:transform .2s,border-color .2s}
+.club-badge-choice:hover{transform:translateY(-3px);border-color:var(--accent)}
+.club-badge-choice img{height:61px;max-width:80px;object-fit:contain}
+.club-badge-choice>b{font:700 33px var(--headline);color:var(--accent)}
+.club-badge-choice span{text-align:center;font:500 11px/1.3 var(--body)}
+.featured-caption{margin-top:42px}
+.featured-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:14px}
+.featured-athlete{background:#14283e;border:1px solid #315169;border-left:3px solid var(--accent);
+  display:flex;flex-direction:column;gap:8px;align-items:flex-start;justify-content:center;min-height:124px;
+  padding:15px;text-align:left;cursor:pointer;color:#f3faff;transition:transform .2s,background .2s}
+.featured-athlete:hover{background:#1f3c56;transform:translateY(-4px)}
+.featured-athlete strong{font:700 clamp(19px,2.2vw,27px)/1 var(--headline)}
+.featured-athlete span{font:500 10px var(--mono);color:#bad0de}
+.featured-athlete:nth-child(2){border-left-color:#ffbe66}
+.featured-athlete:nth-child(3){border-left-color:#a8ed60}
+.featured-athlete:nth-child(4){border-left-color:#ff6e88}
+@media(max-width:1180px){.football-stat-breakdown{grid-template-columns:repeat(3,minmax(0,1fr))}.featured-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){.football-stat-breakdown{grid-template-columns:repeat(2,minmax(0,1fr))}.featured-grid{grid-template-columns:1fr 1fr}.featured-athlete{min-height:96px;padding:10px}.featured-athlete strong{font-size:19px}.club-badge-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.club-badge-choice{min-height:112px}}
+@media(prefers-reduced-motion:reduce){.featured-athlete,.club-badge-choice,.football-year-tabs button{transition:none!important}}
