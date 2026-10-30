@@ -35,6 +35,10 @@ assert.match(css,/\.rank-sport-icon/);
 assert.match(html,/id="showMoreRanks"/);
 assert.match(code,/visibleRankingCount\+=120/);
 assert.match(code,/portraitManifest\[sport\]/);
+assert.match(code,/loading='eager'/);
+for(const id of ['leaderPortrait','subjectPortrait','avatarPhotoA','avatarPhotoB']){
+  assert.match(html,new RegExp(`id="${id}"[^>]*hidden loading="eager"`));
+}
 assert.ok(Object.keys(portraitIndex.Cricket).length>150);
 assert.ok(Object.keys(portraitIndex.F1).length>450);
 

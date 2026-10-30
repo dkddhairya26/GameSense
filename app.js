@@ -791,7 +791,9 @@ function rankAvatar(g){
   const sportIcon={Soccer:'football',NBA:'basketball',Cricket:'cricket',F1:'f1'}[sport];
   return '<span class="rank-thumb" data-rank-id="'+escapeHtml(g.id)+'">'+
     '<span>'+escapeHtml(countryFallback(g)||initials(g.name))+'</span>'+
-    '<img class="rank-photo" alt="" hidden loading="lazy" decoding="async" referrerpolicy="no-referrer">'+
+    // Rows are lazy-created by IntersectionObserver, so the hidden image must
+    // load eagerly once its src is assigned or onload never fires.
+    '<img class="rank-photo" alt="" hidden loading="eager" decoding="async" referrerpolicy="no-referrer">'+
     '<img class="rank-sport-icon" src="assets/sport-icons/'+sportIcon+'.svg" alt="" aria-hidden="true">'+
     '</span>';
 }
@@ -911,6 +913,7 @@ function displayPhoto(g,imageId,initialsId,creditId,version,readVersion){
         });
       }else{img.hidden=true;fallback.hidden=false;if(credit)credit.hidden=true;}
     };
+    img.loading='eager';
     img.src=info.src;
     if(credit){credit.href=info.credit;credit.hidden=false;credit.title='Wikimedia image file and licensing information'}
   }).catch(()=>{});
@@ -935,6 +938,7 @@ function hydrateRankingPhotos(){
         }).catch(()=>{});
       }
     };
+    img.loading='eager';
     img.src=info.src;
   };
   const loadNode=node=>{
